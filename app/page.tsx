@@ -1,9 +1,12 @@
 'use client'
 
-import Hero from "@/components/hero"
-import Marquee from "@/components/marquee"
-import ProjectList from "@/components/project-list"
+import dynamic from "next/dynamic"
+
+const Hero = dynamic(() => import("@/components/hero"))
+const Marquee = dynamic(() => import("@/components/marquee"), { ssr: false })
+const ProjectList = dynamic(() => import("@/components/project-list"), { ssr: false })
 import Link from "next/link"
+import Image from "next/image"
 import React, { useRef } from "react"
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
 
@@ -94,9 +97,12 @@ export default function Home() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full opacity-50 group-hover:opacity-80 transition-opacity duration-500 pointer-events-none" />
-              <img 
+              <Image 
                 src="/blob.gif" 
                 alt="Animated Blob Graphic" 
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
                 className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-transform duration-700" 
               />
             </motion.div>
