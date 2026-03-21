@@ -1,0 +1,155 @@
+'use client'
+
+import Hero from "@/components/hero"
+import Marquee from "@/components/marquee"
+import ProjectList from "@/components/project-list"
+import Link from "next/link"
+import React, { useRef } from "react"
+import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
+
+export default function Home() {
+  const introRef = useRef<HTMLElement>(null)
+  const contactRef = useRef<HTMLElement>(null)
+
+  const { scrollYProgress: introProgress } = useScroll({
+    target: introRef,
+    offset: ["start end", "end start"]
+  })
+  
+  const { scrollYProgress: contactProgress } = useScroll({
+    target: contactRef,
+    offset: ["start end", "end start"]
+  })
+
+  // The text translates slightly opposite to the scroll direction
+  const introTextY = useTransform(introProgress, [0, 1], ["-15%", "15%"])
+  const contactTextY = useTransform(contactProgress, [0, 1], ["-25%", "25%"])
+  
+  // The background translates slowly making it look deeper
+  const introBgY = useTransform(introProgress, [0, 1], ["-50%", "50%"])
+  const contactBgY = useTransform(contactProgress, [0, 1], ["-30%", "30%"])
+
+  // --- 3D Animation Hook state ---
+  const mouseX = useMotionValue(0)
+  const mouseY = useMotionValue(0)
+
+  // Maximum tilt degrees
+  const rotateX = useTransform(mouseY, [-0.5, 0.5], ["12deg", "-12deg"])
+  const rotateY = useTransform(mouseX, [-0.5, 0.5], ["-12deg", "12deg"])
+
+  // Smooth the rotation to make it fluid
+  const smoothRotateX = useSpring(rotateX, { damping: 20, stiffness: 100 })
+  const smoothRotateY = useSpring(rotateY, { damping: 20, stiffness: 100 })
+
+  function handleMouseMove(e: React.MouseEvent) {
+    if (!introRef.current) return
+    const rect = introRef.current.getBoundingClientRect()
+    // Calculate mouse position relative to center of the element, normalized between -0.5 and 0.5
+    const x = (e.clientX - rect.left) / rect.width - 0.5
+    const y = (e.clientY - rect.top) / rect.height - 0.5
+    mouseX.set(x)
+    mouseY.set(y)
+  }
+
+  function handleMouseLeave() {
+    mouseX.set(0)
+    mouseY.set(0)
+  }
+
+  return (
+    <div className="w-full">
+      <Hero />
+
+      {/* Intro Section with 3D Tilt Effect */}
+      <section 
+        ref={introRef} 
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        className="py-24 md:py-40 px-4 md:px-12 border-t border-white/10 bg-neutral-950 relative overflow-hidden"
+        style={{ perspective: 1200 }}
+      >
+        {/* Decorative parallax element */}
+        <motion.div 
+          style={{ y: introBgY }}
+          className="absolute right-0 md:right-32 top-1/4 w-[300px] h-[300px] bg-white/[0.03] rounded-full blur-[80px] pointer-events-none"
+        />
+        
+        <motion.div 
+          style={{ 
+            y: introTextY, 
+            rotateX: smoothRotateX, 
+            rotateY: smoothRotateY,
+            z: 20 // Pulls the element slightly forward in 3D space
+          }} 
+          className="w-full xl:w-[90%] mx-auto relative z-10 transform-gpu"
+        >
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center justify-between">
+            <p className="flex-1 text-3xl md:text-5xl leading-tight font-light text-neutral-400">
+              I'm a <span className="text-white font-bold">full stack developer</span> who turns ideas into elegant digital solutions. Specializing in modern web applications, scalable backends, and pixel-perfect frontends.
+            </p>
+            
+            <motion.div 
+              className="w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 relative flex-shrink-0 group flex items-center justify-center transform-gpu"
+              whileHover={{ scale: 1.05, rotateZ: 2 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full opacity-50 group-hover:opacity-80 transition-opacity duration-500 pointer-events-none" />
+              <img 
+                src="/blob.gif" 
+                alt="Animated Blob Graphic" 
+                className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-transform duration-700" 
+              />
+            </motion.div>
+          </div>
+
+          <div className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 border-t border-white/10 pt-8 md:pt-12">
+            {[
+              { number: "20+", label: "Projects" },
+              { number: "4+", label: "Years" },
+              { number: "100%", label: "Dedication" },
+            ].map((stat) => (
+              <div key={stat.label}>
+                <div className="text-3xl md:text-4xl font-bold">{stat.number}</div>
+                <div className="text-sm uppercase tracking-widest text-neutral-500 mt-2">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      <Marquee />
+      <ProjectList />
+
+      {/* Parallax Contact Section */}
+      <section ref={contactRef} className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center bg-white text-black px-4 py-20 md:py-0 text-center relative overflow-hidden">
+        <motion.div 
+          className="absolute inset-0 bg-[url('/placeholder.svg?height=1000&width=1000')] opacity-5 mix-blend-multiply"
+          style={{ y: contactBgY, scale: 1.3 }}
+        />
+        
+        <motion.h2 
+          className="text-5xl md:text-[12vw] font-bold leading-none tracking-tighter relative z-10"
+          style={{ y: contactTextY }}
+        >
+          GET IN TOUCH
+        </motion.h2>
+        
+        <motion.p 
+          className="text-base md:text-xl lg:text-2xl max-w-md mt-6 mb-8 md:mb-12 font-light relative z-10"
+          style={{ y: contactTextY }}
+        >
+          Have a project in mind? Let's collaborate and build something extraordinary.
+        </motion.p>
+        
+        <motion.div style={{ y: contactTextY }} className="relative z-10">
+          <Link
+            href="/contact"
+            className="px-8 md:px-12 py-4 md:py-6 bg-black text-white rounded-full text-base md:text-xl font-medium hover:scale-110 transition-transform duration-300 inline-flex items-center justify-center shadow-2xl"
+          >
+            Contact Me
+          </Link>
+        </motion.div>
+      </section>
+    </div>
+  )
+}
