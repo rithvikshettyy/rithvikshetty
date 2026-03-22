@@ -115,9 +115,9 @@ export default function Achievements() {
                 variants={itemVariants}
                 className="group bg-neutral-900/30 backdrop-blur-xl border border-white/10 rounded-[2rem] overflow-hidden hover:bg-neutral-900/50 hover:border-white/20 transition-all duration-500 flex flex-col min-h-[450px]"
               >
-                <div className="relative h-56 md:h-64 w-full overflow-hidden border-b border-white/10 bg-neutral-950">
-                  <Image src={item.image} alt={item.title} fill className="object-contain p-4 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
+                <div className="relative h-56 md:h-64 w-full overflow-hidden border-b border-white/10">
+                  <Image src={item.image} alt={item.title} fill className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="p-8 md:p-10 flex-1 flex flex-col justify-between">
                   <div>
