@@ -92,7 +92,7 @@ export const metadata: Metadata = {
   },
   generator: "v0.app",
   icons: {
-    icon: "/blob.gif",
+    icon: "/blob-cropped.gif",
     apple: "/apple-icon.png",
   },
 }

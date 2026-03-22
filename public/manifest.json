@@ -24,7 +24,7 @@
   ],
   "icons": [
     {
-      "src": "/blob.gif",
+      "src": "/blob-cropped.gif",
       "sizes": "any",
       "type": "image/gif"
     },
