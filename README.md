@@ -61,7 +61,7 @@ This portfolio is continuously evolving. I am currently focusing on:
 
 ## ✉️ Contact
 
-- **Website**: [rithvikshetty.com](https://tinyroomconcert.vercel.app/) (Demo Link)
+- **Website**: [rithvikshetty.in](https://rithvikshetty.in/) (Demo Link)
 - **LinkedIn**: [Rithvik Shetty](https://www.linkedin.com/in/rithvikshetty/)
 - **Email**: [Contact Page](public/contact)
 
