@@ -114,8 +114,8 @@ export default function About() {
               <Star className="w-6 h-6 text-neutral-300" />
               <h3 className="text-2xl font-bold tracking-tight">Tech Stack</h3>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-start gap-x-3 gap-y-4 w-full">
-              {['Next.js', 'React', 'TypeScript', 'Node.js', 'Python', 'Machine Learning', 'Supabase', 'Tailwind CSS', 'Figma'].map((skill, i) => (
+            <div className="flex flex-wrap items-center justify-start gap-3 w-full">
+              {['Next.js', 'React', 'TypeScript', 'Node.js', 'Python', 'Machine Learning', 'Supabase', 'Tailwind', 'Figma'].map((skill, i) => (
                 <span key={i} className="inline-flex px-5 py-2 bg-white/5 border border-white/10 rounded-xl text-neutral-300 text-sm md:text-base hover:bg-white hover:text-black hover:scale-105 transition-all cursor-crosshair font-medium whitespace-nowrap">
                   {skill}
                 </span>
