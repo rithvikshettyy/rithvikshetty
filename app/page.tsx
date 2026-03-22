@@ -18,7 +18,7 @@ export default function Home() {
     target: introRef,
     offset: ["start end", "end start"]
   })
-  
+
   const { scrollYProgress: contactProgress } = useScroll({
     target: contactRef,
     offset: ["start end", "end start"]
@@ -27,7 +27,7 @@ export default function Home() {
   // The text translates slightly opposite to the scroll direction
   const introTextY = useTransform(introProgress, [0, 1], ["-15%", "15%"])
   const contactTextY = useTransform(contactProgress, [0, 1], ["-25%", "25%"])
-  
+
   // The background translates slowly making it look deeper
   const introBgY = useTransform(introProgress, [0, 1], ["-50%", "50%"])
   const contactBgY = useTransform(contactProgress, [0, 1], ["-30%", "30%"])
@@ -64,46 +64,46 @@ export default function Home() {
       <Hero />
 
       {/* Intro Section with 3D Tilt Effect */}
-      <section 
-        ref={introRef} 
+      <section
+        ref={introRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         className="py-24 md:py-40 px-4 md:px-12 border-t border-white/10 bg-neutral-950 relative overflow-hidden"
         style={{ perspective: 1200 }}
       >
         {/* Decorative parallax element */}
-        <motion.div 
+        <motion.div
           style={{ y: introBgY }}
           className="absolute right-0 md:right-32 top-1/4 w-[300px] h-[300px] bg-white/[0.03] rounded-full blur-[80px] pointer-events-none"
         />
-        
-        <motion.div 
-          style={{ 
-            y: introTextY, 
-            rotateX: smoothRotateX, 
+
+        <motion.div
+          style={{
+            y: introTextY,
+            rotateX: smoothRotateX,
             rotateY: smoothRotateY,
             z: 20 // Pulls the element slightly forward in 3D space
-          }} 
+          }}
           className="w-full xl:w-[90%] mx-auto relative z-10 transform-gpu"
         >
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center justify-between">
             <p className="flex-1 text-3xl md:text-5xl leading-tight font-light text-neutral-400">
               I'm a <span className="text-white font-bold">full stack developer</span> who turns ideas into elegant digital solutions. Specializing in modern web applications, scalable backends, and pixel-perfect frontends.
             </p>
-            
-            <motion.div 
+
+            <motion.div
               className="w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 relative flex-shrink-0 group flex items-center justify-center transform-gpu"
               whileHover={{ scale: 1.05, rotateZ: 2 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full opacity-50 group-hover:opacity-80 transition-opacity duration-500 pointer-events-none" />
-              <Image 
-                src="/blob.gif" 
-                alt="Animated Blob Graphic" 
+              <Image
+                src="/blob.gif"
+                alt="Animated Blob Graphic"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
-                className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-transform duration-700" 
+                className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-transform duration-700"
               />
             </motion.div>
           </div>
@@ -114,7 +114,7 @@ export default function Home() {
               { number: "4+", label: "Years" },
               { number: "100%", label: "Dedication" },
             ].map((stat) => (
-              <div key={stat.label}>
+              <div key={stat.label} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold">{stat.number}</div>
                 <div className="text-sm uppercase tracking-widest text-neutral-500 mt-2">{stat.label}</div>
               </div>
@@ -128,25 +128,25 @@ export default function Home() {
 
       {/* Parallax Contact Section */}
       <section ref={contactRef} className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center bg-white text-black px-4 py-20 md:py-0 text-center relative overflow-hidden">
-        <motion.div 
+        <motion.div
           className="absolute inset-0 bg-[url('/placeholder.svg?height=1000&width=1000')] opacity-5 mix-blend-multiply"
           style={{ y: contactBgY, scale: 1.3 }}
         />
-        
-        <motion.h2 
+
+        <motion.h2
           className="text-5xl md:text-[12vw] font-bold leading-none tracking-tighter relative z-10"
           style={{ y: contactTextY }}
         >
           GET IN TOUCH
         </motion.h2>
-        
-        <motion.p 
+
+        <motion.p
           className="text-base md:text-xl lg:text-2xl max-w-md mt-6 mb-8 md:mb-12 font-light relative z-10"
           style={{ y: contactTextY }}
         >
           Have a project in mind? Let's collaborate and build something extraordinary.
         </motion.p>
-        
+
         <motion.div style={{ y: contactTextY }} className="relative z-10">
           <Link
             href="/contact"

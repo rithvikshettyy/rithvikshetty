@@ -8,13 +8,22 @@ import { useRef } from "react"
 const projects = [
   {
     id: "01",
-    title: "TRCT.IN",
+    title: "TinyRoomConcert.in",
     category: "Freelance",
     year: "2026",
-    description: "A dedicated website built for a thriving run club in Thane. The platform enhances community engagement and streamlines tracking and events for runners.",
+    url: "https://tinyroomconcert.vercel.app",
+    description: "An immersive platform built for intimate live music sessions, providing musicians a space to perform and fans a unique way to discover and attend exclusive concerts.",
   },
   {
     id: "02",
+    title: "TRCT.IN",
+    category: "Freelance",
+    year: "2026",
+    url: "https://trct-in.vercel.app",
+    description: "A dedicated website built for a thriving run club in Thane. The platform enhances community engagement and streamlines tracking and events for runners.",
+  },
+  {
+    id: "03",
     title: "AUTOPHARMAX",
     category: "Machine Learning",
     year: "2026",
@@ -22,7 +31,7 @@ const projects = [
     description: "AI-driven platform that analyzes global drug efficacy data and clinical insights to optimize treatment outcomes.",
   },
   {
-    id: "03",
+    id: "04",
     title: "SEAGUARD",
     category: "Hackathon Project",
     year: "2025",
@@ -30,7 +39,7 @@ const projects = [
     description: "An innovative mobile application built with React Native, Supabase backend, and SARVAM AI integration. Features Twilio communication and Figma-designed UI.",
   },
   {
-    id: "04",
+    id: "05",
     title: "ML BASED PIPELINE LEAK DETECTION",
     category: "Machine Learning",
     year: "2024",
@@ -38,7 +47,7 @@ const projects = [
     description: "A machine learning solution for detecting pipeline leaks using advanced sensor data analysis.",
   },
   {
-    id: "05",
+    id: "06",
     title: "LOOPLIST",
     category: "SOFTWARE",
     year: "2024",
@@ -46,7 +55,7 @@ const projects = [
     description: "A collaborative to-do list web application that allows users to manage their tasks in real-time.",
   },
   {
-    id: "06",
+    id: "07",
     title: "FEEDBACK FORM",
     category: "JAVA APPLICATION",
     year: "2023",
@@ -54,7 +63,7 @@ const projects = [
     description: "A simple feedback form built with Java Swing for collecting user feedback.",
   },
   {
-    id: "07",
+    id: "08",
     title: "AI CHATBOT",
     category: "PYTHON",
     year: "2023",

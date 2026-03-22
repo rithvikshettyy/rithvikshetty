@@ -20,7 +20,7 @@ const blogPosts = [
   {
     id: 2,
     title: 'Won the "Most Product Readiness Award" at HackCelestial 2.0',
-    description: 'A look back at how we built SeaGuard under pressure—an AI-powered maritime safety application leveraging React Native, Supabase, and Twilio—which secured the Most Product Readiness Award.',
+    description: 'A look back at how we built SeaGuard under pressure, an AI-powered maritime safety application leveraging React Native, Supabase, and Twilio—which secured the Most Product Readiness Award.',
     date: 'September 25, 2025',
     readTime: '12 min read',
     category: 'Hackathon',

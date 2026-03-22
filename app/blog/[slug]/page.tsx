@@ -88,7 +88,7 @@ const blogPosts = [
   {
     id: 2,
     title: 'Won the "Most Product Readiness Award" at HackCelestial 2.0',
-    description: 'A look back at how we built SeaGuard under pressure—an AI-powered maritime safety application leveraging React Native, Supabase, and Twilio—which secured the Most Product Readiness Award.',
+    description: 'A look back at how we built SeaGuard under pressure, an AI-powered maritime safety application leveraging React Native, Supabase, and Twilio; which secured the Most Product Readiness Award.',
     date: 'September 25, 2025',
     readTime: '12 min read',
     category: 'Hackathon',
@@ -98,12 +98,12 @@ const blogPosts = [
     content: (
       <>
         <p className="text-2xl md:text-3xl text-neutral-100 mb-10 font-normal leading-relaxed">
-          Securing the "Most Product Readiness Award" at HackCelestial 2.0 wasn't just about writing good code—it was about building something that solved a real problem in maritime safety.
+          Securing the "Most Product Readiness Award" at HackCelestial 2.0 wasn't just about writing good code, it was about building something that solved a real problem in maritime safety.
         </p>
 
         <h2 className="text-3xl md:text-4xl font-bold mt-16 mb-8 text-white">The Challenge</h2>
         <p className="mb-8">
-          We set out to build SeaGuard—a mobile application designed to save lives at sea. The ocean is vast and unforgiving, and when emergencies happen, communication is historically spotty. We wanted to build an SOS framework that used AI to streamline triage so coast guards understand exactly what they're walking into.
+          We set out to build SeaGuard, a mobile application designed to save lives at sea. The ocean is vast and unforgiving, and when emergencies happen, communication is historically spotty. We wanted to build an SOS framework that used AI to streamline triage so coast guards understand exactly what they're walking into.
         </p>
 
         <h2 className="text-3xl md:text-4xl font-bold mt-16 mb-8 text-white">The Tech Stack</h2>
@@ -245,12 +245,12 @@ export default function BlogPost() {
   const handleShare = (platform: string) => {
     const url = encodeURIComponent(window.location.href)
     const text = encodeURIComponent(`Check out this article: ${post?.title}`)
-    
+
     let shareUrl = ''
     if (platform === 'twitter') shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`
     if (platform === 'linkedin') shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`
     if (platform === 'facebook') shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`
-    
+
     if (shareUrl) window.open(shareUrl, '_blank', 'width=600,height=400')
   }
 
@@ -383,15 +383,15 @@ export default function BlogPost() {
           className="mt-16 flex items-center gap-4"
         >
           <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2">
-            <button 
-              onClick={handleUpvote} 
+            <button
+              onClick={handleUpvote}
               className={`flex items-center justify-center p-2 rounded-full transition-colors ${userVote === 'up' ? 'text-green-400 bg-green-400/10' : 'text-neutral-400 hover:text-white hover:bg-white/5'}`}
             >
               <ThumbsUp size={20} className={userVote === 'up' ? 'fill-green-400/20' : ''} />
             </button>
             <span className="text-neutral-200 font-mono text-lg min-w-[3ch] text-center select-none font-bold">{voteCount}</span>
-            <button 
-              onClick={handleDownvote} 
+            <button
+              onClick={handleDownvote}
               className={`flex items-center justify-center p-2 rounded-full transition-colors ${userVote === 'down' ? 'text-red-400 bg-red-400/10' : 'text-neutral-400 hover:text-white hover:bg-white/5'}`}
             >
               <ThumbsDown size={20} className={userVote === 'down' ? 'fill-red-400/20' : ''} />
