@@ -26,11 +26,11 @@ export default function ContactPage() {
               </h1>
 
               <motion.div
-                animate={{ y: [0, -15, 0] }}
+                animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
                 transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-[-540px] -left-32 md:-left-[580px] w-64 h-64 md:w-[900px] md:h-[900px] pointer-events-none z-0 overflow-visible"
+                className="absolute top-[-40px] -right-12 md:top-auto md:bottom-[-540px] md:-left-[580px] w-56 h-56 md:w-[900px] md:h-[900px] pointer-events-none z-0 overflow-visible"
               >
-                <Image src="/robot3d.png" alt="Robot 3D Companion" fill className="object-contain drop-shadow-[0_0_100px_rgba(255,255,255,0.06)] opacity-60" />
+                <Image src="/robot3d.png" alt="Robot 3D Companion" fill className="object-contain drop-shadow-[0_0_80px_rgba(255,255,255,0.05)] opacity-60 md:opacity-50" />
               </motion.div>
             </div>
 
