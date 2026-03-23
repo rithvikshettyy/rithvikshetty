@@ -16,26 +16,27 @@ const techStack = [
 
 export default function Marquee() {
   return (
-    <div className="py-10 md:py-20 border-y border-white/10 overflow-hidden flex bg-white text-black relative z-20">
+    <div className="py-16 md:py-24 border-y border-black/5 overflow-hidden flex bg-white text-black relative z-20">
       <motion.div
-        className="flex whitespace-nowrap gap-16 md:gap-24 items-center"
-        animate={{ x: [0, -2000] }}
+        className="flex whitespace-nowrap gap-20 md:gap-32 items-center"
+        animate={{ x: [0, -4000] }}
         transition={{
           repeat: Number.POSITIVE_INFINITY,
           ease: "linear",
-          duration: 40,
+          duration: 50,
         }}
       >
         {[...techStack, ...techStack, ...techStack, ...techStack].map((item, i) => (
-          <div key={i} className="flex items-center gap-6 opacity-80 hover:opacity-100 transition-opacity duration-300">
+          <div key={i} className="flex items-center gap-8 md:gap-12 transition-all duration-300">
             <motion.div
-              whileHover={{ rotate: 180, scale: 1.1 }}
+              whileHover={{ rotate: 10, scale: 1.1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="p-3 bg-neutral-100 dark:bg-neutral-900 rounded-2xl"
+              className="p-4 md:p-6 bg-[#1a1a1a] rounded-[1.5rem] md:rounded-[2rem] border-2 shadow-2xl"
+              style={{ borderColor: `${item.color}20` }}
             >
-              <item.icon size={48} strokeWidth={1} color={item.color} />
+              <item.icon size={64} strokeWidth={1.5} color={item.color} className="w-10 h-10 md:w-16 md:h-16" />
             </motion.div>
-            <span className="text-5xl md:text-7xl font-bold tracking-tighter">
+            <span className="text-6xl md:text-9xl lg:text-[10vw] font-black tracking-tighter uppercase">
               {item.name}
             </span>
           </div>

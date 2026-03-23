@@ -5,6 +5,7 @@ import dynamic from "next/dynamic"
 const Hero = dynamic(() => import("@/components/hero"))
 const Marquee = dynamic(() => import("@/components/marquee"), { ssr: false })
 const ProjectList = dynamic(() => import("@/components/project-list"), { ssr: false })
+const CreativeTeaser = dynamic(() => import("@/components/creative-teaser"), { ssr: false })
 import Link from "next/link"
 import Image from "next/image"
 import React, { useRef } from "react"
@@ -125,6 +126,7 @@ export default function Home() {
 
       <Marquee />
       <ProjectList />
+      <CreativeTeaser />
 
       {/* Parallax Contact Section */}
       <section ref={contactRef} className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center bg-white text-black px-4 py-20 md:py-0 text-center relative overflow-hidden">
