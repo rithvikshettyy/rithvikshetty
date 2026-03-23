@@ -10,7 +10,7 @@ import ModeToggle from "@/components/mode-toggle"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: "swap",
@@ -62,16 +62,16 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Rithvik Shetty - Full Stack Developer",
+        alt: "Rithvik Shetty - Full Stack Developer - Freelancer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rithvik Shetty | Full Stack Developer",
+    title: "Rithvik Shetty | Full Stack Developer | Freelancer",
     description: "Building the future of the web with performance and aesthetics.",
     images: ["/og-image.png"],
-    creator: "@rithvikshettyy", // Recommended to match your social handle
+    creator: "@RithvikShetty04", // Recommended to match your social handle
   },
   robots: {
     index: true,
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "G-EXAMPLE-CODE", // Replace with your actual Google Search Console code when available
+    google: "jHG7Fl5URrypSSrxEe-PirtreNUxDNNSVvSafgwSVVo",
   },
   alternates: {
     canonical: "https://rithvikshetty.in",
