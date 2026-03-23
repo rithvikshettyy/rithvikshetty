@@ -1,11 +1,17 @@
 "use client"
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowLeft, Sparkles, Zap, FlaskConical } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Playground() {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6 pt-40 md:pt-48 pb-20 relative overflow-hidden">
       
@@ -13,9 +19,9 @@ export default function Playground() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.03] blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-blue-500/[0.05] blur-[100px] rounded-full pointer-events-none" />
 
-      {/* Particle System (Bubbles) */}
+      {/* Particle System (Bubbles) - Rendered only on client to avoid hydration errors */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {isMounted && [...Array(20)].map((_, i) => (
           <motion.div
             key={i}
             initial={{ 
