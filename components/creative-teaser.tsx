@@ -9,6 +9,7 @@ const CreativeTeaser = () => {
       row1={{ left: "CRAFTING", center: "with", right: "INTENT" }}
       row2={{ left: "pixel", center: "PERFECT", right: "LOGIC" }} 
       indexOffset={1}
+      floatingImage="/rocket3d.png"
     />
   )
 }

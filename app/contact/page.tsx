@@ -1,11 +1,16 @@
 "use client"
+import { motion } from "framer-motion"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Send } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6 flex flex-col">
-      <div className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 flex-grow">
+    <div className="min-h-screen pt-32 pb-20 px-6 flex flex-col relative overflow-hidden">
+      {/* Background Decor */}
+      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-white/[0.02] blur-[100px] rounded-full pointer-events-none" />
+
+      <div className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 flex-grow relative z-10">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-neutral-500 hover:text-white mb-12 transition-colors"
@@ -14,11 +19,22 @@ export default function ContactPage() {
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-          <div>
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-8">
-              LET'S <br /> WORK <br /> TOGETHER
-            </h1>
-            <p className="text-xl text-neutral-400 mb-12 max-w-md font-light">
+          <div className="relative group">
+            <div className="relative inline-block">
+              <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8 relative z-20">
+                LET'S <br /> WORK <br /> TOGETHER
+              </h1>
+
+              <motion.div
+                animate={{ y: [0, -15, 0] }}
+                transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-[-540px] -left-32 md:-left-[580px] w-64 h-64 md:w-[900px] md:h-[900px] pointer-events-none z-0 overflow-visible"
+              >
+                <Image src="/robot3d.png" alt="Robot 3D Companion" fill className="object-contain drop-shadow-[0_0_100px_rgba(255,255,255,0.06)] opacity-60" />
+              </motion.div>
+            </div>
+
+            <p className="text-xl text-neutral-400 mb-12 max-w-md font-light tracking-wide leading-relaxed">
               We are currently accepting new projects. Tell us about your vision and we'll tell you how we can bring it
               to life.
             </p>

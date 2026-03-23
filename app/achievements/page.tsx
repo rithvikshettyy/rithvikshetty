@@ -35,21 +35,6 @@ const hackathons = [
   },
 ]
 
-const research = [
-  {
-    title: "Attention Enhanced Speaker representation with Contrastive Learning",
-    publisher: "ICCUBEA, IEEE",
-    year: "2025",
-    image: "/about1.jpeg",
-  },
-  {
-    title: "Advanced Fake News Detection Using BERT and Ensemble Learning",
-    publisher: "ICDSM, Springer",
-    year: "2024",
-    image: "/about1.jpeg",
-  }
-]
-
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -135,52 +120,6 @@ export default function Achievements() {
             ))}
           </motion.div>
         </div>
-
-        {/* Research & Publications Section */}
-        {/*
-        <div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center gap-4 mb-10 md:mb-16 border-t border-white/10 pt-16 md:pt-24"
-          >
-            <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-neutral-500" />
-            <h2 className="text-4xl md:text-5xl font-black tracking-tighter">Research & Published Works</h2>
-          </motion.div>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8"
-          >
-            {research.map((item, i) => (
-              <motion.div
-                key={i}
-                variants={itemVariants}
-                className="group bg-neutral-900/30 backdrop-blur-xl border border-white/10 rounded-[2rem] overflow-hidden hover:bg-neutral-900/50 hover:border-white/20 transition-all duration-500"
-              >
-                <div className="relative h-64 md:h-80 w-full overflow-hidden border-b border-white/10 bg-black flex items-center justify-center">
-                  <div className="absolute inset-0 z-0">
-                    <Image src={item.image} alt={item.title} fill className="object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 blur-[2px] group-hover:blur-none" />
-                  </div>
-                  <GraduationCap className="w-20 h-20 text-white/50 relative z-10 group-hover:opacity-0 transition-opacity duration-300 drop-shadow-2xl" />
-                </div>
-                <div className="p-8 md:p-10 flex flex-col justify-between">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-8 tracking-tight leading-tight group-hover:text-white text-neutral-100">{item.title}</h3>
-                  <div className="flex flex-wrap items-center gap-4">
-                    <div className="px-5 py-2 hover:bg-white hover:text-black transition-colors duration-300 bg-white/10 border border-white/20 rounded-full cursor-pointer">
-                      <span className="text-sm md:text-base font-semibold tracking-wide">{item.publisher}</span>
-                    </div>
-                    <span className="text-xl font-light text-neutral-500">{item.year}</span>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-        */}
 
       </section>
     </main>

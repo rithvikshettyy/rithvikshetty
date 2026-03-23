@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { useRef } from "react"
 
 const projects = [
@@ -75,8 +76,17 @@ const projects = [
 export default function ProjectList() {
   return (
     <div className="py-32 px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 w-full mx-auto">
-      <div className="mb-20 border-b border-white/20 pb-6 flex justify-between items-end">
-        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">SELECTED WORKS</h2>
+      <div className="mb-20 border-b border-white/20 pb-6 flex justify-between items-end relative overflow-visible">
+        <div className="flex items-center gap-6">
+          <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">SELECTED WORKS</h2>
+          <motion.div
+            animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="w-12 h-12 md:w-16 md:h-16 relative"
+          >
+            <Image src="/star3d.png" alt="Star Accent" fill className="object-contain drop-shadow-2xl brightness-110" />
+          </motion.div>
+        </div>
         <span className="hidden md:inline-block text-sm text-neutral-500">( 2022 — 2026 )</span>
       </div>
 
