@@ -28,8 +28,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Rithvik Shetty | Full Stack Developer & Freelancer",
-  description: "Full stack developer and freelancer specializing in React, Next.js, and modern web technologies. Building innovative digital solutions.",
+  metadataBase: new URL("https://rithvikshetty.in"),
+  title: "Rithvik Shetty | Full Stack Developer & Digital Architect",
+  description: "Full stack developer and freelancer specializing in React, Next.js, and modern web technologies. Crafting minimalist, high-performance digital solutions.",
   keywords: [
     "Rithvik Shetty",
     "Full Stack Developer",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     "React Developer",
     "Next.js Developer",
     "Web Development",
-    "Machine Learning",
+    "Creative Technologist",
     "Freelance Developer",
     "Portfolio",
   ],
@@ -53,12 +54,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://rithvikshetty.in",
-    siteName: "Rithvik Shetty - Full Stack Developer",
-    title: "Rithvik Shetty | Full Stack Developer & Freelancer",
-    description: "Full stack developer specializing in React, Next.js, and modern web technologies.",
+    siteName: "Rithvik Shetty",
+    title: "Rithvik Shetty | Full Stack Developer & Digital Architect",
+    description: "Crafting digital experiences with code and creativity. Explore rithvikshetty.in for top-tier full-stack solutions.",
     images: [
       {
-        url: "https://rithvikshetty.in/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Rithvik Shetty - Full Stack Developer",
@@ -68,8 +69,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rithvik Shetty | Full Stack Developer",
-    description: "Crafting digital experiences with code and creativity.",
-    images: ["https://rithvikshetty.in/og-image.jpg"],
+    description: "Building the future of the web with performance and aesthetics.",
+    images: ["/og-image.png"],
+    creator: "@rithvikshettyy", // Recommended to match your social handle
   },
   robots: {
     index: true,
@@ -85,12 +87,12 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "google-site-verification-code",
+    google: "G-EXAMPLE-CODE", // Replace with your actual Google Search Console code when available
   },
   alternates: {
     canonical: "https://rithvikshetty.in",
   },
-  generator: "v0.app",
+  generator: "Next.js",
   icons: {
     icon: "/blob-cropped.gif",
     apple: "/apple-icon.png",
@@ -124,7 +126,7 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/rithvikshetty/",
                 "https://in.pinterest.com/mayberithvik/"
               ],
-              image: "https://rithvikshetty.in/og-image.jpg",
+              image: "https://rithvikshetty.in/og-image.png",
             }),
           }}
         />
