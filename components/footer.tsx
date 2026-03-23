@@ -1,18 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
-import AdminModal from "./admin-modal"
 
 export default function Footer() {
-  const [isAdminOpen, setIsAdminOpen] = useState(false)
-
   return (
     <footer className="bg-black border-t border-white/10 py-20 px-6">
-      <AdminModal isOpen={isAdminOpen} onClose={() => setIsAdminOpen(false)} />
       <div className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 flex flex-col md:flex-row justify-between items-start md:items-end gap-10">
         <div>
-          <h2 onDoubleClick={() => setIsAdminOpen(true)} className="text-[15vw] md:text-[120px] leading-[0.8] font-bold tracking-tighter select-none text-neutral-600 hover:text-white transition-colors duration-700 cursor-default">
+          <h2 className="text-[15vw] md:text-[120px] leading-[0.8] font-bold tracking-tighter select-none text-neutral-600 hover:text-white transition-colors duration-700 cursor-default">
             Rish.
           </h2>
         </div>
