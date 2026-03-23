@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rithvikshetty.in"),
-  title: "Rithvik Shetty | Full Stack Developer & Digital Architect",
+  title: "Rithvik Shetty | Full Stack Developer & Freelancer",
   description: "Full stack developer and freelancer specializing in React, Next.js, and modern web technologies. Crafting minimalist, high-performance digital solutions.",
   keywords: [
     "Rithvik Shetty",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rithvikshetty.in",
     siteName: "Rithvik Shetty",
-    title: "Rithvik Shetty | Full Stack Developer & Digital Architect",
+    title: "Rithvik Shetty | Full Stack Developer & Freelancer",
     description: "Crafting digital experiences with code and creativity. Explore rithvikshetty.in for top-tier full-stack solutions.",
     images: [
       {
