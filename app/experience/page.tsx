@@ -70,7 +70,7 @@ const collegePositions = [
     period: 'Aug 2025 - Dec 2025',
     description: 'Coordinating social media strategies and digital presence to promote entrepreneurship and innovation-focused events.',
     skills: ['Leadership', 'Strategy', 'Growth', 'Marketing'],
-    type: 'LEADERSHIP',
+    type: 'leadership',
     // certificateUrl: '#',
   },
 ]
