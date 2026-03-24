@@ -77,7 +77,7 @@ export default function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="text-[calc(17vw_-_6px)] md:text-[calc(13vw_-_6px)] leading-[0.85] font-black tracking-tighter text-center mix-blend-difference select-none flex flex-col items-center"
+          className="text-[calc(17vw_-_6px)] md:text-[calc(13vw_-_6px)] leading-[0.85] font-bold tracking-tighter text-center mix-blend-difference select-none flex flex-col items-center"
         >
           <div className="flex overflow-hidden px-4 pb-2">
             {text1.split("").map((char, i) => (

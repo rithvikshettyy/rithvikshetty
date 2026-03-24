@@ -5,83 +5,23 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
 
-const clientProjects = [
-  {
-    title: "TinyRoomConcert",
-    description: "An immersive platform built for intimate live music sessions, providing musicians a space to perform and fans a unique way to discover and attend exclusive concerts.",
-    year: "2026",
-    image: "/ttrc.png",
-    url: "https://tinyroomconcert.vercel.app",
-  },
-  {
-    title: "TRCT.IN",
-    description: "A dedicated website built for a thriving run club in Thane. The platform enhances community engagement and streamlines tracking and events for runners.",
-    year: "2026",
-    image: "/trct.png",
-    url: "https://trct-in.vercel.app",
-  },
-]
-
-const myProjects = [
-  {
-    title: "AutopharmaX",
-    description: "AI-driven platform that analyzes global drug efficacy data and clinical insights to optimize treatment outcomes.",
-    year: "2026",
-    image: "/neon-glowing-web-design.jpg",
-    url: "https://github.com/rithvikshettyy/autopharmax",
-  },
-  {
-    title: "SeaGuard",
-    description: "An innovative mobile application built with ReactNative, Supabase backend, and SARVAM AI integration. Features Twilio communication and Figma-designed UI.",
-    year: "2025",
-    image: "/seaguardbottomboat.png",
-    url: "https://github.com/rithvikshettyy/SeaGuard",
-  },
-  {
-    title: "Groww.in",
-    description: "Frontend recreation of Groww investment platform. Built with React, HTML, CSS, SCSS, and Figma design. Responsive and feature-rich interface.",
-    year: "2024",
-    image: "/groww.jpg",
-    url: "https://github.com/rithvikshettyy/Groww.in",
-  },
-  {
-    title: "LoopList",
-    description: "A collaborative to-do list web application that allows users to manage their tasks in real-time.",
-    year: "2024",
-    image: "/geometric-app-design.jpg",
-    url: "https://github.com/rithvikshettyy/LoopList-Collaborative-ToDo-app-using-Firebase-and-Streamlit",
-  },
-  {
-    title: "Object Measurement",
-    description: "This Python project demonstrates how to measure the size of objects in an image using OpenCV. It employs image processing techniques to detect objects and calculate their dimensions, provided a known reference object or scale.",
-    year: "2024",
-    image: "/dashboard-analytics-black.jpg",
-    url: "https://github.com/rithvikshettyy/Object-Measurement",
-  },
-  {
-    title: "Spotify.com",
-    description: "Music streaming platform UI with React, HTML, and CSS. Interactive elements and responsive design showcasing frontend expertise.",
-    year: "2023",
-    image: "/spotify.jpg",
-    url: "https://spotify-five-fawn.vercel.app/",
-  },
-  {
-    title: "Portfolio Website",
-    description: "Professional portfolio website showcasing projects and work. Built with modern web technologies and design principles.",
-    year: "2026",
-    image: "/rithvik.png",
-    url: "https://github.com/rithvikshettyy/rithvikshetty",
-  },
-]
+import { staticProjects } from "@/components/project-list"
 
 export default function ProjectsPage() {
-  const renderProjectCard = (project: any, index: number) => (
-    <Link
-      key={index}
-      href={project.url || "#"}
-      target={project.url ? "_blank" : undefined}
-      rel={project.url ? "noopener noreferrer" : undefined}
-    >
+  const clientProjects = staticProjects.filter(p => p.isClient)
+  const myProjects = staticProjects.filter(p => !p.isClient)
+
+  const renderProjectCard = (project: any, index: number) => {
+    const href = project.slug ? `/projects/${project.slug}` : (project.url || "#")
+    const isInternal = !!project.slug
+    const linkProps = !isInternal && project.url ? { target: "_blank", rel: "noopener noreferrer" } : {}
+
+    return (
+      <Link
+        key={index}
+        href={href}
+        {...linkProps}
+      >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -111,7 +51,8 @@ export default function ProjectsPage() {
         </div>
       </motion.div>
     </Link>
-  );
+    )
+  }
 
   return (
     <div className="bg-black text-white min-h-screen pt-32 pb-20">

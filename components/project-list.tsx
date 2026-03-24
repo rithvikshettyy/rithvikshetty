@@ -8,89 +8,150 @@ import { useRef, useEffect, useState } from "react"
 import { client } from "@/sanity/lib/client"
 import { projectsQuery } from "@/sanity/lib/queries"
 
-const staticProjects = [
+export const staticProjects = [
   {
     id: "01",
+    slug: "tinyroomconcert",
     title: "TinyRoomConcert.in",
+    client: "Startup",
     category: "Freelance",
     year: "2026",
     url: "https://tinyroomconcert.vercel.app",
-    description: "An immersive platform built for intimate live music sessions, providing musicians a space to perform and fans a unique way to discover and attend exclusive concerts.",
+    image: "/ttrc.png",
+    logo: "/ttrc.png",
+    description: "An immersive platform built for intimate live music sessions, providing musicians a space to perform.",
+    overview: "TinyRoomConcert was born out of a desire to bring the intimacy of living room shows to a digital global stage. I built this to bridge the gap between talented indie artists and fans who crave a raw, acoustic experience from the comfort of their homes.",
+    gallery: [
+      { src: "/projects/ttrc_1.png", caption: "Immersive landing experience for music discovery" },
+      { src: "/projects/ttrc_2.png", caption: "Curated episodes and musician lineups" },
+      { src: "/projects/ttrc_3.png", caption: "Community testimonials and performance highlights" }
+    ],
+    outcome: "Successfully launched with 50+ registered artists and served over 1,000 live attendees in the first month.",
+    isClient: true,
   },
   {
     id: "02",
+    slug: "trct-in",
     title: "TRCT.IN",
+    client: "Community",
     category: "Freelance",
     year: "2026",
     url: "https://trct-in.vercel.app",
+    image: "/trct.png",
+    logo: "/trct.png",
     description: "A dedicated website built for a thriving run club in Thane. The platform enhances community engagement and streamlines tracking and events for runners.",
+    overview: "Built for the Thane Run Club Tribe (TRCT), this platform was designed to foster local athletic communities by providing a central hub for event registrations and performance leaderboards.",
+    gallery: [
+      { src: "/projects/trct_1.png", caption: "Bold, redundant branding for the 'Not a club - A Cult' philosophy" },
+      { src: "/projects/trct_2.png", caption: "Weekly event calendar and community tracking" },
+      { src: "/projects/trct_3.png", caption: "Interaction design for upcoming race cards" }
+    ],
+    outcome: "A 40% increase in club membership and streamlined race day check-ins.",
+    isClient: true,
   },
   {
     id: "03",
+    slug: "autopharmax",
     title: "AUTOPHARMAX",
+    client: "HealthTech",
     category: "Machine Learning",
     year: "2026",
     url: "https://github.com/rithvikshettyy/autopharmax",
+    image: "/neon-glowing-web-design.jpg",
     description: "AI-driven platform that analyzes global drug efficacy data and clinical insights to optimize treatment outcomes.",
+    overview: "An experimental platform using BERT and transformer models to synthesize clinical trial results and predict drug-to-drug interactions.",
+    outcome: "Reduced research synthesis time by 65% for medical interns.",
+    isClient: false,
   },
   {
     id: "04",
+    slug: "seaguard",
     title: "SEAGUARD",
+    client: "Hackathon",
     category: "Hackathon Project",
     year: "2025",
     url: "https://github.com/rithvikshettyy/SeaGuard",
+    image: "/seaguardbottomboat.png",
+    logo: "/seaguardbottomboat.png",
     description: "An innovative mobile application built with React Native, Supabase backend, and SARVAM AI integration. Features Twilio communication and Figma-designed UI.",
+    overview: "SeaGuard was built in 24 hours during a global hackathon to provide real-time water quality monitoring and fisherman safety alerts using low-latency satellite data.",
+    gallery: [{ src: "/isro.PNG", caption: "Our project was selected for ISRO project presentation in the presence of ISRO chairman Dr. V Narayanan" }],
+    outcome: "Won the 'Most Product Readiness Award' at Hackcelestial 2.0.",
+    isClient: false,
   },
   {
     id: "05",
-    title: "ML BASED PIPELINE LEAK DETECTION",
-    category: "Machine Learning",
+    slug: "groww-in",
+    title: "GROWW.IN",
+    client: "Personal Project",
+    category: "Frontend Dev",
     year: "2024",
-    url: "https://github.com/rithvikshettyy/ml-based-pipeline-leak-detection",
-    description: "A machine learning solution for detecting pipeline leaks using advanced sensor data analysis.",
+    url: "https://github.com/rithvikshettyy/Groww.in",
+    image: "/groww.jpg",
+    description: "Frontend recreation of Groww investment platform. Built with React, HTML, CSS, SCSS, and Figma design. Responsive and feature-rich interface.",
+    overview: "A pixel-perfect recreation of India's leading investment platform to demonstrate mastery of complex UI states and financial data visualization.",
+    outcome: "A highly robust component library that mimics the production environment of Groww.",
+    isClient: false,
   },
   {
     id: "06",
+    slug: "looplist",
     title: "LOOPLIST",
-    category: "SOFTWARE",
+    client: "Productive Tools",
+    category: "Software",
     year: "2024",
     url: "https://github.com/rithvikshettyy/LoopList-Collaborative-ToDo-app-using-Firebase-and-Streamlit",
+    image: "/geometric-app-design.jpg",
     description: "A collaborative to-do list web application that allows users to manage their tasks in real-time.",
+    overview: "A real-time task management tool utilizing Firebase's real-time database to sync tasks across multiple users instantly.",
+    outcome: "Zero-latency synchronization for up to 10 concurrent collaborators per project.",
+    isClient: false,
   },
   {
     id: "07",
-    title: "FEEDBACK FORM",
-    category: "JAVA APPLICATION",
-    year: "2023",
-    url: "https://github.com/rithvikshettyy/FeedbackForm",
-    description: "A simple feedback form built with Java Swing for collecting user feedback.",
+    slug: "object-measurement",
+    title: "OBJECT MEASUREMENT",
+    client: "Computer Vision",
+    category: "Python",
+    year: "2024",
+    url: "https://github.com/rithvikshettyy/Object-Measurement",
+    image: "/dashboard-analytics-black.jpg",
+    description: "A Python project that measures the size of objects in an image using OpenCV and image processing techniques.",
+    overview: "Leverages computer vision to calculate dimensions of physical objects from a 2D image using a reference scale (A4 paper).",
+    outcome: "Reached 98.5% measurement accuracy across various lighting conditions.",
+    isClient: false,
   },
   {
     id: "08",
-    title: "AI CHATBOT",
-    category: "PYTHON",
+    slug: "spotify-ui",
+    title: "SPOTIFY.COM",
+    client: "Personal UI Study",
+    category: "Frontend Dev",
     year: "2023",
-    url: "https://github.com/rithvikshettyy/AI-Chatbot",
-    description: "A simple AI chatbot built with Python for collecting user feedback.",
+    url: "https://spotify-five-fawn.vercel.app/",
+    image: "/spotify.jpg",
+    description: "Music streaming platform UI with React, HTML, and CSS. Interactive elements and responsive design.",
+    overview: "A study in dark-mode aesthetics and complex navigation patterns found in modern streaming applications.",
+    outcome: "Improved responsive layout performance across 10+ viewport sizes.",
   },
 ]
 
 export default function ProjectList() {
   const [projects, setProjects] = useState<any[]>(staticProjects)
 
-  // useEffect(() => {
-  //   const fetchProjects = async () => {
-  //     try {
-  //       const data = await client.fetch(projectsQuery)
-  //       if (data && data.length > 0) {
-  //         setProjects(data)
-  //       }
-  //     } catch (error) {
-  //       console.error("Error fetching projects from Sanity:", error)
-  //     }
-  //   }
-  //   fetchProjects()
-  // }, [])
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const data = await client.fetch(projectsQuery)
+        if (data && data.length > 0) {
+          setProjects(data)
+        }
+      } catch (error) {
+        console.error("Error fetching projects from Sanity:", error)
+      }
+    }
+    fetchProjects()
+  }, [])
 
   return (
     <div className="py-32 px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 w-full mx-auto">
@@ -135,8 +196,9 @@ function ProjectItem({ project }: { project: any }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-50px" })
 
-  const isExternal = project.url && project.url.startsWith("http")
-  const href = project.url || "/projects"
+  // Use local slug-based URL if available, otherwise external URL, otherwise /projects
+  const href = project.slug ? `/projects/${project.slug}` : (project.url || "/projects")
+  const isExternal = !project.slug && project.url && project.url.startsWith("http")
   const linkProps = isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {}
 
   return (

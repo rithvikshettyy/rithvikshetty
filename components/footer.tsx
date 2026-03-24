@@ -2,18 +2,26 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import dynamic from "next/dynamic"
+
+const AsciiArt = dynamic(() => import("./ascii-art"), { ssr: false })
 
 export default function Footer() {
   const pathname = usePathname()
-  if (pathname?.startsWith("/studio")) return null
+  if (pathname?.startsWith("/studio") || pathname?.match(/^\/projects\/.+/)) return null
 
   return (
     <footer className="bg-black border-t border-white/10 py-20 px-6">
       <div className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 flex flex-col md:flex-row justify-between items-start md:items-end gap-10">
         <div>
-          <h2 className="text-[15vw] md:text-[120px] leading-[0.8] font-bold tracking-tighter select-none text-neutral-600 hover:text-white transition-colors duration-700 cursor-default">
+        <div className="relative group">
+          <div className="absolute -inset-10 flex items-center justify-center opacity-20 pointer-events-none transform scale-[0.8] md:scale-110 lg:scale-125">
+            <AsciiArt />
+          </div>
+          <h2 className="relative z-10 text-[15vw] md:text-[120px] leading-[0.8] font-bold tracking-tighter select-none text-neutral-600 hover:text-white transition-colors duration-700 cursor-default">
             Rish.
           </h2>
+        </div>
         </div>
 
         <div className="flex gap-12 text-xs uppercase tracking-widest text-neutral-400">
