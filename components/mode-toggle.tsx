@@ -3,10 +3,14 @@
 import { useState, useEffect } from "react"
 import { Moon, Sun, Eye } from "lucide-react"
 import { motion, AnimatePresence, Variants } from "framer-motion"
+import { usePathname } from "next/navigation"
 
 type Mode = "dark" | "light" | "contrast"
 
 export default function ModeToggle() {
+  const pathname = usePathname()
+  if (pathname?.startsWith("/studio")) return null
+
   const [mode, setMode] = useState<Mode>("dark")
   const [isOpen, setIsOpen] = useState(false)
 

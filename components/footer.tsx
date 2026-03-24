@@ -1,8 +1,12 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export default function Footer() {
+  const pathname = usePathname()
+  if (pathname?.startsWith("/studio")) return null
+
   return (
     <footer className="bg-black border-t border-white/10 py-20 px-6">
       <div className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 flex flex-col md:flex-row justify-between items-start md:items-end gap-10">

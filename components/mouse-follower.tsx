@@ -2,8 +2,12 @@
 
 import { useEffect, useState } from "react"
 import { motion, useSpring, useMotionValue } from "framer-motion"
+import { usePathname } from "next/navigation"
 
 export default function MouseFollower() {
+  const pathname = usePathname()
+  if (pathname?.startsWith("/studio")) return null
+
   const cursorX = useMotionValue(-100)
   const cursorY = useMotionValue(-100)
 

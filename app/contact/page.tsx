@@ -1,12 +1,49 @@
 "use client"
+import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Send } from "lucide-react"
+import { ArrowLeft, Send, Check, Loader2 } from "lucide-react"
 
 export default function ContactPage() {
+  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle")
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setStatus("sending")
+
+    const formData = new FormData(e.currentTarget)
+    const data = Object.fromEntries(formData.entries())
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/rithvikshetty2004@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (response.ok) {
+        // User requested a delay of 4-5 seconds
+        setTimeout(() => {
+          setStatus("sent")
+          // Optional: Reset form or status after some time
+        }, 4000)
+      } else {
+        setStatus("idle")
+        alert("Something went wrong. Please try again.")
+      }
+    } catch (error) {
+      console.error(error)
+      setStatus("idle")
+      alert("Something went wrong. Please try again.")
+    }
+  }
+
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6 flex flex-col relative overflow-hidden">
+    <div className="min-h-screen pt-32 pb-20 px-6 flex flex-col relative overflow-hidden text-white">
       {/* Background Decor */}
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-white/[0.02] blur-[100px] rounded-full pointer-events-none" />
 
@@ -58,7 +95,7 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="text-xs uppercase tracking-widest text-neutral-600 mb-3">Socials</h3>
-                <div className="flex gap-6 text-lg">
+                <div className="flex gap-6 text-lg text-white">
                   <a href="https://instagram.com/rithv1k7" className="hover:text-neutral-400 transition-colors">
                     Instagram
                   </a>
@@ -80,11 +117,7 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-neutral-900/20 p-8 md:p-12 border border-white/10 backdrop-blur-sm">
-            <form action="https://formsubmit.co/rithvikshetty2004@gmail.com" method="POST" className="space-y-8">
-              {/* FormSubmit Configuration Settings */}
-              <input type="hidden" name="_subject" value="New Contact Request from Portfolio!" />
-              <input type="hidden" name="_template" value="table" />
-
+            <form onSubmit={handleSubmit} className="space-y-8">
               <div className="space-y-2 group">
                 <label
                   htmlFor="name"
@@ -159,9 +192,28 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full bg-white text-black py-5 text-lg font-bold uppercase tracking-widest hover:bg-neutral-200 transition-colors flex items-center justify-center gap-3 group mt-4"
+                disabled={status !== "idle"}
+                className={`w-full py-5 text-lg font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-3 group mt-4 ${
+                  status === "sent" 
+                    ? "bg-green-500 text-white" 
+                    : "bg-white text-black hover:bg-neutral-200"
+                } disabled:cursor-not-allowed`}
               >
-                Send Request <Send size={18} className="group-hover:translate-x-1 transition-transform" />
+                {status === "idle" && (
+                  <>
+                    Send Request <Send size={18} className="group-hover:translate-x-1 transition-transform" />
+                  </>
+                )}
+                {status === "sending" && (
+                  <>
+                    Sending... <Loader2 size={18} className="animate-spin" />
+                  </>
+                )}
+                {status === "sent" && (
+                  <>
+                    Request Sent <Check size={18} />
+                  </>
+                )}
               </button>
             </form>
           </div>

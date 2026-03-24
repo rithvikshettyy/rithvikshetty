@@ -4,9 +4,11 @@ import { motion, useInView } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { useRef } from "react"
+import { useRef, useEffect, useState } from "react"
+import { client } from "@/sanity/lib/client"
+import { projectsQuery } from "@/sanity/lib/queries"
 
-const projects = [
+const staticProjects = [
   {
     id: "01",
     title: "TinyRoomConcert.in",
@@ -74,6 +76,22 @@ const projects = [
 ]
 
 export default function ProjectList() {
+  const [projects, setProjects] = useState<any[]>(staticProjects)
+
+  // useEffect(() => {
+  //   const fetchProjects = async () => {
+  //     try {
+  //       const data = await client.fetch(projectsQuery)
+  //       if (data && data.length > 0) {
+  //         setProjects(data)
+  //       }
+  //     } catch (error) {
+  //       console.error("Error fetching projects from Sanity:", error)
+  //     }
+  //   }
+  //   fetchProjects()
+  // }, [])
+
   return (
     <div className="py-32 px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 w-full mx-auto">
       <div className="mb-20 border-b border-white/20 pb-6 flex justify-between items-end relative overflow-visible">
@@ -82,7 +100,7 @@ export default function ProjectList() {
           <motion.div
             animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="w-14 h-14 md:w-24 md:h-24 relative shrink-0 -ml-6 md:-ml-16"
+            className="w-14 h-14 md:w-24 md:h-24 relative shrink-0 -ml-6 md:-ml-0"
           >
             <Image src="/star3d.png" alt="Star Accent" fill className="object-contain drop-shadow-2xl brightness-110" />
           </motion.div>
