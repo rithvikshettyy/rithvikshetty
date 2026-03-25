@@ -67,7 +67,7 @@ export default function ContactPage() {
                 transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute top-[-40px] -right-12 md:top-auto md:bottom-[-540px] md:-left-[580px] w-56 h-56 md:w-[900px] md:h-[900px] pointer-events-none z-0 overflow-visible"
               >
-                <Image src="/robot3d.png" alt="Robot 3D Companion" fill className="object-contain drop-shadow-[0_0_80px_rgba(255,255,255,0.05)] opacity-60 md:opacity-50" />
+                <Image src="/robot3d.png" alt="Robot 3D Companion" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px" className="object-contain drop-shadow-[0_0_80px_rgba(255,255,255,0.05)] opacity-60 md:opacity-50" />
               </motion.div>
             </div>
 

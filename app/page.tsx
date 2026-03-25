@@ -10,6 +10,7 @@ import Link from "next/link"
 import Image from "next/image"
 import React, { useRef } from "react"
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
+import TextScramble from "@/components/text-scramble"
 
 export default function Home() {
   const introRef = useRef<HTMLElement>(null)
@@ -32,6 +33,8 @@ export default function Home() {
   // The background translates slowly making it look deeper
   const introBgY = useTransform(introProgress, [0, 1], ["-50%", "50%"])
   const contactBgY = useTransform(contactProgress, [0, 1], ["-30%", "30%"])
+  const introBlobScale = useTransform(introProgress, [0, 0.5, 1], [0.8, 1.1, 0.8])
+  const smoothIntroBlobScale = useSpring(introBlobScale, { stiffness: 100, damping: 30 })
 
   // --- 3D Animation Hook state ---
   const mouseX = useMotionValue(0)
@@ -93,6 +96,7 @@ export default function Home() {
             </p>
 
             <motion.div
+              style={{ scale: smoothIntroBlobScale }}
               className="w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 relative flex-shrink-0 group flex items-center justify-center transform-gpu"
               whileHover={{ scale: 1.05, rotateZ: 2 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -139,7 +143,7 @@ export default function Home() {
           className="text-5xl md:text-[12vw] font-bold leading-none tracking-tighter relative z-10"
           style={{ y: contactTextY }}
         >
-          GET IN TOUCH
+          <TextScramble text="GET IN TOUCH" />
         </motion.h2>
 
         <motion.p

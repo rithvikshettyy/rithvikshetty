@@ -1,9 +1,10 @@
 'use client'
 
 import { motion, Variants } from 'framer-motion'
-import { Github, Linkedin, Twitter, Mail, ArrowUpRight, Zap, Star } from 'lucide-react'
+import { Github, Linkedin, Twitter, Mail, ArrowUpRight, Zap, Star, Code2, Wind, FileCode2, Terminal, Server, Database, PenTool, Cloud, Box } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import ScrollTextReveal from '@/components/scroll-text-reveal'
 
 const PinterestIcon = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -37,149 +38,238 @@ export default function About() {
 
       <section className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 relative z-10">
 
-        {/* Header Title */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="mb-16 md:mb-20"
-        >
-          <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-tight">
-            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">Rithvik</span>
-          </h1>
-          <p className="mt-6 text-xl md:text-2xl text-neutral-400 font-light max-w-2xl tracking-wide leading-relaxed">
-            <span className="font-bold text-white tracking-tight text-2xl md:text-3xl">FRONT <span className="font-serif italic font-normal text-neutral-300">end</span> DEVELOPER</span><br />
-            Freelancer specialized in building <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">experiences</span>.
-          </p>
-          <div className="mt-10 flex items-center">
-            <Link href="/rithvikshetty_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-black font-bold uppercase tracking-widest rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 text-xs md:text-sm shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-              View Resume <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </motion.div>
-
-        {/* Bento Grid Container */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]"
-        >
-
-          {/* Main Bio Bento Box */}
+        {/* Header Section with Photo Beside Text */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mb-20 md:mb-32 items-center">
           <motion.div
-            variants={itemVariants}
-            className="md:col-span-6 lg:col-span-8 bg-neutral-900/30 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-8 md:p-12 hover:bg-neutral-900/50 transition-colors duration-500 overflow-hidden relative group"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="lg:col-span-12 xl:col-span-7"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-white/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-            <div className="relative z-10 flex flex-col justify-between h-full">
-              <Zap className="w-8 h-8 text-neutral-500 mb-8 opacity-50 hidden md:block" />
-              <div className="space-y-6 text-neutral-300">
-                <p className="text-xl md:text-3xl leading-relaxed font-light">
-                  Passionate about emerging technologies, blending <strong className="font-semibold text-white">Machine Learning</strong> with <strong className="font-semibold text-white">Modern Web Development</strong>.
-                </p>
-                <p className="text-base md:text-xl leading-relaxed font-light text-neutral-400">
-                  From architecting robust backends with Node & Supabase to designing pixel-perfect interfaces in Figma and React. I don't just write code; I craft holistic user experiences. Former Design Lead at TEDx SIESGST, bringing a creative edge to technical challenges.
-                </p>
-              </div>
+            <h1 className="text-6xl md:text-[10vw] xl:text-8xl font-black tracking-tighter leading-[0.85] mb-8">
+              I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">Rithvik</span>
+            </h1>
+            <p className="text-xl md:text-3xl text-neutral-400 font-light tracking-wide leading-relaxed max-w-2xl">
+              <span className="font-bold text-white tracking-tight text-2xl md:text-4xl">FRONT <span className="font-serif italic font-normal text-neutral-300">end</span> DEVELOPER</span><br />
+              Freelancer specialized in building <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">experiences</span>.
+            </p>
+            <div className="mt-12 flex items-center">
+              <Link href="/rithvikshetty_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-5 bg-white text-black font-bold uppercase tracking-widest rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 text-xs md:text-sm shadow-[0_0_30px_rgba(255,255,255,0.15)]">
+                View Resume <ArrowUpRight className="w-4 h-4" />
+              </Link>
             </div>
           </motion.div>
 
-          {/* Photo Bento Box */}
+          {/* Photo Section (Moved beside text) */}
           <motion.div
-            variants={itemVariants}
-            className="md:col-span-3 lg:col-span-4 bg-neutral-900/30 backdrop-blur-xl border border-white/10 rounded-[2rem] overflow-hidden relative group h-[400px] md:h-auto min-h-[400px]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-12 xl:col-span-5 bg-neutral-900 border border-white/10 rounded-[2.5rem] overflow-hidden relative group h-[400px] md:h-[600px] xl:h-[550px]"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
             <Image
               src="/about1.jpeg"
               alt="Rithvik"
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover object-[80%_center] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+              priority
+              className="object-cover object-[center_top] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
             />
-            <div className="absolute bottom-8 left-8 z-20">
-              <div className="px-5 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-sm md:text-base font-medium shadow-2xl tracking-wide">
+            <div className="absolute bottom-10 left-10 z-20">
+              <div className="px-6 py-3 bg-white/10 backdrop-blur-xl rounded-full border border-white/20 text-base font-medium shadow-2xl tracking-wide">
                 Based in India
               </div>
             </div>
           </motion.div>
+        </div>
 
-          {/* Tech Stack Bento */}
+        <div className="space-y-32">
           <motion.div
             variants={itemVariants}
-            className="md:col-span-6 lg:col-span-4 bg-neutral-900/30 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 md:p-10 hover:bg-neutral-900/50 transition-colors duration-500 flex flex-col justify-center"
+            className="max-w-4xl"
           >
-            <div className="flex items-center gap-3 mb-8">
-              <Star className="w-6 h-6 text-neutral-300" />
-              <h3 className="text-2xl font-bold tracking-tight">Tech Stack</h3>
-            </div>
-            <div className="flex flex-wrap items-center justify-start gap-3 w-full">
-              {['Next.js', 'React', 'TypeScript', 'Node.js', 'Python', 'Machine Learning', 'Supabase', 'Tailwind', 'Figma'].map((skill, i) => (
-                <span key={i} className="inline-flex px-5 py-2 bg-white/5 border border-white/10 rounded-xl text-neutral-300 text-sm md:text-base hover:bg-white hover:text-black hover:scale-105 transition-all cursor-crosshair font-medium whitespace-nowrap">
-                  {skill}
-                </span>
-              ))}
+            <div className="space-y-16">
+              <ScrollTextReveal
+                className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.9]"
+                text="Passionate about emerging technologies, blending Machine Learning with Modern Web Development."
+              />
+              <ScrollTextReveal
+                className="text-2xl md:text-4xl leading-tight font-bold tracking-tighter text-neutral-400 max-w-5xl"
+                text="From architecting robust backends with Node & Supabase to designing pixel-perfect interfaces in Figma and React. I don't just write code; I craft holistic user experiences. Former Design Lead at TEDx SIESGST, bringing a creative edge to technical challenges."
+              />
             </div>
           </motion.div>
 
-          {/* Core Values Bento */}
+          {/* Tech Stack (Unwrapped from grid) */}
           <motion.div
             variants={itemVariants}
-            className="md:col-span-6 lg:col-span-8 bg-neutral-900/30 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 md:p-12 items-center flex"
+            className="space-y-12 py-6 max-w-7xl"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-[1px] bg-white/20" />
+              <h3 className="text-2xl font-bold tracking-tight uppercase text-neutral-500">Expertise</h3>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
               {[
-                { title: "Design Obsessed", desc: "Pixel perfection and smooth interactions are non-negotiable." },
-                { title: "Performant First", desc: "Under the hood speed that scales effortlessly over time." },
-                { title: "Continuous Learner", desc: "Always adapting to the absolute edge of what's possible." }
-              ].map((val, idx) => (
-                <div key={idx} className="space-y-4 group">
-                  <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-xl font-bold text-neutral-400 group-hover:bg-white group-hover:text-black transition-colors duration-300">
-                    0{idx + 1}
+                { name: "REACT JS", icon: Code2, color: "#61DAFB" },
+                { name: "NEXT JS", icon: Code2, color: "#ffffff" },
+                { name: "TYPESCRIPT", icon: FileCode2, color: "#3178C6" },
+                { name: "TAILWIND", icon: Wind, color: "#38B2AC" },
+                { name: "NODE JS", icon: Server, color: "#339933" },
+                { name: "PYTHON", icon: Terminal, color: "#3776AB" },
+                { name: "SUPABASE", icon: Database, color: "#3ECF8E" },
+                { name: "POSTGRES", icon: Database, color: "#336791" },
+                { name: "DOCKER", icon: Box, color: "#2496ED" },
+                { name: "AWS", icon: Cloud, color: "#FF9900" },
+                { name: "FIGMA", icon: PenTool, color: "#F24E1E" },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  className="group relative flex flex-col items-center justify-center space-y-6"
+                >
+                  <div className="relative">
+                    {/* Burst Effect (Shockwave) */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <motion.div
+                        initial={{ scale: 0.5, opacity: 0 }}
+                        whileHover={{ scale: 2.2, opacity: [0, 0.5, 0] }}
+                        transition={{ duration: 0.6, ease: "circOut" }}
+                        className="w-32 h-32 rounded-full border border-white/40 pointer-events-none z-0"
+                      />
+                    </div>
+
+                    {/* Drifting Particles Burst */}
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+                      {[...Array(8)].map((_, j) => (
+                        <motion.div
+                          key={j}
+                          initial={{ opacity: 0, x: 0, y: 0, scale: 0 }}
+                          whileHover={{
+                            opacity: [0, 1, 0],
+                            x: Math.cos((j * 45) * (Math.PI / 180)) * 70,
+                            y: Math.sin((j * 45) * (Math.PI / 180)) * 70,
+                            scale: [0, 1, 0.5]
+                          }}
+                          transition={{ duration: 0.7, ease: "backOut", delay: j * 0.01 }}
+                          className="absolute w-1 h-1 rounded-full"
+                          style={{ backgroundColor: item.color }}
+                        />
+                      ))}
+                    </div>
+
+                    <motion.div
+                      animate={{
+                        y: [0, -12, 0],
+                        rotate: [0, 2, 0, -2, 0]
+                      }}
+                      transition={{
+                        duration: 4 + (i % 3),
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: i * 0.2
+                      }}
+                      whileHover={{ scale: 1.12, rotate: 5 }}
+                      className="p-8 md:p-10 bg-[#1a1a1a] rounded-[2rem] border-2 shadow-2xl relative z-10 transition-all duration-500 group-hover:bg-[#222]"
+                      style={{ borderColor: `${item.color}20` }}
+                    >
+                      <item.icon size={64} strokeWidth={1.5} color={item.color} className="w-12 h-12 md:w-20 md:h-20" />
+
+                      {/* Inner Shine Effect */}
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        whileHover={{ opacity: 0.25 }}
+                        className="absolute inset-0 blur-2xl rounded-full"
+                        style={{ backgroundColor: item.color }}
+                      />
+
+                      {/* Shadow Underneath */}
+                      <motion.div
+                        className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-16 h-2 bg-black/40 blur-xl rounded-full"
+                        animate={{ scale: [1, 0.8, 1], opacity: [0.3, 0.1, 0.3] }}
+                        transition={{ duration: 4 + (i % 3), repeat: Infinity, ease: "easeInOut", delay: i * 0.2 }}
+                      />
+                    </motion.div>
                   </div>
-                  <h4 className="text-xl md:text-2xl font-bold text-neutral-100 tracking-tight">{val.title}</h4>
-                  <p className="text-neutral-500 text-base leading-relaxed">{val.desc}</p>
-                </div>
+
+                  {/* Skill Typography */}
+                  <span className="text-xl md:text-2xl font-bold tracking-tighter uppercase text-neutral-500 group-hover:text-white transition-colors duration-500">
+                    {item.name}
+                  </span>
+                </motion.div>
               ))}
             </div>
           </motion.div>
 
-          {/* Social Links Bento Layout */}
-          {[
-            { name: 'GitHub', icon: Github, href: 'https://github.com/rithvikshettyy', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-neutral-100 hover:text-black hover:border-white' },
-            { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/rithvikshetty/', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#0077b5] hover:border-[#0077b5] hover:text-white' },
-            { name: 'Twitter', icon: Twitter, href: 'https://x.com/RithvikShetty04', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#1DA1F2] hover:border-[#1DA1F2] hover:text-white' },
-            { name: 'Pinterest', icon: PinterestIcon, href: 'https://in.pinterest.com/mayberithvik/', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-[#E60023] hover:border-[#E60023] hover:text-white' },
-            { name: 'Contact', icon: Mail, href: '/contact', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-red-500 hover:border-red-500 hover:text-white', isLink: true }
-          ].map((link, i) => {
-            const inner = (
-              <div className="flex flex-col h-full justify-between gap-8">
-                <div className="flex justify-between items-start">
-                  <div className="p-3 bg-white/10 rounded-2xl">
-                    <link.icon className="w-7 h-7" />
+          {/* Core Values Section (Updated to single paragraph) */}
+          <motion.div
+            variants={itemVariants}
+            className="space-y-12"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-[1px] bg-white/20" />
+              <h3 className="text-2xl font-bold tracking-tight uppercase text-neutral-500">Principles</h3>
+            </div>
+
+            <div className="max-w-6xl">
+              <ScrollTextReveal
+                className="text-2xl md:text-5xl leading-[1.1] font-bold tracking-tighter text-neutral-400"
+                text="My approach is rooted in being Design Obsessed, where pixel perfection and smooth interactions are non-negotiable. I prioritize being Performant First, ensuring under-the-hood speed that scales effortlessly over time. As a Continuous Learner, I am always adapting to the absolute edge of what's possible."
+              />
+            </div>
+          </motion.div>
+
+          {/* Social Links (Bento Style Restored) */}
+          <motion.div
+            variants={itemVariants}
+            className="space-y-16 pb-20"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-[1px] bg-white/20" />
+              <h3 className="text-2xl font-bold tracking-tight uppercase text-neutral-500">Connect</h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]">
+              {[
+                { name: 'GitHub', icon: Github, href: 'https://github.com/rithvikshettyy', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-neutral-100 hover:text-black hover:border-white' },
+                { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/rithvikshetty/', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#0077b5] hover:border-[#0077b5] hover:text-white' },
+                { name: 'Twitter', icon: Twitter, href: 'https://x.com/RithvikShetty04', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#1DA1F2] hover:border-[#1DA1F2] hover:text-white' },
+                { name: 'Pinterest', icon: PinterestIcon, href: 'https://in.pinterest.com/mayberithvik/', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-[#E60023] hover:border-[#E60023] hover:text-white' },
+                { name: 'Contact', icon: Mail, href: '/contact', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-red-500 hover:border-red-500 hover:text-white', isLink: true }
+              ].map((link, i) => {
+                const inner = (
+                  <div className="flex flex-col h-full justify-between gap-8">
+                    <div className="flex justify-between items-start">
+                      <div className="p-3 bg-white/10 rounded-2xl">
+                        <link.icon className="w-7 h-7" />
+                      </div>
+                      <ArrowUpRight className="w-8 h-8 opacity-0 group-hover:opacity-100 -translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
+                    </div>
+                    <div className="relative">
+                      <h3 className="text-2xl md:text-3xl font-bold tracking-tight">{link.name}</h3>
+                    </div>
                   </div>
-                  <ArrowUpRight className="w-8 h-8 opacity-0 group-hover:opacity-100 -translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
-                </div>
-                <div className="relative">
-                  <h3 className="text-2xl md:text-3xl font-bold tracking-tight">{link.name}</h3>
-                </div>
-              </div>
-            );
+                );
 
-            const className = `group bg-neutral-900/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 md:p-10 transition-all duration-500 cursor-pointer ${link.hover}`;
+                const className = `group bg-neutral-900/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 md:p-10 transition-all duration-500 cursor-pointer ${link.hover}`;
 
-            return (
-              <motion.div variants={itemVariants} key={i} className={link.col}>
-                {link.isLink ? (
-                  <Link href={link.href} className={`block h-full ${className}`}>{inner}</Link>
-                ) : (
-                  <a href={link.href} target="_blank" rel="noopener noreferrer" className={`block h-full ${className}`}>{inner}</a>
-                )}
-              </motion.div>
-            )
-          })}
-        </motion.div>
+                return (
+                  <motion.div variants={itemVariants} key={i} className={link.col}>
+                    {link.isLink ? (
+                      <Link href={link.href} className={`block h-full ${className}`}>{inner}</Link>
+                    ) : (
+                      <a href={link.href} target="_blank" rel="noopener noreferrer" className={`block h-full ${className}`}>{inner}</a>
+                    )}
+                  </motion.div>
+                )
+              })}
+            </div>
+          </motion.div>
+        </div>
       </section>
     </main>
   )

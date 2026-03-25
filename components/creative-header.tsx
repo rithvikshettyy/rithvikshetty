@@ -1,7 +1,7 @@
 "use client"
 
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useRef } from 'react'
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 import Image from 'next/image'
 
 interface CreativeHeaderProps {
@@ -20,16 +20,32 @@ interface CreativeHeaderProps {
 }
 
 const CreativeHeader: React.FC<CreativeHeaderProps> = ({ row1, row2, indexOffset = 1, floatingImage }) => {
+  const containerRef = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  })
+
+  // Rows move in opposite directions on scroll
+  const xLeft = useTransform(scrollYProgress, [0, 1], [-100, 100])
+  const xRight = useTransform(scrollYProgress, [0, 1], [100, -100])
+  
+  const springLeft = useSpring(xLeft, { stiffness: 100, damping: 30 })
+  const springRight = useSpring(xRight, { stiffness: 100, damping: 30 })
+
   return (
-    <div className="w-full bg-[#efebe0] text-black overflow-hidden relative border-y border-black/15">
+    <div ref={containerRef} className="w-full bg-[#efebe0] text-black overflow-hidden relative border-y border-black/15">
       <div className="w-full">
         {/* Row 1 */}
         <div className="flex flex-col lg:flex-row border-b border-black/15">
           <div className="flex-1 border-b lg:border-b-0 lg:border-r border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset).padStart(2, '0')})</span>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-neutral-900">
+            <motion.h2 
+              style={{ x: springLeft }}
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-neutral-900 whitespace-nowrap"
+            >
               {row1.left}
-            </h2>
+            </motion.h2>
           </div>
           <div className="flex-[0.4] border-b lg:border-b-0 lg:border-r border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group overflow-hidden">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 1).padStart(2, '0')})</span>
@@ -52,9 +68,12 @@ const CreativeHeader: React.FC<CreativeHeaderProps> = ({ row1, row2, indexOffset
           </div>
           <div className="flex-1 border-b md:border-b-0 border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 2).padStart(2, '0')})</span>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-neutral-900">
+            <motion.h2 
+              style={{ x: springRight }}
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-neutral-900 whitespace-nowrap"
+            >
               {row1.right}
-            </h2>
+            </motion.h2>
           </div>
         </div>
 
@@ -68,15 +87,21 @@ const CreativeHeader: React.FC<CreativeHeaderProps> = ({ row1, row2, indexOffset
           </div>
           <div className="flex-1 border-b lg:border-b-0 lg:border-r border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 4).padStart(2, '0')})</span>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter uppercase leading-none text-neutral-900">
+            <motion.h2 
+              style={{ x: springLeft }}
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter uppercase leading-none text-neutral-900 whitespace-nowrap"
+            >
               {row2.right}
-            </h2>
+            </motion.h2>
           </div>
           <div className="flex-[0.75] py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 5).padStart(2, '0')})</span>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none italic text-neutral-900">
+            <motion.h2 
+              style={{ x: springRight }}
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none italic text-neutral-900 whitespace-nowrap"
+            >
               {row2.center}
-            </h2>
+            </motion.h2>
           </div>
         </div>
       </div>

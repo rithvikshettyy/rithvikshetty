@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useInView } from "framer-motion"
+import { motion, useInView, useMotionValue, useSpring } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -138,6 +138,19 @@ export const staticProjects = [
 
 export default function ProjectList() {
   const [projects, setProjects] = useState<any[]>(staticProjects)
+  const [hoveredProject, setHoveredProject] = useState<any>(null)
+
+  const mouseX = useMotionValue(0)
+  const mouseY = useMotionValue(0)
+
+  const springConfig = { damping: 25, stiffness: 150 }
+  const x = useSpring(mouseX, springConfig)
+  const y = useSpring(mouseY, springConfig)
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    mouseX.set(e.clientX)
+    mouseY.set(e.clientY)
+  }
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -169,11 +182,39 @@ export default function ProjectList() {
         <span className="hidden md:inline-block text-sm text-neutral-500">( 2022 — 2026 )</span>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col" onMouseMove={handleMouseMove}>
         {projects.map((project) => (
-          <ProjectItem key={project.id} project={project} />
+          <ProjectItem
+            key={project.id}
+            project={project}
+            onMouseEnter={() => setHoveredProject(project)}
+            onMouseLeave={() => setHoveredProject(null)}
+          />
         ))}
       </div>
+
+      {/* Floating Hover Image */}
+      <motion.div
+        style={{
+          x,
+          y,
+          translateX: "-50%",
+          translateY: "-50%",
+          scale: hoveredProject ? 1 : 0,
+          opacity: hoveredProject ? 1 : 0,
+          rotate: hoveredProject ? 5 : 0,
+        }}
+        className="fixed top-0 left-0 w-80 h-52 pointer-events-none z-[60] overflow-hidden rounded-xl border border-white/20 shadow-2xl transition-all duration-300 ease-out"
+      >
+        {hoveredProject && (
+          <Image
+            src={hoveredProject.image || "/placeholder.svg"}
+            alt={hoveredProject.title}
+            fill
+            className="object-cover"
+          />
+        )}
+      </motion.div>
 
       <div className="mt-20 flex justify-center">
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -192,7 +233,7 @@ export default function ProjectList() {
   )
 }
 
-function ProjectItem({ project }: { project: any }) {
+function ProjectItem({ project, onMouseEnter, onMouseLeave }: { project: any; onMouseEnter: () => void; onMouseLeave: () => void }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-50px" })
 
@@ -207,6 +248,8 @@ function ProjectItem({ project }: { project: any }) {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6 }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       className="group relative border-b border-white/10 py-8 cursor-pointer transition-colors hover:bg-neutral-900/50"
     >
       <Link
