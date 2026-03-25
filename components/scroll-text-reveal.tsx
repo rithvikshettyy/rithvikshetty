@@ -38,7 +38,7 @@ function Word({ children, progress, range }: { children: React.ReactNode, progre
   return (
     <motion.span
       style={{ opacity, color }}
-      className="mr-[0.25em] mb-[0.1em]"
+      className="mr-[0.25em] mb-[0.1em] reveal-word"
     >
       {children}
     </motion.span>

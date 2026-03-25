@@ -1,8 +1,7 @@
 "use client"
 
-import { motion, useScroll, useTransform, Variants } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
-
 export default function Hero() {
   const containerRef = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -13,28 +12,6 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
-  const text1 = "RITHVIK"
-  const text2 = "SHETTY"
-
-  const containerVariants: Variants = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.08, delayChildren: 0.1 },
-    },
-  }
-
-  const letterVariants: Variants = {
-    hidden: { y: "110%", opacity: 0, rotateZ: 10, scale: 0.9 },
-    visible: {
-      y: "0%",
-      opacity: 1,
-      rotateZ: 0,
-      scale: 1,
-      transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] },
-    },
-  }
-
   return (
     <div
       ref={containerRef}
@@ -42,8 +19,8 @@ export default function Hero() {
     >
       {/* Ambient Background Motion */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             x: ["-20%", "20%", "-20%"],
             y: ["-20%", "20%", "-20%"],
             scale: [1, 1.1, 1],
@@ -52,8 +29,8 @@ export default function Hero() {
           transition={{ duration: 15, ease: "easeInOut", repeat: Infinity }}
           className="absolute top-[10%] left-[10%] w-[50vw] h-[50vw] rounded-full bg-white blur-[120px]"
         />
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             x: ["20%", "-20%", "20%"],
             y: ["20%", "-20%", "20%"],
             scale: [1.2, 1, 1.2],
@@ -62,8 +39,8 @@ export default function Hero() {
           transition={{ duration: 20, ease: "easeInOut", repeat: Infinity }}
           className="absolute bottom-[10%] right-[10%] w-[60vw] h-[60vw] rounded-full bg-neutral-400 blur-[130px]"
         />
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             y: ["-30%", "30%", "-30%"],
             opacity: [0.01, 0.02, 0.01]
           }}
@@ -72,40 +49,31 @@ export default function Hero() {
         />
       </div>
 
-      <motion.div style={{ y, opacity }} className="z-10 flex flex-col items-center">
-        <motion.h1
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="text-[calc(17vw_-_6px)] md:text-[calc(13vw_-_6px)] leading-[0.85] font-bold tracking-tighter text-center mix-blend-difference select-none flex flex-col items-center"
+      <motion.div
+        style={{ y, opacity }}
+        className="z-10 flex flex-col items-center text-center max-w-5xl"
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 30 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="flex overflow-hidden px-4 pb-2">
-            {text1.split("").map((char, i) => (
-              <motion.span key={i} variants={letterVariants} className="inline-block origin-bottom">
-                {char}
-              </motion.span>
-            ))}
-          </div>
-          <div className="flex overflow-hidden text-neutral-600 px-4 pb-2">
-            {text2.split("").map((char, i) => (
-              <motion.span key={i} variants={letterVariants} className="inline-block origin-bottom">
-                {char}
-              </motion.span>
-            ))}
-          </div>
-        </motion.h1>
+          <h1 className="text-7xl md:text-[12vw] xl:text-[140px] font-black tracking-tighter leading-[0.8] mb-12">
+            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 via-neutral-200 to-neutral-600">Rithvik</span>
+          </h1>
 
-        <motion.p
-          initial={{ y: 50, opacity: 0, filter: "blur(10px)" }}
-          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-          transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 text-lg md:text-2xl max-w-2xl text-center font-light text-neutral-400 tracking-wide"
-        >
-          <span className="font-bold text-white tracking-tight uppercase">FULL <span className="font-serif italic font-normal text-neutral-300 normal-case">stack</span> DEVELOPER</span> & Freelancer crafting digital experiences with code and creativity.
-        </motion.p>
+          <p className="text-2xl md:text-5xl text-neutral-400 font-light tracking-tight leading-tight max-w-4xl mx-auto space-y-4">
+            <span className="block font-bold text-white tracking-tighter text-3xl md:text-6xl uppercase">
+              FRONT <span className="font-serif italic font-normal text-neutral-400 lowercase tracking-normal">end</span> DEVELOPER
+            </span>
+            <span className="block text-xl md:text-3xl font-light tracking-wide text-neutral-500 mt-6">
+              Freelancer specialized in building <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-500">experiences</span>.
+            </span>
+          </p>
+        </motion.div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}

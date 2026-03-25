@@ -85,9 +85,9 @@ export default function Achievements() {
         {/* Center Title Area */}
         <motion.div
           style={{ scale: titleScale, opacity: titleOpacity }}
-          className="flex-1 flex flex-col justify-center items-center pt-20"
+          className="flex-1 flex flex-col justify-center items-center pt-12 md:pt-24 pb-8 md:pb-12"
         >
-          <div className="flex flex-col items-center gap-6 mb-12">
+          <div className="flex flex-col items-center gap-6 mb-6">
             <span className="text-3xl md:text-5xl font-light tracking-widest text-neutral-800 dark:text-white/30 italic">({hackathons.length})</span>
             <p className="text-[10px] md:text-xs text-neutral-600 dark:text-neutral-500 max-w-[280px] text-center font-medium leading-relaxed uppercase tracking-[0.3em] opacity-100 dark:opacity-60">
               Recognitions earned through <br /> technical excellence and <br /> pure grit.

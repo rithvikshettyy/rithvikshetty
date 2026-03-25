@@ -73,7 +73,7 @@ const AsciiArt = () => {
     }, [])
 
     return (
-        <div className="font-mono text-[5px] md:text-[7px] lg:text-[8px] leading-[0.8] text-white/30 select-none pointer-events-none tracking-[0.1em]">
+        <div className="font-mono text-[5px] md:text-[7px] lg:text-[8px] leading-[0.8] text-white/60 select-none pointer-events-none tracking-[0.1em]">
             <pre className="inline-block text-left bg-transparent whitespace-pre">
                 {frame}
             </pre>

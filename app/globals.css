@@ -196,9 +196,11 @@
 .light .mix-blend-difference:not(.force-difference) { mix-blend-mode: normal !important; }
 .light .grain { opacity: 0.03; filter: invert(1); }
 .light .bg-purple-900\/10, .light .bg-magenta-900\/5 { background-color: rgba(0,0,0,0.02) !important; }
-.light .from-white { --tw-gradient-from: black !important; }
-.light .via-white\/70, .light .via-white\/80 { --tw-gradient-to: rgba(0,0,0,0.7) !important; }
-.light .to-white\/20 { --tw-gradient-to: rgba(0,0,0,0.2) !important; }
+.light .text-transparent {
+  color: black !important;
+  background-image: none !important;
+  -webkit-text-fill-color: black !important;
+}
 .light ::selection { background-color: black; color: white; }
 
 /* High Contrast Accessibility Mode */
@@ -214,7 +216,7 @@
   background-color: black !important;
   border: 2px solid #ffeb3b !important;
 }
-.contrast .text-white, .contrast .text-black, .contrast .text-neutral-400, .contrast .text-neutral-500, .contrast .text-neutral-600, .contrast .text-neutral-300 {
+.contrast .text-white, .contrast .text-black, .contrast .text-neutral-100, .contrast .text-neutral-200, .contrast .text-neutral-300, .contrast .text-neutral-400, .contrast .text-neutral-500, .contrast .text-neutral-600, .contrast .text-neutral-700, .contrast .text-neutral-800, .contrast .text-neutral-900, .contrast .text-neutral-950, .contrast [class*="text-white/"], .contrast [class*="text-neutral-"] {
   color: #ffeb3b !important;
 }
 .contrast .border-white\/5, .contrast .border-white\/10, .contrast .border-white\/20, .contrast .border-white\/30, .contrast .border-white\/40 {
@@ -235,6 +237,20 @@
   color: #ffeb3b !important;
   -webkit-text-fill-color: #ffeb3b !important;
 }
+.contrast .text-transparent {
+  color: #ffeb3b !important;
+  -webkit-text-fill-color: #ffeb3b !important;
+}
+
+.contrast .bg-clip-text, .contrast .reveal-word {
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+  background-image: none !important;
+  color: #ffeb3b !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffeb3b !important;
+}
+
 .contrast .grain { opacity: 0; }
 
 /* Added cinematic grain utility */

@@ -47,7 +47,7 @@ export default function ContactPage() {
       {/* Background Decor */}
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-white/[0.02] blur-[100px] rounded-full pointer-events-none" />
 
-      <div className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 flex-grow relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-6 sm:px-12 md:px-16 flex-grow relative z-10">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-neutral-500 hover:text-white mb-12 transition-colors"
@@ -55,10 +55,10 @@ export default function ContactPage() {
           <ArrowLeft size={16} /> Back Home
         </Link>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div className="relative group">
-            <div className="relative inline-block">
-              <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8 relative z-20">
+            <div className="relative mb-8">
+              <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.85] relative z-20">
                 LET'S <br /> WORK <br /> TOGETHER
               </h1>
 
@@ -116,7 +116,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-neutral-900/20 p-8 md:p-12 border border-white/10 backdrop-blur-sm">
+          <div className="bg-neutral-900/20 p-8 md:p-12 border border-white/10 backdrop-blur-sm w-full max-w-xl lg:ml-auto">
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="space-y-2 group">
                 <label
