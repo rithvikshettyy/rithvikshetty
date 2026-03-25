@@ -8,7 +8,7 @@ const AsciiArt = dynamic(() => import("./ascii-art"), { ssr: false })
 
 export default function Footer() {
   const pathname = usePathname()
-  if (pathname?.startsWith("/studio") || pathname?.match(/^\/projects\/.+/)) return null
+  if (pathname?.startsWith("/studio") || pathname?.startsWith("/playground") || pathname?.match(/^\/projects\/.+/)) return null
 
   return (
     <footer className="bg-black border-t border-white/10 py-20 px-6">
