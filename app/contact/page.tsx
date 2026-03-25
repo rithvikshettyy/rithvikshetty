@@ -26,11 +26,16 @@ export default function ContactPage() {
       })
 
       if (response.ok) {
-        // User requested a delay of 4-5 seconds
+        // User requested a delay of 3 seconds
         setTimeout(() => {
           setStatus("sent")
-          // Optional: Reset form or status after some time
-        }, 4000)
+          // Revert back to idle after 3 seconds
+          setTimeout(() => {
+            setStatus("idle")
+            const form = e.target as HTMLFormElement
+            form.reset()
+          }, 3000)
+        }, 3000)
       } else {
         setStatus("idle")
         alert("Something went wrong. Please try again.")
