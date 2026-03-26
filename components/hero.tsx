@@ -64,7 +64,7 @@ export default function Hero() {
 
           <p className="text-2xl md:text-5xl text-neutral-400 font-light tracking-tight leading-tight max-w-4xl mx-auto space-y-4">
             <span className="block font-bold text-white tracking-tighter text-3xl md:text-6xl uppercase">
-              FRONT <span className="font-serif italic font-normal text-neutral-400 lowercase tracking-normal">end</span> DEVELOPER
+              FULL <span className="font-serif italic font-normal text-neutral-400 lowercase tracking-normal">stack</span> DEVELOPER
             </span>
             <span className="block text-xl md:text-3xl font-light tracking-wide text-neutral-500 mt-6">
               Freelancer specialized in building <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-500">experiences</span>.
