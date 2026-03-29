@@ -13,7 +13,7 @@ interface TextScrambleProps {
 const CHARS = "!@#$%^&*()_+~`|}{[]:;?><,./-="
 
 export default function TextScramble({ text, autostart = false, className = "", once = true }: TextScrambleProps) {
-  const [displayChars, setDisplayChars] = useState(text.split("").map(() => CHARS[Math.floor(Math.random() * CHARS.length)]))
+  const [displayChars, setDisplayChars] = useState(text.split(""))
   const [isAnimating, setIsAnimating] = useState(false)
   const iterationRef = useRef(0)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
