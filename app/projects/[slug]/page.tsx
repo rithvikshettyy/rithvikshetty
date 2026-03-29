@@ -136,6 +136,7 @@ export default function ProjectDetailPage() {
               src={project.image.asset.url} 
               alt={project.title} 
               fill 
+              sizes="100vw"
               className="object-cover"
               priority
             />

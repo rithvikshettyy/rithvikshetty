@@ -72,6 +72,7 @@ export default function About() {
               src="/about1.jpeg"
               alt="Rithvik"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               priority
               className="object-cover object-[center_top] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
             />

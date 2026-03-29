@@ -7,6 +7,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',

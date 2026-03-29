@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   const clientProjects = staticProjects.filter(p => p.isClient)
   const myProjects = staticProjects.filter(p => !p.isClient)
 
-  const renderProjectCard = (project: any, index: number) => {
+  const renderProjectCard = (project: any, index: number, isPriority: boolean = false) => {
     const href = project.slug ? `/projects/${project.slug}` : (project.url || "#")
     const isInternal = !!project.slug
     const linkProps = !isInternal && project.url ? { target: "_blank", rel: "noopener noreferrer" } : {}
@@ -36,6 +36,7 @@ export default function ProjectsPage() {
             alt={project.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
+            priority={isPriority}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
           />
         </div>
@@ -79,7 +80,7 @@ export default function ProjectsPage() {
             <div className="h-[1px] w-full bg-white/10" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-12 md:gap-y-20">
-            {clientProjects.map((project, index) => renderProjectCard(project, index))}
+            {clientProjects.map((project, index) => renderProjectCard(project, index, index < 2))}
           </div>
         </div>
 
@@ -90,7 +91,7 @@ export default function ProjectsPage() {
             <div className="h-[1px] w-full bg-white/10" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-12 md:gap-y-20">
-            {myProjects.map((project, index) => renderProjectCard(project, index))}
+            {myProjects.map((project, index) => renderProjectCard(project, index, false))}
           </div>
         </div>
       </div>
