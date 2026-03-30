@@ -121,7 +121,7 @@ export default function RootLayout({
               name: "Rithvik Shetty",
               url: "https://rithvikshetty.in",
               jobTitle: "Full Stack Developer",
-              description: "Full stack developer and freelancer specializing in React, Next.js, and modern web dev technologies",
+              description: "Full stack developer and freelancer specializing in React, Next.js, and modern web technologies",
               sameAs: [
                 "https://github.com/rithvikshettyy",
                 "https://www.linkedin.com/in/rithvikshetty/",
