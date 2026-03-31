@@ -94,7 +94,7 @@ const blogPosts = [
     category: 'Hackathon',
     tags: ['React Native', 'Supabase', 'AI Innovation'],
     slug: 'hackcelestial-seaguard',
-    thumbnail: '/hackcelestial.png',
+    thumbnail: '/hackcelestial.PNG',
     content: (
       <>
         <p className="text-2xl md:text-3xl text-neutral-100 mb-10 font-normal leading-relaxed">
