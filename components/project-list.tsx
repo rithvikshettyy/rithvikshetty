@@ -11,6 +11,25 @@ import { projectsQuery } from "@/sanity/lib/queries"
 export const staticProjects = [
   {
     id: "01",
+    slug: "devtune",
+    title: "DEVTUNE CLI",
+    client: "Open Source Tool",
+    category: "CLI / IDE Ext",
+    year: "2026",
+    url: "https://devtune.rithvikshetty.in",
+    githubUrl: "https://github.com/rithvikshettyy/DevTune",
+    image: "/devtune-logo.png",
+    logo: "/devtune-logo.png",
+    description: "A terminal-based Spotify controller and IDE extension designed for developers to control their music directly from the workspace.",
+    overview: "DevTune CLI bridges the gap between coding and workspace focus. It's a high-performance terminal tool that allows Spotify Premium users to control their music with minimal friction, featuring a sleek, developer-first command-line interface.",
+    gallery: [
+      { src: "/projects/devtune_extension.png", caption: "Interface for DevTune CLI extension" },
+    ],
+    outcome: "Eliminates context switching for developers, providing a rhythm-driven coding environment with negligible overhead.",
+    isClient: false,
+  },
+  {
+    id: "02",
     slug: "tinyroomconcert",
     title: "TinyRoomConcert.in",
     client: "Startup",
@@ -30,7 +49,7 @@ export const staticProjects = [
     isClient: true,
   },
   {
-    id: "02",
+    id: "03",
     slug: "trct-in",
     title: "TRCT.IN",
     client: "Community",
@@ -50,7 +69,7 @@ export const staticProjects = [
     isClient: true,
   },
   {
-    id: "03",
+    id: "04",
     slug: "autopharmax",
     title: "AUTOPHARMAX",
     client: "HealthTech",
@@ -64,7 +83,7 @@ export const staticProjects = [
     isClient: false,
   },
   {
-    id: "04",
+    id: "05",
     slug: "seaguard",
     title: "SEAGUARD",
     client: "Hackathon",
@@ -80,7 +99,7 @@ export const staticProjects = [
     isClient: false,
   },
   {
-    id: "05",
+    id: "06",
     slug: "groww-in",
     title: "GROWW.IN",
     client: "Personal Project",
@@ -94,7 +113,7 @@ export const staticProjects = [
     isClient: false,
   },
   {
-    id: "06",
+    id: "07",
     slug: "looplist",
     title: "LOOPLIST",
     client: "Productive Tools",
@@ -108,7 +127,7 @@ export const staticProjects = [
     isClient: false,
   },
   {
-    id: "07",
+    id: "08",
     slug: "object-measurement",
     title: "OBJECT MEASUREMENT",
     client: "Computer Vision",
@@ -122,7 +141,7 @@ export const staticProjects = [
     isClient: false,
   },
   {
-    id: "08",
+    id: "09",
     slug: "spotify-ui",
     title: "SPOTIFY.COM",
     client: "Personal UI Study",

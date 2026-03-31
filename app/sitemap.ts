@@ -10,6 +10,7 @@ const projectSlugs = [
   'looplist',
   'object-measurement',
   'spotify-ui',
+  'devtune',
 ]
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

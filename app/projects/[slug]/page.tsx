@@ -108,16 +108,29 @@ export default function ProjectDetailPage() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
-              {project.url && (
-                <>
-                  <div className="flex items-center gap-2 text-neutral-500 mb-2 uppercase tracking-widest text-[10px] font-bold">
-                    Live Project
+              <div className="flex flex-col gap-6">
+                {project.url && (
+                  <div>
+                    <div className="flex items-center gap-2 text-neutral-500 mb-2 uppercase tracking-widest text-[10px] font-bold">
+                      Live Project
+                    </div>
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xl font-medium underline underline-offset-8 hover:opacity-70 transition-opacity">
+                      Visit Site <ArrowUpRight size={18} />
+                    </a>
                   </div>
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xl font-medium underline underline-offset-8 hover:opacity-70 transition-opacity">
-                    Visit Site <ArrowUpRight size={18} />
-                  </a>
-                </>
-              )}
+                )}
+                
+                {project.githubUrl && (
+                  <div>
+                    <div className="flex items-center gap-2 text-neutral-500 mb-2 uppercase tracking-widest text-[10px] font-bold">
+                      Source Code
+                    </div>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xl font-medium underline underline-offset-8 hover:opacity-70 transition-opacity">
+                      GitHub Repo <ArrowUpRight size={18} />
+                    </a>
+                  </div>
+                )}
+              </div>
             </motion.div>
           </div>
         </div>
