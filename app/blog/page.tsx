@@ -26,7 +26,7 @@ const blogPosts = [
     category: 'Hackathon',
     tags: ['React Native', 'Supabase', 'AI Innovation'],
     slug: 'hackcelestial-seaguard',
-    thumbnail: '/hackcelestial.png',
+    thumbnail: '/hackcelestial.PNG',
   },
 ]
 
