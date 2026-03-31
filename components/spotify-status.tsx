@@ -47,9 +47,9 @@ export default function SpotifyStatus() {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      className="flex items-center gap-3 mb-4"
+      className="flex items-center gap-3 mb-4 max-w-full overflow-hidden whitespace-nowrap"
     >
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center shrink-0">
         <svg
           viewBox="0 0 24 24"
           className="w-6 h-6 text-[#1DB954] fill-current z-10 relative drop-shadow-[0_0_8px_rgba(29,185,84,0.3)] dark:drop-shadow-[0_0_8px_rgba(29,185,84,0.5)]"
@@ -70,27 +70,27 @@ export default function SpotifyStatus() {
         </AnimatePresence>
       </div>
 
-      <div className="flex items-center gap-2 text-sm md:text-base font-medium tracking-tight">
+      <div className="flex items-center gap-2 text-sm md:text-base font-medium tracking-tight overflow-hidden">
         <span className="text-neutral-500 dark:text-neutral-400 font-normal shrink-0">
           {isPlaying ? "Now listening :" : "Last played :"}
         </span>
-        <div className="flex items-center gap-1 overflow-hidden">
+        <div className="flex items-center gap-1 overflow-hidden truncate">
           {isPlaying ? (
-            <a
+            <a 
               href={`https://open.spotify.com/track/${song?.track_id}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline transition-all flex items-center gap-2 truncate"
+              className="hover:underline transition-all flex items-center gap-1 min-w-0"
             >
-              <span className="text-neutral-900 dark:text-neutral-100 truncate font-semibold">{song?.song}</span>
-              <span className="text-neutral-400 dark:text-neutral-600">·</span>
-              <span className="text-neutral-600 dark:text-neutral-500 truncate">{song?.artist}</span>
+              <span className="text-neutral-900 dark:text-neutral-100 font-semibold truncate shrink">{song?.song}</span>
+              <span className="text-neutral-400 dark:text-neutral-600 shrink-0">·</span>
+              <span className="text-neutral-600 dark:text-neutral-500 truncate shrink">{song?.artist}</span>
             </a>
           ) : (
-            <div className="flex items-center gap-1">
-              <span className="text-neutral-900 dark:text-neutral-200 font-semibold">Ucha Lamba Kad</span>
-              <span className="text-neutral-400 dark:text-neutral-600">·</span>
-              <span className="text-neutral-600 dark:text-neutral-500">Anand Raj Anand, Kalpana Patowary</span>
+            <div className="flex items-center gap-1 min-w-0">
+              <span className="text-neutral-900 dark:text-neutral-200 font-semibold truncate shrink">Ucha Lamba Kad</span>
+              <span className="text-neutral-400 dark:text-neutral-600 shrink-0">·</span>
+              <span className="text-neutral-600 dark:text-neutral-500 truncate shrink">Anand Raj Anand, Kalpana Patowary</span>
             </div>
           )}
         </div>
