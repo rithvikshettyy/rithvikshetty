@@ -72,11 +72,11 @@ export default function SpotifyStatus() {
 
       <div className="flex items-center gap-2 text-sm md:text-base font-medium tracking-tight">
         <span className="text-neutral-500 dark:text-neutral-400 font-normal shrink-0">
-          {isPlaying ? "Now listening :" : "Last played —"}
+          {isPlaying ? "Now listening :" : "Last played :"}
         </span>
         <div className="flex items-center gap-1 overflow-hidden">
           {isPlaying ? (
-            <a 
+            <a
               href={`https://open.spotify.com/track/${song?.track_id}`}
               target="_blank"
               rel="noopener noreferrer"
