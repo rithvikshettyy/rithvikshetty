@@ -2,6 +2,8 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import SpotifyStatus from "./spotify-status"
+
 export default function Hero() {
   const containerRef = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -70,9 +72,15 @@ export default function Hero() {
               Freelancer specialized in building <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-500">experiences</span>.
             </span>
           </p>
+
+          {/* Centered Spotify Status Bar */}
+          <div className="mt-10 flex justify-center scale-90 md:scale-100">
+            <SpotifyStatus />
+          </div>
         </motion.div>
       </motion.div>
 
+      {/* Left Badge: Freelance Availability */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}

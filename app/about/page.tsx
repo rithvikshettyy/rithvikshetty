@@ -5,6 +5,7 @@ import { Github, Linkedin, Twitter, Mail, ArrowUpRight, Zap, Star, Code2, Wind, 
 import Link from 'next/link'
 import Image from 'next/image'
 import ScrollTextReveal from '@/components/scroll-text-reveal'
+import SpotifyStatus from '@/components/spotify-status'
 
 const PinterestIcon = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -46,6 +47,7 @@ export default function About() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="lg:col-span-12 xl:col-span-7"
           >
+            <SpotifyStatus />
             <h1 className="text-6xl md:text-[10vw] xl:text-8xl font-black tracking-tighter leading-[0.85] mb-8">
               I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">Rithvik</span>
             </h1>
