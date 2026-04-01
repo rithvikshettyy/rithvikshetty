@@ -49,9 +49,10 @@ export default function SpotifyStatus() {
         } else if (lastfmRes) {
           const lastfmData = await lastfmRes.json()
           const lastTrack = lastfmData.recenttracks?.track?.[0]
+          const isNowPlaying = lastTrack?.["@attr"]?.nowplaying === "true"
           
           if (lastTrack) {
-            setIsPlaying(false)
+            setIsPlaying(isNowPlaying)
             setSong({
               track: lastTrack.name,
               artist: typeof lastTrack.artist === 'string' ? lastTrack.artist : lastTrack.artist["#text"],
@@ -67,7 +68,7 @@ export default function SpotifyStatus() {
     }
 
     checkStatus()
-    const interval = setInterval(checkStatus, 30000)
+    const interval = setInterval(checkStatus, 15000)
     return () => clearInterval(interval)
   }, [DISCORD_ID, LASTFM_API_KEY, LASTFM_USER])
 
