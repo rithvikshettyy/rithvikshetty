@@ -1,26 +1,20 @@
 "use client"
 
-import React, { useState, useEffect, Suspense } from 'react'
-import Link from 'next/link'
+import React, { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
-import { ArrowLeft, Loader2 } from 'lucide-react'
-import { useScroll, useTransform, useSpring, motion, AnimatePresence } from 'framer-motion'
+import { useScroll, useTransform, useSpring, motion } from 'framer-motion'
 
 const AsciiArt = dynamic(() => import('@/components/ascii-art'), { ssr: false })
 
 export default function Playground() {
   const [isMounted, setIsMounted] = useState(false)
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
-  const [isModelLoaded, setIsModelLoaded] = useState(false)
-
-  const { scrollYProgress } = useScroll()
   
-  // Cinematic scroll transforms for the car - ultra-refined range
-  const modelScale = useTransform(scrollYProgress, [0, 1], [1.1, 1.5])
-  const modelOpacity = useTransform(scrollYProgress, [0, 0.05, 0.95, 1], [0, 1, 1, 0])
-  const smoothScale = useSpring(modelScale, { stiffness: 45, damping: 25 })
-
-
+  const { scrollYProgress } = useScroll()
+  const rawDisintegrate = useTransform(scrollYProgress, [0, 0.4], [0, 1])
+  const smoothDisintegrate = useSpring(rawDisintegrate, { stiffness: 50, damping: 20 })
+  const textOpacity = useTransform(scrollYProgress, [0.4, 0.8], [0, 1])
+  const shapeOpacity = useTransform(scrollYProgress, [0.8, 1], [0.8, 0])
 
   useEffect(() => {
     setIsMounted(true)
@@ -32,93 +26,85 @@ export default function Playground() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  // Optimized background ASCII density
-  const asciiWidth = Math.floor((windowSize.width || 1200) / 12)
-  const asciiHeight = Math.floor((windowSize.height || 800) / 18)
+  // Use higher density for large central composition
+  const asciiWidth = Math.floor((windowSize.width || 1200) / 7)
+  const asciiHeight = Math.floor((windowSize.height || 800) / 12)
+
+  // Motion Value to Numeric for AsciiArt prop (AsciiArt isn't a motion component)
+  const [dis, setDis] = useState(0)
+  useEffect(() => {
+    return smoothDisintegrate.onChange((v: number) => setDis(v))
+  }, [smoothDisintegrate])
 
   return (
-    <div className="h-[300vh] bg-black text-white relative font-sans">
-
+    <div className="h-[300vh] bg-black text-white relative">
+      
       {/* Fixed Background Context */}
       <div className="fixed inset-0 flex flex-col items-center justify-center overflow-hidden">
-
-        {/* Background ASCII Layer - Ultra-subtile depth texture */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.04 }}
-          className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none"
+        
+        {/* Centered Overlapping ASCII Shapes */}
+        <motion.div 
+            style={{ opacity: shapeOpacity }}
+            className="absolute inset-0 z-0 flex items-center justify-center"
         >
-          {isMounted && (
-            <AsciiArt
-              width={asciiWidth}
-              height={asciiHeight}
-              mode="field"
-              speedX={0.003}
-              speedY={0.005}
-              disintegrate={0}
-              fontSize="text-[5px] md:text-[7px]"
-              color="text-neutral-900"
-              className="leading-none tracking-[0.5em]"
-            />
-          )}
-        </motion.div>
-
-        {/* Main 3D Car Element (Sketchfab Embed) */}
-        <motion.div
-          style={{
-            scale: smoothScale,
-            opacity: modelOpacity
-          }}
-          className="relative z-10 w-full h-[100vh] flex items-center justify-center pointer-events-auto"
-        >
-          <div className="relative w-full h-full max-w-7xl flex items-center justify-center overflow-hidden rounded-3xl">
-            {/* Minimalist Loader */}
-            {!isModelLoaded && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center z-20 bg-black/50 gap-4">
-                <Loader2 className="w-8 h-8 animate-spin text-neutral-800" />
-              </div>
+            {isMounted && (
+            <div className="relative w-full h-full flex items-center justify-center scale-125 md:scale-110">
+                {/* Primary Inner Shape */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <AsciiArt 
+                        width={asciiWidth} 
+                        height={asciiHeight} 
+                        mode="object"
+                        speedX={0.01}
+                        speedY={0.015}
+                        disintegrate={dis}
+                        fontSize="text-[7px] md:text-[11px]" 
+                        color="text-neutral-400"
+                        className="leading-none tracking-widest"
+                    />
+                </div>
+                {/* Secondary Outer Shape */}
+                <div className="absolute inset-0 flex items-center justify-center scale-125 opacity-40 pointer-events-none">
+                    <AsciiArt 
+                        width={asciiWidth} 
+                        height={asciiHeight} 
+                        mode="object"
+                        speedX={-0.008}
+                        speedY={-0.012}
+                        disintegrate={dis * 1.5}
+                        fontSize="text-[6px] md:text-[10px]" 
+                        color="text-neutral-600"
+                        className="leading-none tracking-widest"
+                    />
+                </div>
+            </div>
             )}
+        </motion.div>
 
-            {/* The Sketchfab Iframe */}
-            <iframe
-              src="https://sketchfab.com/models/72731472c2b649eaaaa5b7e0a00761fb/embed?autostart=1&transparent=1&ui_theme=dark&ui_controls=0&ui_infos=0&ui_inspector=0&ui_watermark=0&ui_hint=0"
-              frameBorder="0"
-              width="100%"
-              height="100%"
-              onLoad={() => setIsModelLoaded(true)}
-              className="w-full h-full scale-[1.05] pointer-events-auto"
-              allow="autoplay; fullscreen; xr-spatial-tracking"
-              title="RB20"
-            />
-          </div>
+        {/* Maintenance Message */}
+        <motion.div 
+            style={{ opacity: textOpacity }}
+            className="relative z-10 flex flex-col items-center gap-6"
+        >
+            <h1 className="text-4xl md:text-8xl font-black tracking-tighter uppercase italic text-center">
+                Under <br /> 
+                <span className="text-neutral-500">Maintenance</span>
+            </h1>
+            <p className="text-neutral-600 font-mono text-xs uppercase tracking-[0.3em]">System Synthesis in Progress</p>
         </motion.div>
 
 
 
-
-        {/* Contextual UI Overlays */}
-        <div className="absolute inset-0 z-20 pointer-events-none flex flex-col justify-between p-8 md:p-16">
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 0.4, x: 0 }}
-            transition={{ delay: 1 }}
-            className="text-[10px] font-mono text-neutral-500 uppercase tracking-[0.4em]"
-          >
-            Mechanical Synthesis // V.002
-          </motion.div>
-
-          <motion.div 
-            style={{ opacity: useTransform(scrollYProgress, [0, 0.08], [0.5, 0]) }}
-            className="flex flex-col items-center gap-4 self-center pb-8"
-          >
-            <p className="text-[10px] font-mono text-neutral-400 uppercase tracking-[0.3em]">Scroll to Approach</p>
-            <div className="w-px h-16 bg-gradient-to-b from-neutral-700 to-transparent" />
-          </motion.div>
-        </div>
+        {/* Progress Guide */}
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.2 }}
+            className="fixed bottom-12 left-1/2 -translate-x-1/2 text-[10px] font-mono uppercase tracking-widest"
+        >
+            Scroll to Initiate Synthesis
+        </motion.div>
 
       </div>
     </div>
   )
 }
-
-
