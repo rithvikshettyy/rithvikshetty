@@ -11,8 +11,8 @@ import { projectsQuery } from "@/sanity/lib/queries"
 export const staticProjects = [
   {
     id: "01",
-    slug: "devtune",
-    title: "DEVTUNE CLI",
+    slug: "tune",
+    title: "TUNE CLI",
     client: "Open Source Tool",
     category: "CLI / IDE Ext",
     year: "2026",
@@ -21,7 +21,7 @@ export const staticProjects = [
     image: "/devtune-logo.png",
     logo: "/devtune-logo.png",
     description: "A terminal-based Spotify controller and IDE extension designed for developers to control their music directly from the workspace.",
-    overview: "DevTune CLI bridges the gap between coding and workspace focus. It's a high-performance terminal tool that allows Spotify Premium users to control their music with minimal friction, featuring a sleek, developer-first command-line interface.",
+    overview: "Tune CLI bridges the gap between coding and workspace focus. It's a high-performance terminal tool that allows Spotify Premium users to control their music with minimal friction, featuring a sleek, developer-first command-line interface.",
     gallery: [
       { src: "/projects/devtune_extension.png", caption: "Interface for DevTune CLI extension" },
     ],
