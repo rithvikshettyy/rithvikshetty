@@ -64,7 +64,7 @@ export default function ProjectDetailPage() {
     <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-[100] px-6 py-8 flex justify-between items-center mix-blend-difference pointer-events-none">
-        <Link href="/" className="pointer-events-auto flex items-center gap-2 group">
+        <Link href="/projects" className="pointer-events-auto flex items-center gap-2 group">
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           <span className="text-xs uppercase tracking-[0.2em] font-medium mt-0.5">Back</span>
         </Link>

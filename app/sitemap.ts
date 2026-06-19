@@ -2,7 +2,8 @@ import { MetadataRoute } from 'next'
 
 // Static project slugs defined directly to avoid importing from "use client" modules
 const projectSlugs = [
-  'tinyroomconcert',
+  'interviewdump',
+  'anyformat',
   'trct-in',
   'autopharmax',
   'seaguard',
