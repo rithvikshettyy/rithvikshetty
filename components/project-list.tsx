@@ -17,8 +17,8 @@ export const staticProjects = [
     category: "Software",
     year: "2026",
     url: "https://www.interviewdump.dev/",
-    image: "/interview.PNG",
-    logo: "/interview.PNG",
+    image: "/interview.png",
+    logo: "/interview.png",
     description: "A free, full-stack tech interview prep platform with 500+ curated questions across DSA, SQL, System Design, Core CS, and Aptitude. All with no paywall or signup wall.",
     gallery: [
       { src: "/projects/id_1.png", caption: "" },
