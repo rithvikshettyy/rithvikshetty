@@ -21,9 +21,11 @@ export default function ProjectDetailPage() {
         const data = await client.fetch(singleProjectQuery, { slug })
         
         if (data) {
-          // Merge Sanity data with static fallback data to ensure fields like 'logo' are present
           const staticProj = staticProjects.find(p => p.slug === slug)
-          setProject({ ...staticProj, ...data })
+          const cleanData = Object.fromEntries(
+            Object.entries(data).filter(([_, v]) => v != null)
+          )
+          setProject({ ...staticProj, ...cleanData })
         } else {
           // Fallback to purely static data if not in Sanity
           const staticProj = staticProjects.find(p => p.slug === slug)

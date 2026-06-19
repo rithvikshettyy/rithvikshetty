@@ -42,6 +42,8 @@ export const project = {
           { title: "Machine Learning", value: "Machine Learning" },
           { title: "Hackathon Project", value: "Hackathon Project" },
           { title: "Software", value: "Software" },
+          { title: "CLI / IDE Ext", value: "CLI / IDE Ext" },
+          { title: "Frontend Dev", value: "Frontend Dev" },
           { title: "Java Application", value: "Java Application" },
           { title: "Python", value: "Python" },
         ],

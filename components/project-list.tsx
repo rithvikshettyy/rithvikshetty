@@ -4,9 +4,7 @@ import { motion, useInView, useMotionValue, useSpring } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { useRef, useEffect, useState } from "react"
-import { client } from "@/sanity/lib/client"
-import { projectsQuery } from "@/sanity/lib/queries"
+import { useRef, useState } from "react"
 
 export const staticProjects = [
   {
@@ -176,7 +174,6 @@ export const staticProjects = [
 ]
 
 export default function ProjectList() {
-  const [projects, setProjects] = useState<any[]>(staticProjects)
   const [hoveredProject, setHoveredProject] = useState<any>(null)
 
   const mouseX = useMotionValue(0)
@@ -190,20 +187,6 @@ export default function ProjectList() {
     mouseX.set(e.clientX)
     mouseY.set(e.clientY)
   }
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const data = await client.fetch(projectsQuery)
-        if (data && data.length > 0) {
-          setProjects(data)
-        }
-      } catch (error) {
-        console.error("Error fetching projects from Sanity:", error)
-      }
-    }
-    fetchProjects()
-  }, [])
 
   return (
     <div className="py-32 px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 w-full mx-auto">
@@ -222,7 +205,7 @@ export default function ProjectList() {
       </div>
 
       <div className="flex flex-col" onMouseMove={handleMouseMove}>
-        {projects.map((project) => (
+        {staticProjects.map((project) => (
           <ProjectItem
             key={project.id}
             project={project}
