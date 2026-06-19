@@ -20,6 +20,11 @@ export const staticProjects = [
     image: "/interview.PNG",
     logo: "/interview.PNG",
     description: "A free, full-stack tech interview prep platform with 500+ curated questions across DSA, SQL, System Design, Core CS, and Aptitude. All with no paywall or signup wall.",
+    gallery: [
+      { src: "/projects/id_1.png", caption: "" },
+      { src: "/projects/id_2.png", caption: "" },
+      { src: "/projects/id_3.png", caption: "" }
+    ],
     overview: "Built a full-stack interview prep platform from scratch using Next.js, TypeScript, Tailwind CSS, and Supabase. Covers 500+ questions across 8 categories with rich explanations, company-specific question banks, and interactive learning tools and streak system are backed by Supabase with Row Level Security.",
     outcome: "A production-deployed, SEO-optimized platform that gives job seekers a complete interview preparation toolkit entirely free, no paywalls, no signups required for browsing.",
     isClient: false,
@@ -35,6 +40,11 @@ export const staticProjects = [
     image: "/format.jpg",
     logo: "/format.jpg",
     description: "A full-stack file conversion platform built with Next.js 14, featuring 18+ tools for PDF, image, and document processing, a Redis-backed URL shortener with click analytics, Razorpay payment integration for enterprise tiers, and Google OAuth authentication. Deployed on Vercel with Upstash Redis and Cloudflare Turnstile bot protection.",
+    gallery: [
+      { src: "/projects/af_1.png", caption: "" },
+      { src: "/projects/af_2.png", caption: "" },
+      { src: "/projects/af_3.png", caption: "" }
+    ],
     overview: "Built a full-stack file conversion platform with 18+ tools for PDF, image, and document processing, a Redis-backed URL shortener with click analytics, and Razorpay payment integration.",
     outcome: "A production-deployed, SEO-optimized conversion platform that gives users free access to PDF merging, image conversion, QR generation, and more.",
     isClient: false,
