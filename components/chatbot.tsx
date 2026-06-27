@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { X, Send, ArrowUpRight } from "lucide-react"
+import { X, Send, ArrowUpRight, Trash2 } from "lucide-react"
 import Link from "next/link"
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
@@ -105,6 +105,12 @@ export default function ChatbotWidget() {
     }
   }, [open])
 
+  useEffect(() => {
+    const handler = () => setOpen(true)
+    window.addEventListener("open-chat", handler)
+    return () => window.removeEventListener("open-chat", handler)
+  }, [])
+
   const sendMessage = useCallback((text: string) => {
     const trimmed = text.trim()
     if (!trimmed || isTyping) return
@@ -133,31 +139,6 @@ export default function ChatbotWidget() {
 
   return (
     <>
-      <AnimatePresence>
-        {!open && (
-          <motion.button
-            key="chat-trigger"
-            initial={{ y: 16, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 16, opacity: 0 }}
-            whileHover="hovered"
-            transition={{ type: "spring", stiffness: 300, damping: 24 }}
-            onClick={() => setOpen(true)}
-            aria-label="Open chat"
-            className="fixed bottom-14 left-1/2 -translate-x-1/2 z-[9998] flex items-center gap-2 px-5 py-2.5 bg-black/80 border border-white/20 backdrop-blur-md rounded-full text-xs font-medium tracking-widest uppercase text-white hover:bg-white hover:text-black hover:border-transparent transition-colors duration-200 shadow-xl"
-          >
-            Chat now
-            <motion.span
-              variants={{ hovered: { x: 3, y: -3 } }}
-              transition={{ type: "spring", stiffness: 400, damping: 18 }}
-              className="inline-flex"
-            >
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </motion.span>
-          </motion.button>
-        )}
-      </AnimatePresence>
-
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent
           showCloseButton={false}
@@ -169,14 +150,25 @@ export default function ChatbotWidget() {
               <p className="text-sm font-semibold leading-none text-white">Chat with me</p>
               <p className="text-xs text-white/40 mt-1">Ask about projects, services, or pricing</p>
             </div>
-            <Button
-              size="icon"
-              variant="ghost"
-              onClick={() => setOpen(false)}
-              className="h-8 w-8 shrink-0 text-white/50 hover:text-white hover:bg-white/10"
-            >
-              <X className="w-4 h-4" />
-            </Button>
+            <div className="flex items-center gap-1">
+              <Button
+                size="icon"
+                variant="ghost"
+                onClick={() => setMessages([{ id: "init", role: "bot", text: chatbotData.greeting }])}
+                title="Clear chat"
+                className="h-8 w-8 shrink-0 text-white/30 hover:text-white/70 hover:bg-white/10"
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+              </Button>
+              <Button
+                size="icon"
+                variant="ghost"
+                onClick={() => setOpen(false)}
+                className="h-8 w-8 shrink-0 text-white/50 hover:text-white hover:bg-white/10"
+              >
+                <X className="w-4 h-4" />
+              </Button>
+            </div>
           </div>
 
           <div className="flex-1 overflow-y-auto min-h-0 px-4 py-4 flex flex-col gap-4">

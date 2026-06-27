@@ -47,7 +47,7 @@ export default function About() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="lg:col-span-12 xl:col-span-7"
           >
-            <SpotifyStatus />
+            <SpotifyStatus variant="inline" />
             <h1 className="text-6xl md:text-[10vw] xl:text-8xl font-black tracking-tighter leading-[0.85] mb-8">
               I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">Rithvik</span>
             </h1>
