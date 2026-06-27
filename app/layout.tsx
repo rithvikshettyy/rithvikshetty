@@ -7,7 +7,6 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import MouseFollower from "@/components/mouse-follower"
 import ModeToggle from "@/components/mode-toggle"
-import ChatbotWidget from "@/components/chatbot"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -139,7 +138,6 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <ModeToggle />
-        <ChatbotWidget />
         <Analytics />
       </body>
     </html>

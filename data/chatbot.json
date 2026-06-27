@@ -1,5 +1,5 @@
 {
-  "greeting": "Hey! I'm Rithvik's assistant. Ask me about his projects, freelance services, or how to get in touch.",
+  "greeting": "Hey! I'm Rithvik's assistant. Ask me about his projects, experience, skills, or how to get in touch.",
   "initialQuickReplies": ["Projects", "Services", "Hire me", "Contact"],
   "services": [
     { "tier": "Basic", "desc": "Landing page or portfolio site" },
@@ -11,41 +11,84 @@
     {
       "id": "greeting",
       "keywords": ["hi", "hello", "hey", "hiya", "howdy", "sup", "what's up", "whats up", "yo"],
-      "text": "Hey! 👋 Good to see you here. Ask me about Rithvik's projects, freelance services, or how to get in touch.",
-      "quickReplies": ["Projects", "Services", "Contact"]
+      "text": "Hey! 👋 Good to see you here. Ask me about Rithvik's projects, experience, skills, or how to get in touch."
     },
     {
       "id": "thanks",
       "keywords": ["thanks", "thank you", "thankyou", "ty", "thx", "appreciate", "awesome", "great", "nice", "cool", "perfect"],
-      "text": "Glad I could help! Anything else you'd like to know?",
-      "quickReplies": ["Projects", "Services", "Contact"]
+      "text": "Glad I could help! Anything else you'd like to know?"
     },
     {
       "id": "bye",
       "keywords": ["bye", "goodbye", "see you", "cya", "later", "take care", "peace", "gotta go"],
-      "text": "See you! Feel free to come back anytime. 👋",
-      "quickReplies": ["Contact"]
+      "text": "See you! Feel free to come back anytime. 👋"
     },
     {
       "id": "how-are-you",
       "keywords": ["how are you", "how r you", "hows it going", "how's it going", "you doing", "all good"],
-      "text": "I'm just a bot, but I'm doing great! More importantly — how can I help you today?",
-      "quickReplies": ["Projects", "Services", "Contact"]
+      "text": "I'm just a bot, but I'm doing great! More importantly — how can I help you today?"
+    },
+    {
+      "id": "resume",
+      "keywords": ["resume", "cv", "curriculum", "download resume", "download cv", "pdf"],
+      "text": "Here's Rithvik's latest resume — available as a PDF:",
+      "links": [{ "label": "Download Resume (PDF)", "href": "/rithvikshetty_resume.pdf" }]
+    },
+    {
+      "id": "education",
+      "keywords": ["education", "degree", "college", "university", "study", "studying", "student", "graduate", "graduation", "sies", "ai ml", "artificial intelligence", "machine learning", "btech", "b.e", "course", "coursework", "gpa", "semester", "navi mumbai"],
+      "text": "Rithvik is pursuing a BE in Artificial Intelligence & Machine Learning at SIES Graduate School of Technology, Navi Mumbai (Nov 2022 – Jun 2026). Relevant coursework: Web Technologies, DSA, Computer Vision, NLP, and Deep Learning. He's also Secretary of the Technical Team and co-organized ByteCamp '25/'26 — a national hackathon with 2,400+ registrations."
+    },
+    {
+      "id": "experience",
+      "keywords": ["experience", "internship", "intern", "work history", "trct", "run club", "ion chemicals", "employment", "past work", "where have you worked", "previous"],
+      "text": "Rithvik's professional experience:",
+      "skillList": [
+        "TRCT.IN · Freelance Frontend Dev · Mar 2024–Present · 6,000+ users, Next.js 15, Razorpay",
+        "Ion Chemicals · Python Dev Intern · Jan–Apr 2025 · Computer Vision pipeline with OpenCV"
+      ],
+      "links": [{ "label": "Download Resume", "href": "/rithvikshetty_resume.pdf" }]
+    },
+    {
+      "id": "achievements",
+      "keywords": ["achievement", "award", "hackathon", "won", "prize", "certification", "certified", "hackcele", "accomplishment", "recognition", "devtune", "seaguard", "bytecamp", "aws", "deloitte"],
+      "text": "Rithvik's awards & certifications:",
+      "skillList": [
+        "🏆 HackCelestial 2.0 — Most Product Readiness Award (200+ teams, judged by ISRO)",
+        "📦 DevTune — 500+ installs on VS Code Marketplace & npm within weeks",
+        "🎓 AWS — Introduction to Machine Learning (Coursera)",
+        "📊 Deloitte — Data Analytics Job Simulation (Forage, 2025)",
+        "🏛️ ByteCamp '25/'26 — Co-organized national hackathon, 2,400+ registrations"
+      ]
+    },
+    {
+      "id": "techstack",
+      "keywords": ["tech stack", "techstack", "stack", "technology", "technologies", "tools", "languages", "framework", "frameworks", "skills", "skill", "what do you use", "what can you", "proficient", "expertise", "knows", "know"],
+      "text": "Rithvik's full tech stack:",
+      "skillList": [
+        "Languages · JavaScript (ES6+), TypeScript, Python, HTML5, CSS3",
+        "Frontend · React.js, Next.js 15, React Native, Expo Router",
+        "Styling · Tailwind CSS, Framer Motion, Shadcn UI, CSS Animations",
+        "Backend · Node.js, FastAPI, REST APIs, NextAuth, JWT, OAuth2",
+        "Databases · PostgreSQL, MongoDB, MySQL, Supabase",
+        "Payments · Razorpay, Stripe",
+        "Integrations · Spotify Web API, Twilio, WhatsApp API",
+        "Tools · Git, Vercel, Figma, Adobe Illustrator, Linux",
+        "Performance · Core Web Vitals, Lighthouse, Web Perf Optimization"
+      ]
     },
     {
       "id": "projects",
       "keywords": ["project", "work", "built", "portfolio", "show", "what have", "made"],
       "text": "Here are some of Rithvik's recent projects:",
-      "projectList": true,
-      "quickReplies": ["Services", "Hire me", "Contact"]
+      "projectList": true
     },
     {
       "id": "services",
       "keywords": ["service", "offer", "freelance", "web", "build", "cost", "price", "budget", "rate", "how much", "what do you", "app", "mobile", "develop"],
       "text": "Rithvik does freelance web & app development — here's what he can build:",
       "serviceList": true,
-      "links": [{ "label": "Get a quote", "href": "/contact" }],
-      "quickReplies": ["Projects", "Contact"]
+      "links": [{ "label": "Get a quote", "href": "/contact" }]
     },
     {
       "id": "contact",
@@ -54,27 +97,33 @@
       "actions": [
         { "label": "Send Email", "type": "email", "value": "rithvikshetty2004@gmail.com" },
         { "label": "WhatsApp", "type": "whatsapp", "value": "919833875297" }
-      ],
-      "quickReplies": ["Projects", "Services"]
+      ]
     },
     {
       "id": "about",
-      "keywords": ["who", "about", "rithvik", "background", "tell me", "introduce", "yourself"],
-      "text": "Rithvik Shetty is a full-stack developer & freelancer based in Thane, India. He builds high-performance web apps, ML projects, and open-source tools.",
-      "links": [{ "label": "About page", "href": "/about" }],
-      "quickReplies": ["Projects", "Hire me", "Contact"]
+      "keywords": ["who", "about", "rithvik", "background", "tell me", "introduce", "yourself", "summary"],
+      "text": "Rithvik Shetty is a frontend developer & AI/ML engineering student (graduating 2026) based in Thane, India. He's shipped trct.in (6,000+ users), interviewdump.dev (open-source, 400+ questions), and DevTune (500+ VS Code/npm installs). He freelances in React, Next.js, and React Native.",
+      "links": [{ "label": "About page", "href": "/about" }]
     },
     {
       "id": "hire",
       "keywords": ["hire", "available", "availability", "work together", "collaborate", "work with", "developer", "looking for", "need a", "find", "app dev", "seeking"],
-      "text": "Rithvik is available for freelance web & app development! Here's his stack:",
-      "skillList": ["Next.js & React", "React Native", "TypeScript", "Node.js & APIs", "Tailwind CSS", "Sanity CMS", "PostgreSQL / Supabase"],
+      "text": "Rithvik is available for freelance work! His stack:",
+      "skillList": [
+        "Next.js 15 & React (SSR, SSG, App Router)",
+        "React Native & Expo Router",
+        "TypeScript & JavaScript (ES6+)",
+        "Tailwind CSS & Framer Motion",
+        "Node.js, FastAPI & REST APIs",
+        "PostgreSQL, Supabase & MongoDB",
+        "Razorpay, Stripe & payment integrations",
+        "Sanity CMS & Vercel deployment"
+      ],
       "links": [
         { "label": "See work", "href": "/projects" },
         { "label": "Contact", "href": "/contact" }
-      ],
-      "quickReplies": ["Services", "Contact"]
+      ]
     }
   ],
-  "fallback": "I'm not sure about that. Try asking about projects, services, or how to get in touch!"
+  "fallback": "I'm not sure about that. Try asking about Rithvik's projects, experience, education, achievements, or how to get in touch!"
 }

@@ -9,7 +9,7 @@ type Mode = "dark" | "light" | "contrast"
 
 export default function ModeToggle() {
   const pathname = usePathname()
-  if (pathname?.startsWith("/studio")) return null
+  if (pathname?.startsWith("/studio") || pathname === "/chat") return null
 
   const [mode, setMode] = useState<Mode>("dark")
   const [isOpen, setIsOpen] = useState(false)

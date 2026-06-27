@@ -2,6 +2,8 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import { ArrowUpRight } from "lucide-react"
+import Link from "next/link"
 import SpotifyStatus from "./spotify-status"
 
 export default function Hero() {
@@ -43,7 +45,7 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="w-full flex flex-col items-center"
         >
-          <h1 className="text-6xl sm:text-7xl md:text-[12vw] xl:text-[140px] font-black tracking-tighter leading-[0.85] md:leading-[0.8] mb-6 md:mb-12">
+          <h1 className="text-6xl sm:text-7xl md:text-[12vw] xl:text-[140px] font-black tracking-tighter leading-[0.85] md:leading-[0.8] mb-6 md:mb-12 mt-1">
             I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 via-neutral-200 to-neutral-600">Rithvik</span>
           </h1>
 
@@ -56,11 +58,30 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Centered Spotify Status Bar */}
-          <div className="mt-8 md:mt-12 w-full flex justify-center overflow-hidden">
-             <div className="scale-[0.85] sm:scale-100 origin-center max-w-full">
-              <SpotifyStatus />
-             </div>
+          {/* Spotify + Chat row */}
+          <div className="mt-8 md:mt-12 w-full flex justify-center items-center gap-3 overflow-hidden flex-wrap">
+            <SpotifyStatus />
+            <Link href="/chat">
+              <motion.div
+                whileHover="hovered"
+                aria-label="Open chat"
+                className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-md hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 shrink-0"
+              >
+                <div className="flex flex-col gap-[5px] items-start">
+                  <span className="text-[10px] font-medium uppercase tracking-[0.12em] text-white/35 leading-none">Hire / Query</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[13px] font-semibold text-white leading-tight">Chat now</span>
+                    <motion.span
+                      variants={{ hovered: { x: 3, y: -3 } }}
+                      transition={{ type: "spring", stiffness: 400, damping: 18 }}
+                      className="inline-flex opacity-50"
+                    >
+                      <ArrowUpRight className="w-3 h-3" />
+                    </motion.span>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
           </div>
         </motion.div>
       </motion.div>
