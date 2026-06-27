@@ -1,0 +1,80 @@
+{
+  "greeting": "Hey! I'm Rithvik's assistant. Ask me about his projects, freelance services, or how to get in touch.",
+  "initialQuickReplies": ["Projects", "Services", "Hire me", "Contact"],
+  "services": [
+    { "tier": "Basic", "desc": "Landing page or portfolio site" },
+    { "tier": "Standard", "desc": "Full website with CMS integration" },
+    { "tier": "Premium", "desc": "Full-stack web or mobile app" },
+    { "tier": "Enterprise", "desc": "Custom scope & ongoing support" }
+  ],
+  "intents": [
+    {
+      "id": "greeting",
+      "keywords": ["hi", "hello", "hey", "hiya", "howdy", "sup", "what's up", "whats up", "yo"],
+      "text": "Hey! 👋 Good to see you here. Ask me about Rithvik's projects, freelance services, or how to get in touch.",
+      "quickReplies": ["Projects", "Services", "Contact"]
+    },
+    {
+      "id": "thanks",
+      "keywords": ["thanks", "thank you", "thankyou", "ty", "thx", "appreciate", "awesome", "great", "nice", "cool", "perfect"],
+      "text": "Glad I could help! Anything else you'd like to know?",
+      "quickReplies": ["Projects", "Services", "Contact"]
+    },
+    {
+      "id": "bye",
+      "keywords": ["bye", "goodbye", "see you", "cya", "later", "take care", "peace", "gotta go"],
+      "text": "See you! Feel free to come back anytime. 👋",
+      "quickReplies": ["Contact"]
+    },
+    {
+      "id": "how-are-you",
+      "keywords": ["how are you", "how r you", "hows it going", "how's it going", "you doing", "all good"],
+      "text": "I'm just a bot, but I'm doing great! More importantly — how can I help you today?",
+      "quickReplies": ["Projects", "Services", "Contact"]
+    },
+    {
+      "id": "projects",
+      "keywords": ["project", "work", "built", "portfolio", "show", "what have", "made"],
+      "text": "Here are some of Rithvik's recent projects:",
+      "projectList": true,
+      "quickReplies": ["Services", "Hire me", "Contact"]
+    },
+    {
+      "id": "services",
+      "keywords": ["service", "offer", "freelance", "web", "build", "cost", "price", "budget", "rate", "how much", "what do you", "app", "mobile", "develop"],
+      "text": "Rithvik does freelance web & app development — here's what he can build:",
+      "serviceList": true,
+      "links": [{ "label": "Get a quote", "href": "/contact" }],
+      "quickReplies": ["Projects", "Contact"]
+    },
+    {
+      "id": "contact",
+      "keywords": ["contact", "email", "reach", "message", "talk", "whatsapp", "dm", "in touch", "connect", "call"],
+      "text": "Pick how you'd like to reach Rithvik:",
+      "actions": [
+        { "label": "Send Email", "type": "email", "value": "rithvikshetty2004@gmail.com" },
+        { "label": "WhatsApp", "type": "whatsapp", "value": "919833875297" }
+      ],
+      "quickReplies": ["Projects", "Services"]
+    },
+    {
+      "id": "about",
+      "keywords": ["who", "about", "rithvik", "background", "tell me", "introduce", "yourself"],
+      "text": "Rithvik Shetty is a full-stack developer & freelancer based in Thane, India. He builds high-performance web apps, ML projects, and open-source tools.",
+      "links": [{ "label": "About page", "href": "/about" }],
+      "quickReplies": ["Projects", "Hire me", "Contact"]
+    },
+    {
+      "id": "hire",
+      "keywords": ["hire", "available", "availability", "work together", "collaborate", "work with", "developer", "looking for", "need a", "find", "app dev", "seeking"],
+      "text": "Rithvik is available for freelance web & app development! Here's his stack:",
+      "skillList": ["Next.js & React", "React Native", "TypeScript", "Node.js & APIs", "Tailwind CSS", "Sanity CMS", "PostgreSQL / Supabase"],
+      "links": [
+        { "label": "See work", "href": "/projects" },
+        { "label": "Contact", "href": "/contact" }
+      ],
+      "quickReplies": ["Services", "Contact"]
+    }
+  ],
+  "fallback": "I'm not sure about that. Try asking about projects, services, or how to get in touch!"
+}
