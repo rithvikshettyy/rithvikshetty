@@ -126,6 +126,8 @@ export default function About() {
                 { name: "DOCKER", icon: Box, color: "#2496ED" },
                 { name: "AWS", icon: Cloud, color: "#FF9900" },
                 { name: "FIGMA", icon: PenTool, color: "#F24E1E" },
+                { name: "REDIS", icon: Database, color: "#DC382D" },
+                { name: "GIT", icon: Code2, color: "#F05032" },
               ].map((item, i) => (
                 <motion.div
                   key={i}
