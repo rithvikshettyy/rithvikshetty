@@ -102,7 +102,7 @@
     {
       "id": "about",
       "keywords": ["who", "about", "rithvik", "background", "tell me", "introduce", "yourself", "summary"],
-      "text": "Rithvik Shetty is a frontend developer & AI/ML engineering student (graduating 2026) based in Thane, India. He's shipped trct.in (6,000+ users), interviewdump.dev (open-source, 400+ questions), and DevTune (500+ VS Code/npm installs). He freelances in React, Next.js, and React Native.",
+      "text": "Rithvik Shetty is a fullstack developer & AI/ML engineering student (graduating 2026) based in Thane, India. He's shipped trct.in (6,000+ users), interviewdump.dev (open-source, 400+ questions), and DevTune (500+ VS Code/npm installs). He freelances in React, Next.js, and React Native.",
       "links": [{ "label": "About page", "href": "/about" }]
     },
     {

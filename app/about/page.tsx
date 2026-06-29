@@ -52,7 +52,7 @@ export default function About() {
               I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">Rithvik</span>
             </h1>
             <p className="text-xl md:text-3xl text-neutral-400 font-light tracking-wide leading-relaxed max-w-2xl">
-              <span className="font-bold text-white tracking-tight text-2xl md:text-4xl">FRONT <span className="font-serif italic font-normal text-neutral-300">end</span> DEVELOPER</span><br />
+              <span className="font-bold text-white tracking-tight text-2xl md:text-4xl">FULL <span className="font-serif italic font-normal text-neutral-300">stack</span> DEVELOPER</span><br />
               Freelancer specialized in building <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">experiences</span>.
             </p>
             <div className="mt-12 flex items-center">
