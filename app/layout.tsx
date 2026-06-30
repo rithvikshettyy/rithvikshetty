@@ -131,6 +131,22 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Rithvik Shetty",
+              url: "https://rithvikshetty.in",
+              description: "Portfolio of Rithvik Shetty, a full stack developer and freelancer specializing in React, Next.js, and modern web technologies.",
+              author: {
+                "@type": "Person",
+                name: "Rithvik Shetty",
+              },
+            }),
+          }}
+        />
       </head>
       <body className={`font-sans antialiased bg-black text-white min-h-screen flex flex-col overflow-x-hidden`}>
         <MouseFollower />

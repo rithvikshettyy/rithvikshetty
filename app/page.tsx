@@ -3,9 +3,9 @@
 import dynamic from "next/dynamic"
 
 const Hero = dynamic(() => import("@/components/hero"))
-const Marquee = dynamic(() => import("@/components/marquee"), { ssr: false })
-const ProjectList = dynamic(() => import("@/components/project-list"), { ssr: false })
-const CreativeTeaser = dynamic(() => import("@/components/creative-teaser"), { ssr: false })
+const Marquee = dynamic(() => import("@/components/marquee"))
+const ProjectList = dynamic(() => import("@/components/project-list"))
+const CreativeTeaser = dynamic(() => import("@/components/creative-teaser"))
 import Link from "next/link"
 import Image from "next/image"
 import React, { useRef } from "react"

@@ -1,0 +1,39 @@
+# Rithvik Shetty
+
+> Full stack developer and freelancer specializing in React, Next.js, TypeScript, and modern web technologies. Based in India. 4+ years building production web apps, ML projects, and freelance client work.
+
+This file follows the llms.txt convention (https://llmstxt.org/) to help AI agents and LLMs find and cite content on this site accurately.
+
+## Core pages
+
+- [Home](https://rithvikshetty.in/): Overview, featured projects, intro.
+- [About](https://rithvikshetty.in/about): Bio, skills, resume link.
+- [Projects](https://rithvikshetty.in/projects): Full project portfolio (client work and personal projects).
+- [Work Experience](https://rithvikshetty.in/experience): Internships, leadership roles, employment history.
+- [Achievements](https://rithvikshetty.in/achievements): Hackathon wins, awards, recognitions.
+- [Contact](https://rithvikshetty.in/contact): Ways to reach Rithvik.
+- [Chat](https://rithvikshetty.in/chat): AI chatbot trained on Rithvik's background, answers questions about him.
+
+## Projects
+
+- [InterviewDump](https://rithvikshetty.in/projects/interviewdump): Free full-stack tech interview prep platform, 500+ questions across DSA/SQL/System Design/Core CS/Aptitude.
+- [AnyFormat](https://rithvikshetty.in/projects/anyformat): File conversion platform, 18+ tools for PDF/image/document processing, Redis URL shortener, Razorpay payments.
+- [TRCT.in](https://rithvikshetty.in/projects/trct-in): Website for Thane Run Club Tribe, event registration and leaderboards.
+- [AutoPharmaX](https://rithvikshetty.in/projects/autopharmax): AI platform analyzing drug efficacy data using BERT/transformer models.
+- [SeaGuard](https://rithvikshetty.in/projects/seaguard): React Native app for water quality monitoring and fisherman safety alerts, presented to ISRO.
+- [Groww.in](https://rithvikshetty.in/projects/groww-in): Frontend recreation of the Groww investment platform.
+- [LoopList](https://rithvikshetty.in/projects/looplist): Real-time collaborative to-do list app using Firebase.
+- [Object Measurement](https://rithvikshetty.in/projects/object-measurement): Python/OpenCV tool measuring physical object dimensions from images.
+- [Spotify UI](https://rithvikshetty.in/projects/spotify-ui): Frontend study recreating the Spotify web interface.
+- [DevTune CLI](https://rithvikshetty.in/projects/devtune): Terminal-based Spotify controller and IDE extension.
+
+## Contact / social
+
+- GitHub: https://github.com/rithvikshettyy
+- LinkedIn: https://www.linkedin.com/in/rithvikshetty/
+- Pinterest: https://in.pinterest.com/mayberithvik/
+
+## Notes for agents
+
+- All pages are publicly indexable; see /robots.txt and /sitemap.xml.
+- For structured facts (name, job title, skills, projects), prefer the JSON-LD (schema.org Person/ItemList/CreativeWork) embedded in each page over scraping rendered text.
