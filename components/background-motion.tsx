@@ -61,16 +61,16 @@ export default function BackgroundMotion() {
   }, [])
 
   return (
-    {/* Reactive Glow Follower */ }
-    < motion.div 
-        style = {{ x: glowX, y: glowY, translateX: "-50%", translateY: "-50%" }
-}
-className = "absolute top-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[150px] opacity-40 mix-blend-screen"
-  />
-  <motion.div
-    style={{ x: glowX, y: glowY, translateX: "-50%", translateY: "-50%" }}
-    className="absolute top-0 left-0 w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-[100px] opacity-30 mix-blend-screen"
-  />
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* Reactive Glow Follower */}
+      <motion.div
+        style={{ x: glowX, y: glowY, translateX: "-50%", translateY: "-50%" }}
+        className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[150px] opacity-40 mix-blend-screen"
+      />
+      <motion.div
+        style={{ x: glowX, y: glowY, translateX: "-50%", translateY: "-50%" }}
+        className="absolute top-0 left-0 w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-[100px] opacity-30 mix-blend-screen"
+      />
 
 {/* Floating Particles Layer */ }
 <div className="absolute inset-0 pointer-events-none overflow-hidden">

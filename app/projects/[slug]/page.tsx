@@ -9,7 +9,7 @@ export async function generateStaticParams() {
   return staticProjects.map((p) => ({ slug: p.slug }))
 }
 
-async function getProject(slug: string) {
+async function getProject(slug: string): Promise<any> {
   const staticProj = staticProjects.find((p) => p.slug === slug)
 
   try {

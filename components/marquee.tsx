@@ -34,7 +34,7 @@ const techStack = [
 
 export default function Marquee() {
   return (
-    <div className="py-16 md:py-24 border-y border-black/5 overflow-hidden flex bg-white text-black relative z-20">
+    <div className="py-12 md:py-[72px] border-y border-black/5 overflow-hidden flex bg-white text-black relative z-20">
       <motion.div
         className="flex whitespace-nowrap gap-20 md:gap-32 items-center"
         animate={{ x: [0, -6000] }}
@@ -49,12 +49,12 @@ export default function Marquee() {
             <motion.div
               whileHover={{ rotate: 10, scale: 1.1 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="p-4 md:p-6 bg-[#1a1a1a] rounded-[1.5rem] md:rounded-[2rem] border-2 shadow-2xl"
+              className="p-3 md:p-[18px] bg-[#1a1a1a] rounded-[1.25rem] md:rounded-[1.5rem] border-2 shadow-2xl"
               style={{ borderColor: `${item.color}20` }}
             >
-              <item.icon size={64} strokeWidth={1.5} color={item.color} className="w-10 h-10 md:w-16 md:h-16" />
+              <item.icon size={64} strokeWidth={1.5} color={item.color} className="w-[30px] h-[30px] md:w-[48px] md:h-[48px]" />
             </motion.div>
-            <span className="text-6xl md:text-9xl lg:text-[10vw] font-black tracking-tighter uppercase">
+            <span className="text-[45px] md:text-8xl lg:text-[7.5vw] font-black tracking-tighter uppercase">
               {item.name}
             </span>
           </div>

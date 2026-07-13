@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
-import SpotifyStatus from "./spotify-status"
 
 export default function Hero() {
   const containerRef = useRef(null)
@@ -58,9 +57,8 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Spotify + Chat row */}
+          {/* Chat row */}
           <div className="mt-8 md:mt-12 w-full flex justify-center items-center gap-3 overflow-hidden flex-wrap">
-            <SpotifyStatus />
             <Link href="/chat">
               <motion.div
                 whileHover="hovered"
@@ -84,17 +82,6 @@ export default function Hero() {
             </Link>
           </div>
         </motion.div>
-      </motion.div>
-
-      {/* Left Badge: Freelance Availability */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
-        className="absolute bottom-6 left-6 md:bottom-10 md:left-12 flex flex-col items-start gap-1 md:gap-2 text-[10px] md:text-xs uppercase tracking-widest text-neutral-500"
-      >
-        <span className="font-bold text-neutral-300 tracking-tight">FULL <span className="font-serif italic font-normal normal-case tracking-normal text-white text-[12px] md:text-[14px] leading-none">stack</span> DEVELOPER</span>
-        <span>Available for Freelance</span>
       </motion.div>
     </div>
   )

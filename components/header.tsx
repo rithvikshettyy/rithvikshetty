@@ -22,7 +22,7 @@ export default function Header() {
   if (pathname?.startsWith("/studio") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat") return null
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 md:py-6 flex justify-between items-center text-white pointer-events-none bg-black/80 backdrop-blur-md border-b border-white/5">
+    <header className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 md:py-6 flex justify-between items-center text-white pointer-events-none bg-black/80 backdrop-blur-md">
       <Link
         href="/"
         className="text-xl md:text-2xl font-bold tracking-tighter uppercase hover:opacity-70 transition-opacity pointer-events-auto"
@@ -37,7 +37,7 @@ export default function Header() {
             key={item.name}
             href={item.path}
             className={cn(
-              "text-xs md:text-sm font-medium uppercase tracking-widest transition-colors hover:text-gray-400",
+              "text-xs md:text-sm font-medium tracking-widest transition-colors hover:text-gray-400",
               pathname === item.path ? "text-gray-500" : "text-white"
             )}
           >
@@ -64,7 +64,7 @@ export default function Header() {
               href={item.path}
               onClick={() => setMobileMenuOpen(false)}
               className={cn(
-                "px-4 py-3 text-sm uppercase tracking-widest border-b border-white/10 transition-colors hover:bg-white/5",
+                "px-4 py-3 text-sm tracking-widest border-b border-white/10 transition-colors hover:bg-white/5",
                 pathname === item.path && "opacity-50 bg-white/5",
               )}
             >
