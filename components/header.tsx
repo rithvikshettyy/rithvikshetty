@@ -23,9 +23,9 @@ export default function Header() {
   const [hidden, setHidden] = useState(true)
 
   useEffect(() => {
-    // On the landing page the bar reveals on scroll only; elsewhere it also
-    // reveals briefly on cursor movement.
-    const cursorReveal = pathname !== "/"
+    // On pages with a full-screen hero (landing, awards) the bar reveals on
+    // scroll only; elsewhere it also reveals briefly on cursor movement.
+    const cursorReveal = pathname !== "/" && pathname !== "/awards"
     let cursorActive = false
     let idle: ReturnType<typeof setTimeout>
 

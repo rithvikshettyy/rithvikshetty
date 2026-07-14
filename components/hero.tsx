@@ -53,7 +53,7 @@ export default function Hero() {
   return (
     <div
       ref={containerRef}
-      className="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8"
+      className="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8 bg-[radial-gradient(ellipse_at_50%_40%,#ededed_0%,#fff_75%)] dark:bg-[radial-gradient(ellipse_at_50%_40%,#161616_0%,#000_75%)]"
     >
       {/* Dithered wave background — inverted in light mode */}
       <motion.div
@@ -108,14 +108,14 @@ export default function Hero() {
             <Link
               href="/chat"
               prefetch={false}
-              aria-label="Open chat"
+              aria-label="Ask my AI assistant"
               className="group pointer-events-auto relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] py-1.5 pl-5 pr-1.5 backdrop-blur-md transition-colors duration-300 hover:border-white/30 shrink-0"
             >
               {/* Hover sheen sweep */}
               <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
 
               {/* Label */}
-              <span className="relative text-[15px] md:text-base font-semibold tracking-tight text-white">Chat with me</span>
+              <span className="relative text-[15px] md:text-base font-semibold tracking-tight text-white">Ask my AI assistant</span>
 
               {/* Arrow chip (inverted, rotates on hover) */}
               <span className="relative ml-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white text-black transition-transform duration-300 ease-out group-hover:rotate-45">
