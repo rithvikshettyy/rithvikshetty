@@ -94,7 +94,7 @@ export const metadata: Metadata = {
   },
   generator: "Next.js",
   icons: {
-    icon: "/blob-cropped.gif",
+    icon: "/favicon-blob.png",
     apple: "/apple-icon.png",
   },
 }

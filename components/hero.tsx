@@ -10,7 +10,7 @@ import dynamic from "next/dynamic"
 const Dither = dynamic(() => import("./Dither"), { ssr: false })
 
 export default function Hero() {
-  const containerRef = useRef(null)
+  const containerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
@@ -29,6 +29,9 @@ export default function Hero() {
   // softness and the per-pixel fbm cost scales with pixel count, so this is the
   // main lever against cursor/animation lag.
   const [dpr, setDpr] = useState(0.75)
+  // Pause the shader's render loop while the hero is scrolled out of view — it's
+  // faded out there anyway, and a live WebGL loop is the biggest main-thread cost.
+  const [inView, setInView] = useState(true)
 
   useEffect(() => {
     const el = document.documentElement
@@ -44,9 +47,16 @@ export default function Hero() {
 
     setDpr(window.innerWidth < 768 ? 0.5 : 0.75)
 
+    let io: IntersectionObserver | undefined
+    if (containerRef.current) {
+      io = new IntersectionObserver(([e]) => setInView(e.isIntersecting), { threshold: 0.02 })
+      io.observe(containerRef.current)
+    }
+
     return () => {
       obs.disconnect()
       mq.removeEventListener("change", syncMotion)
+      io?.disconnect()
     }
   }, [])
 
@@ -69,6 +79,7 @@ export default function Hero() {
             pixelSize={2}
             mouseRadius={0.4}
             dpr={dpr}
+            paused={!inView}
             disableAnimation={reduced}
             enableMouseInteraction={!reduced}
           />

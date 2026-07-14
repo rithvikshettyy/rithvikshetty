@@ -108,11 +108,12 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full opacity-50 group-hover:opacity-80 transition-opacity duration-500 pointer-events-none" />
               <Image
-                src="/blob.gif"
+                src="/blob.webp"
                 alt="Animated Blob Graphic"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, 40vw"
                 priority
+                unoptimized
                 className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-transform duration-700"
               />
             </motion.div>

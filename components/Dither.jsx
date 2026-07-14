@@ -268,13 +268,15 @@ export default function Dither({
   disableAnimation = false,
   enableMouseInteraction = true,
   mouseRadius = 1,
-  dpr = 1
+  dpr = 1,
+  paused = false
 }) {
   return (
     <Canvas
       className="dither-container"
       camera={{ position: [0, 0, 6] }}
       dpr={dpr}
+      frameloop={paused ? 'never' : 'always'}
       gl={{ antialias: false, powerPreference: 'high-performance' }}
     >
       <DitheredWaves
