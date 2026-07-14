@@ -12,9 +12,10 @@ export default function Footer() {
   const isHome = pathname === "/"
 
   // The neon-flower shader is desktop-only — three.js is too heavy for mobile.
+  // No hardwareConcurrency check: Brave spoofs it to 2 and would hide the shader.
   const [webgl, setWebgl] = useState(false)
   useEffect(() => {
-    setWebgl(window.innerWidth >= 768 && (navigator.hardwareConcurrency ?? 4) >= 4)
+    setWebgl(window.innerWidth >= 768)
   }, [])
 
   if (pathname?.startsWith("/studio") || pathname?.startsWith("/playground") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat") return null

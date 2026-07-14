@@ -50,8 +50,9 @@ export default function Hero() {
 
     const desktop = window.innerWidth >= 768
     setDpr(desktop ? 0.75 : 0.5)
-    // Enable WebGL only on desktop with enough cores (rough low-end guard).
-    setWebgl(desktop && (navigator.hardwareConcurrency ?? 4) >= 4 && !mq.matches)
+    // Desktop only. (No hardwareConcurrency check — privacy browsers like Brave
+    // spoof it to 2, which would wrongly disable the shader there.)
+    setWebgl(desktop && !mq.matches)
 
     let io: IntersectionObserver | undefined
     if (containerRef.current) {
