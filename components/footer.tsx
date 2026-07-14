@@ -3,25 +3,12 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import dynamic from "next/dynamic"
-import { useEffect, useState } from "react"
 
 const FlowerHalftone = dynamic(() => import("./flower-halftone"), { ssr: false })
 
 export default function Footer() {
   const pathname = usePathname()
   const isHome = pathname === "/"
-
-  // The neon flowers only read right on the dark footer; light mode turns it
-  // white, so gate them to dark only.
-  const [isDark, setIsDark] = useState(true)
-  useEffect(() => {
-    const el = document.documentElement
-    const sync = () => setIsDark(!el.classList.contains("light"))
-    sync()
-    const obs = new MutationObserver(sync)
-    obs.observe(el, { attributes: true, attributeFilter: ["class"] })
-    return () => obs.disconnect()
-  }, [])
 
   if (pathname?.startsWith("/studio") || pathname?.startsWith("/playground") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat") return null
 
@@ -54,10 +41,10 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-4">
               <span className="text-white mb-2 font-bold">Legal</span>
-              <Link href="/privacy" className="hover:text-white transition-colors">
+              <Link href="/privacy" prefetch={false} className="hover:text-white transition-colors">
                 Privacy
               </Link>
-              <Link href="/terms" className="hover:text-white transition-colors">
+              <Link href="/terms" prefetch={false} className="hover:text-white transition-colors">
                 Terms
               </Link>
             </div>
@@ -70,8 +57,8 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Glitchy halftone neon flowers — homepage + dark mode only, flush at the very bottom */}
-      {isHome && isDark && (
+      {/* Glitchy halftone neon flowers — homepage only, flush at the very bottom */}
+      {isHome && (
         <div className="relative -mx-6 -mb-20 mt-20 h-[300px] md:h-[420px] w-auto overflow-hidden">
           <FlowerHalftone />
         </div>

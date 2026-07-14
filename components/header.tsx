@@ -18,21 +18,39 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  // Pages with a full-screen hero: the bar starts hidden over the hero and
-  // slides in on scroll.
-  const slideOnScroll = pathname === "/" || pathname === "/awards"
-  const [hidden, setHidden] = useState(slideOnScroll)
+  // The bar starts hidden and reveals on activity: while scrolled past the hero,
+  // or briefly whenever the cursor moves. It hides again when idle at the top.
+  const [hidden, setHidden] = useState(true)
 
   useEffect(() => {
-    if (!slideOnScroll) {
-      setHidden(false)
-      return
+    // On the landing page the bar reveals on scroll only; elsewhere it also
+    // reveals briefly on cursor movement.
+    const cursorReveal = pathname !== "/"
+    let cursorActive = false
+    let idle: ReturnType<typeof setTimeout>
+
+    const update = () => setHidden(!(window.scrollY >= 80 || cursorActive))
+
+    const onScroll = () => update()
+    const onMove = () => {
+      cursorActive = true
+      update()
+      clearTimeout(idle)
+      idle = setTimeout(() => {
+        cursorActive = false
+        update()
+      }, 2500)
     }
-    const onScroll = () => setHidden(window.scrollY < 80)
-    onScroll()
+
+    update()
     window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [slideOnScroll])
+    if (cursorReveal) window.addEventListener("mousemove", onMove, { passive: true })
+    return () => {
+      clearTimeout(idle)
+      window.removeEventListener("scroll", onScroll)
+      window.removeEventListener("mousemove", onMove)
+    }
+  }, [pathname])
 
   if (pathname?.startsWith("/studio") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat") return null
 
@@ -47,7 +65,7 @@ export default function Header() {
         href="/"
         className="text-xl md:text-2xl font-bold tracking-tighter uppercase hover:opacity-70 transition-opacity pointer-events-auto"
       >
-        RS
+        RHVK
       </Link>
 
       {/* Desktop Navigation */}
@@ -56,6 +74,7 @@ export default function Header() {
           <Link
             key={item.name}
             href={item.path}
+            prefetch={false}
             className={cn(
               "text-xs md:text-sm font-medium tracking-tight transition-colors hover:text-gray-400",
               pathname === item.path ? "text-gray-500" : "text-white"
@@ -82,6 +101,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.path}
+              prefetch={false}
               onClick={() => setMobileMenuOpen(false)}
               className={cn(
                 "px-4 py-3 text-sm font-medium tracking-tight border-b border-white/10 transition-colors hover:bg-white/5",

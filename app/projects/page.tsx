@@ -63,6 +63,7 @@ export default function ProjectsPage() {
       <div className="relative z-10 w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-56 2xl:px-72">
         <Link
           href="/"
+          prefetch={false}
           className="group inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-[0.2em] text-neutral-500 hover:text-white transition-colors mb-10 md:mb-16"
         >
           <ArrowLeft size={16} className="transition-transform duration-300 group-hover:-translate-x-1" />
@@ -236,7 +237,7 @@ function ProjectRow({
       animate={{ opacity: dim ? 0.35 : 1 }}
       className="group border-b border-white/10"
     >
-      <Link href={href} {...linkProps} className="block">
+      <Link href={href} prefetch={false} {...linkProps} className="block">
         <div className="flex flex-col gap-4 py-6 md:py-8 md:flex-row md:items-center md:gap-8">
           <span className="font-mono text-xs text-neutral-500 md:w-12 shrink-0">
             {String(index + 1).padStart(2, "0")}

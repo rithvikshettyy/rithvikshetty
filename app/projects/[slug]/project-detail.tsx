@@ -107,24 +107,26 @@ export default function ProjectDetail({ project }: { project: any }) {
       <section className="py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
           <div className="lg:col-span-4">
-            <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-neutral-500 mb-8 lg:sticky lg:top-32">
-              / Project Overview
-            </h2>
-            {project.logo && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                className="mt-12 lg:sticky lg:top-48 w-48 md:w-64 aspect-square relative opacity-100 transition-all duration-700 rounded-xl overflow-hidden border border-white/10"
-              >
-                <Image
-                  src={project.logo}
-                  alt={`${project.title} Logo`}
-                  fill
-                  className="object-cover object-center"
-                />
-              </motion.div>
-            )}
+            <div className="lg:sticky lg:top-32">
+              <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-neutral-500 mb-8">
+                / Project Overview
+              </h2>
+              {project.logo && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="w-48 md:w-64 aspect-square relative rounded-xl overflow-hidden border border-white/10"
+                >
+                  <Image
+                    src={project.logo}
+                    alt={`${project.title} Logo`}
+                    fill
+                    className="object-cover object-center"
+                  />
+                </motion.div>
+              )}
+            </div>
           </div>
           <div className="lg:col-span-8 flex flex-col gap-12">
             <h3 className="text-3xl md:text-5xl lg:text-6xl font-medium leading-[1.1] tracking-tight">
@@ -156,7 +158,7 @@ export default function ProjectDetail({ project }: { project: any }) {
                 src={project.gallery[0].asset?.url || project.gallery[0].src || project.gallery[0]}
                 alt={`${project.title} Preview 1`}
                 fill
-                className="object-contain bg-neutral-950"
+                className="object-cover"
               />
             </motion.div>
             {project.gallery[0].caption && (

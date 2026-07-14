@@ -1,9 +1,11 @@
 'use client'
 
-import { motion, useScroll, useTransform, useInView } from 'framer-motion'
+import { motion, useScroll, useTransform, useInView, useMotionValue, useSpring, useReducedMotion } from 'framer-motion'
 import { Trophy, Award, Medal, Plus, ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import { useRef, useEffect, useState } from 'react'
+
+const EASE = [0.16, 1, 0.3, 1] as const
 
 const hackathons = [
   {
@@ -73,6 +75,7 @@ export default function Achievements() {
           muted
           loop
           playsInline
+          preload="metadata"
           className="absolute inset-0 w-full h-full object-cover opacity-25 dark:opacity-40 z-0 pointer-events-none"
         >
           <source src="/awards.mp4" type="video/mp4" />
@@ -117,69 +120,97 @@ export default function Achievements() {
       {/* Tiles Section (Scroll past hero) */}
       <div className="relative z-30 pt-[100vh]">
         <section ref={tilesRef} className="w-full mx-auto px-4 md:px-12 lg:px-24 xl:px-40 pb-40">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={isTilesInView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7">
             {hackathons.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: i * 0.1 }}
-                className="group relative bg-white/5 dark:bg-white/[0.03] backdrop-blur-[40px] border border-black/5 dark:border-white/10 rounded-[2rem] overflow-hidden hover:bg-white/10 transition-all duration-700 h-[400px] md:h-[480px] flex flex-col shadow-2xl shadow-black/10"
-              >
-                {/* Hero Image Section */}
-                <div className="relative h-[240px] md:h-[280px] w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center border-b border-black/5 dark:border-white/5">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-all duration-1000 ease-out opacity-90 group-hover:opacity-100"
-                  />
-                  {/* Subtle Glass Overlay for document feel */}
-                  <div className="absolute inset-0 bg-white/5 dark:bg-black/20 transition-opacity duration-700 group-hover:opacity-0" />
-                </div>
-
-                {/* Content Section */}
-                <div className="p-6 md:p-8 flex-1 flex flex-col gap-6">
-                  {/* Technical Metadata Grid - Responsive Stagger */}
-                  <div className="grid grid-cols-1 xs:grid-cols-2 sm:flex sm:justify-between items-start sm:items-center gap-4 pb-4 border-b border-black/5 dark:border-white/5">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-neutral-100 dark:bg-white/5 flex items-center justify-center border border-black/5 dark:border-white/10 shrink-0">
-                        <item.icon className="w-5 h-5 text-neutral-600 dark:text-white/50" />
-                      </div>
-                      <div className="flex flex-col min-w-0">
-                        <span className="text-[7px] md:text-[8px] font-bold tracking-[0.2em] text-neutral-500 dark:text-white/30 uppercase leading-none mb-1">Class</span>
-                        <span className="text-[10px] md:text-[11px] font-bold tracking-tight text-neutral-950 dark:text-white/90 uppercase truncate">RECOGNITION</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-end sm:items-end text-right">
-                      <span className="text-[7px] md:text-[8px] font-bold tracking-[0.2em] text-neutral-500 dark:text-white/30 uppercase leading-none mb-1">Issued</span>
-                      <span className="text-[10px] md:text-[11px] font-bold text-neutral-950 dark:text-white/90 uppercase font-mono tracking-tighter truncate">{item.date}</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3 pt-1">
-                    <h3 className="text-xl md:text-2xl font-bold tracking-tighter leading-[0.95] text-neutral-800 dark:text-white/80 group-hover:text-black dark:group-hover:text-white transition-colors uppercase cursor-default">
-                      {item.title}
-                    </h3>
-                    <p className="text-neutral-500 dark:text-neutral-400 text-sm font-light leading-relaxed max-w-lg">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Subtle Light Reflection */}
-                <div className="absolute inset-0 pointer-events-none border-[1.5px] border-white/10 rounded-[2rem] opacity-50 dark:opacity-100" />
-              </motion.div>
+              <AwardTile key={i} item={item} index={i} />
             ))}
-          </motion.div>
+          </div>
         </section>
       </div>
     </main>
+  )
+}
+
+function AwardTile({ item, index }: { item: any; index: number }) {
+  const reduce = useReducedMotion()
+  const ref = useRef<HTMLDivElement>(null)
+
+  // Cursor-driven 3D tilt.
+  const mx = useMotionValue(0)
+  const my = useMotionValue(0)
+  const rotateX = useSpring(useTransform(my, [-0.5, 0.5], ['7deg', '-7deg']), { stiffness: 150, damping: 18 })
+  const rotateY = useSpring(useTransform(mx, [-0.5, 0.5], ['-7deg', '7deg']), { stiffness: 150, damping: 18 })
+
+  const onMove = (e: React.MouseEvent) => {
+    if (reduce || !ref.current) return
+    const r = ref.current.getBoundingClientRect()
+    mx.set((e.clientX - r.left) / r.width - 0.5)
+    my.set((e.clientY - r.top) / r.height - 0.5)
+  }
+  const onLeave = () => {
+    mx.set(0)
+    my.set(0)
+  }
+
+  return (
+    <motion.div
+      initial={reduce ? false : { opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.8, ease: EASE, delay: Math.min(index * 0.08, 0.3) }}
+      style={{ perspective: 1200 }}
+      className="group"
+    >
+      <motion.div
+        ref={ref}
+        onMouseMove={onMove}
+        onMouseLeave={onLeave}
+        style={{ rotateX, rotateY }}
+        className="relative h-[380px] md:h-[440px] rounded-[1.75rem] overflow-hidden transform-gpu will-change-transform ring-1 ring-black/10 dark:ring-white/10 shadow-2xl shadow-black/20"
+      >
+        {/* Image */}
+        <Image
+          src={item.image}
+          alt={item.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.08]"
+        />
+
+        {/* Scrim — always keeps the overlaid text legible, deepens on hover */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent" />
+        {/* Stronger base gradient behind the bottom title block */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/75 to-transparent transition-opacity duration-700" />
+        {/* Hover sheen sweep */}
+        <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />
+
+        {/* Top row: index + meta */}
+        <div className="absolute inset-x-0 top-0 p-5 md:p-7 flex items-start justify-between text-[#fff]" style={{ transform: 'translateZ(40px)' }}>
+          <span className="font-mono text-xs text-white/60">/{String(index + 1).padStart(2, '0')}</span>
+          <div className="flex items-center gap-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 px-3 py-1.5">
+            <item.icon className="w-3.5 h-3.5 text-[#fff]" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/90">{item.date}</span>
+          </div>
+        </div>
+
+        {/* Bottom content */}
+        <div className="absolute inset-x-0 bottom-0 p-5 md:p-7 text-[#fff]" style={{ transform: 'translateZ(60px)' }}>
+          <div className="mb-3 h-px w-10 bg-white/40 origin-left transition-transform duration-500 group-hover:scale-x-[2.2]" />
+          <div className="flex items-end justify-between gap-4">
+            <div className="min-w-0">
+              <h3 className="text-xl md:text-2xl font-bold tracking-tighter leading-[1.05] uppercase text-balance [text-shadow:0_2px_16px_rgba(0,0,0,0.75)] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-0.5">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-sm font-light text-white/70 leading-relaxed transition-all duration-500 md:max-h-0 md:opacity-0 md:overflow-hidden md:group-hover:max-h-24 md:group-hover:opacity-100">
+                {item.description}
+              </p>
+            </div>
+            <span className="shrink-0 grid h-10 w-10 place-items-center rounded-full bg-white text-black opacity-0 translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+              <ArrowUpRight className="h-5 w-5" />
+            </span>
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
   )
 }

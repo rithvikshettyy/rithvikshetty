@@ -182,6 +182,7 @@ export default function Home() {
           <motion.div style={{ y: contactTextY }}>
             <Link
               href="/contact"
+              prefetch={false}
               className="px-8 md:px-12 py-4 md:py-6 bg-black text-white rounded-full text-base md:text-xl font-medium hover:scale-110 transition-transform duration-300 inline-flex items-center justify-center shadow-2xl"
             >
               Contact Me

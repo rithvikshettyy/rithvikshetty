@@ -78,6 +78,7 @@ export default function ProjectList() {
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Link
             href="/projects"
+            prefetch={false}
             className="group relative px-8 py-4 border border-white/30 rounded-full text-sm uppercase tracking-widest overflow-hidden inline-block"
           >
             <span className="relative z-10 group-hover:text-black transition-colors duration-300">
@@ -112,6 +113,7 @@ function ProjectItem({ project, onMouseEnter, onMouseLeave }: { project: any; on
     >
       <Link
         href={href}
+        prefetch={false}
         {...linkProps}
         className="flex flex-col px-4"
       >

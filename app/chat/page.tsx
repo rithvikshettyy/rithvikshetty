@@ -81,6 +81,7 @@ function OrbBlob({ compact }: { compact: boolean }) {
         loop
         muted
         playsInline
+        preload="metadata"
         width={220}
         height={220}
         className="select-none pointer-events-none rounded-[2rem] ring-1 ring-black/5 dark:ring-white/10 shadow-2xl shadow-black/20"
@@ -601,6 +602,7 @@ export default function ChatPage() {
               loop
               muted
               playsInline
+              preload="metadata"
               className="absolute max-w-none mix-blend-screen select-none"
               style={{ width: 232, height: 87, left: -23, top: -29 }}
             >

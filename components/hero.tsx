@@ -107,6 +107,7 @@ export default function Hero() {
           <div className="mt-8 md:mt-12 w-full flex justify-center items-center gap-3 overflow-hidden flex-wrap">
             <Link
               href="/chat"
+              prefetch={false}
               aria-label="Open chat"
               className="group pointer-events-auto relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] py-1.5 pl-5 pr-1.5 backdrop-blur-md transition-colors duration-300 hover:border-white/30 shrink-0"
             >
