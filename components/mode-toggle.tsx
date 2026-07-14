@@ -15,24 +15,34 @@ export default function ModeToggle() {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
-    // Check local storage or system preference on mount
     const savedMode = localStorage.getItem("theme-mode")
-    // Migrate the removed "contrast" mode to dark.
     if (savedMode === "light" || savedMode === "dark") {
-      applyMode(savedMode)
-    } else if (savedMode) {
-      applyMode("dark")
+      applyClass(savedMode)
+      return
     }
+    // No explicit choice: follow the OS preference and keep tracking it until the
+    // user picks a mode. The pre-paint script already set the initial class.
+    const mq = window.matchMedia("(prefers-color-scheme: light)")
+    applyClass(mq.matches ? "light" : "dark")
+    const onChange = (e: MediaQueryListEvent) => {
+      if (!localStorage.getItem("theme-mode")) applyClass(e.matches ? "light" : "dark")
+    }
+    mq.addEventListener("change", onChange)
+    return () => mq.removeEventListener("change", onChange)
   }, [])
 
-  const applyMode = (newMode: Mode) => {
+  // Set the class + state without persisting — used for the OS-driven default.
+  const applyClass = (newMode: Mode) => {
     setMode(newMode)
-    localStorage.setItem("theme-mode", newMode)
-    
     const html = document.documentElement
     html.classList.remove("light", "contrast", "dark")
-    if (newMode === "light") html.classList.add("light")
-    if (newMode === "dark") html.classList.add("dark")
+    html.classList.add(newMode)
+  }
+
+  // Explicit user pick — persists so it wins over the OS from now on.
+  const applyMode = (newMode: Mode) => {
+    localStorage.setItem("theme-mode", newMode)
+    applyClass(newMode)
   }
 
   const modes = [

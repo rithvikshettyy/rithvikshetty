@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant light (&:is(.light *));
 
 :root {
   /* Overriding with black/white aesthetic variables */
@@ -176,6 +177,8 @@
 .light .backdrop-blur-\[60px\], .light .backdrop-blur-3xl { backdrop-blur: 20px !important; }
 .light .text-white { color: black !important; }
 .light .text-white\/30 { color: rgba(0,0,0,0.3) !important; }
+.light .text-neutral-100 { color: #111 !important; }
+.light .text-neutral-200 { color: #1a1a1a !important; }
 .light .text-neutral-300 { color: #222 !important; }
 .light .text-neutral-400 { color: #333 !important; }
 .light .text-neutral-500 { color: #555 !important; }

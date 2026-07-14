@@ -107,6 +107,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark scroll-smooth ${playfair.variable}`} suppressHydrationWarning>
       <head>
+        {/* Set theme before paint: saved choice wins, else follow the OS. Avoids a flash. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var m=localStorage.getItem('theme-mode');var mode=(m==='light'||m==='dark')?m:(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');var el=document.documentElement;el.classList.remove('light','dark','contrast');el.classList.add(mode);}catch(e){}})();`,
+          }}
+        />
         <link rel="manifest" href="/manifest.json" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

@@ -71,18 +71,13 @@ export default function About() {
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
             <Image
-              src="/about1.jpeg"
+              src="/about3.PNG"
               alt="Rithvik"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
               className="object-cover object-[center_top] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
             />
-            <div className="absolute bottom-10 left-10 z-20">
-              <div className="px-6 py-3 bg-white/10 backdrop-blur-xl rounded-full border border-white/20 text-base font-medium shadow-2xl tracking-wide">
-                Based in India
-              </div>
-            </div>
           </motion.div>
         </div>
 
@@ -240,11 +235,13 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]">
               {[
-                { name: 'GitHub', icon: Github, href: 'https://github.com/rithvikshettyy', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-neutral-100 hover:text-black hover:border-white' },
-                { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/rithvikshetty/', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#0077b5] hover:border-[#0077b5] hover:text-white' },
-                { name: 'Twitter', icon: Twitter, href: 'https://x.com/RithvikShetty04', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#1DA1F2] hover:border-[#1DA1F2] hover:text-white' },
-                { name: 'Pinterest', icon: PinterestIcon, href: 'https://in.pinterest.com/mayberithvik/', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-[#E60023] hover:border-[#E60023] hover:text-white' },
-                { name: 'Contact', icon: Mail, href: '/contact', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-red-500 hover:border-red-500 hover:text-white', isLink: true }
+                // light:hover:! duplicates re-enable the hover in light mode, where the
+                // base bg-neutral-900/40 gets an !important override that would otherwise win.
+                { name: 'GitHub', icon: Github, href: 'https://github.com/rithvikshettyy', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-neutral-100 hover:text-black hover:border-white light:hover:!bg-neutral-900 light:hover:!text-white light:hover:!border-neutral-900' },
+                { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/rithvikshetty/', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#0077b5] hover:border-[#0077b5] hover:text-white light:hover:!bg-[#0077b5] light:hover:!border-[#0077b5] light:hover:!text-white' },
+                { name: 'Twitter', icon: Twitter, href: 'https://x.com/RithvikShetty04', col: 'md:col-span-2 lg:col-span-4', hover: 'hover:bg-[#1DA1F2] hover:border-[#1DA1F2] hover:text-white light:hover:!bg-[#1DA1F2] light:hover:!border-[#1DA1F2] light:hover:!text-white' },
+                { name: 'Pinterest', icon: PinterestIcon, href: 'https://in.pinterest.com/mayberithvik/', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-[#E60023] hover:border-[#E60023] hover:text-white light:hover:!bg-[#E60023] light:hover:!border-[#E60023] light:hover:!text-white' },
+                { name: 'Contact', icon: Mail, href: '/contact', col: 'md:col-span-3 lg:col-span-6', hover: 'hover:bg-red-500 hover:border-red-500 hover:text-white light:hover:!bg-red-500 light:hover:!border-red-500 light:hover:!text-white', isLink: true }
               ].map((link, i) => {
                 const inner = (
                   <div className="flex flex-col h-full justify-between gap-8">

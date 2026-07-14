@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useRef, useMemo } from "react"
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
+import React, { useRef, useMemo, useState, useEffect } from "react"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 interface ScrollTextRevealProps {
   text: string
@@ -10,6 +10,18 @@ interface ScrollTextRevealProps {
 
 export default function ScrollTextReveal({ text, className = "" }: ScrollTextRevealProps) {
   const containerRef = useRef<HTMLParagraphElement>(null)
+
+  // Reveal targets white in dark mode; in light mode that vanishes on the white
+  // page, so reveal toward near-black instead.
+  const [isLight, setIsLight] = useState(false)
+  useEffect(() => {
+    const el = document.documentElement
+    const sync = () => setIsLight(el.classList.contains("light"))
+    sync()
+    const obs = new MutationObserver(sync)
+    obs.observe(el, { attributes: true, attributeFilter: ["class"] })
+    return () => obs.disconnect()
+  }, [])
 
   // Track scroll progress for this specific element
   const { scrollYProgress } = useScroll({
@@ -23,7 +35,7 @@ export default function ScrollTextReveal({ text, className = "" }: ScrollTextRev
   return (
     <p ref={containerRef} className={`flex flex-wrap ${className}`}>
       {words.map((word, i) => (
-        <Word key={i} progress={scrollYProgress} range={[i / words.length, (i + 1) / words.length]}>
+        <Word key={i} progress={scrollYProgress} range={[i / words.length, (i + 1) / words.length]} isLight={isLight}>
           {word}
         </Word>
       ))}
@@ -31,9 +43,9 @@ export default function ScrollTextReveal({ text, className = "" }: ScrollTextRev
   )
 }
 
-function Word({ children, progress, range }: { children: React.ReactNode, progress: any, range: [number, number] }) {
+function Word({ children, progress, range, isLight }: { children: React.ReactNode, progress: any, range: [number, number], isLight: boolean }) {
   const opacity = useTransform(progress, range, [0.15, 1])
-  const color = useTransform(progress, range, ["#404040", "#ffffff"])
+  const color = useTransform(progress, range, isLight ? ["#a3a3a3", "#171717"] : ["#404040", "#ffffff"])
 
   return (
     <motion.span
