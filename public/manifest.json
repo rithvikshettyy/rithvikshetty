@@ -24,9 +24,9 @@
   ],
   "icons": [
     {
-      "src": "/blob-cropped.gif",
-      "sizes": "any",
-      "type": "image/gif"
+      "src": "/favicon-blob.png",
+      "sizes": "64x64",
+      "type": "image/png"
     },
     {
       "src": "/apple-icon.png",
