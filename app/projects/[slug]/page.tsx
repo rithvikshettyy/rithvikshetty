@@ -1,7 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { client } from "@/sanity/lib/client"
-import { singleProjectQuery } from "@/sanity/lib/queries"
 import { staticProjects } from "@/data/projects"
 import ProjectDetail from "./project-detail"
 
@@ -10,19 +8,7 @@ export async function generateStaticParams() {
 }
 
 async function getProject(slug: string): Promise<any> {
-  const staticProj = staticProjects.find((p) => p.slug === slug)
-
-  try {
-    const data = await client.fetch(singleProjectQuery, { slug })
-    if (data) {
-      const cleanData = Object.fromEntries(Object.entries(data).filter(([_, v]) => v != null))
-      return { ...staticProj, ...cleanData }
-    }
-  } catch (error) {
-    console.error("Error fetching project:", error)
-  }
-
-  return staticProj ?? null
+  return staticProjects.find((p) => p.slug === slug) ?? null
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

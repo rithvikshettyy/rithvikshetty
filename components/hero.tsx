@@ -1,9 +1,13 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
+import dynamic from "next/dynamic"
+
+// WebGL can't SSR — load the dithered wave background on the client only.
+const Dither = dynamic(() => import("./Dither"), { ssr: false })
 
 export default function Hero() {
   const containerRef = useRef(null)
@@ -14,25 +18,67 @@ export default function Hero() {
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+  // Fade the background out as the hero scrolls away.
+  const bgOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
+
+  // The shader draws waves on a black base. In light mode we invert it so it
+  // reads as a soft gray texture on the white page. `.dark` is the default.
+  const [isLight, setIsLight] = useState(false)
+  const [reduced, setReduced] = useState(false)
+  // Render the shader below native resolution — the dither/pixelation hides the
+  // softness and the per-pixel fbm cost scales with pixel count, so this is the
+  // main lever against cursor/animation lag.
+  const [dpr, setDpr] = useState(0.75)
+
+  useEffect(() => {
+    const el = document.documentElement
+    const syncMode = () => setIsLight(el.classList.contains("light"))
+    syncMode()
+    const obs = new MutationObserver(syncMode)
+    obs.observe(el, { attributes: true, attributeFilter: ["class"] })
+
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)")
+    const syncMotion = () => setReduced(mq.matches)
+    syncMotion()
+    mq.addEventListener("change", syncMotion)
+
+    setDpr(window.innerWidth < 768 ? 0.5 : 0.75)
+
+    return () => {
+      obs.disconnect()
+      mq.removeEventListener("change", syncMotion)
+    }
+  }, [])
 
   return (
     <div
       ref={containerRef}
       className="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8"
     >
-      {/* Ambient Background Motion */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          animate={{
-            x: ["-20%", "20%", "-20%"],
-            y: ["-20%", "20%", "-20%"],
-            scale: [1, 1.1, 1],
-            opacity: [0.02, 0.04, 0.02]
-          }}
-          transition={{ duration: 15, ease: "easeInOut", repeat: Infinity }}
-          className="absolute top-[10%] left-[10%] w-[50vw] h-[50vw] rounded-full bg-white blur-[120px]"
-        />
-      </div>
+      {/* Dithered wave background — inverted in light mode */}
+      <motion.div
+        style={{ opacity: bgOpacity, filter: isLight ? "invert(1)" : undefined }}
+        className="absolute inset-0 z-0"
+      >
+          <Dither
+            waveColor={[0.35, 0.35, 0.35]}
+            waveSpeed={0.03}
+            waveFrequency={3}
+            waveAmplitude={0.3}
+            colorNum={4}
+            pixelSize={2}
+            mouseRadius={0.4}
+            dpr={dpr}
+            disableAnimation={reduced}
+            enableMouseInteraction={!reduced}
+          />
+        </motion.div>
+
+      {/* Radial vignette keeps headline contrast crisp over the dark dither;
+          skip it in light mode where it would darken the halo behind black text */}
+      {!isLight && (
+        <div className="absolute inset-0 z-[1] pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.25)_45%,transparent_78%)]" />
+      )}
 
       <motion.div
         style={{ y, opacity }}
@@ -59,26 +105,21 @@ export default function Hero() {
 
           {/* Chat row */}
           <div className="mt-8 md:mt-12 w-full flex justify-center items-center gap-3 overflow-hidden flex-wrap">
-            <Link href="/chat">
-              <motion.div
-                whileHover="hovered"
-                aria-label="Open chat"
-                className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-md hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 shrink-0"
-              >
-                <div className="flex flex-col gap-[5px] items-start">
-                  <span className="text-[10px] font-medium uppercase tracking-[0.12em] text-white/35 leading-none">Hire / Query</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[13px] font-semibold text-white leading-tight">Chat now</span>
-                    <motion.span
-                      variants={{ hovered: { x: 3, y: -3 } }}
-                      transition={{ type: "spring", stiffness: 400, damping: 18 }}
-                      className="inline-flex opacity-50"
-                    >
-                      <ArrowUpRight className="w-3 h-3" />
-                    </motion.span>
-                  </div>
-                </div>
-              </motion.div>
+            <Link
+              href="/chat"
+              aria-label="Open chat"
+              className="group pointer-events-auto relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] py-1.5 pl-5 pr-1.5 backdrop-blur-md transition-colors duration-300 hover:border-white/30 shrink-0"
+            >
+              {/* Hover sheen sweep */}
+              <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
+
+              {/* Label */}
+              <span className="relative text-[15px] md:text-base font-semibold tracking-tight text-white">Chat with me</span>
+
+              {/* Arrow chip (inverted, rotates on hover) */}
+              <span className="relative ml-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white text-black transition-transform duration-300 ease-out group-hover:rotate-45">
+                <ArrowUpRight className="h-4 w-4" />
+              </span>
             </Link>
           </div>
         </motion.div>

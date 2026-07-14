@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Moon, Sun, Eye } from "lucide-react"
+import { Moon, Sun } from "lucide-react"
 import { motion, AnimatePresence, Variants } from "framer-motion"
 import { usePathname } from "next/navigation"
 
-type Mode = "dark" | "light" | "contrast"
+type Mode = "dark" | "light"
 
 export default function ModeToggle() {
   const pathname = usePathname()
@@ -16,9 +16,12 @@ export default function ModeToggle() {
 
   useEffect(() => {
     // Check local storage or system preference on mount
-    const savedMode = localStorage.getItem("theme-mode") as Mode
-    if (savedMode) {
+    const savedMode = localStorage.getItem("theme-mode")
+    // Migrate the removed "contrast" mode to dark.
+    if (savedMode === "light" || savedMode === "dark") {
       applyMode(savedMode)
+    } else if (savedMode) {
+      applyMode("dark")
     }
   }, [])
 
@@ -29,14 +32,12 @@ export default function ModeToggle() {
     const html = document.documentElement
     html.classList.remove("light", "contrast", "dark")
     if (newMode === "light") html.classList.add("light")
-    if (newMode === "contrast") html.classList.add("contrast")
     if (newMode === "dark") html.classList.add("dark")
   }
 
   const modes = [
     { id: "dark", icon: Moon, label: "Dark Mode" },
     { id: "light", icon: Sun, label: "Light Mode" },
-    { id: "contrast", icon: Eye, label: "High Contrast" }
   ]
 
   const CurrentIcon = modes.find(m => m.id === mode)?.icon || Moon

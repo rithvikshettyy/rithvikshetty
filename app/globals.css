@@ -203,56 +203,6 @@
 }
 .light ::selection { background-color: black; color: white; }
 
-/* High Contrast Accessibility Mode */
-.contrast body {
-  background-color: black !important;
-  color: #ffeb3b !important;
-}
-.contrast .bg-black, .contrast .bg-neutral-950, .contrast .bg-neutral-900, .contrast .bg-\[\#1a1a1a\] {
-  background-color: black !important;
-  border: 1px solid #ffeb3b !important;
-}
-.contrast .bg-white {
-  background-color: black !important;
-  border: 2px solid #ffeb3b !important;
-}
-.contrast .text-white, .contrast .text-black, .contrast .text-neutral-100, .contrast .text-neutral-200, .contrast .text-neutral-300, .contrast .text-neutral-400, .contrast .text-neutral-500, .contrast .text-neutral-600, .contrast .text-neutral-700, .contrast .text-neutral-800, .contrast .text-neutral-900, .contrast .text-neutral-950, .contrast [class*="text-white/"], .contrast [class*="text-neutral-"] {
-  color: #ffeb3b !important;
-}
-.contrast .border-white\/5, .contrast .border-white\/10, .contrast .border-white\/20, .contrast .border-white\/30, .contrast .border-white\/40 {
-  border-color: #ffeb3b !important;
-}
-.contrast .bg-white\/5, .contrast .bg-white\/10, .contrast .bg-white\/20, .contrast .bg-white\/30, .contrast .bg-white\/\[0\.03\] {
-  background-color: transparent !important;
-  border: 1px solid #ffeb3b !important;
-}
-.contrast .backdrop-blur-xl, .contrast .backdrop-blur-3xl, .contrast .backdrop-blur-\[60px\] {
-  backdrop-blur: 0 !important;
-}
-.contrast svg, .contrast .lucide {
-  color: #ffeb3b !important;
-}
-.contrast .from-white, .contrast .via-white\/70, .contrast .via-white\/80, .contrast .to-white\/20 {
-  background-image: none !important;
-  color: #ffeb3b !important;
-  -webkit-text-fill-color: #ffeb3b !important;
-}
-.contrast .text-transparent {
-  color: #ffeb3b !important;
-  -webkit-text-fill-color: #ffeb3b !important;
-}
-
-.contrast .bg-clip-text, .contrast .reveal-word {
-  background-clip: unset !important;
-  -webkit-background-clip: unset !important;
-  background-image: none !important;
-  color: #ffeb3b !important;
-  opacity: 1 !important;
-  -webkit-text-fill-color: #ffeb3b !important;
-}
-
-.contrast .grain { opacity: 0; }
-
 /* Added cinematic grain utility */
 .grain {
   position: fixed;

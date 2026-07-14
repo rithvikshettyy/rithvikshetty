@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
@@ -18,11 +18,30 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const isLanding = pathname === "/"
+  // On the landing page the bar starts hidden over the hero and slides in on scroll.
+  const [hidden, setHidden] = useState(isLanding)
+
+  useEffect(() => {
+    if (!isLanding) {
+      setHidden(false)
+      return
+    }
+    const onScroll = () => setHidden(window.scrollY < 80)
+    onScroll()
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [isLanding])
 
   if (pathname?.startsWith("/studio") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat") return null
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 md:py-6 flex justify-between items-center text-white pointer-events-none bg-black/80 backdrop-blur-md">
+    <header
+      className={cn(
+        "fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 md:py-6 flex justify-between items-center text-white pointer-events-none bg-black/80 backdrop-blur-md transition-transform duration-300 ease-out",
+        hidden && "-translate-y-full",
+      )}
+    >
       <Link
         href="/"
         className="text-xl md:text-2xl font-bold tracking-tighter uppercase hover:opacity-70 transition-opacity pointer-events-auto"

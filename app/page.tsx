@@ -9,12 +9,16 @@ const CreativeTeaser = dynamic(() => import("@/components/creative-teaser"))
 import Link from "next/link"
 import Image from "next/image"
 import React, { useRef } from "react"
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
+import { motion, useScroll, useTransform, useMotionValue, useSpring, useReducedMotion } from "framer-motion"
 import TextScramble from "@/components/text-scramble"
+import ScrollTextReveal from "@/components/scroll-text-reveal"
 
 export default function Home() {
   const introRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
+  const prefersReduced = useReducedMotion()
+  // Reveal offsets collapse to 0 when the user prefers reduced motion.
+  const revealOffset = prefersReduced ? 0 : 40
 
   const { scrollYProgress: introProgress } = useScroll({
     target: introRef,
@@ -32,7 +36,7 @@ export default function Home() {
 
   // The background translates slowly making it look deeper
   const introBgY = useTransform(introProgress, [0, 1], ["-50%", "50%"])
-  const contactBgY = useTransform(contactProgress, [0, 1], ["-30%", "30%"])
+  const contactBgY = useTransform(contactProgress, [0, 1], ["-45%", "45%"])
   const introBlobScale = useTransform(introProgress, [0, 0.5, 1], [0.8, 1.1, 0.8])
   const smoothIntroBlobScale = useSpring(introBlobScale, { stiffness: 100, damping: 30 })
 
@@ -91,9 +95,10 @@ export default function Home() {
           className="w-full xl:w-[90%] mx-auto relative z-10 transform-gpu"
         >
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center justify-between">
-            <p className="flex-1 text-3xl md:text-5xl leading-tight font-light text-neutral-400">
-              I'm a <span className="text-white font-bold">full stack developer</span> who turns ideas into elegant digital solutions. Specializing in modern web applications, scalable backends, and pixel-perfect frontends.
-            </p>
+            <ScrollTextReveal
+              text="I'm a full stack developer who turns ideas into elegant digital solutions. Specializing in modern web applications, scalable backends, and pixel-perfect frontends."
+              className="flex-1 text-3xl md:text-5xl leading-tight font-light text-neutral-400"
+            />
 
             <motion.div
               style={{ scale: smoothIntroBlobScale }}
@@ -113,18 +118,32 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 border-t border-white/10 pt-8 md:pt-12">
+          <motion.div
+            className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 border-t border-white/10 pt-8 md:pt-12"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ staggerChildren: 0.12 }}
+          >
             {[
               { number: "20+", label: "Projects" },
               { number: "4+", label: "Years" },
               { number: "100%", label: "Dedication" },
             ].map((stat) => (
-              <div key={stat.label} className="text-center">
+              <motion.div
+                key={stat.label}
+                className="text-center"
+                variants={{
+                  hidden: { opacity: 0, y: revealOffset },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
                 <div className="text-3xl md:text-4xl font-bold">{stat.number}</div>
                 <div className="text-sm uppercase tracking-widest text-neutral-500 mt-2">{stat.label}</div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -139,27 +158,35 @@ export default function Home() {
           style={{ y: contactBgY, scale: 1.3 }}
         />
 
-        <motion.h2
-          className="text-5xl md:text-[12vw] font-bold leading-none tracking-tighter relative z-10"
-          style={{ y: contactTextY }}
+        <motion.div
+          className="flex flex-col items-center relative z-10"
+          initial={{ opacity: 0, y: revealOffset }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <TextScramble text="GET IN TOUCH" />
-        </motion.h2>
-
-        <motion.p
-          className="text-base md:text-xl lg:text-2xl max-w-md mt-6 mb-8 md:mb-12 font-light relative z-10"
-          style={{ y: contactTextY }}
-        >
-          Have a project in mind? Let's collaborate and build something extraordinary.
-        </motion.p>
-
-        <motion.div style={{ y: contactTextY }} className="relative z-10">
-          <Link
-            href="/contact"
-            className="px-8 md:px-12 py-4 md:py-6 bg-black text-white rounded-full text-base md:text-xl font-medium hover:scale-110 transition-transform duration-300 inline-flex items-center justify-center shadow-2xl"
+          <motion.h2
+            className="text-5xl md:text-[12vw] font-bold leading-none tracking-tighter"
+            style={{ y: contactTextY }}
           >
-            Contact Me
-          </Link>
+            <TextScramble text="GET IN TOUCH" />
+          </motion.h2>
+
+          <motion.p
+            className="text-base md:text-xl lg:text-2xl max-w-md mt-6 mb-8 md:mb-12 font-light"
+            style={{ y: contactTextY }}
+          >
+            Have a project in mind? Let's collaborate and build something extraordinary.
+          </motion.p>
+
+          <motion.div style={{ y: contactTextY }}>
+            <Link
+              href="/contact"
+              className="px-8 md:px-12 py-4 md:py-6 bg-black text-white rounded-full text-base md:text-xl font-medium hover:scale-110 transition-transform duration-300 inline-flex items-center justify-center shadow-2xl"
+            >
+              Contact Me
+            </Link>
+          </motion.div>
         </motion.div>
       </section>
     </div>
