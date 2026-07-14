@@ -84,7 +84,7 @@ function OrbBlob({ compact }: { compact: boolean }) {
         preload="metadata"
         width={220}
         height={220}
-        className="select-none pointer-events-none rounded-[2rem] ring-1 ring-black/5 dark:ring-white/10 shadow-2xl shadow-black/20"
+        className="select-none pointer-events-none rounded-[2rem] ring-1 ring-black/5 dark:ring-white/10"
         style={{ transform: "translateZ(0)" }}
       >
         <source src="/chat-blob.webm" type="video/webm" />
