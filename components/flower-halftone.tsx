@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useRef, useState } from "react"
+import { Suspense, useEffect, useMemo, useRef, useState } from "react"
 import { Canvas, useFrame, useLoader, useThree } from "@react-three/fiber"
 import * as THREE from "three"
 
@@ -224,7 +224,11 @@ export default function FlowerHalftone() {
             )
           }}
         >
-          <FlowerPlane reduced={reduced} />
+          {/* Suspense boundary for the texture's useLoader — required so the
+              suspend is handled in production builds (dev is more forgiving). */}
+          <Suspense fallback={null}>
+            <FlowerPlane reduced={reduced} />
+          </Suspense>
         </Canvas>
       )}
     </div>
