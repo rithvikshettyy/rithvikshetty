@@ -1,0 +1,292 @@
+- generic [active] [ref=f1e1]:
+  - banner:
+    - link "RS" [ref=f1e2] [cursor=pointer]:
+      - /url: /
+    - navigation [ref=f1e3]:
+      - link "Projects" [ref=f1e4] [cursor=pointer]:
+        - /url: /projects
+      - link "Experience" [ref=f1e5] [cursor=pointer]:
+        - /url: /experience
+      - link "About" [ref=f1e6] [cursor=pointer]:
+        - /url: /about
+      - link "Awards" [ref=f1e7] [cursor=pointer]:
+        - /url: /awards
+      - link "Contact" [ref=f1e8] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=f1e9]:
+    - generic [ref=f1e10]:
+      - generic [ref=f1e14]:
+        - heading "I'm Rithvik" [level=1] [ref=f1e15]
+        - generic [ref=f1e16]:
+          - generic [ref=f1e17]: FULL stack DEVELOPER
+          - generic [ref=f1e18]: Freelancer specialized in building experiences.
+        - link "Open chat" [ref=f1e20] [cursor=pointer]:
+          - /url: /chat
+          - generic [ref=f1e21]: Chat with me
+      - generic [ref=f1e27]:
+        - generic [ref=f1e28]:
+          - paragraph [ref=f1e29]:
+            - generic [ref=f1e30]: I'm
+            - generic [ref=f1e31]: a
+            - generic [ref=f1e32]: full
+            - generic [ref=f1e33]: stack
+            - generic [ref=f1e34]: developer
+            - generic [ref=f1e35]: who
+            - generic [ref=f1e36]: turns
+            - generic [ref=f1e37]: ideas
+            - generic [ref=f1e38]: into
+            - generic [ref=f1e39]: elegant
+            - generic [ref=f1e40]: digital
+            - generic [ref=f1e41]: solutions.
+            - generic [ref=f1e42]: Specializing
+            - generic [ref=f1e43]: in
+            - generic [ref=f1e44]: modern
+            - generic [ref=f1e45]: web
+            - generic [ref=f1e46]: applications,
+            - generic [ref=f1e47]: scalable
+            - generic [ref=f1e48]: backends,
+            - generic [ref=f1e49]: and
+            - generic [ref=f1e50]: pixel-perfect
+            - generic [ref=f1e51]: frontends.
+          - img "Animated Blob Graphic" [ref=f1e53]
+        - generic [ref=f1e54]:
+          - generic [ref=f1e55]:
+            - generic [ref=f1e56]: 20+
+            - generic [ref=f1e57]: Projects
+          - generic [ref=f1e58]:
+            - generic [ref=f1e59]: 4+
+            - generic [ref=f1e60]: Years
+          - generic [ref=f1e61]:
+            - generic [ref=f1e62]: 100%
+            - generic [ref=f1e63]: Dedication
+      - generic [ref=f1e65]:
+        - generic [ref=f1e66]: REACT JS
+        - generic [ref=f1e73]: TAILWIND CSS
+        - generic [ref=f1e80]: TYPESCRIPT
+        - generic [ref=f1e88]: PYTHON
+        - generic [ref=f1e93]: NODE JS
+        - generic [ref=f1e99]: DOCKER
+        - generic [ref=f1e105]: POSTGRESQL
+        - generic [ref=f1e112]: MERN
+        - generic [ref=f1e119]: FIGMA
+        - generic [ref=f1e127]: FRONTEND
+        - generic [ref=f1e132]: APP DEV
+        - generic [ref=f1e137]: AWS
+        - generic [ref=f1e142]: REACT NATIVE
+        - generic [ref=f1e148]: REACT JS
+        - generic [ref=f1e155]: TAILWIND CSS
+        - generic [ref=f1e162]: TYPESCRIPT
+        - generic [ref=f1e170]: PYTHON
+        - generic [ref=f1e175]: NODE JS
+        - generic [ref=f1e181]: DOCKER
+        - generic [ref=f1e187]: POSTGRESQL
+        - generic [ref=f1e194]: MERN
+        - generic [ref=f1e201]: FIGMA
+        - generic [ref=f1e209]: FRONTEND
+        - generic [ref=f1e214]: APP DEV
+        - generic [ref=f1e219]: AWS
+        - generic [ref=f1e224]: REACT NATIVE
+        - generic [ref=f1e230]: REACT JS
+        - generic [ref=f1e237]: TAILWIND CSS
+        - generic [ref=f1e244]: TYPESCRIPT
+        - generic [ref=f1e252]: PYTHON
+        - generic [ref=f1e257]: NODE JS
+        - generic [ref=f1e263]: DOCKER
+        - generic [ref=f1e269]: POSTGRESQL
+        - generic [ref=f1e276]: MERN
+        - generic [ref=f1e283]: FIGMA
+        - generic [ref=f1e291]: FRONTEND
+        - generic [ref=f1e296]: APP DEV
+        - generic [ref=f1e301]: AWS
+        - generic [ref=f1e306]: REACT NATIVE
+        - generic [ref=f1e312]: REACT JS
+        - generic [ref=f1e319]: TAILWIND CSS
+        - generic [ref=f1e326]: TYPESCRIPT
+        - generic [ref=f1e334]: PYTHON
+        - generic [ref=f1e339]: NODE JS
+        - generic [ref=f1e345]: DOCKER
+        - generic [ref=f1e351]: POSTGRESQL
+        - generic [ref=f1e358]: MERN
+        - generic [ref=f1e365]: FIGMA
+        - generic [ref=f1e373]: FRONTEND
+        - generic [ref=f1e378]: APP DEV
+        - generic [ref=f1e383]: AWS
+        - generic [ref=f1e388]: REACT NATIVE
+      - generic [ref=f1e394]:
+        - generic [ref=f1e395]:
+          - generic [ref=f1e396]:
+            - heading "SELECTED WORKS" [level=2] [ref=f1e397]
+            - img "Star Accent" [ref=f1e399]
+          - generic [ref=f1e400]: ( 2022 — 2026 )
+        - generic [ref=f1e401]:
+          - link "/01 INTERVIEWDUMP Software 2026 A free, full-stack tech interview prep platform with 500+ curated questions across DSA, SQL, System Design, Core CS, and Aptitude. All with no paywall or signup wall." [ref=f1e403] [cursor=pointer]:
+            - /url: /projects/interviewdump
+            - generic [ref=f1e404]:
+              - generic [ref=f1e405]:
+                - generic [ref=f1e406]: /01
+                - heading "INTERVIEWDUMP" [level=3] [ref=f1e407]
+              - generic [ref=f1e408]:
+                - generic [ref=f1e409]: Software
+                - generic [ref=f1e410]: "2026"
+            - paragraph [ref=f1e414]: A free, full-stack tech interview prep platform with 500+ curated questions across DSA, SQL, System Design, Core CS, and Aptitude. All with no paywall or signup wall.
+          - link "/02 ANYFORMAT Software 2026 A full-stack file conversion platform built with Next.js 14, featuring 18+ tools for PDF, image, and document processing, a Redis-backed URL shortener with click analytics, Razorpay payment integration for enterprise tiers, and Google OAuth authentication. Deployed on Vercel with Upstash Redis and Cloudflare Turnstile bot protection." [ref=f1e416] [cursor=pointer]:
+            - /url: /projects/anyformat
+            - generic [ref=f1e417]:
+              - generic [ref=f1e418]:
+                - generic [ref=f1e419]: /02
+                - heading "ANYFORMAT" [level=3] [ref=f1e420]
+              - generic [ref=f1e421]:
+                - generic [ref=f1e422]: Software
+                - generic [ref=f1e423]: "2026"
+            - paragraph [ref=f1e427]: A full-stack file conversion platform built with Next.js 14, featuring 18+ tools for PDF, image, and document processing, a Redis-backed URL shortener with click analytics, Razorpay payment integration for enterprise tiers, and Google OAuth authentication. Deployed on Vercel with Upstash Redis and Cloudflare Turnstile bot protection.
+          - link "/03 TUNE CLI CLI / IDE Ext 2026 A terminal-based Spotify controller and IDE extension designed for developers to control their music directly from the workspace." [ref=f1e429] [cursor=pointer]:
+            - /url: /projects/tune
+            - generic [ref=f1e430]:
+              - generic [ref=f1e431]:
+                - generic [ref=f1e432]: /03
+                - heading "TUNE CLI" [level=3] [ref=f1e433]
+              - generic [ref=f1e434]:
+                - generic [ref=f1e435]: CLI / IDE Ext
+                - generic [ref=f1e436]: "2026"
+            - paragraph [ref=f1e440]: A terminal-based Spotify controller and IDE extension designed for developers to control their music directly from the workspace.
+          - link "/04 TRCT.IN Freelance 2026 A dedicated website built for a thriving run club in Thane. The platform enhances community engagement and streamlines tracking and events for runners." [ref=f1e442] [cursor=pointer]:
+            - /url: /projects/trct-in
+            - generic [ref=f1e443]:
+              - generic [ref=f1e444]:
+                - generic [ref=f1e445]: /04
+                - heading "TRCT.IN" [level=3] [ref=f1e446]
+              - generic [ref=f1e447]:
+                - generic [ref=f1e448]: Freelance
+                - generic [ref=f1e449]: "2026"
+            - paragraph [ref=f1e453]: A dedicated website built for a thriving run club in Thane. The platform enhances community engagement and streamlines tracking and events for runners.
+          - link "/05 AUTOPHARMAX Machine Learning 2026 AI-driven platform that analyzes global drug efficacy data and clinical insights to optimize treatment outcomes." [ref=f1e455] [cursor=pointer]:
+            - /url: /projects/autopharmax
+            - generic [ref=f1e456]:
+              - generic [ref=f1e457]:
+                - generic [ref=f1e458]: /05
+                - heading "AUTOPHARMAX" [level=3] [ref=f1e459]
+              - generic [ref=f1e460]:
+                - generic [ref=f1e461]: Machine Learning
+                - generic [ref=f1e462]: "2026"
+            - paragraph [ref=f1e466]: AI-driven platform that analyzes global drug efficacy data and clinical insights to optimize treatment outcomes.
+          - link "/06 SEAGUARD Hackathon Project 2025 An innovative mobile application built with React Native, Supabase backend, and SARVAM AI integration. Features Twilio communication and Figma-designed UI." [ref=f1e468] [cursor=pointer]:
+            - /url: /projects/seaguard
+            - generic [ref=f1e469]:
+              - generic [ref=f1e470]:
+                - generic [ref=f1e471]: /06
+                - heading "SEAGUARD" [level=3] [ref=f1e472]
+              - generic [ref=f1e473]:
+                - generic [ref=f1e474]: Hackathon Project
+                - generic [ref=f1e475]: "2025"
+            - paragraph [ref=f1e479]: An innovative mobile application built with React Native, Supabase backend, and SARVAM AI integration. Features Twilio communication and Figma-designed UI.
+          - link "/07 GROWW.IN Frontend Dev 2024 Frontend recreation of Groww investment platform. Built with React, HTML, CSS, SCSS, and Figma design. Responsive and feature-rich interface." [ref=f1e481] [cursor=pointer]:
+            - /url: /projects/groww-in
+            - generic [ref=f1e482]:
+              - generic [ref=f1e483]:
+                - generic [ref=f1e484]: /07
+                - heading "GROWW.IN" [level=3] [ref=f1e485]
+              - generic [ref=f1e486]:
+                - generic [ref=f1e487]: Frontend Dev
+                - generic [ref=f1e488]: "2024"
+            - paragraph [ref=f1e492]: Frontend recreation of Groww investment platform. Built with React, HTML, CSS, SCSS, and Figma design. Responsive and feature-rich interface.
+          - link "/08 LOOPLIST Software 2024 A collaborative to-do list web application that allows users to manage their tasks in real-time." [ref=f1e494] [cursor=pointer]:
+            - /url: /projects/looplist
+            - generic [ref=f1e495]:
+              - generic [ref=f1e496]:
+                - generic [ref=f1e497]: /08
+                - heading "LOOPLIST" [level=3] [ref=f1e498]
+              - generic [ref=f1e499]:
+                - generic [ref=f1e500]: Software
+                - generic [ref=f1e501]: "2024"
+            - paragraph [ref=f1e505]: A collaborative to-do list web application that allows users to manage their tasks in real-time.
+          - link "/09 OBJECT MEASUREMENT Python 2024 A Python project that measures the size of objects in an image using OpenCV and image processing techniques." [ref=f1e507] [cursor=pointer]:
+            - /url: /projects/object-measurement
+            - generic [ref=f1e508]:
+              - generic [ref=f1e509]:
+                - generic [ref=f1e510]: /09
+                - heading "OBJECT MEASUREMENT" [level=3] [ref=f1e511]
+              - generic [ref=f1e512]:
+                - generic [ref=f1e513]: Python
+                - generic [ref=f1e514]: "2024"
+            - paragraph [ref=f1e518]: A Python project that measures the size of objects in an image using OpenCV and image processing techniques.
+          - link "/10 SPOTIFY.COM Frontend Dev 2023 Music streaming platform UI with React, HTML, and CSS. Interactive elements and responsive design." [ref=f1e520] [cursor=pointer]:
+            - /url: /projects/spotify-ui
+            - generic [ref=f1e521]:
+              - generic [ref=f1e522]:
+                - generic [ref=f1e523]: /10
+                - heading "SPOTIFY.COM" [level=3] [ref=f1e524]
+              - generic [ref=f1e525]:
+                - generic [ref=f1e526]: Frontend Dev
+                - generic [ref=f1e527]: "2023"
+            - paragraph [ref=f1e531]: Music streaming platform UI with React, HTML, and CSS. Interactive elements and responsive design.
+        - link "View All Projects" [ref=f1e534] [cursor=pointer]:
+          - /url: /projects
+      - generic [ref=f1e536]:
+        - generic [ref=f1e537]:
+          - generic [ref=f1e538]:
+            - generic [ref=f1e539]: (01)
+            - heading "CRAFTING" [level=2] [ref=f1e540]
+          - generic [ref=f1e541]:
+            - generic [ref=f1e542]: (02)
+            - generic [ref=f1e543]:
+              - generic [ref=f1e544]: with
+              - generic:
+                - img "3D Accent"
+          - generic [ref=f1e545]:
+            - generic [ref=f1e546]: (03)
+            - heading "INTENT" [level=2] [ref=f1e547]
+        - generic [ref=f1e548]:
+          - generic [ref=f1e549]:
+            - generic [ref=f1e550]: (04)
+            - generic [ref=f1e551]: pixel
+          - generic [ref=f1e552]:
+            - generic [ref=f1e553]: (05)
+            - heading "LOGIC" [level=2] [ref=f1e554]
+          - generic [ref=f1e555]:
+            - generic [ref=f1e556]: (06)
+            - heading "PERFECT" [level=2] [ref=f1e557]
+      - generic [ref=f1e560]:
+        - heading "G E T I N T O U C H" [level=2] [ref=f1e561]:
+          - generic [ref=f1e562]:
+            - generic [ref=f1e563]: G
+            - generic [ref=f1e565]: E
+            - generic [ref=f1e567]: T
+            - generic [ref=f1e571]: I
+            - generic [ref=f1e573]: "N"
+            - generic [ref=f1e577]: T
+            - generic [ref=f1e579]: O
+            - generic [ref=f1e581]: U
+            - generic [ref=f1e583]: C
+            - generic [ref=f1e585]: H
+        - paragraph [ref=f1e587]: Have a project in mind? Let's collaborate and build something extraordinary.
+        - link "Contact Me" [ref=f1e589] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=f1e590]:
+    - generic [ref=f1e591]:
+      - generic [ref=f1e592]:
+        - heading "Rish." [level=2] [ref=f1e593]
+        - generic [ref=f1e594]:
+          - generic [ref=f1e595]:
+            - generic [ref=f1e596]: Socials
+            - link "Twitter" [ref=f1e597] [cursor=pointer]:
+              - /url: https://x.com/RithvikShetty04
+            - link "Instagram" [ref=f1e598] [cursor=pointer]:
+              - /url: https://instagram.com/rithv1k7
+            - link "LinkedIn" [ref=f1e599] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/rithvikshetty/
+            - link "GitHub" [ref=f1e600] [cursor=pointer]:
+              - /url: https://github.com/rithvikshettyy
+            - link "Pinterest" [ref=f1e601] [cursor=pointer]:
+              - /url: https://in.pinterest.com/mayberithvik/
+          - generic [ref=f1e602]:
+            - generic [ref=f1e603]: Legal
+            - link "Privacy" [ref=f1e604] [cursor=pointer]:
+              - /url: /privacy
+            - link "Terms" [ref=f1e605] [cursor=pointer]:
+              - /url: /terms
+      - generic [ref=f1e606]:
+        - generic [ref=f1e607]: © 2026 Rithvik Shetty
+        - generic [ref=f1e608]: All Rights Reserved
+  - button "Toggle theme" [ref=f1e610]
+  - button "Open Next.js Dev Tools" [ref=f1e627] [cursor=pointer]
+  - alert [ref=f1e631]

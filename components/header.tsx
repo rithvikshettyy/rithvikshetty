@@ -11,19 +11,20 @@ const navItems = [
   { name: "Experience", path: "/experience" },
   // { name: "Playground", path: "/playground" },
   { name: "About", path: "/about" },
-  { name: "Achievements", path: "/achievements" },
+  { name: "Awards", path: "/awards" },
   { name: "Contact", path: "/contact" },
 ]
 
 export default function Header() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const isLanding = pathname === "/"
-  // On the landing page the bar starts hidden over the hero and slides in on scroll.
-  const [hidden, setHidden] = useState(isLanding)
+  // Pages with a full-screen hero: the bar starts hidden over the hero and
+  // slides in on scroll.
+  const slideOnScroll = pathname === "/" || pathname === "/awards"
+  const [hidden, setHidden] = useState(slideOnScroll)
 
   useEffect(() => {
-    if (!isLanding) {
+    if (!slideOnScroll) {
       setHidden(false)
       return
     }
@@ -31,7 +32,7 @@ export default function Header() {
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
-  }, [isLanding])
+  }, [slideOnScroll])
 
   if (pathname?.startsWith("/studio") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat") return null
 

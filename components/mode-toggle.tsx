@@ -92,7 +92,7 @@ export default function ModeToggle() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="flex flex-col gap-2 p-2 bg-neutral-900 border border-white/20 rounded-2xl shadow-2xl backdrop-blur-xl mb-2 origin-bottom-right"
+            className="flex flex-col gap-2 p-2 bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/15 rounded-2xl shadow-xl shadow-black/10 dark:shadow-black/40 backdrop-blur-xl mb-2 origin-bottom-right"
           >
             {modes.map((m) => (
               <motion.button
@@ -105,7 +105,9 @@ export default function ModeToggle() {
                   setIsOpen(false)
                 }}
                 className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                  mode === m.id ? "bg-white text-black shadow-lg" : "text-white hover:bg-white/10"
+                  mode === m.id
+                    ? "bg-[#111] text-[#fafafa] dark:bg-white dark:text-black shadow-sm"
+                    : "text-neutral-600 dark:text-white hover:bg-black/[0.06] dark:hover:bg-white/10"
                 }`}
               >
                 <m.icon size={16} />
@@ -119,7 +121,7 @@ export default function ModeToggle() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="p-4 bg-white text-black rounded-full shadow-2xl flex items-center justify-center focus:outline-none focus:ring-4 focus:ring-white/50 relative overflow-hidden"
+        className="p-4 bg-white text-black rounded-full shadow-2xl border border-black/10 dark:border-transparent flex items-center justify-center focus:outline-none focus:ring-4 focus:ring-black/20 dark:focus:ring-white/50 relative overflow-hidden"
         aria-label="Toggle theme"
       >
         <AnimatePresence mode="wait">

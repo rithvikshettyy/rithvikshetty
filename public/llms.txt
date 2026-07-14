@@ -10,7 +10,7 @@ This file follows the llms.txt convention (https://llmstxt.org/) to help AI agen
 - [About](https://rithvikshetty.in/about): Bio, skills, resume link.
 - [Projects](https://rithvikshetty.in/projects): Full project portfolio (client work and personal projects).
 - [Work Experience](https://rithvikshetty.in/experience): Internships, leadership roles, employment history.
-- [Achievements](https://rithvikshetty.in/achievements): Hackathon wins, awards, recognitions.
+- [Awards](https://rithvikshetty.in/awards): Hackathon wins, awards, recognitions.
 - [Contact](https://rithvikshetty.in/contact): Ways to reach Rithvik.
 - [Chat](https://rithvikshetty.in/chat): AI chatbot trained on Rithvik's background, answers questions about him.
 

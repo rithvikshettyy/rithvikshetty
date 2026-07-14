@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Achievements | Rithvik Shetty - Full Stack Developer',
+  title: 'Awards | Rithvik Shetty - Full Stack Developer',
   description: 'Hackathon wins, awards, and recognitions earned by Rithvik Shetty, including the HackCelestial 2.0 Most Product Readiness Award and an ISRO-presented project.',
   keywords: [
     'Rithvik Shetty Achievements',
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     'Recognitions',
   ],
   openGraph: {
-    title: 'Achievements | Rithvik Shetty',
+    title: 'Awards | Rithvik Shetty',
     description: 'Hackathon wins, awards, and recognitions earned through technical work.',
-    url: 'https://rithvikshetty.in/achievements',
+    url: 'https://rithvikshetty.in/awards',
     type: 'website',
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Achievements | Rithvik Shetty',
+    title: 'Awards | Rithvik Shetty',
     description: 'Hackathon wins, awards, and recognitions earned through technical work.',
   },
   robots: {
@@ -34,6 +34,6 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://rithvikshetty.in/achievements',
+    canonical: 'https://rithvikshetty.in/awards',
   },
 }

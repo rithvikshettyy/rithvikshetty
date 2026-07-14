@@ -67,15 +67,21 @@ export default function Achievements() {
 
       {/* Cinematic Hero Section */}
       <section className="sticky top-0 h-screen w-full flex flex-col justify-between p-6 md:p-12 overflow-hidden pointer-events-none z-20">
+        {/* Ambient background video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-25 dark:opacity-40 z-0 pointer-events-none"
+        >
+          <source src="/awards.mp4" type="video/mp4" />
+        </video>
+        {/* Legibility wash over the video */}
+        <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-white/70 via-white/30 to-white/70 dark:from-black/70 dark:via-black/30 dark:to-black/70" />
+
         {/* Top UI Bar */}
-        <div className="flex justify-between items-start text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
-          <div className="space-y-1">
-            <p>+91 91379 86520</p>
-          </div>
-          <div className="hidden md:block text-center space-y-1">
-            <p className="text-white">Full Stack Developer</p>
-            <p>Specialized in Core Engineering</p>
-          </div>
+        <div className="relative z-10 flex justify-end items-start text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
           <div className="text-right space-y-1">
             <p>Based in India</p>
             <p className="text-white font-mono">{time}</p>
@@ -85,7 +91,7 @@ export default function Achievements() {
         {/* Center Title Area */}
         <motion.div
           style={{ scale: titleScale, opacity: titleOpacity }}
-          className="flex-1 flex flex-col justify-center items-center pt-12 md:pt-24 pb-8 md:pb-12"
+          className="relative z-10 flex-1 flex flex-col justify-center items-center pt-12 md:pt-24 pb-8 md:pb-12"
         >
           <div className="flex flex-col items-center gap-6 mb-6">
             <span className="text-3xl md:text-5xl font-light tracking-widest text-neutral-800 dark:text-white/30 italic">({hackathons.length})</span>
@@ -94,14 +100,14 @@ export default function Achievements() {
             </p>
           </div>
 
-          <h1 className="text-[14vw] md:text-[12vw] font-bold tracking-tighter leading-[0.85] text-center uppercase">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-black via-black/80 to-black/20 dark:from-white dark:via-white/70 dark:to-white/20 pb-2">AWARDS &</span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-t from-black/20 via-black/60 to-black dark:from-white/10 dark:via-white/50 dark:to-white">RECOGNITIONS</span>
+          <h1 className="group pointer-events-auto cursor-default text-[14vw] md:text-[12vw] font-bold tracking-tighter leading-[0.85] text-center uppercase transition-transform duration-500 ease-out hover:scale-[1.02]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-black via-black/80 to-black/20 dark:from-white dark:via-white/70 dark:to-white/20 pb-2 transition-transform duration-500 ease-out group-hover:-translate-x-2 md:group-hover:-translate-x-4">AWARDS &</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-t from-black/20 via-black/60 to-black dark:from-white/10 dark:via-white/50 dark:to-white transition-transform duration-500 ease-out group-hover:translate-x-2 md:group-hover:translate-x-4">RECOGNITIONS</span>
           </h1>
         </motion.div>
 
         {/* Bottom UI Bar */}
-        <div className="flex justify-between items-end">
+        <div className="relative z-10 flex justify-between items-end">
           <div className="w-12 h-12 border border-white/20 flex items-center justify-center rounded-full bg-white/5 backdrop-blur-xl">
             <Plus className="w-6 h-6 text-white" />
           </div>

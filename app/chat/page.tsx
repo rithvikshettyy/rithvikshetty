@@ -46,7 +46,7 @@ interface Message {
 
 const TOP_PROJECTS = staticProjects.slice(0, 5)
 const SERVICES = chatbotData.services as Array<{ tier: string; desc: string }>
-const SUGGESTIONS = ["Projects", "Experience", "Tech Stack", "Education", "Achievements", "Contact"]
+const SUGGESTIONS = ["Projects", "Experience", "Tech Stack", "Education", "Awards", "Contact"]
 
 function matchIntent(input: string): IntentDef | null {
   const normalized = input.toLowerCase().replace(/[^a-z0-9\s]/g, "").trim()
@@ -83,7 +83,7 @@ function OrbBlob({ compact }: { compact: boolean }) {
         playsInline
         width={220}
         height={220}
-        className="select-none pointer-events-none"
+        className="select-none pointer-events-none rounded-[2rem] ring-1 ring-black/5 dark:ring-white/10 shadow-2xl shadow-black/20"
         style={{ transform: "translateZ(0)" }}
       >
         <source src="/chat-blob.webm" type="video/webm" />
@@ -189,14 +189,7 @@ export default function ChatPage() {
         <Link href="/">
           <motion.div
             whileHover={{ x: -2 }}
-            className="flex items-center gap-1.5 transition-colors"
-            style={{ color: "rgba(255,255,255,0.35)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.color = "rgba(255,255,255,0.65)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.color = "rgba(255,255,255,0.35)")
-            }
+            className="flex items-center gap-1.5 transition-colors text-black/45 hover:text-black/75 dark:text-white/35 dark:hover:text-white/65"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm">Back</span>
@@ -246,10 +239,7 @@ export default function ChatPage() {
             transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
             className="relative z-10 text-center px-6 flex flex-col items-center shrink-0 -mt-6"
           >
-            <p
-              className="text-[13px] mb-2.5 tracking-wide"
-              style={{ color: "rgba(255,255,255,0.32)" }}
-            >
+            <p className="text-[13px] mb-2.5 tracking-wide text-black/40 dark:text-white/40">
               Rithvik's Assistant
             </p>
             <h1 className="text-[32px] sm:text-4xl font-bold text-white leading-tight tracking-tight">
@@ -264,12 +254,7 @@ export default function ChatPage() {
                   <Link
                     key={s}
                     href="/contact"
-                    className="px-4 py-2 text-sm rounded-full transition-all duration-200"
-                    style={{
-                      background: "rgba(59,130,246,0.11)",
-                      border: "1px solid rgba(96,165,250,0.22)",
-                      color: "rgba(186,230,255,0.72)",
-                    }}
+                    className="px-4 py-2 text-sm rounded-full border transition-all duration-200 bg-blue-500/10 border-blue-500/30 text-blue-700 hover:bg-blue-500/20 hover:border-blue-500/50 hover:text-blue-800 dark:border-blue-400/25 dark:text-blue-100/80 dark:hover:bg-blue-500/20 dark:hover:text-blue-50"
                   >
                     {s}
                   </Link>
@@ -277,22 +262,7 @@ export default function ChatPage() {
                 <button
                   key={s}
                   onClick={() => sendMessage(s)}
-                  className="px-4 py-2 text-sm rounded-full transition-all duration-200"
-                  style={{
-                    background: "rgba(59,130,246,0.11)",
-                    border: "1px solid rgba(96,165,250,0.22)",
-                    color: "rgba(186,230,255,0.72)",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "rgba(59,130,246,0.22)"
-                    e.currentTarget.style.borderColor = "rgba(96,165,250,0.38)"
-                    e.currentTarget.style.color = "rgba(219,234,254,0.92)"
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "rgba(59,130,246,0.11)"
-                    e.currentTarget.style.borderColor = "rgba(96,165,250,0.22)"
-                    e.currentTarget.style.color = "rgba(186,230,255,0.72)"
-                  }}
+                  className="px-4 py-2 text-sm rounded-full border transition-all duration-200 bg-blue-500/10 border-blue-500/30 text-blue-700 hover:bg-blue-500/20 hover:border-blue-500/50 hover:text-blue-800 dark:border-blue-400/25 dark:text-blue-100/80 dark:hover:bg-blue-500/20 dark:hover:text-blue-50"
                 >
                   {s}
                 </button>
@@ -614,15 +584,29 @@ export default function ChatPage() {
         <div
           className="max-w-xl mx-auto flex items-center gap-3 px-5 py-4"
           style={{
-            background: "rgba(255,255,255,0.07)",
-            backdropFilter: "blur(40px) saturate(1.8)",
-            WebkitBackdropFilter: "blur(40px) saturate(1.8)",
-            border: "1px solid rgba(255,255,255,0.18)",
+            color: "#fff",
+            background: "rgba(10,10,12,0.9)",
+            backdropFilter: "blur(40px) saturate(1.4)",
+            WebkitBackdropFilter: "blur(40px) saturate(1.4)",
+            border: "1px solid rgba(255,255,255,0.12)",
             borderRadius: 9999,
             boxShadow:
-              "inset 0 1.5px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.12), 0 4px 24px rgba(0,0,0,0.15)",
+              "inset 0 1px 0 rgba(255,255,255,0.08), 0 8px 30px rgba(0,0,0,0.35)",
           }}
         >
+          {/* Animated search orb — zoomed onto the orb region of the video */}
+          <div className="relative shrink-0 w-9 h-9 rounded-full overflow-hidden pointer-events-none">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute max-w-none mix-blend-screen select-none"
+              style={{ width: 232, height: 87, left: -23, top: -29 }}
+            >
+              <source src="/search.mp4" type="video/mp4" />
+            </video>
+          </div>
           <input
             ref={inputRef}
             value={input}
@@ -634,7 +618,7 @@ export default function ChatPage() {
               }
             }}
             placeholder="Ask anything..."
-            className="flex-1 bg-transparent outline-none text-[15px] placeholder:text-blue-100/40"
+            className="flex-1 bg-transparent outline-none text-[15px] placeholder:text-white/70"
             style={{
               color: "rgba(255,255,255,0.88)",
               caretColor: "rgba(180,220,255,0.9)",
@@ -654,20 +638,14 @@ export default function ChatPage() {
                 <Send className="w-3.5 h-3.5 text-white" />
               </div>
             ) : (
-              /* Waveform bars icon like reference */
-              <svg
-                width="28"
-                height="20"
-                viewBox="0 0 28 20"
-                fill="none"
-                className="opacity-70"
-              >
-                <rect x="0"  y="7"  width="3" height="6"  rx="1.5" fill="white" />
-                <rect x="5"  y="3"  width="3" height="14" rx="1.5" fill="white" />
-                <rect x="10" y="0"  width="3" height="20" rx="1.5" fill="white" />
-                <rect x="15" y="3"  width="3" height="14" rx="1.5" fill="white" />
-                <rect x="20" y="6"  width="3" height="8"  rx="1.5" fill="white" />
-                <rect x="25" y="8"  width="3" height="4"  rx="1.5" fill="white" />
+              /* Waveform bars icon */
+              <svg width="28" height="20" viewBox="0 0 28 20" fill="none" className="opacity-70">
+                <rect x="0"  y="7"  width="3" height="6"  rx="1.5" fill="currentColor" />
+                <rect x="5"  y="3"  width="3" height="14" rx="1.5" fill="currentColor" />
+                <rect x="10" y="0"  width="3" height="20" rx="1.5" fill="currentColor" />
+                <rect x="15" y="3"  width="3" height="14" rx="1.5" fill="currentColor" />
+                <rect x="20" y="6"  width="3" height="8"  rx="1.5" fill="currentColor" />
+                <rect x="25" y="8"  width="3" height="4"  rx="1.5" fill="currentColor" />
               </svg>
             )}
           </button>
