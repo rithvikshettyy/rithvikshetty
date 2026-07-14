@@ -32,6 +32,9 @@ export default function Hero() {
   // Pause the shader's render loop while the hero is scrolled out of view — it's
   // faded out there anyway, and a live WebGL loop is the biggest main-thread cost.
   const [inView, setInView] = useState(true)
+  // Skip the WebGL shader on mobile/low-end — three.js parse + per-pixel fbm is
+  // the main perf ceiling there. The gradient fallback carries the hero instead.
+  const [webgl, setWebgl] = useState(false)
 
   useEffect(() => {
     const el = document.documentElement
@@ -45,7 +48,10 @@ export default function Hero() {
     syncMotion()
     mq.addEventListener("change", syncMotion)
 
-    setDpr(window.innerWidth < 768 ? 0.5 : 0.75)
+    const desktop = window.innerWidth >= 768
+    setDpr(desktop ? 0.75 : 0.5)
+    // Enable WebGL only on desktop with enough cores (rough low-end guard).
+    setWebgl(desktop && (navigator.hardwareConcurrency ?? 4) >= 4 && !mq.matches)
 
     let io: IntersectionObserver | undefined
     if (containerRef.current) {
@@ -65,11 +71,12 @@ export default function Hero() {
       ref={containerRef}
       className="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8 bg-[radial-gradient(ellipse_at_50%_40%,#ededed_0%,#fff_75%)] dark:bg-[radial-gradient(ellipse_at_50%_40%,#161616_0%,#000_75%)]"
     >
-      {/* Dithered wave background — inverted in light mode */}
-      <motion.div
-        style={{ opacity: bgOpacity, filter: isLight ? "invert(1)" : undefined }}
-        className="absolute inset-0 z-0"
-      >
+      {/* Dithered wave background — desktop only, inverted in light mode */}
+      {webgl && (
+        <motion.div
+          style={{ opacity: bgOpacity, filter: isLight ? "invert(1)" : undefined }}
+          className="absolute inset-0 z-0"
+        >
           <Dither
             waveColor={[0.35, 0.35, 0.35]}
             waveSpeed={0.03}
@@ -84,10 +91,11 @@ export default function Hero() {
             enableMouseInteraction={!reduced}
           />
         </motion.div>
+      )}
 
       {/* Radial vignette keeps headline contrast crisp over the dark dither;
           skip it in light mode where it would darken the halo behind black text */}
-      {!isLight && (
+      {webgl && !isLight && (
         <div className="absolute inset-0 z-[1] pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.25)_45%,transparent_78%)]" />
       )}
 

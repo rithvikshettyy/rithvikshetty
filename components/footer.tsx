@@ -3,12 +3,19 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import dynamic from "next/dynamic"
+import { useEffect, useState } from "react"
 
 const FlowerHalftone = dynamic(() => import("./flower-halftone"), { ssr: false })
 
 export default function Footer() {
   const pathname = usePathname()
   const isHome = pathname === "/"
+
+  // The neon-flower shader is desktop-only — three.js is too heavy for mobile.
+  const [webgl, setWebgl] = useState(false)
+  useEffect(() => {
+    setWebgl(window.innerWidth >= 768 && (navigator.hardwareConcurrency ?? 4) >= 4)
+  }, [])
 
   if (pathname?.startsWith("/studio") || pathname?.startsWith("/playground") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat") return null
 
@@ -57,8 +64,8 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Glitchy halftone neon flowers — homepage only, flush at the very bottom */}
-      {isHome && (
+      {/* Glitchy halftone neon flowers — homepage + desktop only, flush at the very bottom */}
+      {isHome && webgl && (
         <div className="relative -mx-6 -mb-20 mt-20 h-[300px] md:h-[420px] w-auto overflow-hidden">
           <FlowerHalftone />
         </div>
