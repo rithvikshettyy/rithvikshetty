@@ -72,6 +72,10 @@ function Word({
     // The word-level morph runs as a plain CSS transition on transform only —
     // it executes on the compositor thread, so main-thread work (hydration,
     // Lenis, dev overhead) can't make the scaling stutter.
+    // pb gives the "y" descender room inside the overflow mask AND the
+    // gradient paint box (bg-clip-text only fills the padding box); -mb cancels
+    // the layout growth so the glyph position — and the greet→hero handoff —
+    // is unchanged.
     <span
       ref={spanRef}
       style={{
@@ -85,7 +89,7 @@ function Word({
         transition: animating ? "transform 0.8s cubic-bezier(0.76, 0, 0.24, 1)" : "none",
         willChange: "transform",
       }}
-      className={`inline-flex overflow-hidden pb-[0.12em] pt-[0.06em] px-[0.06em] ${className ?? ""}`}
+      className={`inline-flex overflow-hidden pb-[0.32em] -mb-[0.2em] pt-[0.06em] px-[0.06em] ${className ?? ""}`}
     >
       {text.split("").map((ch, i) => (
         <motion.span
@@ -280,7 +284,7 @@ export default function Preloader() {
               natural spot. Rides above the red panel. Inline colors dodge the
               global .light overrides that would make it invisible on black. */}
           <div
-            className="absolute bottom-24 md:bottom-36 inset-x-3 md:inset-x-8 flex items-end justify-between leading-none tracking-tight translate-y-[5px]"
+            className="absolute bottom-24 md:bottom-36 inset-x-3 md:inset-x-8 flex items-end justify-center gap-[4vw] leading-none tracking-tight translate-y-[5px]"
             style={{ visibility: start ? "visible" : "hidden" }}
           >
             <Word
@@ -289,7 +293,7 @@ export default function Preloader() {
               spanRef={firstRef}
               pose={pose("f")}
               animating={descended && !reduced}
-              className="font-normal [font-family:var(--font-coolvetica)] text-[15.2vw]"
+              className="font-normal [font-family:Helvetica,Arial,sans-serif] text-[15.2vw]"
               style={{ color: "#f5f5f0" }}
             />
             <Word
@@ -298,7 +302,7 @@ export default function Preloader() {
               spanRef={lastRef}
               pose={pose("l")}
               animating={descended && !reduced}
-              className="font-normal [font-family:var(--font-apparel)] text-[15.2vw]"
+              className="font-normal [font-family:Helvetica,Arial,sans-serif] text-[15.2vw]"
               style={{
                 backgroundImage: "linear-gradient(to right, #9be9d8, #e9fffa, #8fd8c7)",
                 WebkitBackgroundClip: "text",

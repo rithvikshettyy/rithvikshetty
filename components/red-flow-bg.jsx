@@ -68,7 +68,8 @@ float blob(vec2 uv, vec2 c, vec2 r) {
 // The red gradient "painting" — layout mimics the reference image:
 // dark left, tall soft red mass right-of-center, bright core upper-right.
 vec3 baseColor(vec2 uv) {
-  vec3 col = vec3(0.015, 0.008, 0.008);
+  // Softer charcoal base (not pure black) so the dark areas read less harsh.
+  vec3 col = vec3(0.05, 0.042, 0.043);
   float aspect = uRes.x / uRes.y;
   vec2 auv = vec2(uv.x * aspect, uv.y);
 

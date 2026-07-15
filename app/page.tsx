@@ -12,6 +12,7 @@ import React, { useRef } from "react"
 import { motion, useScroll, useTransform, useMotionValue, useSpring, useReducedMotion } from "framer-motion"
 import TextScramble from "@/components/text-scramble"
 import ScrollTextReveal from "@/components/scroll-text-reveal"
+import Magnetic from "@/components/magnetic"
 
 export default function Home() {
   const introRef = useRef<HTMLElement>(null)
@@ -33,8 +34,10 @@ export default function Home() {
     offset: ["start end", "end start"]
   })
 
-  // The text translates slightly opposite to the scroll direction
-  const introTextY = useTransform(introProgress, [0, 1], ["-15%", "15%"])
+  // The text translates slightly opposite to the scroll direction.
+  // Kept small: a larger range shoves the content out of the fixed 100vh
+  // overlay during the hero's pinned scale-up and clips the stats row.
+  const introTextY = useTransform(introProgress, [0, 1], ["-4%", "4%"])
   const contactTextY = useTransform(contactProgress, [0, 1], ["-25%", "25%"])
 
   // The background translates slowly making it look deeper
@@ -85,7 +88,7 @@ export default function Home() {
         }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="min-h-screen flex flex-col justify-center py-24 md:py-40 px-4 md:px-12 border-t border-white/10 bg-neutral-950 relative overflow-hidden"
+        className="min-h-screen flex flex-col justify-center py-8 md:py-10 px-4 md:px-12 border-t border-white/10 bg-neutral-950 relative overflow-hidden"
         style={{ perspective: 1200 }}
       >
         {/* Decorative parallax element */}
@@ -190,13 +193,15 @@ export default function Home() {
           </motion.p>
 
           <motion.div style={{ y: contactTextY }}>
-            <Link
-              href="/contact"
-              prefetch={false}
-              className="px-8 md:px-12 py-4 md:py-6 bg-black text-white rounded-full text-base md:text-xl font-medium hover:scale-110 transition-transform duration-300 inline-flex items-center justify-center shadow-2xl"
-            >
-              Contact Me
-            </Link>
+            <Magnetic strength={0.4} className="inline-block">
+              <Link
+                href="/contact"
+                prefetch={false}
+                className="px-8 md:px-12 py-4 md:py-6 bg-black text-white rounded-full text-base md:text-xl font-medium hover:scale-105 transition-transform duration-300 inline-flex items-center justify-center shadow-2xl"
+              >
+                Contact Me
+              </Link>
+            </Magnetic>
           </motion.div>
         </motion.div>
       </section>

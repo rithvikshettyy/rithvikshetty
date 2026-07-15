@@ -34,24 +34,24 @@ const CreativeHeader: React.FC<CreativeHeaderProps> = ({ row1, row2, indexOffset
   const springRight = useSpring(xRight, { stiffness: 100, damping: 30 })
 
   return (
-    <div ref={containerRef} className="w-full bg-[#efebe0] text-black overflow-hidden relative border-y border-black/15">
+    <div ref={containerRef} className="w-full bg-[#a81f14] text-white overflow-hidden relative border-y border-white/20">
       <div className="w-full">
         {/* Row 1 */}
-        <div className="flex flex-col lg:flex-row border-b border-black/15">
-          <div className="flex-1 border-b lg:border-b-0 lg:border-r border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
+        <div className="flex flex-col lg:flex-row border-b border-white/20">
+          <div className="flex-1 border-b lg:border-b-0 lg:border-r border-white/20 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset).padStart(2, '0')})</span>
             <motion.h2 
               style={{ x: springLeft }}
-              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-neutral-900 whitespace-nowrap"
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-white whitespace-nowrap"
             >
               {row1.left}
             </motion.h2>
           </div>
-          <div className="flex-[0.4] border-b lg:border-b-0 lg:border-r border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group overflow-hidden">
+          <div className="flex-[0.4] border-b lg:border-b-0 lg:border-r border-white/20 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group overflow-hidden">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 1).padStart(2, '0')})</span>
             
             <div className="flex items-center justify-center gap-4 lg:gap-8 relative z-10 w-full lg:w-auto">
-              <span className="text-3xl md:text-4xl lg:text-5xl font-serif italic text-neutral-700 tracking-tighter shrink-0">
+              <span className="text-3xl md:text-4xl lg:text-5xl font-serif italic text-white/70 tracking-tighter shrink-0">
                 {row1.center}
               </span>
 
@@ -66,11 +66,11 @@ const CreativeHeader: React.FC<CreativeHeaderProps> = ({ row1, row2, indexOffset
               )}
             </div>
           </div>
-          <div className="flex-1 border-b md:border-b-0 border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
+          <div className="flex-1 border-b md:border-b-0 border-white/20 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 2).padStart(2, '0')})</span>
             <motion.h2 
               style={{ x: springRight }}
-              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-neutral-900 whitespace-nowrap"
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none text-white whitespace-nowrap"
             >
               {row1.right}
             </motion.h2>
@@ -78,18 +78,18 @@ const CreativeHeader: React.FC<CreativeHeaderProps> = ({ row1, row2, indexOffset
         </div>
 
         {/* Row 2 */}
-        <div className="flex flex-col lg:flex-row border-b border-black/15">
-          <div className="flex-[0.25] border-b lg:border-b-0 lg:border-r border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center bg-black/[0.02] relative group">
+        <div className="flex flex-col lg:flex-row border-b border-white/20">
+          <div className="flex-[0.25] border-b lg:border-b-0 lg:border-r border-white/20 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center bg-white/[0.05] relative group">
              <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 3).padStart(2, '0')})</span>
-             <span className="text-3xl md:text-4xl lg:text-5xl font-serif italic text-neutral-700">
+             <span className="text-3xl md:text-4xl lg:text-5xl font-serif italic text-white/70">
               {row2.left}
             </span>
           </div>
-          <div className="flex-1 border-b lg:border-b-0 lg:border-r border-black/15 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
+          <div className="flex-1 border-b lg:border-b-0 lg:border-r border-white/20 py-6 lg:py-8 px-6 lg:px-10 flex items-center justify-center relative group">
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 4).padStart(2, '0')})</span>
             <motion.h2 
               style={{ x: springLeft }}
-              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter uppercase leading-none text-neutral-900 whitespace-nowrap"
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter uppercase leading-none text-white whitespace-nowrap"
             >
               {row2.right}
             </motion.h2>
@@ -98,7 +98,7 @@ const CreativeHeader: React.FC<CreativeHeaderProps> = ({ row1, row2, indexOffset
             <span className="absolute top-2 left-2 text-[8px] font-mono opacity-20 group-hover:opacity-100 transition-opacity">({String(indexOffset + 5).padStart(2, '0')})</span>
             <motion.h2 
               style={{ x: springRight }}
-              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none italic text-neutral-900 whitespace-nowrap"
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none italic text-white whitespace-nowrap"
             >
               {row2.center}
             </motion.h2>

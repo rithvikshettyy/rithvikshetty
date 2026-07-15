@@ -6,8 +6,6 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import MouseFollower from "@/components/mouse-follower"
-import ModeToggle from "@/components/mode-toggle"
 import Preloader from "@/components/preloader"
 import SmoothScroll from "@/components/smooth-scroll"
 
@@ -45,7 +43,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rithvikshetty.in"),
-  title: "Rithvik Shetty | Full Stack Developer & Freelancer",
+  title: "Rithvik Shetty, FullStack Developer",
   description: "Full stack developer and freelancer specializing in React, Next.js, and modern web technologies. Crafting minimalist, high-performance digital solutions.",
   keywords: [
     "Rithvik Shetty",
@@ -71,7 +69,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rithvikshetty.in",
     siteName: "Rithvik Shetty",
-    title: "Rithvik Shetty | Full Stack Developer & Freelancer",
+    title: "Rithvik Shetty, FullStack Developer",
     description: "Crafting digital experiences with code and creativity. Explore rithvikshetty.in for top-tier full-stack solutions.",
     images: [
       {
@@ -110,8 +108,8 @@ export const metadata: Metadata = {
   },
   generator: "Next.js",
   icons: {
-    icon: "/favicon-blob.png",
-    apple: "/apple-icon.png",
+    icon: "/favicon-icon.png",
+    apple: "/favicon-icon.png",
   },
 }
 
@@ -124,10 +122,11 @@ export default function RootLayout({
     // No scroll-smooth class here — Lenis owns scrolling; CSS smooth-scroll would fight it.
     <html lang="en" className={`dark ${playfair.variable} ${coolvetica.variable} ${apparelDisplay.variable}`} suppressHydrationWarning>
       <head>
-        {/* Set theme before paint: saved choice wins, else follow the OS. Avoids a flash. */}
+        {/* Dark mode only — no theme toggle. Clear any stale saved choice so a
+            previous 'light' session can't re-apply. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var m=localStorage.getItem('theme-mode');var mode=(m==='light'||m==='dark')?m:(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');var el=document.documentElement;el.classList.remove('light','dark','contrast');el.classList.add(mode);}catch(e){}})();`,
+            __html: `(function(){try{localStorage.removeItem('theme-mode');var el=document.documentElement;el.classList.remove('light','contrast');el.classList.add('dark');}catch(e){}})();`,
           }}
         />
         <link rel="manifest" href="/manifest.json" />
@@ -174,12 +173,11 @@ export default function RootLayout({
       </head>
       <body className={`font-sans antialiased bg-black text-white min-h-screen flex flex-col overflow-x-hidden`}>
         <SmoothScroll />
+        <div className="grain" aria-hidden="true" />
         <Preloader />
-        <MouseFollower />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
-        <ModeToggle />
         <Analytics />
       </body>
     </html>

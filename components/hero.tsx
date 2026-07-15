@@ -203,10 +203,11 @@ export default function Hero({ nextSection }: HeroProps) {
         return () => unfixNext()
       }
 
+      // Desktop only. On mobile the pinned scale-up scrub is heavy on touch and
+      // the taller mobile intro content clips inside the fixed 100vh card — a
+      // plain vertical scroll is smoother and avoids the clip. Mobile and
+      // reduced-motion both fall through to the natural, unpinned layout.
       mm.add("(min-width: 768px) and (prefers-reduced-motion: no-preference)", () => build(false))
-      mm.add("(max-width: 767px) and (prefers-reduced-motion: no-preference)", () => build(true))
-      // prefers-reduced-motion: no pin, no tweens — hero and next section
-      // stay exactly as laid out.
 
       // The display fonts load late and change the h1 metrics — re-measure.
       document.fonts.ready.then(() => ScrollTrigger.refresh())
@@ -217,11 +218,13 @@ export default function Hero({ nextSection }: HeroProps) {
   return (
     <div
       ref={containerRef}
-      className="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8 bg-[radial-gradient(ellipse_at_50%_40%,#ededed_0%,#fff_75%)] dark:bg-[radial-gradient(ellipse_at_50%_40%,#161616_0%,#000_75%)]"
+      className="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8 bg-[radial-gradient(ellipse_at_50%_40%,#ededed_0%,#fff_75%)] dark:bg-[radial-gradient(ellipse_at_50%_40%,#1c1c1c_0%,#101010_75%)]"
     >
-      {/* Red flow-field shader background (reference-site look) */}
+      {/* Red flow-field shader background (reference-site look).
+          Slight blur softens the flow; scale-105 pushes the blurred edges
+          off-screen so the viewport corners don't darken. */}
       {webgl && !isLight && (
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 scale-105 blur-[7px]">
           <RedFlowBg
             dpr={0.75}
             paused={!inView}
@@ -238,14 +241,17 @@ export default function Hero({ nextSection }: HeroProps) {
         <h1
           ref={nameRef}
           style={{ visibility: nameReady ? undefined : "hidden" }}
-          className="absolute bottom-24 md:bottom-36 inset-x-3 md:inset-x-8 flex items-end justify-between leading-none tracking-tight"
+          className="absolute bottom-24 md:bottom-36 inset-x-3 md:inset-x-8 flex items-end justify-center gap-[4vw] leading-none tracking-tight"
         >
-          <span data-name="first" className="font-normal [font-family:var(--font-coolvetica)] text-[15.2vw]">
+          <span data-name="first" className="font-normal [font-family:Helvetica,Arial,sans-serif] text-[15.2vw]">
             Rithvik
           </span>
           <span
             data-name="last"
-            className="font-normal [font-family:var(--font-apparel)] text-[15.2vw] text-transparent bg-clip-text bg-gradient-to-r from-[#9be9d8] via-[#e9fffa] to-[#8fd8c7]"
+            // pb extends the gradient paint box below the "y" descender (bg-clip-text
+            // only fills the box); -mb cancels the layout shift so it stays baseline-
+            // aligned with "Rithvik".
+            className="font-normal [font-family:Helvetica,Arial,sans-serif] text-[15.2vw] text-transparent bg-clip-text bg-gradient-to-r from-[#9be9d8] via-[#e9fffa] to-[#8fd8c7] pb-[0.28em] -mb-[0.28em]"
           >
             Shetty<span className="text-[0.6em]">.</span>
           </span>
@@ -260,17 +266,32 @@ export default function Hero({ nextSection }: HeroProps) {
           className="absolute inset-0"
         >
           {/* Tagline — top left, like the reference */}
-          <p data-hero-ui className="absolute top-24 md:top-28 left-4 md:left-12 text-sm md:text-lg font-bold text-white tracking-tight uppercase">
-            FULL <span className="font-serif italic font-normal text-neutral-400 lowercase tracking-normal">stack</span> DEVELOPER
+          <p data-hero-ui className="absolute top-[34px] md:top-[50px] left-4 md:left-12 max-w-[16rem] md:max-w-sm text-sm md:text-base font-medium text-white/90 tracking-tight leading-snug">
+            Full stack developer, <span className="font-serif italic font-normal">turning ideas into products</span>,<br />
+            through clean code, detail and craft.
           </p>
 
           {/* Thin rule under the name */}
           <div data-hero-ui className="absolute bottom-20 md:bottom-24 inset-x-3 md:inset-x-8 h-px bg-white/20" />
 
-          {/* Version tag — bottom left, under the rule */}
-          <p data-hero-ui className="absolute bottom-5 md:bottom-6 left-3 md:left-8 text-sm md:text-base font-semibold tracking-widest text-white">
-            → V4.0
-          </p>
+          {/* Social links — centered under the rule, like the reference */}
+          <nav
+            data-hero-ui
+            className="absolute bottom-6 md:bottom-7 left-1/2 -translate-x-1/2 flex items-center gap-4 md:gap-5 text-sm md:text-base font-medium uppercase tracking-widest text-white pointer-events-auto whitespace-nowrap"
+          >
+            <a href="https://github.com/rithvikshettyy" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-neutral-400">
+              GitHub
+            </a>
+            <span className="text-white/30">/</span>
+            <a href="https://www.linkedin.com/in/rithvikshetty/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-neutral-400">
+              LinkedIn
+            </a>
+            <span className="text-white/30">/</span>
+            <a href="https://x.com/RithvikShetty04" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-neutral-400">
+              Twitter
+            </a>
+          </nav>
+
         </motion.div>
       </div>
     </div>
