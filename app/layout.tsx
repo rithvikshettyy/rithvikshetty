@@ -1,18 +1,34 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google"
+import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import MouseFollower from "@/components/mouse-follower"
 import ModeToggle from "@/components/mode-toggle"
+import Preloader from "@/components/preloader"
+import SmoothScroll from "@/components/smooth-scroll"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
+  display: "swap",
+})
+
+const coolvetica = localFont({
+  src: "./fonts/coolvetica-rg.otf",
+  variable: "--font-coolvetica",
+  display: "swap",
+})
+
+const apparelDisplay = localFont({
+  // Regular Italic — the Black Italic cut read too heavy at display sizes.
+  src: "./fonts/appareldisplay-regularit.otf",
+  variable: "--font-apparel",
   display: "swap",
 })
 
@@ -105,7 +121,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`dark scroll-smooth ${playfair.variable}`} suppressHydrationWarning>
+    // No scroll-smooth class here — Lenis owns scrolling; CSS smooth-scroll would fight it.
+    <html lang="en" className={`dark ${playfair.variable} ${coolvetica.variable} ${apparelDisplay.variable}`} suppressHydrationWarning>
       <head>
         {/* Set theme before paint: saved choice wins, else follow the OS. Avoids a flash. */}
         <script
@@ -156,6 +173,8 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans antialiased bg-black text-white min-h-screen flex flex-col overflow-x-hidden`}>
+        <SmoothScroll />
+        <Preloader />
         <MouseFollower />
         <Header />
         <main className="flex-grow">{children}</main>

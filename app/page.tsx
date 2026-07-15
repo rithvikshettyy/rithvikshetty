@@ -16,6 +16,9 @@ import ScrollTextReveal from "@/components/scroll-text-reveal"
 export default function Home() {
   const introRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
+  // Element state (not just a ref) so the dynamically-imported Hero re-renders
+  // with the section node once it exists — its GSAP setup depends on it.
+  const [introEl, setIntroEl] = React.useState<HTMLElement | null>(null)
   const prefersReduced = useReducedMotion()
   // Reveal offsets collapse to 0 when the user prefers reduced motion.
   const revealOffset = prefersReduced ? 0 : 40
@@ -69,14 +72,20 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <Hero />
+      <Hero nextSection={introEl} />
 
-      {/* Intro Section with 3D Tilt Effect */}
+      {/* Intro Section with 3D Tilt Effect.
+          min-h-screen + centered content: during the hero's pinned scroll
+          sequence this section is scaled up as a fixed 100vw×100vh overlay,
+          so its in-flow size must match the viewport for a seamless handoff. */}
       <section
-        ref={introRef}
+        ref={(el) => {
+          introRef.current = el
+          setIntroEl(el)
+        }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="py-24 md:py-40 px-4 md:px-12 border-t border-white/10 bg-neutral-950 relative overflow-hidden"
+        className="min-h-screen flex flex-col justify-center py-24 md:py-40 px-4 md:px-12 border-t border-white/10 bg-neutral-950 relative overflow-hidden"
         style={{ perspective: 1200 }}
       >
         {/* Decorative parallax element */}
