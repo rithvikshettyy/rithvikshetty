@@ -14,11 +14,16 @@ export default function SmoothScroll() {
     // Native scrolling for users who prefer reduced motion.
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
 
+    // Reloads should start at the top, not restore the previous scroll.
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual"
+
     const lenis = new Lenis({
       // Reference-site feel: ~1.2s glide with an expo-out curve.
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     })
+    // Snap to the top immediately in case the browser restored a position.
+    lenis.scrollTo(0, { immediate: true })
 
     lenis.on("scroll", ScrollTrigger.update)
 

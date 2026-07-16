@@ -123,10 +123,11 @@ export default function RootLayout({
     <html lang="en" className={`dark ${playfair.variable} ${coolvetica.variable} ${apparelDisplay.variable}`} suppressHydrationWarning>
       <head>
         {/* Dark mode only — no theme toggle. Clear any stale saved choice so a
-            previous 'light' session can't re-apply. */}
+            previous 'light' session can't re-apply. Also force reloads to start
+            at the top instead of restoring the previous scroll position. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{localStorage.removeItem('theme-mode');var el=document.documentElement;el.classList.remove('light','contrast');el.classList.add('dark');}catch(e){}})();`,
+            __html: `(function(){try{localStorage.removeItem('theme-mode');var el=document.documentElement;el.classList.remove('light','contrast');el.classList.add('dark');if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);}catch(e){}})();`,
           }}
         />
         <link rel="manifest" href="/manifest.json" />

@@ -40,7 +40,8 @@ export default function ProjectsPage() {
   const cy = useMotionValue(0)
   const sx = useSpring(cx, { stiffness: 260, damping: 32, mass: 0.6 })
   const sy = useSpring(cy, { stiffness: 260, damping: 32, mass: 0.6 })
-  const glow = useMotionTemplate`radial-gradient(560px circle at ${sx}px ${sy}px, color-mix(in oklch, currentColor 9%, transparent), transparent 72%)`
+  // Crimson cursor spotlight — echoes the homepage red.
+  const glow = useMotionTemplate`radial-gradient(560px circle at ${sx}px ${sy}px, color-mix(in oklch, #a81f14 20%, transparent), transparent 72%)`
 
   const onMove = (e: React.MouseEvent) => {
     cx.set(e.clientX)

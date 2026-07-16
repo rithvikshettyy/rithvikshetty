@@ -4,13 +4,8 @@ import { motion, Variants } from 'framer-motion'
 import { Github, Linkedin, Twitter, Mail, ArrowUpRight, Zap, Star, Code2, Wind, FileCode2, Terminal, Server, Database, PenTool, Cloud, Box } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
-import dynamic from 'next/dynamic'
 import ScrollTextReveal from '@/components/scroll-text-reveal'
 import SpotifyStatus from '@/components/spotify-status'
-
-// WebGL can't SSR — load the dithered wave background on the client only.
-const Dither = dynamic(() => import('@/components/Dither'), { ssr: false })
 
 const PinterestIcon = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -37,75 +32,10 @@ const itemVariants: Variants = {
 }
 
 export default function About() {
-  // The shader draws waves on a black base. In light mode we invert it so it
-  // reads as a soft gray texture on the white page. `.dark` is the default.
-  const [isLight, setIsLight] = useState(false)
-  const [reduced, setReduced] = useState(false)
-  // Render the shader below native resolution — the dither/pixelation hides the
-  // softness and the per-pixel fbm cost scales with pixel count, so this is the
-  // main lever against cursor/animation lag.
-  const [dpr, setDpr] = useState(0.75)
-  // Skip the WebGL shader on mobile/low-end — three.js parse + per-pixel fbm is
-  // the main perf ceiling there.
-  const [webgl, setWebgl] = useState(false)
-
-  useEffect(() => {
-    const el = document.documentElement
-    const syncMode = () => setIsLight(el.classList.contains('light'))
-    syncMode()
-    const obs = new MutationObserver(syncMode)
-    obs.observe(el, { attributes: true, attributeFilter: ['class'] })
-
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const syncMotion = () => setReduced(mq.matches)
-    syncMotion()
-    mq.addEventListener('change', syncMotion)
-
-    const desktop = window.innerWidth >= 768
-    setDpr(desktop ? 0.75 : 0.5)
-    // Desktop only. (No hardwareConcurrency check — privacy browsers like Brave
-    // spoof it to 2, which would wrongly disable the shader there.)
-    setWebgl(desktop && !mq.matches)
-
-    return () => {
-      obs.disconnect()
-      mq.removeEventListener('change', syncMotion)
-    }
-  }, [])
-
   return (
     <main className="w-full bg-black text-white min-h-screen pt-32 pb-20 overflow-hidden relative">
-      {/* Dithered wave background — fixed behind the whole page, desktop only,
-          inverted in light mode */}
-      {webgl && (
-        <div
-          className="fixed inset-0 z-0"
-          style={{ filter: isLight ? 'invert(1)' : undefined }}
-        >
-          <Dither
-            waveColor={[0.35, 0.35, 0.35]}
-            waveSpeed={0.03}
-            waveFrequency={3}
-            waveAmplitude={0.3}
-            colorNum={4}
-            pixelSize={2}
-            mouseRadius={0.4}
-            dpr={dpr}
-            paused={false}
-            disableAnimation={reduced}
-            enableMouseInteraction={!reduced}
-          />
-        </div>
-      )}
-
-      {/* Radial vignette keeps text contrast crisp over the dark dither;
-          skip it in light mode where it would darken the page */}
-      {webgl && !isLight && (
-        <div className="fixed inset-0 z-[1] pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.35)_45%,rgba(0,0,0,0.15)_78%)]" />
-      )}
-
-      {/* Background Ambient Glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-white/[0.03] blur-[120px] rounded-full pointer-events-none" />
+      {/* Crimson ambient glow — echoes the homepage red */}
+      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[900px] h-[440px] bg-[#a81f14]/25 blur-[130px] rounded-full pointer-events-none" />
 
       <section className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 relative z-10">
 
@@ -119,11 +49,11 @@ export default function About() {
           >
             <SpotifyStatus variant="inline" />
             <h1 className="text-6xl md:text-[10vw] xl:text-8xl font-black tracking-tighter leading-[0.85] mb-8">
-              I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">Rithvik</span>
+              I'm <span className="text-accent">Rithvik</span>
             </h1>
             <p className="text-xl md:text-3xl text-neutral-400 font-light tracking-wide leading-relaxed max-w-2xl">
               <span className="font-bold text-white tracking-tight text-2xl md:text-4xl">FULL <span className="font-serif italic font-normal text-neutral-300">stack</span> DEVELOPER</span><br />
-              Freelancer specialized in building <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600">experiences</span>.
+              Freelancer specialized in building <span className="text-accent">experiences</span>.
             </p>
             <div className="mt-12 flex items-center gap-4 flex-wrap">
               <Link href="/rithvikshetty_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-5 bg-white text-black font-bold uppercase tracking-widest rounded-full border border-black/15 dark:border-transparent hover:scale-105 transition-transform flex items-center justify-center gap-3 text-xs md:text-sm shadow-[0_0_30px_rgba(255,255,255,0.15)]">

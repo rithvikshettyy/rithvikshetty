@@ -50,7 +50,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6 flex flex-col relative overflow-hidden text-white">
       {/* Background Decor */}
-      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-white/[0.02] blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-[560px] h-[560px] bg-[#a81f14]/20 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="w-full max-w-7xl mx-auto px-6 sm:px-12 md:px-16 flex-grow relative z-10">
         <Link

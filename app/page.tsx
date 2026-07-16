@@ -6,6 +6,8 @@ const Hero = dynamic(() => import("@/components/hero"))
 const Marquee = dynamic(() => import("@/components/marquee"))
 const ProjectList = dynamic(() => import("@/components/project-list"))
 const CreativeTeaser = dynamic(() => import("@/components/creative-teaser"))
+// WebGL sphere gallery — client only.
+const InfiniteMenu = dynamic(() => import("@/components/InfiniteMenu"), { ssr: false })
 import Link from "next/link"
 import Image from "next/image"
 import React, { useRef } from "react"
@@ -13,13 +15,50 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring, useReducedM
 import TextScramble from "@/components/text-scramble"
 import ScrollTextReveal from "@/components/scroll-text-reveal"
 import Magnetic from "@/components/magnetic"
+import { staticProjects } from "@/data/projects"
+
+// Project items for the InfiniteMenu sphere.
+const sphereItems = staticProjects.map((p) => ({
+  image: p.image,
+  link: p.slug ? `/projects/${p.slug}` : (p.url || "/projects"),
+  title: p.title,
+  description: p.description,
+}))
 
 export default function Home() {
   const introRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
+  const orbitRef = useRef<HTMLElement>(null)
   // Element state (not just a ref) so the dynamically-imported Hero re-renders
   // with the section node once it exists — its GSAP setup depends on it.
   const [introEl, setIntroEl] = React.useState<HTMLElement | null>(null)
+
+  // Hide the navbar while the full-screen orbit section fills the viewport
+  // (desktop only — it's a normal in-flow block on mobile). Signals the header
+  // via events so it stays hidden regardless of its own scroll-reveal logic.
+  // Observes the inner sticky panel (≈1 viewport) so the ratio is reliable,
+  // unlike the tall outer section whose ratio never approaches 1.
+  React.useEffect(() => {
+    const section = orbitRef.current
+    if (!section || window.innerWidth < 768) return
+    const panel = section.querySelector<HTMLElement>(":scope > div")
+    if (!panel) return
+    let hidden = false
+    const io = new IntersectionObserver(
+      ([e]) => {
+        const shouldHide = e.intersectionRatio > 0.6
+        if (shouldHide === hidden) return
+        hidden = shouldHide
+        window.dispatchEvent(new CustomEvent(shouldHide ? "chrome:hide" : "chrome:show"))
+      },
+      { threshold: [0, 0.3, 0.6, 0.9, 1] }
+    )
+    io.observe(panel)
+    return () => {
+      io.disconnect()
+      if (hidden) window.dispatchEvent(new CustomEvent("chrome:show"))
+    }
+  }, [])
   const prefersReduced = useReducedMotion()
   // Reveal offsets collapse to 0 when the user prefers reduced motion.
   const revealOffset = prefersReduced ? 0 : 40
@@ -162,6 +201,26 @@ export default function Home() {
 
       <Marquee />
       <ProjectList />
+
+      {/* Projects in orbit — interactive WebGL sphere gallery.
+          Desktop: pins full-screen while the extra scroll height gives dwell
+          time to drag; navbar hides while it's on screen. Mobile stays a
+          normal in-flow block (a pinned full-screen canvas with
+          touch-action:none would trap touch scrolling). */}
+      <section ref={orbitRef} className="relative w-full bg-black border-t border-white/10 md:h-[220vh]">
+        <div className="relative md:sticky md:top-0 w-full overflow-hidden h-[70vh] md:h-screen">
+          {/* Canvas fills the whole viewport so the sphere and its action
+              button are never cropped */}
+          <div className="absolute inset-0">
+            <InfiniteMenu items={sphereItems} />
+          </div>
+          {/* Small hint, top-left, non-interactive so drag passes through */}
+          <div className="absolute top-0 left-0 z-10 px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 pt-14 md:pt-28 pointer-events-none">
+            <span className="text-sm uppercase tracking-widest text-neutral-500">( Drag to explore )</span>
+          </div>
+        </div>
+      </section>
+
       <CreativeTeaser />
 
       {/* Parallax Contact Section */}

@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useInView, useMotionValue, useSpring } from "framer-motion"
+import { AnimatePresence, motion, useInView, useMotionValue, useSpring } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -9,8 +9,20 @@ import { staticProjects } from "@/data/projects"
 
 export { staticProjects }
 
+type Filter = "all" | "client" | "personal"
+const FILTERS: { id: Filter; label: string }[] = [
+  { id: "all", label: "All Work" },
+  { id: "client", label: "Client" },
+  { id: "personal", label: "Personal" },
+]
+
 export default function ProjectList() {
   const [hoveredProject, setHoveredProject] = useState<any>(null)
+  const [filter, setFilter] = useState<Filter>("all")
+
+  const visibleProjects = staticProjects.filter((p) =>
+    filter === "all" ? true : filter === "client" ? (p as any).isClient : !(p as any).isClient
+  )
 
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
@@ -40,15 +52,42 @@ export default function ProjectList() {
         <span className="hidden md:inline-block text-sm text-neutral-500">( 2022 — 2026 )</span>
       </div>
 
+      {/* Work-type filter */}
+      <div className="mb-8 flex items-center gap-2 md:gap-3">
+        {FILTERS.map((f) => {
+          const active = filter === f.id
+          return (
+            <button
+              key={f.id}
+              onClick={() => setFilter(f.id)}
+              className={`relative rounded-full px-4 py-2 text-xs md:text-sm font-medium uppercase tracking-widest transition-colors ${
+                active ? "text-black" : "text-neutral-400 hover:text-white"
+              }`}
+            >
+              {active && (
+                <motion.span
+                  layoutId="filter-pill"
+                  className="absolute inset-0 rounded-full bg-white"
+                  transition={{ type: "spring", stiffness: 400, damping: 32 }}
+                />
+              )}
+              <span className="relative z-10">{f.label}</span>
+            </button>
+          )
+        })}
+      </div>
+
       <div className="flex flex-col" onMouseMove={handleMouseMove}>
-        {staticProjects.map((project) => (
-          <ProjectItem
-            key={project.id}
-            project={project}
-            onMouseEnter={() => setHoveredProject(project)}
-            onMouseLeave={() => setHoveredProject(null)}
-          />
-        ))}
+        <AnimatePresence mode="popLayout" initial={false}>
+          {visibleProjects.map((project) => (
+            <ProjectItem
+              key={project.id}
+              project={project}
+              onMouseEnter={() => setHoveredProject(project)}
+              onMouseLeave={() => setHoveredProject(null)}
+            />
+          ))}
+        </AnimatePresence>
       </div>
 
       {/* Floating Hover Image */}
@@ -104,9 +143,11 @@ function ProjectItem({ project, onMouseEnter, onMouseLeave }: { project: any; on
   return (
     <motion.div
       ref={ref}
+      layout
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.6 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       className="group relative border-b border-white/10 py-8 cursor-pointer transition-colors hover:bg-neutral-900/50"

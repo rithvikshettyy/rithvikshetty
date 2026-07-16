@@ -21,6 +21,20 @@ export default function Header() {
   // The bar starts hidden and reveals on activity: while scrolled past the hero,
   // or briefly whenever the cursor moves. It hides again when idle at the top.
   const [hidden, setHidden] = useState(true)
+  // Sections can force the bar away regardless of scroll (e.g. the full-screen
+  // orbit gallery) by dispatching `chrome:hide` / `chrome:show`.
+  const [forceHidden, setForceHidden] = useState(false)
+
+  useEffect(() => {
+    const onHide = () => setForceHidden(true)
+    const onShow = () => setForceHidden(false)
+    window.addEventListener("chrome:hide", onHide)
+    window.addEventListener("chrome:show", onShow)
+    return () => {
+      window.removeEventListener("chrome:hide", onHide)
+      window.removeEventListener("chrome:show", onShow)
+    }
+  }, [])
 
   useEffect(() => {
     // On pages with a full-screen hero (landing, awards) the bar reveals on
@@ -58,7 +72,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 md:py-6 flex justify-between items-center text-white pointer-events-none bg-black/80 backdrop-blur-md transition-transform duration-300 ease-out",
-        hidden && "-translate-y-full",
+        (hidden || forceHidden) && "-translate-y-full",
       )}
     >
       <Link

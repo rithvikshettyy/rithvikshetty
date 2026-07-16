@@ -82,6 +82,8 @@ export default function Achievements() {
         </video>
         {/* Legibility wash over the video */}
         <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-white/70 via-white/30 to-white/70 dark:from-black/70 dark:via-black/30 dark:to-black/70" />
+        {/* Crimson ambient glow — echoes the homepage red */}
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[500px] z-[1] bg-[#a81f14]/20 blur-[140px] rounded-full pointer-events-none" />
 
         {/* Top UI Bar */}
         <div className="relative z-10 flex justify-end items-start text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">

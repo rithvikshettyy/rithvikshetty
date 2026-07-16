@@ -102,8 +102,10 @@ export default function ExperiencePage() {
   const list = tab === 'work' ? workExperiences : collegePositions
 
   return (
-    <div className="bg-black text-white min-h-screen pt-28 md:pt-36 pb-24 overflow-hidden">
-      <div className="w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-56 2xl:px-72">
+    <div className="relative bg-black text-white min-h-screen pt-28 md:pt-36 pb-24 overflow-hidden">
+      {/* Crimson ambient glow — echoes the homepage red */}
+      <div className="absolute -top-24 left-0 w-[560px] h-[420px] bg-[#a81f14]/20 blur-[130px] rounded-full pointer-events-none" />
+      <div className="relative z-10 w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-56 2xl:px-72">
         <Link
           href="/"
           prefetch={false}

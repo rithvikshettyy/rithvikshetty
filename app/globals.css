@@ -238,3 +238,22 @@
   80% { transform:translate(3%, 35%); }
   90% { transform:translate(-10%, 10%); }
 }
+
+/* Brand accent — the mint→teal gradient from the homepage name.
+   Use on emphasized words for a consistent highlight site-wide. */
+.text-accent {
+  background-image: linear-gradient(to right, #9be9d8, #e9fffa, #8fd8c7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Crimson accent — the homepage red (hero shader / teaser). Ambient wash used
+   behind page headings so the red thread recurs across the site. */
+.accent-glow {
+  background-color: #a81f14;
+  pointer-events: none;
+  filter: blur(120px);
+  border-radius: 9999px;
+}
