@@ -1,6 +1,7 @@
 'use client'
 
-import { motion, Variants } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, Variants, useReducedMotion, useScroll, useSpring } from 'framer-motion'
 import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -14,20 +15,28 @@ const PinterestIcon = ({ className }: { className?: string }) => (
 )
 
 const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 30, filter: 'blur(10px)' },
+  hidden: { opacity: 0, y: 24, filter: 'blur(6px)' },
   visible: {
     opacity: 1,
     y: 0,
     filter: 'blur(0px)',
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] }
   }
 }
 
 // The "About" block — intro, expertise grid, principles, and connect bento.
 // Used standalone on /about and embedded on the homepage.
 export default function AboutSection() {
+  const reduce = useReducedMotion()
+
+  // Scroll-scrubbed red marker: the stroke draws in and flows down as this
+  // block moves through the viewport, and reverses on scroll-up.
+  const lineRef = useRef<HTMLDivElement>(null)
+  const { scrollYProgress } = useScroll({ target: lineRef, offset: ['start 0.9', 'end 0.55'] })
+  const lineLength = useSpring(scrollYProgress, { stiffness: 140, damping: 30, mass: 0.4 })
+
   return (
-    <div className="w-full bg-black text-white pt-24 md:pt-28 pb-20 overflow-hidden relative">
+    <div className="w-full bg-black text-white pt-24 md:pt-28 pb-20 overflow-x-clip relative z-20">
       {/* Crimson ambient glow — echoes the homepage red */}
       <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[900px] h-[440px] bg-[#a81f14]/25 blur-[130px] rounded-full pointer-events-none" />
 
@@ -43,7 +52,7 @@ export default function AboutSection() {
             className="lg:col-span-12 xl:col-span-7"
           >
             <SpotifyStatus variant="inline" />
-            <h2 className="text-6xl md:text-[10vw] xl:text-8xl font-black tracking-tighter leading-[0.85] mb-8">
+            <h2 className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter leading-[0.85] mb-8">
               I'm <span className="text-accent">Rithvik</span>
             </h2>
             <p className="text-xl md:text-3xl text-neutral-400 font-light tracking-wide leading-relaxed max-w-2xl">
@@ -89,13 +98,58 @@ export default function AboutSection() {
           </motion.div>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-24 md:space-y-32">
+        <div ref={lineRef} className="relative space-y-24 md:space-y-32 overflow-visible">
+          {/* Hand-drawn red marker flowing down the About column, behind
+              everything. pathLength is scroll-scrubbed; the stroke enters
+              off-frame and its tail exits off the window.
+
+              Two variants: a wide multi-swing snake for tablet/desktop, and a
+              gentler, lower-amplitude curve for narrow phones (the desktop
+              path stretches into cramped zigzags on a phone's aspect ratio). */}
+          {/* Tablet / desktop */}
+          <svg
+            aria-hidden
+            viewBox="0 0 1000 2000"
+            preserveAspectRatio="none"
+            className="pointer-events-none absolute left-1/2 top-0 z-0 hidden h-full w-screen -translate-x-1/2 overflow-visible sm:block"
+          >
+            <motion.path
+              d="M-220 -60 C120 90 640 160 730 380 C795 560 600 630 560 770 C525 895 780 1000 690 1195 C640 1360 400 1360 440 1580 C490 1800 700 1900 520 2080 C300 2320 -160 2560 -900 3200"
+              fill="none"
+              stroke="#e5231d"
+              vectorEffect="non-scaling-stroke"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="[stroke-width:20px] lg:[stroke-width:26px]"
+              style={{ pathLength: reduce ? 1 : lineLength }}
+            />
+          </svg>
+          {/* Phone */}
+          <svg
+            aria-hidden
+            viewBox="0 0 400 1600"
+            preserveAspectRatio="none"
+            className="pointer-events-none absolute left-1/2 top-0 z-0 block h-full w-screen -translate-x-1/2 overflow-visible sm:hidden"
+          >
+            <motion.path
+              d="M-40 -30 C100 180 300 320 250 600 C210 830 40 960 200 1220 C300 1400 210 1520 -60 1720"
+              fill="none"
+              stroke="#e5231d"
+              vectorEffect="non-scaling-stroke"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="[stroke-width:11px]"
+              style={{ pathLength: reduce ? 1 : lineLength }}
+            />
+          </svg>
+
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}
             variants={itemVariants}
-            className="max-w-4xl"
+            className="relative z-10 max-w-4xl"
           >
             <div className="space-y-16">
               <ScrollTextReveal
@@ -115,20 +169,59 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}
             variants={itemVariants}
-            className="space-y-12"
+            className="relative z-10 space-y-12"
           >
             <div className="flex items-center gap-4">
               <div className="w-12 h-[1px] bg-white/20" />
               <h3 className="text-2xl font-bold tracking-tight uppercase text-neutral-500">Principles</h3>
             </div>
 
-            <div className="max-w-6xl">
-              <ScrollTextReveal
-                className="text-2xl md:text-5xl leading-[1.1] font-medium tracking-tight text-neutral-400"
-                text="My approach is rooted in being Design Obsessed, where pixel perfection and smooth interactions are non-negotiable. I prioritize being Performant First, ensuring under-the-hood speed that scales effortlessly over time. As a Continuous Learner, I am always adapting to the absolute edge of what's possible."
-              />
+            <div className="relative">
+              {/* Favicon anchored in the diagonal gap between the two paragraphs */}
+              <div className="pointer-events-none absolute inset-0 hidden md:flex items-center justify-center">
+                <div className="relative">
+                  <div className="absolute -inset-6 bg-[#a81f14]/25 blur-[60px] rounded-full" />
+                  <Image
+                    src="/favicon-icon.png"
+                    alt="RS monogram"
+                    width={224}
+                    height={224}
+                    className="relative w-40 h-40 lg:w-56 lg:h-56 rounded-3xl border border-white/10 shadow-2xl"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-y-24 lg:gap-y-40 lg:-mx-24 xl:-mx-48">
+                {/* Top-right paragraph */}
+                <div className="md:col-span-2 md:row-start-1 md:max-w-3xl md:justify-self-end">
+                  <ScrollTextReveal
+                    className="justify-start md:justify-end md:text-right text-xl md:text-2xl lg:text-3xl leading-[1.3] font-medium tracking-tight text-neutral-400"
+                    text="My approach is rooted in being Design Obsessed, where pixel perfection and smooth interactions are non-negotiable."
+                  />
+                </div>
+
+                {/* Bottom-left paragraph */}
+                <div className="md:col-span-2 md:row-start-2 md:max-w-3xl md:justify-self-start">
+                  <ScrollTextReveal
+                    className="text-xl md:text-2xl lg:text-3xl leading-[1.3] font-medium tracking-tight text-neutral-400"
+                    text="I prioritize being Performant First, ensuring under-the-hood speed that scales effortlessly over time. As a Continuous Learner, I am always adapting to the absolute edge of what's possible."
+                  />
+                </div>
+              </div>
+
+              {/* Mobile: favicon centered between stacked paragraphs */}
+              <div className="pointer-events-none flex md:hidden justify-center mt-16">
+                <Image
+                  src="/favicon-icon.png"
+                  alt="RS monogram"
+                  width={224}
+                  height={224}
+                  className="w-32 h-32 rounded-3xl border border-white/10 shadow-2xl"
+                />
+              </div>
             </div>
           </motion.div>
+          </div>
 
           {/* Social Links (Bento Style) */}
           <motion.div
@@ -136,7 +229,7 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}
             variants={itemVariants}
-            className="space-y-16 pb-20"
+            className="relative z-10 space-y-16 pb-20"
           >
             <div className="flex items-center gap-4">
               <div className="w-12 h-[1px] bg-white/20" />
@@ -165,7 +258,7 @@ export default function AboutSection() {
                   </div>
                 );
 
-                const className = `group bg-neutral-900/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 md:p-10 transition-all duration-500 cursor-pointer ${link.hover}`;
+                const className = `group bg-neutral-900/40 backdrop-blur-md md:backdrop-blur-xl border border-white/10 rounded-[2rem] p-6 sm:p-8 md:p-10 transition-all duration-500 cursor-pointer ${link.hover}`;
 
                 return (
                   <motion.div variants={itemVariants} key={i} className={link.col}>

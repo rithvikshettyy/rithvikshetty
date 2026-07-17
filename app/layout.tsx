@@ -175,7 +175,6 @@ export default function RootLayout({
       </head>
       <body className={`font-sans antialiased bg-black text-white min-h-screen flex flex-col overflow-x-hidden`}>
         <SmoothScroll />
-        <div className="grain" aria-hidden="true" />
         <Preloader />
         {/* Navbar disabled site-wide — all sections live on the homepage. */}
         {/* <Header /> */}

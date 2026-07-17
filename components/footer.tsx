@@ -18,7 +18,7 @@ export default function Footer() {
     setWebgl(window.innerWidth >= 768)
   }, [])
 
-  if (pathname?.startsWith("/studio") || pathname?.startsWith("/playground") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat" || pathname === "/about" || pathname === "/contact") return null
+  if (pathname?.startsWith("/studio") || pathname?.startsWith("/playground") || pathname?.match(/^\/projects\/.+/) || pathname === "/chat" || pathname === "/about" || pathname === "/contact" || pathname === "/work") return null
 
   return (
     <footer className="bg-black border-t border-white/10 py-20 px-6">

@@ -51,6 +51,31 @@ export default function AwardsSection() {
 
   const [time, setTime] = useState("")
 
+  // Custom favicon cursor — active only while the pointer is inside this
+  // section. It naturally reverts to the OS cursor the moment we leave into
+  // the "let's work together" (contact) section below.
+  const [cursorActive, setCursorActive] = useState(false)
+  const curX = useMotionValue(-100)
+  const curY = useMotionValue(-100)
+  const smX = useSpring(curX, { stiffness: 500, damping: 40, mass: 0.4 })
+  const smY = useSpring(curY, { stiffness: 500, damping: 40, mass: 0.4 })
+
+  useEffect(() => {
+    // Fine pointer only — no custom cursor on touch devices.
+    if (typeof window !== 'undefined' && !window.matchMedia('(pointer: fine)').matches) return
+    const onMove = (e: PointerEvent) => {
+      const el = containerRef.current as HTMLElement | null
+      if (!el) return
+      const r = el.getBoundingClientRect()
+      const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom
+      curX.set(e.clientX)
+      curY.set(e.clientY)
+      setCursorActive(inside)
+    }
+    window.addEventListener('pointermove', onMove, { passive: true })
+    return () => window.removeEventListener('pointermove', onMove)
+  }, [curX, curY])
+
   useEffect(() => {
     const updateTime = () => {
       const now = new Date()
@@ -65,7 +90,21 @@ export default function AwardsSection() {
   const titleOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0])
 
   return (
-    <div ref={containerRef} className="w-full bg-black text-white min-h-[200vh] relative">
+    <div
+      ref={containerRef}
+      className={`w-full bg-black text-white min-h-[200vh] relative ${cursorActive ? 'cursor-none [&_*]:!cursor-none' : ''}`}
+    >
+      {/* Favicon cursor follower — only visible while hovering this section */}
+      <motion.img
+        src="/favicon-icon.png"
+        alt=""
+        aria-hidden
+        style={{ left: smX, top: smY }}
+        animate={{ opacity: cursorActive ? 1 : 0, scale: cursorActive ? 1 : 0.6 }}
+        transition={{ duration: 0.18, ease: 'easeOut' }}
+        className="pointer-events-none fixed z-[9999] h-20 w-20 -translate-x-1/2 -translate-y-1/2 rounded-xl shadow-lg will-change-transform"
+      />
+
       {/* Cinematic Hero Section */}
       <section className="sticky top-0 h-screen w-full flex flex-col justify-between p-6 md:p-12 overflow-hidden pointer-events-none z-20">
         {/* Ambient background video */}
