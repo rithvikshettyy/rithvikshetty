@@ -4,7 +4,10 @@ import dynamic from "next/dynamic"
 
 const Hero = dynamic(() => import("@/components/hero"))
 const Marquee = dynamic(() => import("@/components/marquee"))
-const ProjectList = dynamic(() => import("@/components/project-list"))
+// ProjectList (the old "Selected Works" list) is retired from the homepage in
+// favour of the InfiniteMenu orbit gallery below. The component file is kept
+// (still used by the chat/chatbot for its staticProjects export) and can be
+// re-added here if needed.
 const CreativeTeaser = dynamic(() => import("@/components/creative-teaser"))
 // WebGL sphere gallery — client only.
 const InfiniteMenu = dynamic(() => import("@/components/InfiniteMenu"), { ssr: false })
@@ -15,12 +18,16 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring, useReducedM
 import TextScramble from "@/components/text-scramble"
 import ScrollTextReveal from "@/components/scroll-text-reveal"
 import Magnetic from "@/components/magnetic"
+import ContactSection from "@/components/contact-section"
+import AwardsSection from "@/components/awards-section"
+import AboutSection from "@/components/about-section"
+import ExperienceSection from "@/components/experience-section"
 import { staticProjects } from "@/data/projects"
 
 // Project items for the InfiniteMenu sphere.
 const sphereItems = staticProjects.map((p) => ({
   image: p.image,
-  link: p.slug ? `/projects/${p.slug}` : (p.url || "/projects"),
+  link: p.slug ? `/projects/${p.slug}` : (p.url || "/"),
   title: p.title,
   description: p.description,
 }))
@@ -199,15 +206,20 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* About, embedded above the tech-stack marquee */}
+      <AboutSection />
+
+      {/* Experience journey, right after About */}
+      <ExperienceSection />
+
       <Marquee />
-      <ProjectList />
 
       {/* Projects in orbit — interactive WebGL sphere gallery.
           Desktop: pins full-screen while the extra scroll height gives dwell
           time to drag; navbar hides while it's on screen. Mobile stays a
           normal in-flow block (a pinned full-screen canvas with
           touch-action:none would trap touch scrolling). */}
-      <section ref={orbitRef} className="relative w-full bg-black border-t border-white/10 md:h-[220vh]">
+      <section id="work" ref={orbitRef} className="relative w-full bg-black border-t border-white/10 md:h-[220vh]">
         <div className="relative md:sticky md:top-0 w-full overflow-hidden h-[70vh] md:h-screen">
           {/* Canvas fills the whole viewport so the sphere and its action
               button are never cropped */}
@@ -222,6 +234,14 @@ export default function Home() {
       </section>
 
       <CreativeTeaser />
+
+      {/* Awards & recognitions, embedded above the contact block */}
+      <AwardsSection />
+
+      {/* Contact form, embedded above the parallax GET IN TOUCH banner */}
+      <section className="bg-black py-24 md:py-32">
+        <ContactSection />
+      </section>
 
       {/* Parallax Contact Section */}
       <section ref={contactRef} className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center bg-white text-black px-4 py-20 md:py-0 text-center relative overflow-hidden">

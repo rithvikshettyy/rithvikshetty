@@ -4,7 +4,7 @@ import { Geist, Geist_Mono, Playfair_Display } from "next/font/google"
 import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import Header from "@/components/header"
+// import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Preloader from "@/components/preloader"
 import SmoothScroll from "@/components/smooth-scroll"
@@ -43,8 +43,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rithvikshetty.in"),
-  title: "Rithvik Shetty, FullStack Developer",
-  description: "Full stack developer and freelancer specializing in React, Next.js, and modern web technologies. Crafting minimalist, high-performance digital solutions.",
+  title: "Rithvik Shetty, Full Stack Developer",
+  description: "Rithvik Shetty, Full Stack Developer, computer science student in Thane, specialized in modern web development, machine learning and interactive design.",
   keywords: [
     "Rithvik Shetty",
     "Full Stack Developer",
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rithvikshetty.in",
     siteName: "Rithvik Shetty",
-    title: "Rithvik Shetty, FullStack Developer",
-    description: "Crafting digital experiences with code and creativity. Explore rithvikshetty.in for top-tier full-stack solutions.",
+    title: "Rithvik Shetty, Full Stack Developer",
+    description: "Rithvik Shetty, Full Stack Developer, computer science student in Thane, specialized in modern web development, machine learning and interactive design.",
     images: [
       {
         url: "/og-image.png",
@@ -82,8 +82,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rithvik Shetty | Full Stack Developer | Freelancer",
-    description: "Building the future of the web with performance and aesthetics.",
+    title: "Rithvik Shetty, Full Stack Developer",
+    description: "Rithvik Shetty, Full Stack Developer, computer science student in Thane, specialized in modern web development, machine learning and interactive design.",
     images: ["/og-image.png"],
     creator: "@RithvikShetty04", // Recommended to match your social handle
   },
@@ -124,10 +124,11 @@ export default function RootLayout({
       <head>
         {/* Dark mode only — no theme toggle. Clear any stale saved choice so a
             previous 'light' session can't re-apply. Also force reloads to start
-            at the top instead of restoring the previous scroll position. */}
+            at the top instead of restoring the previous scroll position.
+            Reloading any subpage redirects to the homepage (runs pre-paint, no flash). */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{localStorage.removeItem('theme-mode');var el=document.documentElement;el.classList.remove('light','contrast');el.classList.add('dark');if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);}catch(e){}})();`,
+            __html: `(function(){try{var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.type==='reload'&&location.pathname!=='/'){location.replace('/');return;}localStorage.removeItem('theme-mode');var el=document.documentElement;el.classList.remove('light','contrast');el.classList.add('dark');if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);}catch(e){}})();`,
           }}
         />
         <link rel="manifest" href="/manifest.json" />
@@ -145,7 +146,7 @@ export default function RootLayout({
               name: "Rithvik Shetty",
               url: "https://rithvikshetty.in",
               jobTitle: "Full Stack Developer",
-              description: "Full stack developer and freelancer specializing in React, Next.js, and modern web technologies",
+              description: "Rithvik Shetty, Full Stack Developer, computer science student in Thane, specialized in modern web development, machine learning and interactive design.",
               sameAs: [
                 "https://github.com/rithvikshettyy",
                 "https://www.linkedin.com/in/rithvikshetty/",
@@ -163,7 +164,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "Rithvik Shetty",
               url: "https://rithvikshetty.in",
-              description: "Portfolio of Rithvik Shetty, a full stack developer and freelancer specializing in React, Next.js, and modern web technologies.",
+              description: "Rithvik Shetty, Full Stack Developer, computer science student in Thane, specialized in modern web development, machine learning and interactive design.",
               author: {
                 "@type": "Person",
                 name: "Rithvik Shetty",
@@ -176,7 +177,8 @@ export default function RootLayout({
         <SmoothScroll />
         <div className="grain" aria-hidden="true" />
         <Preloader />
-        <Header />
+        {/* Navbar disabled site-wide — all sections live on the homepage. */}
+        {/* <Header /> */}
         <main className="flex-grow">{children}</main>
         <Footer />
         <Analytics />

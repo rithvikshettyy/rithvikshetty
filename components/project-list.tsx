@@ -49,7 +49,7 @@ export default function ProjectList() {
             <Image src="/star3d.png" alt="Star Accent" fill className="object-contain drop-shadow-2xl brightness-110" />
           </motion.div>
         </div>
-        <span className="hidden md:inline-block text-sm text-neutral-500">( 2022 — 2026 )</span>
+        <span className="hidden md:inline-block text-sm text-neutral-500">( 2022 - 2026 )</span>
       </div>
 
       {/* Work-type filter */}

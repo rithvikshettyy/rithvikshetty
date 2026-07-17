@@ -176,11 +176,16 @@ function FlowerPlane({ reduced }: { reduced: boolean }) {
   )
 }
 
+// Warm the texture cache as soon as this chunk loads (page open), so the
+// shader has nothing left to fetch by the time the footer scrolls into view.
+useLoader.preload(THREE.TextureLoader, "/flower-base.jpg")
+
 export default function FlowerHalftone() {
   const [reduced, setReduced] = useState(false)
-  // Only mount the canvas once the footer scrolls near view, so this heavy
-  // shader isn't driving a second live WebGL context while the hero one runs.
-  const [visible, setVisible] = useState(false)
+  // The canvas mounts immediately (shader compile + texture upload happen at
+  // page open, so there's no pop-in), but the render loop only runs while the
+  // footer is near view — offscreen it idles at zero cost.
+  const [inView, setInView] = useState(false)
   // Bumped to force a full remount if the driver drops the context (recovery).
   const [gen, setGen] = useState(0)
   const hostRef = useRef<HTMLDivElement>(null)
@@ -197,7 +202,7 @@ export default function FlowerHalftone() {
     const el = hostRef.current
     if (!el) return
     const io = new IntersectionObserver(
-      ([e]) => e.isIntersecting && setVisible(true),
+      ([e]) => setInView(e.isIntersecting),
       { rootMargin: "200px" },
     )
     io.observe(el)
@@ -206,10 +211,12 @@ export default function FlowerHalftone() {
 
   return (
     <div ref={hostRef} className="!absolute inset-0">
-      {visible && (
-        <Canvas
+      <Canvas
           key={gen}
           dpr={[1, 1.5]}
+          // 'demand' still renders the first frame on mount (compiles the
+          // program up front); 'always' drives the loop only while in view.
+          frameloop={inView ? "always" : "demand"}
           gl={{ antialias: false, alpha: true, powerPreference: "high-performance" }}
           className="!absolute inset-0"
           onCreated={({ gl }) => {
@@ -229,8 +236,7 @@ export default function FlowerHalftone() {
           <Suspense fallback={null}>
             <FlowerPlane reduced={reduced} />
           </Suspense>
-        </Canvas>
-      )}
+      </Canvas>
     </div>
   )
 }

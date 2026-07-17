@@ -123,7 +123,7 @@ export default function SpotifyStatus({ variant = "capsule" }: { variant?: "caps
               </span>
               <div className="flex items-baseline gap-1.5 min-w-0">
                 <span className="text-[13px] font-semibold text-white truncate leading-tight">{song.track}</span>
-                <span className="text-white/20 text-[10px] shrink-0">—</span>
+                <span className="text-white/20 text-[10px] shrink-0">·</span>
                 <span className="text-[11px] text-white/50 truncate leading-tight">{song.artist}</span>
               </div>
             </div>

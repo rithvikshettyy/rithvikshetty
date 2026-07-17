@@ -349,7 +349,7 @@ export default function ChatPage() {
                     </Link>
                   ))}
                   <Link
-                    href="/projects"
+                    href="/"
                     className="text-xs pl-1 mt-0.5 transition-colors"
                     style={{ color: "rgba(96,165,250,0.5)" }}
                   >
@@ -385,7 +385,7 @@ export default function ChatPage() {
                         style={{ color: "rgba(255,255,255,0.38)" }}
                       >
                         {" "}
-                        — {s.desc}
+                        · {s.desc}
                       </span>
                     </div>
                   ))}

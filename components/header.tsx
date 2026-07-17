@@ -6,13 +6,8 @@ import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
 
-const navItems = [
-  { name: "Projects", path: "/projects" },
-  { name: "Experience", path: "/experience" },
-  // { name: "Playground", path: "/playground" },
-  { name: "About", path: "/about" },
-  { name: "Awards", path: "/awards" },
-  { name: "Contact", path: "/contact" },
+const navItems: { name: string; path: string }[] = [
+  // All sections now live on the homepage; the bar is logo-only.
 ]
 
 export default function Header() {
