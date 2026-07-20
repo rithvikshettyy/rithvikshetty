@@ -1,0 +1,149 @@
+[     869ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    1125ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    1866ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    2573ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    2716ms] [LOG] [Fast Refresh] done in 967ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    3033ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    3425ms] [LOG] %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    3427ms] [LOG] %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {route: /, path: /} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    3428ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784219359748} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   28246ms] [WARNING] Image with src "/rocket3d.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   28246ms] [WARNING] Image with src "/rocket3d.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   58199ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   98864ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   99491ms] [LOG] [Fast Refresh] done in 810ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  206717ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  207547ms] [LOG] [Fast Refresh] done in 935ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  208813ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/about, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784219565044} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  209392ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  209411ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  209486ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  209885ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  224182ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  239249ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  249132ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784219605158} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  249206ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  307467ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  307548ms] [LOG] [Fast Refresh] done in 181ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  308555ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/about, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784219664803} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  308871ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  309112ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  309274ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  323939ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  339033ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  353920ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  368952ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  383945ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  398981ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  399147ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  399199ms] [LOG] [Fast Refresh] done in 191ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  414594ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  415434ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  416592ms] [LOG] [Fast Refresh] done in 1418ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  416987ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  417414ms] [LOG] [Fast Refresh] done in 573ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  417773ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  418032ms] [LOG] [Fast Refresh] done in 469ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  418207ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  418671ms] [LOG] [Fast Refresh] done in 571ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  418839ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  418840ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  419026ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  419565ms] [LOG] [Fast Refresh] done in 687ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  420022ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  420682ms] [LOG] [Fast Refresh] done in 978ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  420938ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  421303ms] [LOG] [Fast Refresh] done in 582ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  421551ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  421578ms] [LOG] [Fast Refresh] done in 156ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  421771ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  421900ms] [LOG] [Fast Refresh] done in 271ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  422125ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  422214ms] [LOG] [Fast Refresh] done in 286ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  422578ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  422607ms] [LOG] [Fast Refresh] done in 302ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  422950ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  423022ms] [LOG] [Fast Refresh] done in 187ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  423254ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  423254ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  423590ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  423718ms] [LOG] [Fast Refresh] done in 250ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  423913ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  423940ms] [LOG] [Fast Refresh] done in 183ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  429460ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  443926ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  458934ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  473917ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  488906ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  503961ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  519112ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  533914ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  548901ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  563946ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  578959ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  593947ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  609013ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  623962ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  638970ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  653954ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  668939ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  683983ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  698982ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  713967ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  728972ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  743965ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  758932ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  773901ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  788922ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  803930ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  818933ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  833930ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  848979ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  863974ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[  865423ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784220221523} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  865494ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1049320ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1051958ms] [LOG] [Fast Refresh] done in 2715ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1073901ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1076356ms] [LOG] [Fast Refresh] done in 2552ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1076509ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1076734ms] [LOG] [Fast Refresh] done in 329ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1100298ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1101929ms] [LOG] [Fast Refresh] done in 1321ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1156866ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1159304ms] [LOG] [Fast Refresh] done in 2506ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1159657ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1164940ms] [LOG] [Fast Refresh] done in 5392ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1168685ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1168800ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1170129ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1171050ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1171082ms] [LOG] [Fast Refresh] done in 1063ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1171095ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1171191ms] [WARNING] Image with src "/rocket3d.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1171191ms] [WARNING] Image with src "/rocket3d.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1171520ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1172015ms] [LOG] %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1172016ms] [LOG] %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {route: /, path: /} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1172018ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784220528337} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1185718ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1200736ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1216355ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1216755ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1216857ms] [LOG] [Fast Refresh] done in 257ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1230810ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1231171ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1231266ms] [LOG] [Fast Refresh] done in 256ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1245639ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1258728ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1258751ms] [LOG] [Fast Refresh] done in 162ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1260676ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1275683ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1291510ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1305903ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1306244ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1306370ms] [LOG] [Fast Refresh] done in 278ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 1320876ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1335772ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1350660ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 1365633ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0

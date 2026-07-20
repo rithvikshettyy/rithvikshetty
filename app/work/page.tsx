@@ -1,224 +1,166 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import { useEffect, useState } from 'react'
+import { staticProjects } from '@/data/projects'
 
-// One experience per viewport — wheel / swipe / arrows flip through a 3D
-// card deck: the current card tips away, the next rises in underneath.
-const experiences = [
-  {
-    type: 'Internship',
-    title: 'Salesforce & Marketing Automation Intern',
-    company: 'Lupin Ltd',
-    period: 'Dec 2025 - Feb 2026',
-    description:
-      'Streamlining business processes and enhancing outreach strategies using Salesforce CRM and advanced marketing automation tools.',
-    highlights: ['Salesforce', 'Marketing Automation', 'Analytics'],
-  },
-  {
-    type: 'Internship',
-    title: 'Machine Learning Intern',
-    company: 'ION Chemicals',
-    period: 'Jan 2025 - Apr 2025',
-    description:
-      'Developing and optimizing machine learning models for chemical analysis and process automation, improving prediction accuracy across datasets.',
-    highlights: ['Python', 'Machine Learning', 'Scikit-learn'],
-  },
-  {
-    type: 'Leadership',
-    title: 'Technical Secretary',
-    company: 'Technical Team, SIES GST',
-    period: '2025 - 2026',
-    description:
-      'Leading technical initiatives and managing large-scale projects while ensuring high standards of execution and innovation for the college community.',
-    highlights: ['Leadership', 'Project Management', 'Technical Strategy'],
-  },
-  {
-    type: 'Leadership',
-    title: 'Design Lead',
-    company: 'TEDx SIESGST',
-    period: '2025 - 2026',
-    description:
-      'Leading design direction and creative vision for TEDx events and initiatives, creating compelling and cohesive visual experiences.',
-    highlights: ['Design', 'Figma', 'Creative Direction', 'UI/UX'],
-  },
-  {
-    type: 'Internship',
-    title: 'Graphic Designer',
-    company: "BM's Drishtency",
-    period: 'Feb 2024 - Mar 2024',
-    description:
-      'Designed high-impact graphics and visual content for digital marketing campaigns and brand identity materials.',
-    highlights: ['Graphic Design', 'Figma', 'Branding'],
-  },
-]
+// Same animated red flow-field as the info page — client + desktop only.
+const RedFlowBg = dynamic(() => import('@/components/red-flow-bg'), { ssr: false })
 
-const N = experiences.length
-const EASE = [0.16, 1, 0.3, 1] as const
+// Standalone project index. Deliberately not wired to the homepage #work orbit
+// section — this is its own page, reached from the hero's "Work" link.
+const projects = staticProjects.map((p) => ({
+  id: p.id,
+  slug: p.slug,
+  title: p.title,
+  category: p.category,
+  year: p.year,
+  image: p.image,
+  url: p.url,
+}))
 
-// Deck-flip variants: direction decides which edge the card enters/leaves from.
-const cardVariants = {
-  enter: (d: number) => ({
-    y: d >= 0 ? 110 : -110,
-    opacity: 0,
-    scale: 0.92,
-    rotateX: d >= 0 ? -14 : 14,
-  }),
-  center: { y: 0, opacity: 1, scale: 1, rotateX: 0 },
-  exit: (d: number) => ({
-    y: d >= 0 ? -110 : 110,
-    opacity: 0,
-    scale: 0.96,
-    rotateX: d >= 0 ? 10 : -10,
-  }),
-}
-
-export default function Work() {
-  const [[index, dir], setState] = useState<[number, number]>([0, 0])
-  const lock = useRef(0)
-  const touchY = useRef<number | null>(null)
-
-  const go = useCallback((d: number) => {
-    const now = Date.now()
-    if (now - lock.current < 850) return
-    lock.current = now
-    setState(([i]) => [(((i + d) % N) + N) % N, d])
-  }, [])
+export default function WorkPage() {
+  const [webgl, setWebgl] = useState(false)
+  const [reduced, setReduced] = useState(false)
+  const [active, setActive] = useState(0)
 
   useEffect(() => {
-    const onWheel = (e: WheelEvent) => {
-      if (Math.abs(e.deltaY) < 25) return
-      go(e.deltaY > 0 ? 1 : -1)
-    }
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') go(1)
-      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') go(-1)
-    }
-    window.addEventListener('wheel', onWheel, { passive: true })
-    window.addEventListener('keydown', onKey)
-    return () => {
-      window.removeEventListener('wheel', onWheel)
-      window.removeEventListener('keydown', onKey)
-    }
-  }, [go])
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+    setReduced(mq.matches)
+    setWebgl(window.innerWidth >= 768)
+  }, [])
 
-  const exp = experiences[index]
+  const current = projects[active]
 
   return (
-    <main
-      className="relative h-[100dvh] overflow-hidden bg-black text-white [font-family:Helvetica,Arial,sans-serif]"
-      onTouchStart={(e) => (touchY.current = e.touches[0].clientY)}
-      onTouchEnd={(e) => {
-        if (touchY.current === null) return
-        const dy = touchY.current - e.changedTouches[0].clientY
-        if (Math.abs(dy) > 50) go(dy > 0 ? 1 : -1)
-        touchY.current = null
-      }}
-    >
-      {/* Crimson ambient glow, echoing the info page */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_50%_at_70%_45%,rgba(200,33,15,0.35),rgba(120,20,10,0.08)_45%,transparent_70%)]" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_120%,rgba(0,0,0,0.65),transparent_55%)]" />
+    <main className="relative min-h-[100dvh] lg:h-[100dvh] bg-black text-white overflow-hidden [font-family:Helvetica,Arial,sans-serif]">
+      {/* Static crimson glow — mobile fallback / base under the shader */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_34%_42%,rgba(200,33,15,0.55),rgba(120,20,10,0.12)_45%,transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_120%,rgba(0,0,0,0.6),transparent_55%)]" />
+      {webgl && (
+        <>
+          <div className="absolute inset-0 z-0 scale-110 blur-[13px] opacity-65">
+            <RedFlowBg dpr={0.6} paused={false} disableAnimation={reduced} enableMouseInteraction={!reduced} />
+          </div>
+          <div className="pointer-events-none absolute inset-0 z-0 bg-black/30" />
+        </>
+      )}
 
-      {/* Top bar */}
+      {/* Top bar — mirrors the info page */}
       <div className="absolute inset-x-6 top-6 md:inset-x-12 md:top-12 z-20 flex items-start justify-between">
         <h1 className="text-5xl md:text-7xl font-medium tracking-tight leading-none">Work</h1>
         <Link
           href="/"
           prefetch={false}
-          className="text-sm md:text-base font-semibold uppercase tracking-widest text-white/75 hover:text-white transition-colors"
+          className="group text-sm md:text-base font-semibold uppercase tracking-widest text-white/75 hover:text-white transition-colors"
+          aria-label="Back"
         >
-          Back
+          {/* Char-roll hover — each letter slides up, revealing its copy */}
+          {'Back'.split('').map((ch, i) => (
+            <span key={i} className="relative inline-block overflow-hidden align-bottom">
+              <span
+                className="block transition-transform duration-400 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-full"
+                style={{ transitionDelay: `${i * 30}ms` }}
+              >
+                {ch}
+                <span className="absolute left-0 top-full" aria-hidden="true">
+                  {ch}
+                </span>
+              </span>
+            </span>
+          ))}
         </Link>
       </div>
 
-      {/* Ghost index number */}
-      <AnimatePresence mode="popLayout" custom={dir}>
-        <motion.span
-          key={`ghost-${index}`}
-          custom={dir}
-          initial={{ opacity: 0, y: dir >= 0 ? 60 : -60 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: dir >= 0 ? -60 : 60 }}
-          transition={{ duration: 0.7, ease: EASE }}
-          aria-hidden="true"
-          className="pointer-events-none absolute right-[4vw] top-1/2 z-0 -translate-y-1/2 select-none text-[38vh] font-black leading-none text-transparent [-webkit-text-stroke:1.5px_rgba(255,255,255,0.08)]"
-        >
-          {String(index + 1).padStart(2, '0')}
-        </motion.span>
-      </AnimatePresence>
-
-      {/* Card */}
-      <div className="relative z-10 flex h-full items-center px-6 md:px-12 lg:px-[6vw] [perspective:1200px]">
-        <AnimatePresence mode="popLayout" custom={dir}>
-          <motion.article
-            key={index}
-            custom={dir}
-            variants={cardVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{ duration: 0.75, ease: EASE }}
-            className="max-w-3xl will-change-transform [transform-style:preserve-3d]"
-          >
-            <div className="flex items-center gap-4">
-              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/55">{exp.type}</span>
-              <span className="h-px w-10 bg-white/20" />
-              <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">{exp.period}</span>
+      <div className="relative z-10 flex h-full flex-col px-6 md:px-12 lg:px-[6vw] pt-28 md:pt-24 pb-24 md:pb-20">
+        <div className="grid flex-1 grid-cols-1 gap-10 lg:grid-cols-[minmax(0,340px)_1fr] lg:gap-x-20 min-h-0 content-start">
+          {/* Left — hovered project preview + meta */}
+          <div className="hidden lg:flex flex-col">
+            <div className="relative w-full max-w-[340px]">
+              <span className="absolute -left-2 -top-2 text-white/50 text-lg select-none">+</span>
+              <span className="absolute -right-2 -top-2 text-white/50 text-lg select-none">+</span>
+              <span className="absolute -left-2 -bottom-2 text-white/50 text-lg select-none">+</span>
+              <span className="absolute -right-2 -bottom-2 text-white/50 text-lg select-none">+</span>
+              <div className="relative aspect-[340/404] overflow-hidden border border-white/15 bg-black/40">
+                {projects.map((p, i) => (
+                  <Image
+                    key={p.slug}
+                    src={p.image}
+                    alt={p.title}
+                    fill
+                    sizes="340px"
+                    priority={i === 0}
+                    className={`object-cover object-center transition-opacity duration-500 ${
+                      i === active ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
 
-            <h2 className="mt-4 text-4xl md:text-6xl xl:text-7xl font-light tracking-[-0.02em] leading-[1.02] text-balance">
-              {exp.title}
-            </h2>
-            <p className="mt-3 text-lg md:text-xl text-white/60">{exp.company}</p>
+            <dl className="mt-5 space-y-5 max-w-[340px]">
+              <div className="flex items-baseline justify-between gap-6 border-t border-white/10 pt-2.5">
+                <dt className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/45">Category</dt>
+                <dd className="text-[15px] text-right">{current.category}</dd>
+              </div>
+              <div className="flex items-baseline justify-between gap-6 border-t border-white/10 pt-2.5">
+                <dt className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/45">Year</dt>
+                <dd className="text-[15px] text-right tabular-nums">{current.year}</dd>
+              </div>
+            </dl>
+          </div>
 
-            <p className="mt-6 max-w-xl text-base md:text-lg leading-[1.65] font-light text-white/90">
-              {exp.description}
-            </p>
+          {/* Right — project index */}
+          <div className="flex flex-col min-h-0">
+            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/55">
+              Selected Projects ({String(projects.length).padStart(2, '0')})
+            </span>
 
-            <div className="mt-7 flex flex-wrap gap-2">
-              {exp.highlights.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-white/20 px-3 py-1 text-xs uppercase tracking-wider text-white/70"
-                >
-                  {skill}
-                </span>
+            <ul className="mt-4 lg:min-h-0 lg:flex-1 lg:overflow-y-auto lg:pr-2 border-t border-white/10">
+              {projects.map((p, i) => (
+                <li key={p.slug}>
+                  <Link
+                    href={p.slug ? `/projects/${p.slug}` : p.url || '/'}
+                    prefetch={false}
+                    onMouseEnter={() => setActive(i)}
+                    onFocus={() => setActive(i)}
+                    className="group flex items-baseline gap-4 md:gap-6 border-b border-white/10 py-3.5 md:py-4 transition-colors hover:bg-white/[0.04]"
+                  >
+                    <span className="text-[11px] font-semibold tabular-nums text-white/35 group-hover:text-accent transition-colors">
+                      {p.id}
+                    </span>
+                    <span className="flex-1 text-2xl md:text-[34px] font-light tracking-[-0.02em] leading-none transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-2">
+                      {p.title}
+                    </span>
+                    <span className="hidden md:block text-[11px] uppercase tracking-[0.14em] text-white/45">
+                      {p.category}
+                    </span>
+                    <span className="text-[11px] tabular-nums text-white/35">{p.year}</span>
+                  </Link>
+                </li>
               ))}
-            </div>
-          </motion.article>
-        </AnimatePresence>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      {/* Right rail — index nav */}
-      <nav className="absolute right-6 md:right-12 top-1/2 z-20 -translate-y-1/2 flex flex-col items-end gap-3">
-        {experiences.map((e, i) => (
-          <button
-            key={e.title}
-            onClick={() => {
-              if (i === index) return
-              lock.current = 0
-              go(i - index)
-            }}
-            aria-label={`Go to ${e.title}`}
-            className={`flex items-center gap-2 text-[11px] font-semibold tracking-widest transition-colors ${
-              i === index ? 'text-white' : 'text-white/30 hover:text-white/60'
-            }`}
-          >
-            {String(i + 1).padStart(2, '0')}
-            <span
-              className={`h-px transition-all duration-500 ${i === index ? 'w-8 bg-accent' : 'w-4 bg-white/25'}`}
-            />
-          </button>
-        ))}
-      </nav>
-
-      {/* Bottom bar */}
+      {/* Bottom bar — pinned like the info page */}
       <div className="absolute inset-x-6 bottom-6 md:inset-x-12 md:bottom-8 z-20 flex items-end justify-between">
-        <span className="text-sm text-white/50 tabular-nums">
-          {String(index + 1).padStart(2, '0')} / {String(N).padStart(2, '0')}
-        </span>
-        <span className="text-[11px] uppercase tracking-[0.2em] text-white/35">Scroll to navigate</span>
+        <a
+          href="mailto:rithvikshetty2004@gmail.com"
+          className="text-sm text-white/80 hover:text-white transition-colors"
+        >
+          rithvikshetty2004@gmail.com
+        </a>
+        <Link
+          href="/about"
+          prefetch={false}
+          className="text-[11px] uppercase tracking-[0.2em] text-white/45 hover:text-white transition-colors"
+        >
+          Info
+        </Link>
       </div>
     </main>
   )

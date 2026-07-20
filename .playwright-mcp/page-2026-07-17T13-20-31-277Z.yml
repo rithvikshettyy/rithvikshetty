@@ -1,0 +1,122 @@
+- generic [active] [ref=f37e1]:
+  - main [ref=f37e2]:
+    - main [ref=f37e3]:
+      - link "Back Home" [ref=f37e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f37e11]:
+        - generic [ref=f37e12]:
+          - text: ( The Journey )
+          - heading "Experience." [level=2] [ref=f37e13]
+          - paragraph [ref=f37e14]: Internships and leadership roles, one card at a time. Keep scrolling to flip through the stack.
+          - generic [ref=f37e15]: 01 / 07
+        - generic [ref=f37e17]:
+          - generic [ref=f37e18]:
+            - generic [ref=f37e19]:
+              - generic [ref=f37e20]: Internship
+              - generic [ref=f37e21]: Dec 2025 - Feb 2026
+            - heading "Salesforce & Marketing Automation Intern" [level=3] [ref=f37e22]
+            - paragraph [ref=f37e23]: Lupin Ltd
+            - paragraph [ref=f37e24]: Streamlining business processes and enhancing outreach strategies using Salesforce CRM and advanced marketing automation tools.
+            - generic [ref=f37e25]:
+              - generic [ref=f37e26]: Salesforce
+              - generic [ref=f37e27]: Marketing Automation
+              - generic [ref=f37e28]: Analytics
+              - generic [ref=f37e29]: Technical Strategy
+          - generic [ref=f37e30]:
+            - generic [ref=f37e31]:
+              - generic [ref=f37e32]: Internship
+              - generic [ref=f37e33]: Jan 2025 - Apr 2025
+            - heading "Machine Learning Intern" [level=3] [ref=f37e34]
+            - paragraph [ref=f37e35]: ION Chemicals
+            - paragraph [ref=f37e36]: Developing and optimizing machine learning models for chemical analysis and process automation, improving prediction accuracy across datasets.
+            - generic [ref=f37e37]:
+              - generic [ref=f37e38]: Python
+              - generic [ref=f37e39]: Machine Learning
+              - generic [ref=f37e40]: Data Analysis
+              - generic [ref=f37e41]: Scikit-learn
+          - generic [ref=f37e42]:
+            - generic [ref=f37e43]:
+              - generic [ref=f37e44]: Internship
+              - generic [ref=f37e45]: Feb 2024 - Mar 2024
+            - heading "Graphic Designer" [level=3] [ref=f37e46]
+            - paragraph [ref=f37e47]: BM's Drishtency
+            - paragraph [ref=f37e48]: Designed high-impact graphics and visual content for digital marketing campaigns and brand identity materials.
+            - generic [ref=f37e49]:
+              - generic [ref=f37e50]: Graphic Design
+              - generic [ref=f37e51]: Figma
+              - generic [ref=f37e52]: Visual Design
+              - generic [ref=f37e53]: Branding
+          - generic [ref=f37e54]:
+            - generic [ref=f37e55]:
+              - generic [ref=f37e56]: Internship
+              - generic [ref=f37e57]: Jan 2024 - Feb 2024
+            - heading "Graphic Designer" [level=3] [ref=f37e58]
+            - paragraph [ref=f37e59]: AASK RETAIL LLP
+            - paragraph [ref=f37e60]: Specialized in apparel design by creating custom T-shirt graphics and high-fidelity mockups for new retail collections.
+            - generic [ref=f37e61]:
+              - generic [ref=f37e62]: Graphic Design
+              - generic [ref=f37e63]: Figma
+              - generic [ref=f37e64]: Apparel Design
+              - generic [ref=f37e65]: Mockup Design
+          - generic [ref=f37e66]:
+            - generic [ref=f37e67]:
+              - generic [ref=f37e68]: Leadership
+              - generic [ref=f37e69]: 2025 - 2026
+            - heading "Technical Secretary" [level=3] [ref=f37e70]
+            - paragraph [ref=f37e71]: Technical Team
+            - paragraph [ref=f37e72]: Leading technical initiatives and managing large-scale projects while ensuring high standards of execution and innovation for the college community.
+            - generic [ref=f37e73]:
+              - generic [ref=f37e74]: Leadership
+              - generic [ref=f37e75]: Project Management
+              - generic [ref=f37e76]: Technical Strategy
+          - generic [ref=f37e77]:
+            - generic [ref=f37e78]:
+              - generic [ref=f37e79]: Leadership
+              - generic [ref=f37e80]: 2025 - 2026
+            - heading "Design Lead" [level=3] [ref=f37e81]
+            - paragraph [ref=f37e82]: TEDx SIESGST
+            - paragraph [ref=f37e83]: Leading design direction and creative vision for TEDx events and initiatives, creating compelling and cohesive visual experiences.
+            - generic [ref=f37e84]:
+              - generic [ref=f37e85]: Design
+              - generic [ref=f37e86]: Figma
+              - generic [ref=f37e87]: Creative Direction
+              - generic [ref=f37e88]: UI/UX
+          - generic [ref=f37e89]:
+            - generic [ref=f37e90]:
+              - generic [ref=f37e91]: Leadership
+              - generic [ref=f37e92]: Aug 2025 - Dec 2025
+            - heading "Social Media Lead" [level=3] [ref=f37e93]
+            - paragraph [ref=f37e94]: Ecell SIESGST
+            - paragraph [ref=f37e95]: Coordinating social media strategies and digital presence to promote entrepreneurship and innovation-focused events.
+            - generic [ref=f37e96]:
+              - generic [ref=f37e97]: Leadership
+              - generic [ref=f37e98]: Strategy
+              - generic [ref=f37e99]: Growth
+              - generic [ref=f37e100]: Marketing
+  - contentinfo [ref=f37e101]:
+    - generic [ref=f37e102]:
+      - generic [ref=f37e103]:
+        - heading "Rish." [level=2] [ref=f37e104]
+        - generic [ref=f37e105]:
+          - generic [ref=f37e106]:
+            - generic [ref=f37e107]: Socials
+            - link "Twitter" [ref=f37e108] [cursor=pointer]:
+              - /url: https://x.com/RithvikShetty04
+            - link "Instagram" [ref=f37e109] [cursor=pointer]:
+              - /url: https://instagram.com/rithv1k7
+            - link "LinkedIn" [ref=f37e110] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/rithvikshetty/
+            - link "GitHub" [ref=f37e111] [cursor=pointer]:
+              - /url: https://github.com/rithvikshettyy
+            - link "Pinterest" [ref=f37e112] [cursor=pointer]:
+              - /url: https://in.pinterest.com/mayberithvik/
+          - generic [ref=f37e113]:
+            - generic [ref=f37e114]: Legal
+            - link "Privacy" [ref=f37e115] [cursor=pointer]:
+              - /url: /privacy
+            - link "Terms" [ref=f37e116] [cursor=pointer]:
+              - /url: /terms
+      - generic [ref=f37e117]:
+        - generic [ref=f37e118]: © 2026 Rithvik Shetty
+        - generic [ref=f37e119]: All Rights Reserved
+  - button "Open Next.js Dev Tools" [ref=f37e125] [cursor=pointer]

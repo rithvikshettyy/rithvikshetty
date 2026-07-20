@@ -1,0 +1,3978 @@
+[    2056ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[   10156ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   10451ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   10845ms] [WARNING] Image with src "/robot3d.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   11041ms] [LOG] %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   11042ms] [LOG] %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {route: /contact, path: /contact} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   11043ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/contact, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784279300498} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   17738ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   18902ms] [LOG] [Fast Refresh] done in 1267ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   30150ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   33422ms] [LOG] [Fast Refresh] done in 3623ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   54025ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   59527ms] [LOG] [Fast Refresh] done in 5477ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   60080ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   60101ms] [LOG] [Fast Refresh] done in 310ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   72054ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   76161ms] [LOG] [Fast Refresh] done in 4235ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  127283ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  132972ms] [LOG] [Fast Refresh] done in 5790ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  133178ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  133350ms] [LOG] [Fast Refresh] done in 317ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  133471ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  133647ms] [LOG] [Fast Refresh] done in 281ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  428150ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  441538ms] [LOG] [Fast Refresh] done in 13344ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  695577ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  697458ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  697820ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  697823ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  697934ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698024ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698096ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698200ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698331ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698335ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  698433ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698521ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698558ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  698658ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  698677ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  699301ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  699567ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  699669ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  699764ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  699946ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  699993ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700074ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700144ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700229ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700303ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700393ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700475ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700541ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700615ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700702ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700794ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700872ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  700961ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701045ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701142ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701261ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701276ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  701342ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701418ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701496ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701560ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701635ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701719ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701774ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  701858ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  701942ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702001ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  702097ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702132ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  702177ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702279ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  702322ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702399ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702487ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702528ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  702638ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  702869ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702956ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  702977ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  703098ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703143ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  703322ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703445ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703523ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703601ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703673ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703786ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703787ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  703869ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  703975ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704053ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704150ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704196ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  704273ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704316ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  704393ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704452ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704518ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704590ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704650ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704753ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704817ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704884ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  704970ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705012ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  705083ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705162ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705247ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705281ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  705390ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705465ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705574ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705642ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705706ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705766ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705831ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705894ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  705963ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706030ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706118ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706147ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  706255ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  706268ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706358ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706440ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706518ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706599ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706674ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706751ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706835ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  706903ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707002ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707101ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707138ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  707283ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707301ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  707404ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707510ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707545ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  707626ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707740ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707789ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  707899ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  707932ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708077ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708116ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  708226ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708272ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  708380ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708385ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  708505ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  708527ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708641ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708642ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  708751ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  708775ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708868ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  708879ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  708942ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  709029ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  709117ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  709198ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  709261ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  709343ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  709539ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  709540ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  709900ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  709912ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  710732ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  710733ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  711073ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  711131ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  711289ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  711303ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  711454ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  711472ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  711579ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  711583ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  711685ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  711725ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  711849ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  711928ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  712044ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  712044ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  712341ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  712391ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  712539ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  712668ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  712806ms] [ERROR] ./components/flower-halftone.tsx:241:7
+Parsing ecmascript source code failed
+  239 |           </Suspense>
+  240 |         </Canvas>
+> 241 |       )}
+      |       ^
+  242 |     </div>
+  243 |   )
+  244 | }
+
+Expected '</', got ')'
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  712934ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  714795ms] [LOG] [Fast Refresh] done in 1965ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  714988ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  717294ms] [LOG] [Fast Refresh] done in 2407ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  717774ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  718379ms] [LOG] [Fast Refresh] done in 708ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  718739ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  718948ms] [LOG] [Fast Refresh] done in 309ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  721376ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  721649ms] [LOG] [Fast Refresh] done in 376ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  722011ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  722036ms] [LOG] [Fast Refresh] done in 130ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  722315ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  722321ms] [LOG] [Fast Refresh] done in 109ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  724368ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  724794ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  724875ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  724961ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725038ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725124ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725190ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725276ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725386ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725403ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  725539ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725596ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725676ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725706ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  725799ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725831ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725921ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  725997ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726085ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726162ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726264ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726300ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  726395ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726422ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  726535ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726542ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  726620ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726693ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726771ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726847ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  726929ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727024ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727131ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727218ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727250ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  727338ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727406ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727490ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727575ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727614ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  727697ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727730ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  727831ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  727841ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  728002ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  728027ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  728037ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  728170ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  728188ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  728327ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  728356ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  728425ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  728502ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  728585ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  728634ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  728934ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  728963ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729067ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729192ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729232ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  729341ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729344ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729473ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729501ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  729599ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729671ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729775ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729802ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  729867ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729932ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  729999ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730073ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730151ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730232ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730302ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730378ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  730419ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730496ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730565ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730637ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730700ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730775ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730858ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  730891ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  730959ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731031ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731104ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731187ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731266ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731338ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731401ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731472ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731589ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731619ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  731695ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731772ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731860ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  731932ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732121ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  732134ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732226ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732309ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732414ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732432ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  732536ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732566ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  732625ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732659ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732698ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732738ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  732883ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  732913ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  733079ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  733111ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  733194ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  733324ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  733378ms] [ERROR] ./components/flower-halftone.tsx:240:7
+Parsing ecmascript source code failed
+  238 |           </Suspense>
+  239 |         </Canvas>
+> 240 |       }
+      |       ^
+  241 |     </div>
+  242 |   )
+  243 | }
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Client Component Browser:
+    ./components/flower-halftone.tsx [Client Component Browser]
+    ./components/footer.tsx [Client Component Browser]
+    ./components/footer.tsx [Server Component]
+    ./app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:3117
+[  733485ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  734065ms] [LOG] [Fast Refresh] done in 674ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  734167ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  734238ms] [LOG] [Fast Refresh] done in 173ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  734369ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  734421ms] [LOG] [Fast Refresh] done in 155ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  734608ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  734639ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  735720ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  735825ms] [LOG] [Fast Refresh] done in 209ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  736725ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  736810ms] [LOG] [Fast Refresh] done in 192ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  739501ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[  739525ms] [LOG] [Fast Refresh] done in 125ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287

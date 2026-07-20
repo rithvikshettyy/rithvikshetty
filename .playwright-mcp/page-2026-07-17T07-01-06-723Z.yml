@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - generic: Info
+  - link "Retour à l'accueil" [ref=e3] [cursor=pointer]:
+    - /url: index.html
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: B
+        - generic [ref=e7]: B
+      - generic [ref=e8]:
+        - generic [ref=e9]: a
+        - generic [ref=e10]: a
+      - generic [ref=e11]:
+        - generic [ref=e12]: c
+        - generic [ref=e13]: c
+      - generic [ref=e14]:
+        - generic [ref=e15]: k
+        - generic [ref=e16]: k
+  - main:
+    - generic:
+      - generic:
+        - img "Luke Baffait"
+      - generic:
+        - generic: Based in
+        - generic: Vannes, France
+      - generic:
+        - generic: Status
+        - generic: Looking for an apprenticeship
+    - generic:
+      - generic:
+        - generic: About
+        - heading "Luke Baffait." [level=1]
+        - paragraph: Creative developer & computer science student, specialized in web development.
+      - paragraph: I craft tailor-made web experiences where technical precision meets emotion. Passionate about animation, interaction and detail, I always seek the symbiosis between art and information.
+      - generic:
+        - generic:
+          - generic: Frontend
+          - list:
+            - listitem: HTML / CSS
+            - listitem: JavaScript
+            - listitem: TypeScript
+            - listitem: React · Next.js
+            - listitem: Tailwind
+        - generic:
+          - generic: Animation & 3D
+          - list:
+            - listitem: GSAP
+            - listitem: Lenis
+            - listitem: Three.js
+            - listitem: WebGL / GLSL
+            - listitem: Blender
+        - generic:
+          - generic: Backend
+          - list:
+            - listitem: Node.js · Express
+            - listitem: Python
+            - listitem: Java · PHP
+            - listitem: MySQL · PostgreSQL
+            - listitem: MongoDB · Supabase
+        - generic:
+          - generic: Security & Tools
+          - list:
+            - listitem: Linux · Bash
+            - listitem: OWASP · Nmap
+            - listitem: Metasploit
+            - listitem: Docker · Git
+  - generic [ref=e17]:
+    - link "l l u u k k e e . . b b a a f f f f a a i i t t @ @ y y a a h h o o o o . . c c o o m m" [ref=e18] [cursor=pointer]:
+      - /url: mailto:luke.baffait@yahoo.com
+      - generic [ref=e19]:
+        - generic [ref=e20]: l
+        - generic [ref=e21]: l
+      - generic [ref=e22]:
+        - generic [ref=e23]: u
+        - generic [ref=e24]: u
+      - generic [ref=e25]:
+        - generic [ref=e26]: k
+        - generic [ref=e27]: k
+      - generic [ref=e28]:
+        - generic [ref=e29]: e
+        - generic [ref=e30]: e
+      - generic [ref=e31]:
+        - generic [ref=e32]: .
+        - generic [ref=e33]: .
+      - generic [ref=e34]:
+        - generic [ref=e35]: b
+        - generic [ref=e36]: b
+      - generic [ref=e37]:
+        - generic [ref=e38]: a
+        - generic [ref=e39]: a
+      - generic [ref=e40]:
+        - generic [ref=e41]: f
+        - generic [ref=e42]: f
+      - generic [ref=e43]:
+        - generic [ref=e44]: f
+        - generic [ref=e45]: f
+      - generic [ref=e46]:
+        - generic [ref=e47]: a
+        - generic [ref=e48]: a
+      - generic [ref=e49]:
+        - generic [ref=e50]: i
+        - generic [ref=e51]: i
+      - generic [ref=e52]:
+        - generic [ref=e53]: t
+        - generic [ref=e54]: t
+      - generic [ref=e55]:
+        - generic [ref=e56]: "@"
+        - generic [ref=e57]: "@"
+      - generic [ref=e58]:
+        - generic [ref=e59]: "y"
+        - generic [ref=e60]: "y"
+      - generic [ref=e61]:
+        - generic [ref=e62]: a
+        - generic [ref=e63]: a
+      - generic [ref=e64]:
+        - generic [ref=e65]: h
+        - generic [ref=e66]: h
+      - generic [ref=e67]:
+        - generic [ref=e68]: o
+        - generic [ref=e69]: o
+      - generic [ref=e70]:
+        - generic [ref=e71]: o
+        - generic [ref=e72]: o
+      - generic [ref=e73]:
+        - generic [ref=e74]: .
+        - generic [ref=e75]: .
+      - generic [ref=e76]:
+        - generic [ref=e77]: c
+        - generic [ref=e78]: c
+      - generic [ref=e79]:
+        - generic [ref=e80]: o
+        - generic [ref=e81]: o
+      - generic [ref=e82]:
+        - generic [ref=e83]: m
+        - generic [ref=e84]: m
+    - generic [ref=e85]: V3.0

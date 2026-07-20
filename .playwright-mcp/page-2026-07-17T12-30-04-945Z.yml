@@ -1,0 +1,93 @@
+- generic [active] [ref=f17e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic: R
+        - generic: i
+        - generic: t
+        - generic: h
+        - generic: v
+        - generic: i
+        - generic: k
+      - generic:
+        - generic: S
+        - generic: h
+        - generic: e
+        - generic: t
+        - generic: t
+        - generic: "y"
+        - generic: .
+  - main [ref=f17e2]:
+    - main [ref=f17e3]:
+      - link "Back Home" [ref=f17e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f17e9]:
+        - generic [ref=f17e10]:
+          - heading "The Journey" [level=2] [ref=f17e11]:
+            - generic [ref=f17e12]: The
+            - generic [ref=f17e14]: Journey
+          - paragraph [ref=f17e16]: The intersection of industry experience and academic leadership, a running log of the work.
+        - generic [ref=f17e17]:
+          - button "Work" [ref=f17e18]
+          - button "Leadership" [ref=f17e20]
+        - generic [ref=f17e21]:
+          - listbox "Option wheel" [ref=f17e23]:
+            - option "Salesforce & Marketing Automation Intern" [selected] [ref=f17e24] [cursor=pointer]
+            - option "Machine Learning Intern" [ref=f17e25] [cursor=pointer]
+            - option "Graphic Designer" [ref=f17e26] [cursor=pointer]
+            - option "Graphic Designer" [ref=f17e27] [cursor=pointer]
+          - generic [ref=f17e28]:
+            - generic [ref=f17e29]:
+              - generic [ref=f17e30]: Dec 2025 - Feb 2026
+              - generic [ref=f17e31]: Internship
+            - heading "Salesforce & Marketing Automation Intern" [level=3] [ref=f17e32]
+            - generic [ref=f17e33]: Lupin Ltd
+            - paragraph [ref=f17e38]: Streamlining business processes and enhancing outreach strategies using Salesforce CRM and advanced marketing automation tools.
+            - generic [ref=f17e39]:
+              - generic [ref=f17e40]: Salesforce
+              - generic [ref=f17e41]: Marketing Automation
+              - generic [ref=f17e42]: Analytics
+              - generic [ref=f17e43]: Technical Strategy
+            - link "View Certificate" [ref=f17e44] [cursor=pointer]:
+              - /url: experience/lupin.pdf
+        - generic [ref=f17e49]:
+          - generic [ref=f17e50]:
+            - generic [ref=f17e51]: 0+
+            - generic [ref=f17e52]: Years Active
+          - generic [ref=f17e53]:
+            - generic [ref=f17e54]: "0"
+            - generic [ref=f17e55]: Roles Held
+          - generic [ref=f17e56]:
+            - generic [ref=f17e57]: "0"
+            - generic [ref=f17e58]: Organizations
+          - generic [ref=f17e59]:
+            - generic [ref=f17e60]: 0+
+            - generic [ref=f17e61]: Skills Used
+  - contentinfo [ref=f17e62]:
+    - generic [ref=f17e63]:
+      - generic [ref=f17e64]:
+        - heading "Rish." [level=2] [ref=f17e65]
+        - generic [ref=f17e66]:
+          - generic [ref=f17e67]:
+            - generic [ref=f17e68]: Socials
+            - link "Twitter" [ref=f17e69] [cursor=pointer]:
+              - /url: https://x.com/RithvikShetty04
+            - link "Instagram" [ref=f17e70] [cursor=pointer]:
+              - /url: https://instagram.com/rithv1k7
+            - link "LinkedIn" [ref=f17e71] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/rithvikshetty/
+            - link "GitHub" [ref=f17e72] [cursor=pointer]:
+              - /url: https://github.com/rithvikshettyy
+            - link "Pinterest" [ref=f17e73] [cursor=pointer]:
+              - /url: https://in.pinterest.com/mayberithvik/
+          - generic [ref=f17e74]:
+            - generic [ref=f17e75]: Legal
+            - link "Privacy" [ref=f17e76] [cursor=pointer]:
+              - /url: /privacy
+            - link "Terms" [ref=f17e77] [cursor=pointer]:
+              - /url: /terms
+      - generic [ref=f17e78]:
+        - generic [ref=f17e79]: © 2026 Rithvik Shetty
+        - generic [ref=f17e80]: All Rights Reserved
+  - button "Open Next.js Dev Tools" [ref=f17e86] [cursor=pointer]
+  - alert [ref=f17e90]

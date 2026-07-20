@@ -1,0 +1,9 @@
+- generic [active] [ref=f8e1]:
+  - main [ref=f8e2]:
+    - main [ref=f8e3]:
+      - generic:
+        - heading "Work" [level=1]
+        - link "Back" [ref=f8e5] [cursor=pointer]:
+          - /url: /
+      - generic: Scroll to navigate
+  - button "Open Next.js Dev Tools" [ref=f8e11] [cursor=pointer]

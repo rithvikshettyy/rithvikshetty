@@ -1,0 +1,958 @@
+[     119ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[     456ms] [LOG] [Fast Refresh] done in 442ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[     690ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[     750ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[     961ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[     996ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    1005ms] [LOG] %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    1006ms] [LOG] %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {route: /experience, path: /experience} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    1007ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/experience color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/experience, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784294431418} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[    1176ms] [LOG] [Fast Refresh] done in 286ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   26194ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[   26259ms] [LOG] [Fast Refresh] done in 169ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 6827190ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 6827353ms] [LOG] [Fast Refresh] done in 233ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 6848602ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 6852385ms] [LOG] [Fast Refresh] done in 3845ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 7046418ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 7048606ms] [LOG] [Fast Refresh] done in 2292ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 7181463ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 7182288ms] [LOG] [Fast Refresh] done in 925ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 7297124ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 7297898ms] [LOG] [Fast Refresh] done in 880ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9803386ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9803807ms] [LOG] [Fast Refresh] done in 523ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9804169ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9804249ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805129ms] [WARNING] GSAP target  not found. https://gsap.com @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805131ms] [WARNING] GSAP target  not found. https://gsap.com @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805187ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805369ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9805607ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805669ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805773ms] [LOG] %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805773ms] [LOG] %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {route: /, path: /} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9805773ms] [LOG] %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {o: http://localhost:3000/, sv: 0.1.3, sdkn: @vercel/analytics/next, sdkv: 1.6.1, ts: 1784304236185} /_vercel/insights/view @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9820126ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9835154ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9835432ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9836068ms] [LOG] [Fast Refresh] done in 782ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9836277ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9836317ms] [LOG] [Fast Refresh] done in 154ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9836491ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9836518ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9836817ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9836939ms] [LOG] [Fast Refresh] done in 223ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9837099ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9837178ms] [LOG] [Fast Refresh] done in 182ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9850149ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9850862ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9851822ms] [LOG] [Fast Refresh] done in 1054ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9865143ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9865349ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9865831ms] [LOG] [Fast Refresh] done in 610ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9866170ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9866524ms] [LOG] [Fast Refresh] done in 455ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9880264ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9880441ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9880712ms] [LOG] [Fast Refresh] done in 386ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9880856ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9880966ms] [LOG] [Fast Refresh] done in 222ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9881224ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9881339ms] [LOG] [Fast Refresh] done in 225ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9881545ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9881559ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9881807ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9881913ms] [LOG] [Fast Refresh] done in 250ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9882445ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9882981ms] [LOG] [Fast Refresh] done in 655ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9883112ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9883125ms] [LOG] [Fast Refresh] done in 122ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9883394ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9883397ms] [LOG] [Fast Refresh] done in 110ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9883509ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9883545ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9895181ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9895378ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9895405ms] [LOG] [Fast Refresh] done in 133ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9910129ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9925183ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9925688ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9925945ms] [LOG] [Fast Refresh] done in 365ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9926203ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9926426ms] [LOG] [Fast Refresh] done in 342ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9926620ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9927212ms] [LOG] [Fast Refresh] done in 696ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9927688ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9927697ms] [LOG] [Fast Refresh] done in 121ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9928044ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9928045ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9928209ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9928227ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9940200ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9940355ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9940404ms] [LOG] [Fast Refresh] done in 150ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9955168ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9955445ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9955570ms] [LOG] [Fast Refresh] done in 226ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9955687ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9955732ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9970166ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[ 9970318ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9970568ms] [LOG] [Fast Refresh] done in 353ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[ 9985158ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10000137ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10015157ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10030165ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10045136ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10060122ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10075172ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10075507ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10075657ms] [LOG] [Fast Refresh] done in 262ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10075766ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10075886ms] [LOG] [Fast Refresh] done in 223ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10090177ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10090347ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10090358ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10105168ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10120164ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10120330ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10120332ms] [LOG] [Fast Refresh] done in 122ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10135172ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10135433ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10135540ms] [LOG] [Fast Refresh] done in 222ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10150148ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10165146ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10180264ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10180437ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10180540ms] [LOG] [Fast Refresh] done in 214ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10180713ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10181202ms] [LOG] [Fast Refresh] done in 597ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10181441ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10182581ms] [LOG] [Fast Refresh] done in 1248ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10182831ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10182895ms] [LOG] [Fast Refresh] done in 183ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10183396ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10183454ms] [LOG] [Fast Refresh] done in 168ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10183777ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10183951ms] [LOG] [Fast Refresh] done in 284ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10184177ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10184319ms] [LOG] [Fast Refresh] done in 264ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10184450ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10184671ms] [LOG] [Fast Refresh] done in 333ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10184835ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10184891ms] [LOG] [Fast Refresh] done in 161ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10185012ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10185221ms] [LOG] [Fast Refresh] done in 328ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10185937ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10186013ms] [LOG] [Fast Refresh] done in 185ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10186357ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10186436ms] [LOG] [Fast Refresh] done in 187ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10186581ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10186596ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10186937ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10187005ms] [LOG] [Fast Refresh] done in 188ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10187114ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10187220ms] [LOG] [Fast Refresh] done in 209ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10195193ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10195451ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10195485ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10210153ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10210345ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10210362ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10225198ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10225436ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10225654ms] [LOG] [Fast Refresh] done in 328ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10240174ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10240435ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10240445ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10255221ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10255379ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10255576ms] [LOG] [Fast Refresh] done in 305ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10270168ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10285177ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10285484ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10285792ms] [LOG] [Fast Refresh] done in 417ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286134ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286159ms] [LOG] [Fast Refresh] done in 125ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286355ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286381ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286582ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286668ms] [LOG] [Fast Refresh] done in 205ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286794ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286866ms] [LOG] [Fast Refresh] done in 185ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10286981ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10287032ms] [LOG] [Fast Refresh] done in 163ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10300214ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10300460ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10300608ms] [LOG] [Fast Refresh] done in 250ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10315167ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10315329ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10315365ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10315521ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10315522ms] [LOG] [Fast Refresh] done in 109ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10315709ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10315744ms] [LOG] [Fast Refresh] done in 137ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10330162ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10330496ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10330582ms] [LOG] [Fast Refresh] done in 197ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10345200ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10345405ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10345459ms] [LOG] [Fast Refresh] done in 166ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10360222ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10360644ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10360817ms] [LOG] [Fast Refresh] done in 274ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10375182ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10375361ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10375432ms] [LOG] [Fast Refresh] done in 175ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10375574ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10375597ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10390155ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10390364ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10390890ms] [LOG] [Fast Refresh] done in 636ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10405163ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10405308ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10405327ms] [LOG] [Fast Refresh] done in 123ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10420253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10435190ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10450207ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10465211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10465437ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10465487ms] [LOG] [Fast Refresh] done in 158ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10480189ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10480352ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10480376ms] [LOG] [Fast Refresh] done in 130ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10495278ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10510262ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10525268ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10525460ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10525468ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10540213ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10540435ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10541337ms] [LOG] [Fast Refresh] done in 1008ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10555208ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10555552ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10555580ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10556301ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10556342ms] [LOG] [Fast Refresh] done in 167ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10556713ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10556836ms] [LOG] [Fast Refresh] done in 228ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10556960ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10557127ms] [LOG] [Fast Refresh] done in 281ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10557239ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10557711ms] [LOG] [Fast Refresh] done in 577ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10557819ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10557918ms] [LOG] [Fast Refresh] done in 206ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10570238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10585205ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10585567ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10586350ms] [LOG] [Fast Refresh] done in 887ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10586558ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10586594ms] [LOG] [Fast Refresh] done in 146ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10600173ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10600382ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10600384ms] [LOG] [Fast Refresh] done in 110ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10615174ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10615341ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10615342ms] [LOG] [Fast Refresh] done in 103ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10630168ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10630308ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10630361ms] [LOG] [Fast Refresh] done in 156ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10630478ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10630497ms] [LOG] [Fast Refresh] done in 130ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10645233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10660266ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10660412ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10661018ms] [LOG] [Fast Refresh] done in 718ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10661541ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10661603ms] [LOG] [Fast Refresh] done in 170ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10675259ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10675850ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10675981ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10676105ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10676130ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10676363ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10676565ms] [LOG] [Fast Refresh] done in 321ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10676704ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10677076ms] [LOG] [Fast Refresh] done in 493ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10690254ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10705191ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10705335ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10705336ms] [LOG] [Fast Refresh] done in 103ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10720174ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10735211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10735467ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10735477ms] [LOG] [Fast Refresh] done in 123ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10750199ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10765163ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10780168ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10795192ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10810170ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10825166ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10840201ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10855177ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10870323ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10885174ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10885308ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10885390ms] [LOG] [Fast Refresh] done in 192ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[10900186ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10915188ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10930182ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10945205ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10960204ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10975211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[10990184ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11005183ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11005435ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11005557ms] [LOG] [Fast Refresh] done in 223ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11005746ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11005803ms] [LOG] [Fast Refresh] done in 170ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11020177ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11035243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11035630ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11035730ms] [LOG] [Fast Refresh] done in 206ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11050192ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11065321ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11065752ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11065900ms] [LOG] [Fast Refresh] done in 257ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11080253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11080483ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11080688ms] [LOG] [Fast Refresh] done in 316ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11095205ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11095339ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11095393ms] [LOG] [Fast Refresh] done in 163ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11110178ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11125202ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11125375ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11125664ms] [LOG] [Fast Refresh] done in 392ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11125935ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11125995ms] [LOG] [Fast Refresh] done in 169ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11140201ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11155217ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11155359ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11155379ms] [LOG] [Fast Refresh] done in 125ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11170206ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11185202ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11185337ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11185413ms] [LOG] [Fast Refresh] done in 196ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11200193ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11215466ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11215767ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11215892ms] [LOG] [Fast Refresh] done in 231ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216008ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216009ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216208ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216292ms] [LOG] [Fast Refresh] done in 211ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216464ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216478ms] [LOG] [Fast Refresh] done in 123ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216656ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11216767ms] [LOG] [Fast Refresh] done in 213ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11217177ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11217312ms] [LOG] [Fast Refresh] done in 235ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11217454ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11217507ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11230171ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11245212ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11245344ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11245660ms] [LOG] [Fast Refresh] done in 420ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11260219ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11260455ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11260511ms] [LOG] [Fast Refresh] done in 163ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11275231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11275427ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11275701ms] [LOG] [Fast Refresh] done in 392ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11290227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11290396ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11290476ms] [LOG] [Fast Refresh] done in 192ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11290627ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11290670ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11290988ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11291026ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11305229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11320192ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11335227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11350171ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11365210ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11365387ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11365413ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11380195ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11380378ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11380431ms] [LOG] [Fast Refresh] done in 173ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11395203ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11395449ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11395489ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11395655ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11395732ms] [LOG] [Fast Refresh] done in 180ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11395978ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11396007ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11410273ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11425182ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11425342ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11425372ms] [LOG] [Fast Refresh] done in 140ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11425512ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11425532ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11425733ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11425734ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11440193ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11455191ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11455382ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11455434ms] [LOG] [Fast Refresh] done in 162ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11470357ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11485463ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11485666ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11485748ms] [LOG] [Fast Refresh] done in 189ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11500288ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11515399ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11515622ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11515663ms] [LOG] [Fast Refresh] done in 145ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11515812ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11515837ms] [LOG] [Fast Refresh] done in 141ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11530286ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11530433ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11530507ms] [LOG] [Fast Refresh] done in 177ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11545261ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11545684ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11545856ms] [LOG] [Fast Refresh] done in 275ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11546051ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11546087ms] [LOG] [Fast Refresh] done in 141ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11560243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11575245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11590267ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11590455ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11590455ms] [LOG] [Fast Refresh] done in 104ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11605234ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11620315ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11620546ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11620894ms] [LOG] [Fast Refresh] done in 455ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11635293ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11635489ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11635613ms] [LOG] [Fast Refresh] done in 229ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11650254ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11650421ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11650440ms] [LOG] [Fast Refresh] done in 133ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11665211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11680238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11695264ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11695565ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11695583ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11710240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11710447ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11710489ms] [LOG] [Fast Refresh] done in 146ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11710646ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11710927ms] [LOG] [Fast Refresh] done in 407ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11725246ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11740439ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11755327ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11755583ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11755716ms] [LOG] [Fast Refresh] done in 241ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11755986ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11756072ms] [LOG] [Fast Refresh] done in 197ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11756210ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11756291ms] [LOG] [Fast Refresh] done in 187ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11770274ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11770401ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11770419ms] [LOG] [Fast Refresh] done in 125ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11770739ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11770823ms] [LOG] [Fast Refresh] done in 185ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11785239ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11800231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11800363ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11800370ms] [LOG] [Fast Refresh] done in 109ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11815241ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11815447ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11815502ms] [LOG] [Fast Refresh] done in 155ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11830280ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11845223ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11845418ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11845501ms] [LOG] [Fast Refresh] done in 187ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11845660ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11845660ms] [LOG] [Fast Refresh] done in 103ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11860230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11875243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11875386ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11875387ms] [LOG] [Fast Refresh] done in 108ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11890253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11905265ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11920245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11935195ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11950251ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11950383ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11950432ms] [LOG] [Fast Refresh] done in 160ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11965222ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11980229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11995229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[11995394ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[11995452ms] [LOG] [Fast Refresh] done in 159ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12010212ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12010372ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12010415ms] [LOG] [Fast Refresh] done in 163ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12010662ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12010670ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12025453ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12025693ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12025705ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12040277ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12055246ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12055416ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12055511ms] [LOG] [Fast Refresh] done in 199ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12055727ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12055818ms] [LOG] [Fast Refresh] done in 217ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12056101ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12056128ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12056585ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12056585ms] [LOG] [Fast Refresh] done in 106ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12056788ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12056823ms] [LOG] [Fast Refresh] done in 147ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12057000ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12057083ms] [LOG] [Fast Refresh] done in 197ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12070239ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12085249ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12085403ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12085496ms] [LOG] [Fast Refresh] done in 194ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12100241ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12100410ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12100438ms] [LOG] [Fast Refresh] done in 133ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12115216ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12115383ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12115444ms] [LOG] [Fast Refresh] done in 168ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12115557ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12115585ms] [LOG] [Fast Refresh] done in 137ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12130272ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12130864ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12131000ms] [LOG] [Fast Refresh] done in 239ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12145239ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12145408ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12145416ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12145684ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12145743ms] [LOG] [Fast Refresh] done in 170ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12160219ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12175241ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12175388ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12175399ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12190260ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12205389ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12220240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12235256ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12235412ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12235444ms] [LOG] [Fast Refresh] done in 137ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12250264ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12265250ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12265416ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12265449ms] [LOG] [Fast Refresh] done in 147ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12265591ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12265616ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12265745ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12265756ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12280245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12280429ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12280653ms] [LOG] [Fast Refresh] done in 345ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12280805ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12280809ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12295200ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12310235ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12310416ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12310499ms] [LOG] [Fast Refresh] done in 195ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12325284ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12340247ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12340434ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12340568ms] [LOG] [Fast Refresh] done in 250ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12355247ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12355734ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12356066ms] [LOG] [Fast Refresh] done in 438ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12370234ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12370406ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12370699ms] [LOG] [Fast Refresh] done in 395ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12371260ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12371557ms] [LOG] [Fast Refresh] done in 406ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12371891ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12372180ms] [LOG] [Fast Refresh] done in 395ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12372325ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12372596ms] [LOG] [Fast Refresh] done in 384ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12372915ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12372958ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373158ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373263ms] [LOG] [Fast Refresh] done in 210ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373374ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373397ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373509ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373561ms] [LOG] [Fast Refresh] done in 160ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373756ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12373793ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12385234ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12400272ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12415270ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12430213ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12445287ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12445418ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12445552ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12460275ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12475246ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12490220ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12505245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12520205ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12520365ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12520527ms] [LOG] [Fast Refresh] done in 267ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12535219ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12550211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12565257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12580307ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12580466ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12580503ms] [LOG] [Fast Refresh] done in 157ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12595245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12610242ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12625274ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12625614ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12626028ms] [LOG] [Fast Refresh] done in 518ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12640224ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12655255ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12670240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12670384ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12670399ms] [LOG] [Fast Refresh] done in 123ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12670550ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12670563ms] [LOG] [Fast Refresh] done in 117ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12685254ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12700240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12700403ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12700404ms] [LOG] [Fast Refresh] done in 106ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12715243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12730231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12745266ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12745569ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12746411ms] [LOG] [Fast Refresh] done in 960ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12746630ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747046ms] [LOG] [Fast Refresh] done in 525ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747168ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747193ms] [LOG] [Fast Refresh] done in 137ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747324ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747438ms] [LOG] [Fast Refresh] done in 230ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747562ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747564ms] [LOG] [Fast Refresh] done in 117ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747676ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747797ms] [LOG] [Fast Refresh] done in 222ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747980ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12747987ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12760197ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12760343ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12760384ms] [LOG] [Fast Refresh] done in 146ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12775222ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12790231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12790411ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12790447ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12805230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12805398ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12805514ms] [LOG] [Fast Refresh] done in 224ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12820227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12835200ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12850214ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12865223ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12865437ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12865929ms] [LOG] [Fast Refresh] done in 597ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12880218ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12895201ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12910257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12910385ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12910442ms] [LOG] [Fast Refresh] done in 160ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12925291ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12940304ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12955226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12955389ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12955401ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12955582ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12955657ms] [LOG] [Fast Refresh] done in 186ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12970267ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12970501ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12970535ms] [LOG] [Fast Refresh] done in 136ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12985227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[12985367ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[12985391ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13000238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13000366ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13000388ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13000515ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13000543ms] [LOG] [Fast Refresh] done in 136ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13015253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13030211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13045205ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13060226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13060371ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13060382ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13075331ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13090225ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13105204ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13120198ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13135240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13150233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13165195ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13180218ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13195255ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13210216ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13225209ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13240274ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13255238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13270212ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13285202ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13300259ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13315224ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13330237ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13345276ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13360228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13375222ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13390220ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13405228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13420243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13435215ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13450228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13465257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13480206ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13495201ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13510201ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13525228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13525366ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13525403ms] [LOG] [Fast Refresh] done in 140ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13540205ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13555219ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13570205ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13585294ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13600253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13615268ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13630217ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13645247ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13660211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13675210ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13690203ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13705234ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13720239ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13735210ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13750207ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13765265ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13780237ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13780383ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13780465ms] [LOG] [Fast Refresh] done in 194ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[13795217ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13810257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13825231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13840227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13855263ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13870215ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13885255ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13900227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13915235ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13930220ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13945234ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13960226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13975211ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[13990233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14005216ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14020212ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14035213ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14050212ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14065231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14080229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14095285ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14095363ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rithv1k&api_key=a073a0bf6d9a7fefde017300100fb281&format=json&limit=1:0
+[14110279ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14125208ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14140266ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14155232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14170237ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14185222ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14200256ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14215250ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14230246ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14245245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14245404ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14245577ms] [LOG] [Fast Refresh] done in 277ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14260257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14275249ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14275403ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14275408ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14290229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14305257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14320226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14320382ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14320476ms] [LOG] [Fast Refresh] done in 198ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14335254ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14350204ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14365275ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14365427ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14365548ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14380229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14380365ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14380376ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14395221ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14410297ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14410464ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14410540ms] [LOG] [Fast Refresh] done in 193ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14425245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14425403ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14425604ms] [LOG] [Fast Refresh] done in 304ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14440239ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14455270ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14455437ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14455495ms] [LOG] [Fast Refresh] done in 169ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14470268ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14485247ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14500251ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14500411ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14500440ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14515265ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14530297ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14545256ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14545405ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14545423ms] [LOG] [Fast Refresh] done in 122ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14560245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14575250ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14575392ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14575522ms] [LOG] [Fast Refresh] done in 234ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14575728ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14575732ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14575952ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14575990ms] [LOG] [Fast Refresh] done in 155ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14576232ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14576250ms] [LOG] [Fast Refresh] done in 145ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14590237ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14605264ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14620273ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14635241ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14635425ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14635672ms] [LOG] [Fast Refresh] done in 351ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14650244ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14665250ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14680335ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14695261ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14695417ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14695423ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14710362ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14725241ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14740207ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14740355ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14740380ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14755252ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14755423ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14755433ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14770259ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14770387ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14770417ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14785252ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14800234ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14815235ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14815441ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14815453ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[14830242ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14845206ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14860238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14875219ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14890233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14905321ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14920218ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14935226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14950350ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14965247ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14980245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[14995237ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15010237ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15025248ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15040243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15055221ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15070229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15085257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15100235ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15115260ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15115407ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[15115412ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[15130235ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15145244ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15145475ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[15145530ms] [LOG] [Fast Refresh] done in 169ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[15160253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15175257ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15190226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15205232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15220212ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15235237ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15250232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15265231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15280223ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15295231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15310246ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15325230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15340235ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15355208ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15370235ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15385227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15400305ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15415221ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15430542ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15445227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15460221ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15475229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15490226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15505238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15520228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15535233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15550230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15565217ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15580232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15595225ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15610232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15625226ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15640230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15655266ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15670239ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15685223ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15700217ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15715243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15730216ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15745228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15760227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15775233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15790220ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15805223ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15820240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15835228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15850232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15865225ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15880232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15895295ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15910239ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15925232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15940252ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15955218ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15970222ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[15985218ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16000225ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16015229ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16030231ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16045230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16060245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16075242ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16090230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16105230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16120230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16135242ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16150236ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16165232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16180225ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16195228ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16210232ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16225233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16240246ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16255254ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16255541ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16255819ms] [LOG] [Fast Refresh] done in 387ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16270225ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16285262ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16300233ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16315253ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16315592ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16316115ms] [LOG] [Fast Refresh] done in 636ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16316359ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16316361ms] [LOG] [Fast Refresh] done in 110ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16316535ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16316586ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16330250ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16345250ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16360238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0
+[16360383ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16360404ms] [LOG] [Fast Refresh] done in 125ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_7a8122d0._.js:2287
+[16375319ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.lanyard.rest/v1/users/992018993730814002:0

@@ -1,0 +1,61 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e2]:
+    - main [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - heading "Info" [level=1] [ref=f1e5]
+        - link "Back" [ref=f1e6] [cursor=pointer]:
+          - /url: /
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]:
+          - generic [ref=f1e10]:
+            - generic [ref=f1e11]: +
+            - generic [ref=f1e12]: +
+            - generic [ref=f1e13]: +
+            - generic [ref=f1e14]: +
+            - img "Rithvik Shetty" [ref=f1e16]
+          - generic [ref=f1e17]:
+            - generic [ref=f1e18]:
+              - term [ref=f1e19]: Based in
+              - definition [ref=f1e20]: Thane, India
+            - generic [ref=f1e21]:
+              - term [ref=f1e22]: Status
+              - definition [ref=f1e23]:
+                - generic [ref=f1e24]: Available for work
+        - generic [ref=f1e26]:
+          - generic [ref=f1e27]: About
+          - heading "Rithvik Shetty." [level=2] [ref=f1e28]
+          - generic [ref=f1e29]:
+            - paragraph [ref=f1e30]: Full stack developer & computer science student, specialized in modern web development.
+            - paragraph [ref=f1e31]: I build tailor-made web experiences where technical precision meets clean design. Passionate about performance, interaction and detail — blending Machine Learning with the modern web.
+          - generic [ref=f1e32]:
+            - generic [ref=f1e33]:
+              - heading "Frontend" [level=3] [ref=f1e34]
+              - list [ref=f1e35]:
+                - listitem [ref=f1e36]: React · Next.js
+                - listitem [ref=f1e37]: TypeScript
+                - listitem [ref=f1e38]: Tailwind CSS
+                - listitem [ref=f1e39]: HTML · CSS
+            - generic [ref=f1e40]:
+              - heading "Backend" [level=3] [ref=f1e41]
+              - list [ref=f1e42]:
+                - listitem [ref=f1e43]: Node.js · Express
+                - listitem [ref=f1e44]: Python
+                - listitem [ref=f1e45]: PostgreSQL · Redis
+                - listitem [ref=f1e46]: Supabase
+            - generic [ref=f1e47]:
+              - heading "AI / ML" [level=3] [ref=f1e48]
+              - list [ref=f1e49]:
+                - listitem [ref=f1e50]: Machine Learning
+                - listitem [ref=f1e51]: Scikit-learn
+                - listitem [ref=f1e52]: OpenCV
+                - listitem [ref=f1e53]: Pandas · NumPy
+            - generic [ref=f1e54]:
+              - heading "Tools" [level=3] [ref=f1e55]
+              - list [ref=f1e56]:
+                - listitem [ref=f1e57]: Docker · Git
+                - listitem [ref=f1e58]: AWS
+                - listitem [ref=f1e59]: Figma
+                - listitem [ref=f1e60]: Razorpay · Stripe
+      - link "rithvikshetty2004@gmail.com" [ref=f1e62] [cursor=pointer]:
+        - /url: mailto:rithvikshetty2004@gmail.com
+  - button "Open Next.js Dev Tools" [ref=f1e68] [cursor=pointer]

@@ -1,0 +1,56 @@
+- generic [active] [ref=f5e1]:
+  - main [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - link "Back Home" [ref=f5e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f5e11]:
+        - generic [ref=f5e12]:
+          - generic [ref=f5e13]:
+            - heading "LET'S WORK TOGETHER" [level=2] [ref=f5e14]
+            - generic:
+              - img "Robot 3D Companion"
+          - paragraph [ref=f5e15]: We are currently accepting new projects. Tell us about your vision and we'll tell you how we can bring it to life.
+          - generic [ref=f5e16]:
+            - generic [ref=f5e17]:
+              - heading "Email Me" [level=3] [ref=f5e18]
+              - link "rithvikshetty2004@gmail.com" [ref=f5e19] [cursor=pointer]:
+                - /url: mailto:rithvikshetty2004@gmail.com
+            - generic [ref=f5e20]:
+              - heading "Visit Me" [level=3] [ref=f5e21]
+              - paragraph [ref=f5e22]: Thane, Maharashtra, India
+            - generic [ref=f5e23]:
+              - heading "Socials" [level=3] [ref=f5e24]
+              - generic [ref=f5e25]:
+                - link "Instagram" [ref=f5e26] [cursor=pointer]:
+                  - /url: https://instagram.com/rithv1k7
+                - link "Twitter" [ref=f5e27] [cursor=pointer]:
+                  - /url: https://x.com/RithvikShetty04
+                - link "LinkedIn" [ref=f5e28] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/rithvikshetty/
+                - link "GitHub" [ref=f5e29] [cursor=pointer]:
+                  - /url: https://github.com/rithvikshettyy
+                - link "Pinterest" [ref=f5e30] [cursor=pointer]:
+                  - /url: https://in.pinterest.com/mayberithvik/
+        - generic [ref=f5e32]:
+          - generic [ref=f5e33]:
+            - text: Name
+            - textbox "Name" [ref=f5e34]:
+              - /placeholder: John Doe
+          - generic [ref=f5e35]:
+            - text: Email
+            - textbox "Email" [ref=f5e36]:
+              - /placeholder: john@example.com
+          - generic [ref=f5e37]:
+            - text: Project Budget
+            - combobox "Project Budget" [ref=f5e38] [cursor=pointer]:
+              - option "Select Range" [selected]
+              - option "Basic"
+              - option "Standard"
+              - option "Premium"
+              - option "Enterprise"
+          - generic [ref=f5e39]:
+            - text: Message
+            - textbox "Message" [ref=f5e40]:
+              - /placeholder: Tell us about your project...
+          - button "Send Request" [ref=f5e41]
+  - button "Open Next.js Dev Tools" [ref=f5e50] [cursor=pointer]

@@ -298,7 +298,7 @@ export default function Hero({ nextSection }: HeroProps) {
             data-hero-ui
             className="absolute bottom-6 md:bottom-7 right-3 md:right-8 flex items-center gap-4 md:gap-6 text-sm md:text-base font-bold uppercase tracking-widest text-white pointer-events-auto whitespace-nowrap"
           >
-            <Link href="/#work" className="transition-colors hover:text-neutral-400">Work</Link>
+            <Link href="/work" prefetch={false} className="transition-colors hover:text-neutral-400">Work</Link>
             <Link href="/about" prefetch={false} className="transition-colors hover:text-neutral-400">Info</Link>
             <Link href="/contact" prefetch={false} className="transition-colors hover:text-neutral-400">Contact</Link>
           </nav>

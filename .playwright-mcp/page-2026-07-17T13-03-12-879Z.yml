@@ -1,0 +1,471 @@
+- generic [active] [ref=f28e1]:
+  - main [ref=f28e2]:
+    - generic [ref=f28e3]:
+      - generic [ref=f28e6]:
+        - paragraph [ref=f28e7]: Full stack developer, turning ideas into products,through clean code, detail and craft.
+        - navigation [ref=f28e9]:
+          - link "GitHub" [ref=f28e10] [cursor=pointer]:
+            - /url: https://github.com/rithvikshettyy
+          - generic [ref=f28e11]: /
+          - link "LinkedIn" [ref=f28e12] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/rithvikshetty/
+          - generic [ref=f28e13]: /
+          - link "Twitter" [ref=f28e14] [cursor=pointer]:
+            - /url: https://x.com/RithvikShetty04
+        - navigation [ref=f28e15]:
+          - link "Work" [ref=f28e16] [cursor=pointer]:
+            - /url: /#work
+          - link "Info" [ref=f28e17] [cursor=pointer]:
+            - /url: /about
+          - link "Contact" [ref=f28e18] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f28e20]:
+        - generic [ref=f28e21]:
+          - paragraph [ref=f28e22]:
+            - generic [ref=f28e23]: I'm
+            - generic [ref=f28e24]: a
+            - generic [ref=f28e25]: full
+            - generic [ref=f28e26]: stack
+            - generic [ref=f28e27]: developer
+            - generic [ref=f28e28]: who
+            - generic [ref=f28e29]: turns
+            - generic [ref=f28e30]: ideas
+            - generic [ref=f28e31]: into
+            - generic [ref=f28e32]: elegant
+            - generic [ref=f28e33]: digital
+            - generic [ref=f28e34]: solutions.
+            - generic [ref=f28e35]: Specializing
+            - generic [ref=f28e36]: in
+            - generic [ref=f28e37]: modern
+            - generic [ref=f28e38]: web
+            - generic [ref=f28e39]: applications,
+            - generic [ref=f28e40]: scalable
+            - generic [ref=f28e41]: backends,
+            - generic [ref=f28e42]: and
+            - generic [ref=f28e43]: pixel-perfect
+            - generic [ref=f28e44]: frontends.
+          - img "Animated Blob Graphic" [ref=f28e46]
+        - generic [ref=f28e47]:
+          - generic [ref=f28e48]:
+            - generic [ref=f28e49]: 20+
+            - generic [ref=f28e50]: Projects
+          - generic [ref=f28e51]:
+            - generic [ref=f28e52]: 4+
+            - generic [ref=f28e53]: Years
+          - generic [ref=f28e54]:
+            - generic [ref=f28e55]: 100%
+            - generic [ref=f28e56]: Dedication
+      - generic [ref=f28e58]:
+        - generic [ref=f28e59]:
+          - generic [ref=f28e60]:
+            - heading "I'm Rithvik" [level=2] [ref=f28e61]
+            - paragraph [ref=f28e62]:
+              - generic [ref=f28e63]: FULL stack DEVELOPER
+              - text: Freelancer specialized in building experiences.
+            - generic [ref=f28e64]:
+              - link "View Resume" [ref=f28e65] [cursor=pointer]:
+                - /url: /rithvikshetty_resume.pdf
+              - link "Ask my AI assistant" [ref=f28e69] [cursor=pointer]:
+                - /url: /chat
+          - img "Rithvik" [ref=f28e77]
+        - generic [ref=f28e78]:
+          - generic [ref=f28e80]:
+            - paragraph [ref=f28e81]:
+              - generic [ref=f28e82]: Passionate
+              - generic [ref=f28e83]: about
+              - generic [ref=f28e84]: emerging
+              - generic [ref=f28e85]: technologies,
+              - generic [ref=f28e86]: blending
+              - generic [ref=f28e87]: Machine
+              - generic [ref=f28e88]: Learning
+              - generic [ref=f28e89]: with
+              - generic [ref=f28e90]: Modern
+              - generic [ref=f28e91]: Web
+              - generic [ref=f28e92]: Development.
+            - paragraph [ref=f28e93]:
+              - generic [ref=f28e94]: From
+              - generic [ref=f28e95]: architecting
+              - generic [ref=f28e96]: robust
+              - generic [ref=f28e97]: backends
+              - generic [ref=f28e98]: with
+              - generic [ref=f28e99]: Node
+              - generic [ref=f28e100]: "&"
+              - generic [ref=f28e101]: Supabase
+              - generic [ref=f28e102]: to
+              - generic [ref=f28e103]: designing
+              - generic [ref=f28e104]: pixel-perfect
+              - generic [ref=f28e105]: interfaces
+              - generic [ref=f28e106]: in
+              - generic [ref=f28e107]: Figma
+              - generic [ref=f28e108]: and
+              - generic [ref=f28e109]: React.
+              - generic [ref=f28e110]: I
+              - generic [ref=f28e111]: don't
+              - generic [ref=f28e112]: just
+              - generic [ref=f28e113]: write
+              - generic [ref=f28e114]: code;
+              - generic [ref=f28e115]: I
+              - generic [ref=f28e116]: craft
+              - generic [ref=f28e117]: holistic
+              - generic [ref=f28e118]: user
+              - generic [ref=f28e119]: experiences.
+              - generic [ref=f28e120]: Former
+              - generic [ref=f28e121]: Design
+              - generic [ref=f28e122]: Lead
+              - generic [ref=f28e123]: at
+              - generic [ref=f28e124]: TEDx
+              - generic [ref=f28e125]: SIESGST,
+              - generic [ref=f28e126]: bringing
+              - generic [ref=f28e127]: a
+              - generic [ref=f28e128]: creative
+              - generic [ref=f28e129]: edge
+              - generic [ref=f28e130]: to
+              - generic [ref=f28e131]: technical
+              - generic [ref=f28e132]: challenges.
+          - generic [ref=f28e133]:
+            - heading "Principles" [level=3] [ref=f28e136]
+            - paragraph [ref=f28e138]:
+              - generic [ref=f28e139]: My
+              - generic [ref=f28e140]: approach
+              - generic [ref=f28e141]: is
+              - generic [ref=f28e142]: rooted
+              - generic [ref=f28e143]: in
+              - generic [ref=f28e144]: being
+              - generic [ref=f28e145]: Design
+              - generic [ref=f28e146]: Obsessed,
+              - generic [ref=f28e147]: where
+              - generic [ref=f28e148]: pixel
+              - generic [ref=f28e149]: perfection
+              - generic [ref=f28e150]: and
+              - generic [ref=f28e151]: smooth
+              - generic [ref=f28e152]: interactions
+              - generic [ref=f28e153]: are
+              - generic [ref=f28e154]: non-negotiable.
+              - generic [ref=f28e155]: I
+              - generic [ref=f28e156]: prioritize
+              - generic [ref=f28e157]: being
+              - generic [ref=f28e158]: Performant
+              - generic [ref=f28e159]: First,
+              - generic [ref=f28e160]: ensuring
+              - generic [ref=f28e161]: under-the-hood
+              - generic [ref=f28e162]: speed
+              - generic [ref=f28e163]: that
+              - generic [ref=f28e164]: scales
+              - generic [ref=f28e165]: effortlessly
+              - generic [ref=f28e166]: over
+              - generic [ref=f28e167]: time.
+              - generic [ref=f28e168]: As
+              - generic [ref=f28e169]: a
+              - generic [ref=f28e170]: Continuous
+              - generic [ref=f28e171]: Learner,
+              - generic [ref=f28e172]: I
+              - generic [ref=f28e173]: am
+              - generic [ref=f28e174]: always
+              - generic [ref=f28e175]: adapting
+              - generic [ref=f28e176]: to
+              - generic [ref=f28e177]: the
+              - generic [ref=f28e178]: absolute
+              - generic [ref=f28e179]: edge
+              - generic [ref=f28e180]: of
+              - generic [ref=f28e181]: what's
+              - generic [ref=f28e182]: possible.
+          - generic [ref=f28e183]:
+            - heading "Connect" [level=3] [ref=f28e186]
+            - generic [ref=f28e187]:
+              - link [ref=f28e189] [cursor=pointer]:
+                - /url: https://github.com/rithvikshettyy
+                - heading "GitHub" [level=3] [ref=f28e200]
+              - link [ref=f28e202] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/rithvikshetty/
+                - heading "LinkedIn" [level=3] [ref=f28e214]
+              - link [ref=f28e216] [cursor=pointer]:
+                - /url: https://x.com/RithvikShetty04
+                - heading "Twitter" [level=3] [ref=f28e226]
+              - link [ref=f28e228] [cursor=pointer]:
+                - /url: https://in.pinterest.com/mayberithvik/
+                - heading "Pinterest" [level=3] [ref=f28e238]
+              - link [ref=f28e240] [cursor=pointer]:
+                - /url: /contact
+                - heading "Contact" [level=3] [ref=f28e251]
+      - generic [ref=f28e253]:
+        - generic: "01"
+        - generic [ref=f28e255]:
+          - listbox "Option wheel" [ref=f28e257]:
+            - option "Salesforce & Marketing Automation Intern" [selected] [ref=f28e258] [cursor=pointer]
+            - option "Machine Learning Intern" [ref=f28e259] [cursor=pointer]
+            - option "Graphic Designer" [ref=f28e260] [cursor=pointer]
+            - option "Graphic Designer" [ref=f28e261] [cursor=pointer]
+            - option "Technical Secretary" [ref=f28e262] [cursor=pointer]
+            - option "Design Lead" [ref=f28e263] [cursor=pointer]
+            - option "Social Media Lead" [ref=f28e264] [cursor=pointer]
+          - generic [ref=f28e265]:
+            - generic [ref=f28e266]:
+              - generic [ref=f28e267]: Dec 2025 - Feb 2026
+              - generic [ref=f28e268]: Internship
+            - heading "Salesforce & Marketing Automation Intern" [level=3] [ref=f28e269]
+            - generic [ref=f28e271]: Lupin Ltd
+            - paragraph [ref=f28e276]: Streamlining business processes and enhancing outreach strategies using Salesforce CRM and advanced marketing automation tools.
+            - generic [ref=f28e277]:
+              - generic [ref=f28e278]: Salesforce
+              - generic [ref=f28e279]: Marketing Automation
+              - generic [ref=f28e280]: Analytics
+              - generic [ref=f28e281]: Technical Strategy
+            - link "View Certificate" [ref=f28e282] [cursor=pointer]:
+              - /url: experience/lupin.pdf
+      - generic [ref=f28e287]:
+        - generic [ref=f28e288]: REACT JS
+        - generic [ref=f28e295]: TAILWIND CSS
+        - generic [ref=f28e302]: TYPESCRIPT
+        - generic [ref=f28e310]: PYTHON
+        - generic [ref=f28e315]: NODE JS
+        - generic [ref=f28e321]: DOCKER
+        - generic [ref=f28e327]: POSTGRESQL
+        - generic [ref=f28e334]: MERN
+        - generic [ref=f28e341]: FIGMA
+        - generic [ref=f28e349]: FRONTEND
+        - generic [ref=f28e354]: APP DEV
+        - generic [ref=f28e359]: AWS
+        - generic [ref=f28e364]: REACT NATIVE
+        - generic [ref=f28e370]: REACT JS
+        - generic [ref=f28e377]: TAILWIND CSS
+        - generic [ref=f28e384]: TYPESCRIPT
+        - generic [ref=f28e392]: PYTHON
+        - generic [ref=f28e397]: NODE JS
+        - generic [ref=f28e403]: DOCKER
+        - generic [ref=f28e409]: POSTGRESQL
+        - generic [ref=f28e416]: MERN
+        - generic [ref=f28e423]: FIGMA
+        - generic [ref=f28e431]: FRONTEND
+        - generic [ref=f28e436]: APP DEV
+        - generic [ref=f28e441]: AWS
+        - generic [ref=f28e446]: REACT NATIVE
+        - generic [ref=f28e452]: REACT JS
+        - generic [ref=f28e459]: TAILWIND CSS
+        - generic [ref=f28e466]: TYPESCRIPT
+        - generic [ref=f28e474]: PYTHON
+        - generic [ref=f28e479]: NODE JS
+        - generic [ref=f28e485]: DOCKER
+        - generic [ref=f28e491]: POSTGRESQL
+        - generic [ref=f28e498]: MERN
+        - generic [ref=f28e505]: FIGMA
+        - generic [ref=f28e513]: FRONTEND
+        - generic [ref=f28e518]: APP DEV
+        - generic [ref=f28e523]: AWS
+        - generic [ref=f28e528]: REACT NATIVE
+        - generic [ref=f28e534]: REACT JS
+        - generic [ref=f28e541]: TAILWIND CSS
+        - generic [ref=f28e548]: TYPESCRIPT
+        - generic [ref=f28e556]: PYTHON
+        - generic [ref=f28e561]: NODE JS
+        - generic [ref=f28e567]: DOCKER
+        - generic [ref=f28e573]: POSTGRESQL
+        - generic [ref=f28e580]: MERN
+        - generic [ref=f28e587]: FIGMA
+        - generic [ref=f28e595]: FRONTEND
+        - generic [ref=f28e600]: APP DEV
+        - generic [ref=f28e605]: AWS
+        - generic [ref=f28e610]: REACT NATIVE
+      - generic [ref=f28e618]:
+        - generic [ref=f28e619]:
+          - text: ( Selected Works )
+          - heading "Projects." [level=2] [ref=f28e620]
+          - paragraph [ref=f28e621]: A rotating stack of the latest builds. Click any card to open the case study.
+        - generic [ref=f28e623]:
+          - generic [ref=f28e624] [cursor=pointer]:
+            - img "INTERVIEWDUMP" [ref=f28e625]
+            - generic [ref=f28e627]:
+              - generic [ref=f28e628]:
+                - heading "INTERVIEWDUMP" [level=3] [ref=f28e629]
+                - paragraph [ref=f28e630]: Software · 2026
+              - generic [ref=f28e631]: "01"
+          - generic [ref=f28e632] [cursor=pointer]:
+            - img "ANYFORMAT" [ref=f28e633]
+            - generic [ref=f28e635]:
+              - generic [ref=f28e636]:
+                - heading "ANYFORMAT" [level=3] [ref=f28e637]
+                - paragraph [ref=f28e638]: Software · 2026
+              - generic [ref=f28e639]: "02"
+          - generic [ref=f28e640] [cursor=pointer]:
+            - img "TUNE CLI" [ref=f28e641]
+            - generic [ref=f28e643]:
+              - generic [ref=f28e644]:
+                - heading "TUNE CLI" [level=3] [ref=f28e645]
+                - paragraph [ref=f28e646]: CLI / IDE Ext · 2026
+              - generic [ref=f28e647]: "03"
+          - generic [ref=f28e648] [cursor=pointer]:
+            - img "TRCT.IN" [ref=f28e649]
+            - generic [ref=f28e651]:
+              - generic [ref=f28e652]:
+                - heading "TRCT.IN" [level=3] [ref=f28e653]
+                - paragraph [ref=f28e654]: Freelance · 2026
+              - generic [ref=f28e655]: "04"
+          - generic [ref=f28e656] [cursor=pointer]:
+            - img "AUTOPHARMAX" [ref=f28e657]
+            - generic [ref=f28e659]:
+              - generic [ref=f28e660]:
+                - heading "AUTOPHARMAX" [level=3] [ref=f28e661]
+                - paragraph [ref=f28e662]: Machine Learning · 2026
+              - generic [ref=f28e663]: "05"
+      - generic [ref=f28e665]:
+        - generic [ref=f28e666]:
+          - generic [ref=f28e667]:
+            - generic [ref=f28e668]: (01)
+            - heading "CRAFTING" [level=2] [ref=f28e669]
+          - generic [ref=f28e670]:
+            - generic [ref=f28e671]: (02)
+            - generic [ref=f28e672]:
+              - generic [ref=f28e673]: with
+              - generic:
+                - img "3D Accent"
+          - generic [ref=f28e674]:
+            - generic [ref=f28e675]: (03)
+            - heading "INTENT" [level=2] [ref=f28e676]
+        - generic [ref=f28e677]:
+          - generic [ref=f28e678]:
+            - generic [ref=f28e679]: (04)
+            - generic [ref=f28e680]: pixel
+          - generic [ref=f28e681]:
+            - generic [ref=f28e682]: (05)
+            - heading "LOGIC" [level=2] [ref=f28e683]
+          - generic [ref=f28e684]:
+            - generic [ref=f28e685]: (06)
+            - heading "PERFECT" [level=2] [ref=f28e686]
+      - generic [ref=f28e687]:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: Based in India
+              - paragraph
+          - generic:
+            - generic:
+              - generic: (4)
+              - paragraph: Recognitions earned through technical excellence and pure grit.
+            - heading "AWARDS & RECOGNITIONS" [level=2] [ref=f28e688]:
+              - generic [ref=f28e689]: AWARDS &
+              - generic [ref=f28e690]: RECOGNITIONS
+        - generic [ref=f28e693]:
+          - generic [ref=f28e695]:
+            - img "Conquer Space - Inter Collegiate Exhibition" [ref=f28e696]
+            - generic [ref=f28e699]:
+              - generic [ref=f28e700]: /01
+              - generic [ref=f28e701]: October, 2025
+            - generic [ref=f28e712]:
+              - heading "Conquer Space - Inter Collegiate Exhibition" [level=3] [ref=f28e713]
+              - paragraph: In presence of Dr. V. Narayanan, Chairman of ISRO
+          - generic [ref=f28e719]:
+            - 'img "Title Winner - Most Product Readiness Award: HackCelestial 2.0" [ref=f28e720]'
+            - generic [ref=f28e723]:
+              - generic [ref=f28e724]: /02
+              - generic [ref=f28e725]: September 2025
+            - generic [ref=f28e736]:
+              - 'heading "Title Winner - Most Product Readiness Award: HackCelestial 2.0" [level=3] [ref=f28e737]'
+              - paragraph: Around 250+ participants
+          - generic [ref=f28e743]:
+            - img "First Position in Cognition'24" [ref=f28e744]
+            - generic [ref=f28e747]:
+              - generic [ref=f28e748]: /03
+              - generic [ref=f28e749]: 2024-2025
+            - generic [ref=f28e757]:
+              - heading "First Position in Cognition'24" [level=3] [ref=f28e758]
+              - paragraph: Technical Team, SIESGST
+          - generic [ref=f28e764]:
+            - img "Technical Head - Student Council" [ref=f28e765]
+            - generic [ref=f28e768]:
+              - generic [ref=f28e769]: /04
+              - generic [ref=f28e770]: 2024-2025
+            - generic [ref=f28e778]:
+              - heading "Technical Head - Student Council" [level=3] [ref=f28e779]
+              - paragraph: Technical Team, SIESGST
+      - generic [ref=f28e787]:
+        - generic [ref=f28e788]:
+          - generic [ref=f28e789]:
+            - heading "LET'S WORK TOGETHER" [level=2] [ref=f28e790]
+            - generic:
+              - img "Robot 3D Companion"
+          - paragraph [ref=f28e791]: We are currently accepting new projects. Tell us about your vision and we'll tell you how we can bring it to life.
+          - generic [ref=f28e792]:
+            - generic [ref=f28e793]:
+              - heading "Email Me" [level=3] [ref=f28e794]
+              - link "rithvikshetty2004@gmail.com" [ref=f28e795] [cursor=pointer]:
+                - /url: mailto:rithvikshetty2004@gmail.com
+            - generic [ref=f28e796]:
+              - heading "Visit Me" [level=3] [ref=f28e797]
+              - paragraph [ref=f28e798]: ThaneMaharashtra, India
+            - generic [ref=f28e799]:
+              - heading "Socials" [level=3] [ref=f28e800]
+              - generic [ref=f28e801]:
+                - link "Instagram" [ref=f28e802] [cursor=pointer]:
+                  - /url: https://instagram.com/rithv1k7
+                - link "Twitter" [ref=f28e803] [cursor=pointer]:
+                  - /url: https://x.com/RithvikShetty04
+                - link "LinkedIn" [ref=f28e804] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/rithvikshetty/
+                - link "GitHub" [ref=f28e805] [cursor=pointer]:
+                  - /url: https://github.com/rithvikshettyy
+                - link "Pinterest" [ref=f28e806] [cursor=pointer]:
+                  - /url: https://in.pinterest.com/mayberithvik/
+        - generic [ref=f28e808]:
+          - generic [ref=f28e809]:
+            - text: Name
+            - textbox "Name" [ref=f28e810]:
+              - /placeholder: John Doe
+          - generic [ref=f28e811]:
+            - text: Email
+            - textbox "Email" [ref=f28e812]:
+              - /placeholder: john@example.com
+          - generic [ref=f28e813]:
+            - text: Project Budget
+            - combobox "Project Budget" [ref=f28e814] [cursor=pointer]:
+              - option "Select Range" [selected]
+              - option "Basic"
+              - option "Standard"
+              - option "Premium"
+              - option "Enterprise"
+          - generic [ref=f28e815]:
+            - text: Message
+            - textbox "Message" [ref=f28e816]:
+              - /placeholder: Tell us about your project...
+          - button "Send Request" [ref=f28e817]
+      - generic [ref=f28e823]:
+        - heading "G E T I N T O U C H" [level=2] [ref=f28e824]:
+          - generic [ref=f28e825]:
+            - generic [ref=f28e826]: G
+            - generic [ref=f28e828]: E
+            - generic [ref=f28e830]: T
+            - generic [ref=f28e834]: I
+            - generic [ref=f28e836]: "N"
+            - generic [ref=f28e840]: T
+            - generic [ref=f28e842]: O
+            - generic [ref=f28e844]: U
+            - generic [ref=f28e846]: C
+            - generic [ref=f28e848]: H
+        - paragraph [ref=f28e850]: Have a project in mind? Let's collaborate and build something extraordinary.
+        - link "Contact Me" [ref=f28e853] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=f28e854]:
+    - generic [ref=f28e855]:
+      - generic [ref=f28e856]:
+        - heading "Rish." [level=2] [ref=f28e857]
+        - generic [ref=f28e858]:
+          - generic [ref=f28e859]:
+            - generic [ref=f28e860]: Socials
+            - link "Twitter" [ref=f28e861] [cursor=pointer]:
+              - /url: https://x.com/RithvikShetty04
+            - link "Instagram" [ref=f28e862] [cursor=pointer]:
+              - /url: https://instagram.com/rithv1k7
+            - link "LinkedIn" [ref=f28e863] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/rithvikshetty/
+            - link "GitHub" [ref=f28e864] [cursor=pointer]:
+              - /url: https://github.com/rithvikshettyy
+            - link "Pinterest" [ref=f28e865] [cursor=pointer]:
+              - /url: https://in.pinterest.com/mayberithvik/
+          - generic [ref=f28e866]:
+            - generic [ref=f28e867]: Legal
+            - link "Privacy" [ref=f28e868] [cursor=pointer]:
+              - /url: /privacy
+            - link "Terms" [ref=f28e869] [cursor=pointer]:
+              - /url: /terms
+      - generic [ref=f28e870]:
+        - generic [ref=f28e871]: © 2026 Rithvik Shetty
+        - generic [ref=f28e872]: All Rights Reserved
+  - button "Open Next.js Dev Tools" [ref=f28e878] [cursor=pointer]

@@ -1,0 +1,48 @@
+- generic [active] [ref=f7e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic: R
+        - generic: i
+        - generic: t
+        - generic: h
+        - generic: v
+        - generic: i
+        - generic: k
+      - generic:
+        - generic: S
+        - generic: h
+        - generic: e
+        - generic: t
+        - generic: t
+        - generic: "y"
+        - generic: .
+  - main [ref=f7e2]:
+    - main [ref=f7e3]:
+      - generic [ref=f7e4]:
+        - heading "Work" [level=1] [ref=f7e5]
+        - link "Back" [ref=f7e6] [cursor=pointer]:
+          - /url: /
+      - generic: "01"
+      - article [ref=f7e8]:
+        - generic [ref=f7e9]:
+          - generic [ref=f7e10]: Internship
+          - generic [ref=f7e12]: Dec 2025 - Feb 2026
+        - heading "Salesforce & Marketing Automation Intern" [level=2] [ref=f7e13]
+        - paragraph [ref=f7e14]: Lupin Ltd
+        - paragraph [ref=f7e15]: Streamlining business processes and enhancing outreach strategies using Salesforce CRM and advanced marketing automation tools.
+        - generic [ref=f7e16]:
+          - generic [ref=f7e17]: Salesforce
+          - generic [ref=f7e18]: Marketing Automation
+          - generic [ref=f7e19]: Analytics
+      - navigation [ref=f7e20]:
+        - button "Go to Salesforce & Marketing Automation Intern" [ref=f7e21]: "01"
+        - button "Go to Machine Learning Intern" [ref=f7e23]: "02"
+        - button "Go to Technical Secretary" [ref=f7e25]: "03"
+        - button "Go to Design Lead" [ref=f7e27]: "04"
+        - button "Go to Graphic Designer" [ref=f7e29]: "05"
+      - generic [ref=f7e31]:
+        - generic [ref=f7e32]: 01 / 05
+        - generic [ref=f7e33]: Scroll to navigate
+  - button "Open Next.js Dev Tools" [ref=f7e39] [cursor=pointer]
+  - alert [ref=f7e43]
