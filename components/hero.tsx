@@ -30,21 +30,13 @@ export default function Hero({ nextSection }: HeroProps) {
   // waits for this signal.
   const [nameReady, setNameReady] = useState(false)
 
-  // Red flow-field shader background: desktop + dark mode only (the red mass
-  // clashes with the white light-mode page), paused off-view, static when the
-  // user prefers reduced motion.
+  // Red flow-field shader background: desktop only, paused off-view, static when
+  // the user prefers reduced motion.
   const [webgl, setWebgl] = useState(false)
-  const [isLight, setIsLight] = useState(false)
   const [reduced, setReduced] = useState(false)
   const [inView, setInView] = useState(true)
 
   useEffect(() => {
-    const el = document.documentElement
-    const syncMode = () => setIsLight(el.classList.contains("light"))
-    syncMode()
-    const obs = new MutationObserver(syncMode)
-    obs.observe(el, { attributes: true, attributeFilter: ["class"] })
-
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)")
     const syncMotion = () => setReduced(mq.matches)
     syncMotion()
@@ -59,7 +51,6 @@ export default function Hero({ nextSection }: HeroProps) {
     }
 
     return () => {
-      obs.disconnect()
       mq.removeEventListener("change", syncMotion)
       io?.disconnect()
     }
@@ -224,7 +215,7 @@ export default function Hero({ nextSection }: HeroProps) {
       {/* Red flow-field shader background (reference-site look).
           Slight blur softens the flow; scale-105 pushes the blurred edges
           off-screen so the viewport corners don't darken. */}
-      {webgl && !isLight && (
+      {webgl && (
         <div className="absolute inset-0 z-0 scale-105 blur-[7px]">
           <RedFlowBg
             dpr={0.75}

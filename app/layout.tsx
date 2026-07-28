@@ -35,10 +35,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-  ],
+  themeColor: "#000000",
 }
 
 export const metadata: Metadata = {
@@ -122,13 +119,11 @@ export default function RootLayout({
     // No scroll-smooth class here — Lenis owns scrolling; CSS smooth-scroll would fight it.
     <html lang="en" className={`dark ${playfair.variable} ${coolvetica.variable} ${apparelDisplay.variable}`} suppressHydrationWarning>
       <head>
-        {/* Dark mode only — no theme toggle. Clear any stale saved choice so a
-            previous 'light' session can't re-apply. Also force reloads to start
-            at the top instead of restoring the previous scroll position.
-            Reloading any subpage redirects to the homepage (runs pre-paint, no flash). */}
+        {/* Force reloads to start at the top instead of restoring the previous
+            scroll position. Reloading any subpage redirects to the homepage. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.type==='reload'&&location.pathname!=='/'){location.replace('/');return;}localStorage.removeItem('theme-mode');var el=document.documentElement;el.classList.remove('light','contrast');el.classList.add('dark');if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);}catch(e){}})();`,
+            __html: `(function(){try{var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.type==='reload'&&location.pathname!=='/'){location.replace('/');return;}if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);}catch(e){}})();`,
           }}
         />
         <link rel="manifest" href="/manifest.json" />

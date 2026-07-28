@@ -2,7 +2,6 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-@custom-variant light (&:is(.light *));
 
 :root {
   /* Overriding with black/white aesthetic variables */
@@ -160,50 +159,6 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-neutral-600;
 }
-
-/* Light Mode Overrides */
-.light body {
-  background-color: white !important;
-  color: black !important;
-}
-.light .bg-black { background-color: white !important; }
-.light .bg-black\/80 { background-color: rgba(255,255,255,0.8) !important; }
-.light .bg-black\/50 { background-color: rgba(255,255,255,0.5) !important; }
-.light .bg-neutral-950 { background-color: #f7f7f7 !important; }
-.light .bg-neutral-900 { background-color: #eaeaea !important; }
-.light .bg-neutral-900\/40, .light .bg-neutral-900\/60 { background-color: rgba(0,0,0,0.05) !important; }
-.light .bg-\[\#1a1a1a\] { background-color: #f0f0f0 !important; }
-.light .bg-white\/5, .light .bg-white\/\[0\.03\] { background-color: rgba(0,0,0,0.04) !important; }
-.light .backdrop-blur-\[60px\], .light .backdrop-blur-3xl { backdrop-blur: 20px !important; }
-.light .text-white { color: black !important; }
-.light .text-white\/30 { color: rgba(0,0,0,0.3) !important; }
-.light .text-neutral-100 { color: #111 !important; }
-.light .text-neutral-200 { color: #1a1a1a !important; }
-.light .text-neutral-300 { color: #222 !important; }
-.light .text-neutral-400 { color: #333 !important; }
-.light .text-neutral-500 { color: #555 !important; }
-.light .text-neutral-600 { color: #666 !important; }
-.light .text-gray-400 { color: #555 !important; }
-.light .text-gray-500 { color: #777 !important; }
-.light .border-white\/5 { border-color: rgba(0,0,0,0.05) !important; }
-.light .border-white\/10 { border-color: rgba(0,0,0,0.1) !important; }
-.light .border-white\/20 { border-color: rgba(0,0,0,0.2) !important; }
-.light .border-white\/30 { border-color: rgba(0,0,0,0.3) !important; }
-.light .border-white\/40 { border-color: rgba(0,0,0,0.4) !important; }
-.light .hover\:text-white:hover { color: black !important; }
-.light .bg-white.scale-y-0 { background-color: black !important; }
-.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; }
-.light .bg-white\/10 { background-color: rgba(0,0,0,0.1) !important; }
-.light .bg-white\/20 { background-color: rgba(0,0,0,0.2) !important; }
-.light .text-white\/50 { color: rgba(0,0,0,0.5) !important; }
-.light .mix-blend-difference:not(.force-difference) { mix-blend-mode: normal !important; }
-.light .bg-purple-900\/10, .light .bg-magenta-900\/5 { background-color: rgba(0,0,0,0.02) !important; }
-.light .text-transparent {
-  color: black !important;
-  background-image: none !important;
-  -webkit-text-fill-color: black !important;
-}
-.light ::selection { background-color: black; color: white; }
 
 /* Brand accent — the mint→teal gradient from the homepage name.
    Use on emphasized words for a consistent highlight site-wide. */
