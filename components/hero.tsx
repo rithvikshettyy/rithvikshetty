@@ -210,7 +210,10 @@ export default function Hero({ nextSection }: HeroProps) {
   return (
     <div
       ref={containerRef}
-      className="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8 bg-[radial-gradient(ellipse_at_50%_40%,#ededed_0%,#fff_75%)] dark:bg-[radial-gradient(ellipse_at_50%_40%,#1c1c1c_0%,#101010_75%)]"
+      // svh on mobile: with 100vh the browser's collapsing URL bar pushes the
+      // bottom rows out of the visible area on first load. Desktop keeps
+      // h-screen — the pinned GSAP sequence measures window.innerHeight.
+      className="h-[100svh] md:h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8 bg-[radial-gradient(ellipse_at_50%_40%,#ededed_0%,#fff_75%)] dark:bg-[radial-gradient(ellipse_at_50%_40%,#1c1c1c_0%,#101010_75%)]"
     >
       {/* Red flow-field shader background (reference-site look).
           Slight blur softens the flow; scale-105 pushes the blurred edges
@@ -269,7 +272,7 @@ export default function Hero({ nextSection }: HeroProps) {
           {/* Social links — centered under the rule, like the reference */}
           <nav
             data-hero-ui
-            className="absolute bottom-6 md:bottom-7 left-1/2 -translate-x-1/2 flex items-center gap-4 md:gap-5 text-sm md:text-base font-medium uppercase tracking-widest text-white pointer-events-auto whitespace-nowrap"
+            className="absolute bottom-5 md:bottom-7 left-1/2 -translate-x-1/2 flex items-center gap-3 md:gap-5 text-xs md:text-base font-medium uppercase tracking-widest text-white pointer-events-auto whitespace-nowrap"
           >
             <a href="https://github.com/rithvikshettyy" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-neutral-400">
               GitHub
@@ -284,10 +287,12 @@ export default function Hero({ nextSection }: HeroProps) {
             </a>
           </nav>
 
-          {/* Section nav — bottom right, like the reference */}
+          {/* Section nav — bottom right on desktop. On mobile it would sit on
+              top of the centered social row (both are nowrap and together
+              exceed the viewport width), so it stacks above it instead. */}
           <nav
             data-hero-ui
-            className="absolute bottom-6 md:bottom-7 right-3 md:right-8 flex items-center gap-4 md:gap-6 text-sm md:text-base font-bold uppercase tracking-widest text-white pointer-events-auto whitespace-nowrap"
+            className="absolute bottom-12 left-1/2 -translate-x-1/2 md:bottom-7 md:left-auto md:translate-x-0 md:right-8 flex items-center gap-4 md:gap-6 text-xs md:text-base font-bold uppercase tracking-widest text-white pointer-events-auto whitespace-nowrap"
           >
             <Link href="/work" prefetch={false} className="transition-colors hover:text-neutral-400">Work</Link>
             <Link href="/about" prefetch={false} className="transition-colors hover:text-neutral-400">Info</Link>
