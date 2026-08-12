@@ -8,6 +8,12 @@ const EASE = [0.16, 1, 0.3, 1] as const
 export default function NotFound() {
   return (
     <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black px-6 py-20 text-white">
+      {/* No intro greet on 404 — the style hides the server-rendered overlay
+          markup, the flag tells the Preloader (root layout) to skip on mount.
+          Both run during parse, before hydration. */}
+      <style>{`#preloader-overlay{display:none!important}`}</style>
+      <script dangerouslySetInnerHTML={{ __html: `window.__skipPreloader=true` }} />
+
       {/* Giant red 404 — soft-focus, sits behind everything */}
       <motion.div
         initial={{ opacity: 0, scale: 1.08 }}

@@ -197,6 +197,18 @@ export default function Preloader() {
   useEffect(() => {
     const isReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     setReduced(isReduced)
+
+    // The 404 page opts out (inline script, runs before hydration): no greet,
+    // and the flags/events are still set so a later client-side nav to the
+    // homepage doesn't leave the hero waiting on a handoff that never comes.
+    if ((window as unknown as { __skipPreloader?: boolean }).__skipPreloader) {
+      const w = window as unknown as { __preloaderDone?: boolean; __preloaderEnded?: boolean }
+      w.__preloaderDone = true
+      w.__preloaderEnded = true
+      setPhase("done")
+      return
+    }
+
     document.body.style.overflow = "hidden"
 
     const finish = () => {
@@ -257,7 +269,7 @@ export default function Preloader() {
       {phase !== "done" && (
         // No exit fade: the hero h1 takes over in the same frame, and any
         // crossfade would briefly show two copies of the name.
-        <motion.div className="fixed inset-0 z-[9999] pointer-events-none" aria-hidden="true">
+        <motion.div id="preloader-overlay" className="fixed inset-0 z-[9999] pointer-events-none" aria-hidden="true">
           {/* Black base — killed the instant the red panel covers it */}
           {phase === "intro" && (
             <div className="absolute inset-0" style={{ backgroundColor: "#050505" }} />
