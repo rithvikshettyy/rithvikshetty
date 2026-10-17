@@ -9,15 +9,29 @@ const EASE = [0.16, 1, 0.3, 1] as const
 
 const hackathons = [
   {
+    title: "Top 12 - Sarvam Buildin' Hours Hackathon",
+    description: "Top 12 of ~100 on-site teams from ~6,000 registrations, by Sarvam AI, Bengaluru",
+    date: "2026",
+    icon: Trophy,
+    image: "",
+  },
+  {
+    title: "Finalist - Paytm Build for India AI Hackathon",
+    description: "Selected among ~100 finalist teams from 6,000+ registrations, Mumbai",
+    date: "2026",
+    icon: Medal,
+    image: "",
+  },
+  {
     title: "Conquer Space - Inter Collegiate Exhibition",
-    description: "In presence of Dr. V. Narayanan, Chairman of ISRO",
+    description: "SeaGuard award presented by the Director, ISRO, in presence of Dr. V. Narayanan, Chairman of ISRO",
     date: "October, 2025",
     icon: Medal,
     image: "/isro.PNG",
   },
   {
     title: "Title Winner - Most Product Readiness Award: HackCelestial 2.0",
-    description: "Around 250+ participants",
+    description: "200+ teams, Pillai College of Engineering",
     date: "September 2025",
     icon: Trophy,
     image: "/hackcelestial.PNG",
@@ -209,13 +223,17 @@ function AwardTile({ item, index }: { item: any; index: number }) {
         className="relative h-[380px] md:h-[440px] rounded-[1.75rem] overflow-hidden transform-gpu will-change-transform ring-1 ring-black/10 dark:ring-white/10 shadow-2xl shadow-black/20"
       >
         {/* Image */}
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.08]"
-        />
+        {item.image ? (
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.08]"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-[#a81f14]/60 via-neutral-900 to-black" />
+        )}
 
         {/* Scrim — always keeps the overlaid text legible, deepens on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent" />

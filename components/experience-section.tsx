@@ -6,6 +6,14 @@ import CardSwap, { Card } from './card-swap'
 
 const workExperiences = [
   {
+    title: 'Freelance Full-Stack Developer',
+    company: 'TRCT (trct.in), The Run Club Thane',
+    period: 'Mar 2024 - Present',
+    description: "Sole developer on the club's production Next.js and TypeScript platform for a 4,000+ member community: authentication, REST APIs, and a Razorpay and Stripe e-commerce module. 100 Lighthouse score.",
+    skills: ['Next.js', 'TypeScript', 'REST APIs', 'Razorpay', 'Stripe'],
+    type: 'Freelance',
+  },
+  {
     title: 'Salesforce & Marketing Automation Intern',
     company: 'Lupin Ltd',
     period: 'Dec 2025 - Feb 2026',
@@ -15,11 +23,11 @@ const workExperiences = [
     certificateUrl: 'experience/lupin.pdf',
   },
   {
-    title: 'Machine Learning Intern',
-    company: 'ION Chemicals',
+    title: 'Python Developer Intern',
+    company: 'Ion Chemicals, Navi Mumbai',
     period: 'Jan 2025 - Apr 2025',
-    description: 'Developing and optimizing machine learning models for chemical analysis and process automation, improving prediction accuracy across datasets.',
-    skills: ['Python', 'Machine Learning', 'Data Analysis', 'Scikit-learn'],
+    description: 'Built a real-time computer vision pipeline in Python with YOLOv8 and OpenCV that detects gas leaks and anomalies on industrial pipelines, cutting manual inspection time by 40%. Integrated it into existing workflows with the plant engineering team.',
+    skills: ['Python', 'YOLOv8', 'OpenCV', 'Computer Vision'],
     type: 'Internship',
     certificateUrl: 'experience/Ionchemicals.pdf',
   },

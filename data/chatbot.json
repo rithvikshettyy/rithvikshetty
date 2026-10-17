@@ -37,28 +37,30 @@
     {
       "id": "education",
       "keywords": ["education", "degree", "college", "university", "study", "studying", "student", "graduate", "graduation", "sies", "ai ml", "artificial intelligence", "machine learning", "btech", "b.e", "course", "coursework", "gpa", "semester", "navi mumbai"],
-      "text": "Rithvik is pursuing a BE in Artificial Intelligence & Machine Learning at SIES Graduate School of Technology, Navi Mumbai (Nov 2022 – Jun 2026). Relevant coursework: Web Technologies, DSA, Computer Vision, NLP, and Deep Learning. He's also Secretary of the Technical Team and co-organized ByteCamp '25/'26 — a national hackathon with 2,400+ registrations."
+      "text": "Rithvik holds a B.E. in Artificial Intelligence & Machine Learning from SIES Graduate School of Technology (Univ. of Mumbai), Nov 2022 – May 2026. Coursework: Machine Learning, Deep Learning, NLP, Image and Video Processing, Advanced AI, Big Data Analytics, Data Analytics and Visualization. He's also Secretary of the Technical Team and co-organized ByteCamp'26 — a national hackathon with 3,000+ registrations."
     },
     {
       "id": "experience",
       "keywords": ["experience", "internship", "intern", "work history", "trct", "run club", "ion chemicals", "employment", "past work", "where have you worked", "previous"],
       "text": "Rithvik's professional experience:",
       "skillList": [
-        "TRCT.IN · Freelance Frontend Dev · Mar 2024–Present · 6,000+ users, Next.js 15, Razorpay",
-        "Ion Chemicals · Python Dev Intern · Jan–Apr 2025 · Computer Vision pipeline with OpenCV"
+        "TRCT (trct.in) · Freelance Full-Stack Developer · Mar 2024–Present · Next.js, TypeScript, 4,000+ member community, Razorpay & Stripe, 100 Lighthouse",
+        "Ion Chemicals · Python Developer Intern · Jan–Apr 2025 · YOLOv8 + OpenCV gas-leak detection pipeline, 40% less manual inspection time"
       ],
       "links": [{ "label": "Download Resume", "href": "/rithvikshetty_resume.pdf" }]
     },
     {
       "id": "achievements",
-      "keywords": ["achievement", "award", "hackathon", "won", "prize", "certification", "certified", "hackcele", "accomplishment", "recognition", "devtune", "seaguard", "bytecamp", "aws", "deloitte"],
+      "keywords": ["achievement", "award", "hackathon", "won", "prize", "certification", "certified", "hackcele", "accomplishment", "recognition", "seaguard", "bytecamp", "aws", "sarvam", "paytm", "mcp"],
       "text": "Rithvik's awards & certifications:",
       "skillList": [
-        "🏆 HackCelestial 2.0 — Most Product Readiness Award (200+ teams, judged by ISRO)",
-        "📦 DevTune — 500+ installs on VS Code Marketplace & npm within weeks",
-        "🎓 AWS — Introduction to Machine Learning (Coursera)",
-        "📊 Deloitte — Data Analytics Job Simulation (Forage, 2025)",
-        "🏛️ ByteCamp '25/'26 — Co-organized national hackathon, 2,400+ registrations"
+        "🏆 Sarvam Buildin' Hours — Top 12 of ~100 on-site teams (~6,000 registrations), Bengaluru, 2026",
+        "🏆 Paytm Build for India AI Hackathon — finalist among ~100 teams from 6,000+ registrations, Mumbai, 2026",
+        "🏆 HackCelestial 2.0 — Most Product Readiness Award (200+ teams)",
+        "🚀 SeaGuard — award presented by the Director, ISRO (2025)",
+        "🎓 AWS & Coursera — Introduction to Machine Learning on AWS (2025)",
+        "🎓 Anthropic — Introduction to Model Context Protocol (2025)",
+        "🏛️ ByteCamp'26 — Co-organized national hackathon, 3,000+ registrations"
       ]
     },
     {
@@ -66,15 +68,12 @@
       "keywords": ["tech stack", "techstack", "stack", "technology", "technologies", "tools", "languages", "framework", "frameworks", "skills", "skill", "what do you use", "what can you", "proficient", "expertise", "knows", "know"],
       "text": "Rithvik's full tech stack:",
       "skillList": [
-        "Languages · JavaScript (ES6+), TypeScript, Python, HTML5, CSS3",
-        "Frontend · React.js, Next.js 15, React Native, Expo Router",
-        "Styling · Tailwind CSS, Framer Motion, Shadcn UI, CSS Animations",
-        "Backend · Node.js, FastAPI, REST APIs, NextAuth, JWT, OAuth2",
-        "Databases · PostgreSQL, MongoDB, MySQL, Supabase",
-        "Payments · Razorpay, Stripe",
-        "Integrations · Spotify Web API, Twilio, WhatsApp API",
-        "Tools · Git, Vercel, Figma, Adobe Illustrator, Linux",
-        "Performance · Core Web Vitals, Lighthouse, Web Perf Optimization"
+        "Python · Python, FastAPI, Pandas, NumPy, Jupyter",
+        "APIs & Backend · REST APIs, FastAPI, Node.js, Twilio, WhatsApp, Razorpay, Stripe, Sarvam AI, Cloudflare Workers",
+        "Databases · SQL, PostgreSQL, Supabase, Redis/Upstash",
+        "Tools & Cloud · Git, GitHub, Docker, Linux, Vercel, AWS",
+        "ML & AI · PyTorch, scikit-learn, XGBoost, YOLOv8, OpenCV, Gemini API, Model Context Protocol, RAG-style retrieval",
+        "Frontend · TypeScript, JavaScript, React, Next.js, React Native, Streamlit"
       ]
     },
     {
@@ -102,22 +101,20 @@
     {
       "id": "about",
       "keywords": ["who", "about", "rithvik", "background", "tell me", "introduce", "yourself", "summary"],
-      "text": "Rithvik Shetty is a fullstack developer & AI/ML engineering student (graduating 2026) based in Thane, India. He's shipped trct.in (6,000+ users), interviewdump.dev (open-source, 400+ questions), and DevTune (500+ VS Code/npm installs). He freelances in React, Next.js, and React Native.",
+      "text": "Rithvik Shetty is a Python developer (backend, REST APIs, applied ML) with a B.E. in AI & ML, based in Thane, India. He shipped a YOLOv8 vision pipeline into a live industrial workflow, built Praman — a multilingual WhatsApp voice assistant that placed Top 12 at Sarvam AI's national hackathon — and is sole developer of trct.in for a 4,000+ member community.",
       "links": [{ "label": "About page", "href": "/about" }]
     },
     {
       "id": "hire",
       "keywords": ["hire", "available", "availability", "work together", "collaborate", "work with", "developer", "looking for", "need a", "find", "app dev", "seeking"],
-      "text": "Rithvik is available for freelance work! His stack:",
+      "text": "Rithvik is available for work! His stack:",
       "skillList": [
-        "Next.js 15 & React (SSR, SSG, App Router)",
-        "React Native & Expo Router",
-        "TypeScript & JavaScript (ES6+)",
-        "Tailwind CSS & Framer Motion",
-        "Node.js, FastAPI & REST APIs",
-        "PostgreSQL, Supabase & MongoDB",
-        "Razorpay, Stripe & payment integrations",
-        "Sanity CMS & Vercel deployment"
+        "Python, FastAPI & REST APIs",
+        "Node.js, Next.js & TypeScript",
+        "PostgreSQL, Supabase & Redis",
+        "Docker, Git & Linux",
+        "PyTorch, YOLOv8 & OpenCV (applied ML)",
+        "API integrations: Twilio, WhatsApp, Razorpay, Stripe, Sarvam AI"
       ],
       "links": [
         { "label": "See work", "href": "/projects" },

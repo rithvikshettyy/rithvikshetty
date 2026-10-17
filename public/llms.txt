@@ -16,6 +16,7 @@ This file follows the llms.txt convention (https://llmstxt.org/) to help AI agen
 
 ## Projects
 
+- [Praman](https://rithvikshetty.in/projects/praman): WhatsApp banking and loan voice assistant in 22 Indian languages (Python, FastAPI, Sarvam AI, Twilio). Top 12 at Sarvam Buildin' Hours; Paytm Build for India finalist.
 - [InterviewDump](https://rithvikshetty.in/projects/interviewdump): Free full-stack tech interview prep platform, 500+ questions across DSA/SQL/System Design/Core CS/Aptitude.
 - [AnyFormat](https://rithvikshetty.in/projects/anyformat): File conversion platform, 18+ tools for PDF/image/document processing, Redis URL shortener, Razorpay payments.
 - [TRCT.in](https://rithvikshetty.in/projects/trct-in): Website for Thane Run Club Tribe, event registration and leaderboards.
