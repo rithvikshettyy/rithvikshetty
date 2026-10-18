@@ -56,8 +56,8 @@ export default function AboutSection() {
               I'm <span className="text-accent">Rithvik</span>
             </h2>
             <p className="text-xl md:text-3xl text-neutral-400 font-light tracking-wide leading-relaxed max-w-2xl">
-              <span className="font-bold text-white tracking-tight text-2xl md:text-4xl">FULL <span className="font-serif italic font-normal text-neutral-300">stack</span> DEVELOPER</span><br />
-              Freelancer specialized in building <span className="text-accent">experiences</span>.
+              <span className="font-bold text-white tracking-tight text-2xl md:text-4xl">PYTHON <span className="font-serif italic font-normal text-neutral-300">backend</span> DEVELOPER</span><br />
+              Freelancer specialized in building <span className="text-accent">APIs and AI systems</span>.
             </p>
             <div className="mt-12 flex items-center gap-4 flex-wrap">
               <Link href="/rithvikshetty_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-5 bg-white text-black font-bold uppercase tracking-widest rounded-full border border-black/15 dark:border-transparent hover:scale-105 transition-transform flex items-center justify-center gap-3 text-xs md:text-sm shadow-[0_0_30px_rgba(255,255,255,0.15)]">

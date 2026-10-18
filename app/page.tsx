@@ -154,7 +154,7 @@ export default function Home() {
         >
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center justify-between">
             <ScrollTextReveal
-              text="I'm a full stack developer who turns ideas into elegant digital solutions. Specializing in modern web applications, scalable backends, and pixel-perfect frontends."
+              text="I'm a Python and web developer who turns ideas into working products. I build backends, REST APIs, modern web applications, and applied machine learning systems."
               className="flex-1 text-3xl md:text-5xl leading-tight font-light text-neutral-400"
             />
 

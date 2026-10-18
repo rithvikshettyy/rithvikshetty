@@ -11,16 +11,16 @@ const hackathons = [
   {
     title: "Top 12 - Sarvam Buildin' Hours Hackathon",
     description: "Top 12 of ~100 on-site teams from ~6,000 registrations, by Sarvam AI, Bengaluru",
-    date: "2026",
+    date: "August 9, 2026",
     icon: Trophy,
-    image: "",
+    image: "/sarvam.png",
   },
   {
     title: "Finalist - Paytm Build for India AI Hackathon",
     description: "Selected among ~100 finalist teams from 6,000+ registrations, Mumbai",
-    date: "2026",
+    date: "October 3, 2026",
     icon: Medal,
-    image: "",
+    image: "/paytm.png",
   },
   {
     title: "Conquer Space - Inter Collegiate Exhibition",
