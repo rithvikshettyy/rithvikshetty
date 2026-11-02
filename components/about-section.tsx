@@ -60,21 +60,25 @@ export default function AboutSection() {
               Freelancer specialized in building <span className="text-accent">APIs and AI systems</span>.
             </p>
             <div className="mt-12 flex items-center gap-4 flex-wrap">
-              <Link href="/rithvikshetty_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-5 bg-white text-black font-bold uppercase tracking-widest rounded-full border border-black/15 dark:border-transparent hover:scale-105 transition-transform flex items-center justify-center gap-3 text-xs md:text-sm shadow-[0_0_30px_rgba(255,255,255,0.15)]">
-                View Resume <ArrowUpRight className="w-4 h-4" />
+              {/* Both CTAs share one size/type scale: h-14, px-8, text-base/md:text-lg semibold. Primary = filled, secondary = outlined. */}
+              <Link
+                href="/rithvikshetty_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex h-14 shrink-0 items-center justify-center gap-3 rounded-full border border-white bg-white px-8 text-base md:text-lg font-semibold tracking-tight text-black shadow-[0_0_30px_rgba(255,255,255,0.15)] transition-transform duration-300 hover:scale-105"
+              >
+                View Resume
+                <ArrowUpRight className="h-5 w-5 transition-transform duration-300 ease-out group-hover:rotate-45" />
               </Link>
               <Link
                 href="/chat"
                 prefetch={false}
-                aria-label="Ask my AI assistant"
-                className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] py-1.5 pl-5 pr-1.5 backdrop-blur-md transition-colors duration-300 hover:border-white/30 shrink-0"
+                className="group relative inline-flex h-14 shrink-0 items-center justify-center gap-3 overflow-hidden rounded-full border border-white/15 bg-white/[0.03] px-8 text-base md:text-lg font-semibold tracking-tight text-white backdrop-blur-md transition-colors duration-300 hover:border-white/30"
               >
                 {/* Hover sheen sweep */}
                 <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
-                <span className="relative text-[15px] md:text-base font-semibold tracking-tight text-white">Ask my AI assistant</span>
-                <span className="relative ml-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white text-black transition-transform duration-300 ease-out group-hover:rotate-45">
-                  <ArrowUpRight className="h-4 w-4" />
-                </span>
+                <span className="relative">Ask my AI assistant</span>
+                <ArrowUpRight className="relative h-5 w-5 transition-transform duration-300 ease-out group-hover:rotate-45" />
               </Link>
             </div>
           </motion.div>
@@ -191,7 +195,7 @@ export default function AboutSection() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-y-24 lg:gap-y-40 lg:-mx-24 xl:-mx-48">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-y-52 lg:gap-y-72 lg:-mx-24 xl:-mx-48">
                 {/* Top-right paragraph */}
                 <div className="md:col-span-2 md:row-start-1 md:max-w-3xl md:justify-self-end">
                   <ScrollTextReveal
