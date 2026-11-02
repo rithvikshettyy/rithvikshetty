@@ -1,18 +1,7 @@
 import { MetadataRoute } from 'next'
+import { staticProjects } from '@/data/projects'
 
-// Static project slugs defined directly to avoid importing from "use client" modules
-const projectSlugs = [
-  'interviewdump',
-  'anyformat',
-  'trct-in',
-  'autopharmax',
-  'seaguard',
-  'groww-in',
-  'looplist',
-  'object-measurement',
-  'spotify-ui',
-  'devtune',
-]
+const projectSlugs = staticProjects.map((p) => p.slug)
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://rithvikshetty.in'

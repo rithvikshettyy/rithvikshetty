@@ -21,12 +21,13 @@ This file follows the llms.txt convention (https://llmstxt.org/) to help AI agen
 - [AnyFormat](https://rithvikshetty.in/projects/anyformat): File conversion platform, 18+ tools for PDF/image/document processing, Redis URL shortener, Razorpay payments.
 - [TRCT.in](https://rithvikshetty.in/projects/trct-in): Website for Thane Run Club Tribe, event registration and leaderboards.
 - [AutoPharmaX](https://rithvikshetty.in/projects/autopharmax): AI platform analyzing drug efficacy data using BERT/transformer models.
+- [Hybrid RAG](https://rithvikshetty.in/projects/hybrid-rag): Hybrid-search RAG over internal docs: Pinecone + BM25 fused with RRF, Cohere rerank, Claude answers with citations and per-claim verification (FastAPI).
+- [Jobsearch](https://rithvikshetty.in/projects/jobsearch): Cron-driven job-alert bot on Cloudflare Workers + D1 polling 50+ job boards, with Telegram Apply/Skip buttons.
+- [Event Radar](https://rithvikshetty.in/projects/radar): Hourly hackathon and AI-event radar for India across 9 sources, pushed to Telegram, running on GitHub Actions.
 - [SeaGuard](https://rithvikshetty.in/projects/seaguard): React Native app for water quality monitoring and fisherman safety alerts, presented to ISRO.
-- [Groww.in](https://rithvikshetty.in/projects/groww-in): Frontend recreation of the Groww investment platform.
 - [LoopList](https://rithvikshetty.in/projects/looplist): Real-time collaborative to-do list app using Firebase.
 - [Object Measurement](https://rithvikshetty.in/projects/object-measurement): Python/OpenCV tool measuring physical object dimensions from images.
-- [Spotify UI](https://rithvikshetty.in/projects/spotify-ui): Frontend study recreating the Spotify web interface.
-- [DevTune CLI](https://rithvikshetty.in/projects/devtune): Terminal-based Spotify controller and IDE extension.
+- [DevTune CLI](https://rithvikshetty.in/projects/tune): Terminal-based Spotify controller and IDE extension.
 
 ## Contact / social
 
