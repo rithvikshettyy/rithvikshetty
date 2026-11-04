@@ -23,6 +23,8 @@ import AwardsSection from "@/components/awards-section"
 import AboutSection from "@/components/about-section"
 import ExperienceSection from "@/components/experience-section"
 import { staticProjects } from "@/data/projects"
+import { consumeReturnToWork, hasReturnToWork } from "@/lib/return-to-work"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 // Project items for the InfiniteMenu sphere.
 const sphereItems = staticProjects.map((p) => ({
@@ -66,6 +68,40 @@ export default function Home() {
       if (hidden) window.dispatchEvent(new CustomEvent("chrome:show"))
     }
   }, [])
+  // Returning from a project opened via the sphere: jump back to the sphere
+  // section instead of the top. The pinned hero (dynamic import + GSAP pin
+  // spacer) shifts layout after mount, so wait for it, then re-correct once.
+  React.useEffect(() => {
+    // Peek, don't consume yet: Strict Mode runs effects twice in dev.
+    if (!hasReturnToWork()) return
+    const jump = () => {
+      const el = orbitRef.current
+      if (!el) return
+      ScrollTrigger.refresh()
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: "instant" })
+    }
+    const pinned =
+      window.innerWidth >= 768 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    let tries = 0
+    let t2: ReturnType<typeof setTimeout> | undefined
+    const poll = setInterval(() => {
+      tries++
+      // Pinned layouts are ready once GSAP has inserted the pin spacer.
+      if ((pinned && document.querySelector(".pin-spacer")) || !pinned || tries > 40) {
+        clearInterval(poll)
+        jump()
+        t2 = setTimeout(() => {
+          jump()
+          consumeReturnToWork()
+        }, 400)
+      }
+    }, 50)
+    return () => {
+      clearInterval(poll)
+      if (t2) clearTimeout(t2)
+    }
+  }, [])
+
   const prefersReduced = useReducedMotion()
   // Reveal offsets collapse to 0 when the user prefers reduced motion.
   const revealOffset = prefersReduced ? 0 : 40
