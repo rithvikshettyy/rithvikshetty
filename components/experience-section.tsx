@@ -6,7 +6,7 @@ import CardSwap, { Card } from './card-swap'
 
 const workExperiences = [
   {
-    title: 'AI Training Specialist (Robotics Annotator)',
+    title: 'AI Training Specialist',
     company: 'Autonex AI',
     period: 'Nov 2026 - Present',
     description: "Annotating and curating robotics data to train Atlas, a humanoid robot built for storage facilities. Labelling manipulation tasks like picking up, carrying and placing chip boxes, so the model learns to move inventory safely and reliably.",
