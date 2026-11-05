@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { markReturnToWork } from '@/lib/return-to-work';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 import './InfiniteMenu.css';
 
@@ -828,6 +830,7 @@ const defaultItems = [
 ];
 
 export default function InfiniteMenu({ items = [], scale = 1.0 }) {
+  const router = useRouter();
   const canvasRef = useRef(null);
   const [activeItem, setActiveItem] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -874,7 +877,9 @@ export default function InfiniteMenu({ items = [], scale = 1.0 }) {
     if (activeItem.link.startsWith('http')) {
       window.open(activeItem.link, '_blank');
     } else {
-      window.location.href = activeItem.link;
+      // Client-side navigation: a full reload would replay the preloader.
+      markReturnToWork();
+      router.push(activeItem.link);
     }
   };
 
