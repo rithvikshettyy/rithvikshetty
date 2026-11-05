@@ -6,6 +6,14 @@ import CardSwap, { Card } from './card-swap'
 
 const workExperiences = [
   {
+    title: 'AI Training Specialist (Robotics Annotator)',
+    company: 'Autonex AI',
+    period: 'Nov 2026 - Present',
+    description: "Annotating and curating robotics data to train Atlas, a humanoid robot built for storage facilities. Labelling manipulation tasks like picking up, carrying and placing chip boxes, so the model learns to move inventory safely and reliably.",
+    skills: ['Robotics', 'Data Annotation', 'Humanoid AI', 'Quality Assurance'],
+    type: 'Internship',
+  },
+  {
     title: 'Freelance Full-Stack Developer',
     company: 'TRCT (trct.in), The Run Club Thane',
     period: 'Mar 2024 - Present',
