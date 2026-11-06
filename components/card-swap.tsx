@@ -48,6 +48,9 @@ type CardSwapProps = {
   autoplay?: boolean
   /** Controlled step counter — each increment flips one card. */
   step?: number
+  /** Center the whole pile horizontally in its parent (mobile) instead of
+   *  anchoring it bottom-right with the CSS scale/translate. */
+  centered?: boolean
   children: React.ReactNode
 }
 
@@ -63,6 +66,7 @@ const CardSwap = ({
   easing = 'elastic',
   autoplay = true,
   step,
+  centered = false,
   children,
 }: CardSwapProps) => {
   const config = !autoplay
@@ -277,7 +281,21 @@ const CardSwap = ({
   )
 
   return (
-    <div ref={container} className="card-swap-container" style={{ width, height }}>
+    <div
+      ref={container}
+      className="card-swap-container"
+      style={{
+        width,
+        height,
+        // Front card sits at the container centre and the pile fans out to the
+        // right by (n-1)*distance; shift left by half of that to centre the group.
+        ...(centered && {
+          left: '50%',
+          right: 'auto',
+          transform: `translateX(calc(-50% - ${((refs.length - 1) * cardDistance) / 2}px))`,
+        }),
+      }}
+    >
       {rendered}
     </div>
   )

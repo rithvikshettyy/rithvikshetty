@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useScroll, useMotionValueEvent } from 'framer-motion'
 import CardSwap, { Card } from './card-swap'
 
@@ -98,6 +98,22 @@ export default function ExperienceSection() {
   const [step, setStep] = useState(0)
   const steps = allExperiences.length
 
+  // Phones: smaller cards with a tight fan, sized to the viewport and centered.
+  // (Desktop values are the SSR default; the real width is read after mount.)
+  const [vw, setVw] = useState<number | null>(null)
+  useEffect(() => {
+    const sync = () => setVw(window.innerWidth)
+    sync()
+    window.addEventListener('resize', sync)
+    return () => window.removeEventListener('resize', sync)
+  }, [])
+  const isMobile = vw !== null && vw < 768
+  const dx = isMobile ? 9 : 45
+  const dy = isMobile ? 10 : 56
+  // Leave room for the page padding (16px a side) plus the fan to the right.
+  const cardW = isMobile ? Math.min(vw! - 32 - (steps - 1) * dx, 360) : 460
+  const cardH = isMobile ? 360 : 340
+
   // Scroll progress across the tall wrapper → discrete flip steps.
   const { scrollYProgress } = useScroll({ target: pinRef, offset: ['start start', 'end end'] })
   useMotionValueEvent(scrollYProgress, 'change', (v) => {
@@ -112,7 +128,7 @@ export default function ExperienceSection() {
       <div className="absolute top-0 left-0 w-[560px] h-[420px] bg-[#a81f14]/20 blur-[130px] rounded-full pointer-events-none" />
 
       <div className="relative z-10 w-full mx-auto px-4 sm:px-8 md:px-20 lg:px-40 xl:px-56 2xl:px-72">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left — heading + blurb */}
           <div>
             <span className="text-sm uppercase tracking-widest text-neutral-500">( The Journey )</span>
@@ -128,19 +144,20 @@ export default function ExperienceSection() {
           </div>
 
           {/* Right — the card stack anchors itself bottom-right of this box */}
-          <div className="relative h-[420px] md:h-[500px]">
+          <div className="relative h-[450px] md:h-[500px]">
             <CardSwap
-              width={460}
-              height={340}
-              cardDistance={45}
-              verticalDistance={56}
-              skewAmount={5}
+              width={cardW}
+              height={cardH}
+              cardDistance={dx}
+              verticalDistance={dy}
+              skewAmount={isMobile ? 3 : 5}
               easing="elastic"
               autoplay={false}
               step={step}
+              centered={isMobile}
             >
               {allExperiences.map((exp) => (
-                <Card key={`${exp.title}-${exp.company}`} className="p-6 flex flex-col">
+                <Card key={`${exp.title}-${exp.company}`} className="p-4 md:p-6 flex flex-col">
                   {/* Meta row */}
                   <div className="flex items-center justify-between">
                     <span className="rounded-full border border-white/15 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-neutral-300">
@@ -149,13 +166,13 @@ export default function ExperienceSection() {
                     <span className="font-mono text-xs text-neutral-500">{exp.period}</span>
                   </div>
 
-                  <h3 className="mt-5 text-2xl font-bold tracking-tighter leading-[1.05]">{exp.title}</h3>
-                  <p className="mt-1.5 text-sm text-neutral-500">{exp.company}</p>
+                  <h3 className="mt-4 md:mt-5 text-xl md:text-2xl font-bold tracking-tighter leading-[1.05]">{exp.title}</h3>
+                  <p className="mt-1.5 text-xs md:text-sm text-neutral-500">{exp.company}</p>
 
-                  <p className="mt-4 text-sm text-neutral-400 leading-relaxed text-pretty">{exp.description}</p>
+                  <p className="mt-3 md:mt-4 text-xs md:text-sm text-neutral-400 leading-relaxed text-pretty">{exp.description}</p>
 
                   {/* Skill chips pinned to the card bottom */}
-                  <div className="mt-auto flex flex-wrap gap-2 pt-4">
+                  <div className="mt-auto flex flex-wrap gap-1.5 md:gap-2 pt-3 md:pt-4">
                     {exp.skills.map((skill) => (
                       <span
                         key={skill}
