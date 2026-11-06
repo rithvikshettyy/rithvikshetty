@@ -102,6 +102,25 @@ export default function Home() {
     }
   }, [])
 
+  // The WebGL sphere (shader compile + decoding every project image) is the
+  // heaviest thing on the page. Mounting it while the intro plays starves the
+  // main thread on phones and makes the greet lag, so wait for the preloader
+  // to finish. Its container is fixed-size, so mounting later shifts nothing.
+  const [sphereReady, setSphereReady] = React.useState(false)
+  React.useEffect(() => {
+    if ((window as unknown as { __preloaderEnded?: boolean }).__preloaderEnded) {
+      setSphereReady(true)
+      return
+    }
+    const onEnd = () => setSphereReady(true)
+    window.addEventListener("preloader:end", onEnd)
+    const fallback = setTimeout(onEnd, 6000)
+    return () => {
+      window.removeEventListener("preloader:end", onEnd)
+      clearTimeout(fallback)
+    }
+  }, [])
+
   const prefersReduced = useReducedMotion()
   // Reveal offsets collapse to 0 when the user prefers reduced motion.
   const revealOffset = prefersReduced ? 0 : 40
@@ -260,7 +279,7 @@ export default function Home() {
           {/* Canvas fills the whole viewport so the sphere and its action
               button are never cropped */}
           <div className="absolute inset-0">
-            <InfiniteMenu items={sphereItems} />
+            {sphereReady && <InfiniteMenu items={sphereItems} />}
           </div>
           {/* Small hint, top-left, non-interactive so drag passes through */}
           <div className="absolute top-0 left-0 z-10 px-4 sm:px-8 md:px-20 lg:px-40 xl:px-64 2xl:px-80 pt-14 md:pt-28 pointer-events-none">

@@ -27,18 +27,11 @@ const COVER = SWEEP_START + SWEEP_RISE + SWEEP_HOLD / 2
 
 // Chars finish rising (last ends ~1.43s) BEFORE the descend starts at 1.5s —
 // overlapping nested transform animations is what made the scaling stutter.
-const charVariants = {
-  hidden: { y: "115%", rotate: 14 },
-  visible: (i: number) => ({
-    y: "0%",
-    rotate: 0,
-    transition: {
-      delay: 0.15 + i * 0.04,
-      duration: 0.8,
-      ease: [0.215, 0.61, 0.355, 1] as const,
-    },
-  }),
-}
+// The char rise is a plain CSS keyframe animation (see .preloader-char in
+// globals.css), NOT framer-motion: on phones the main thread is saturated by
+// hydration while the intro plays, and JS-driven animation stalled mid-way
+// (only "Rithvik" visible for seconds). CSS transform animations run on the
+// compositor and keep going regardless. Delay formula: 0.15s + i * 0.04s.
 
 interface WordPose {
   x: number
@@ -57,6 +50,7 @@ function Word({
   spanRef,
   pose,
   animating,
+  started,
 }: {
   text: string
   offset: number
@@ -65,6 +59,9 @@ function Word({
   spanRef?: React.Ref<HTMLSpanElement>
   pose?: WordPose | null
   animating?: boolean
+  // Chars only begin rising once the name is measured/visible, so the CSS
+  // animation clock doesn't burn down while hidden before hydration.
+  started?: boolean
 }) {
   return (
     // Padding keeps ascenders/descenders and rotated chars from clipping
@@ -92,17 +89,14 @@ function Word({
       className={`inline-flex overflow-hidden pb-[0.32em] -mb-[0.2em] pt-[0.06em] px-[0.06em] ${className ?? ""}`}
     >
       {text.split("").map((ch, i) => (
-        <motion.span
+        <span
           key={i}
-          custom={offset + i}
-          variants={charVariants}
-          initial="hidden"
-          animate="visible"
           // The trailing dot is rendered smaller — must match the hero h1.
-          className={`inline-block origin-bottom-left will-change-transform ${ch === "." ? "text-[0.6em]" : ""}`}
+          className={`preloader-char inline-block origin-bottom-left ${started ? "preloader-char-go" : ""} ${ch === "." ? "text-[0.6em]" : ""}`}
+          style={{ animationDelay: `${0.15 + (offset + i) * 0.04}s` }}
         >
           {ch}
-        </motion.span>
+        </span>
       ))}
     </span>
   )
@@ -304,6 +298,7 @@ export default function Preloader() {
               offset={0}
               spanRef={firstRef}
               pose={pose("f")}
+              started={!!start}
               animating={descended && !reduced}
               className="font-normal [font-family:Helvetica,Arial,sans-serif] text-[15.2vw]"
               style={{ color: "#f5f5f0" }}
@@ -313,6 +308,7 @@ export default function Preloader() {
               offset={FIRST.length}
               spanRef={lastRef}
               pose={pose("l")}
+              started={!!start}
               animating={descended && !reduced}
               className="font-normal [font-family:Helvetica,Arial,sans-serif] text-[15.2vw]"
               style={{
