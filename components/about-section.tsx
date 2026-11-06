@@ -37,6 +37,11 @@ export default function AboutSection() {
 
   return (
     <div className="w-full bg-black text-white pt-24 md:pt-28 pb-20 overflow-x-clip relative z-20">
+      {/* Seam blend: the intro section above is neutral-950, this block is
+          black. Start at the same colour and fade to black so there's no
+          hard edge where the two meet. */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-48 md:h-64 bg-gradient-to-b from-neutral-950 to-black" />
+
       {/* Crimson ambient glow — echoes the homepage red */}
       <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[900px] h-[440px] bg-[#a81f14]/25 blur-[130px] rounded-full pointer-events-none" />
 
