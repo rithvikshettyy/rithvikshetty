@@ -35,9 +35,10 @@
 .action-button-icon {
   user-select: none;
   position: relative;
+  display: block;
   color: #fff;
-  top: 2px;
-  font-size: 26px;
+  width: 26px;
+  height: 26px;
 }
 
 .im-edge-scrim {

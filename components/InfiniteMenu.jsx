@@ -901,7 +901,19 @@ export default function InfiniteMenu({ items = [], scale = 1.0 }) {
           <p className={`face-description ${isMoving ? 'inactive' : 'active'}`}> {activeItem.description}</p>
 
           <div onClick={handleButtonClick} className={`action-button ${isMoving ? 'inactive' : 'active'}`}>
-            <p className="action-button-icon">&#x2197;</p>
+            {/* SVG, not the ↗ character: iOS swaps that glyph for a coloured emoji */}
+            <svg
+              className="action-button-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M7 17L17 7M8 7h9v9" />
+            </svg>
           </div>
         </>
       )}
