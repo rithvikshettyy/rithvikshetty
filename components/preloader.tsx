@@ -42,6 +42,30 @@ interface WordPose {
 
 const IDENTITY: WordPose = { x: 0, y: 0, scale: 1, origin: "0 0" }
 
+// Gradient text (iOS WebKit workaround): `background-clip: text` on a parent
+// whose children are transformed/composited makes the text vanish on iOS
+// (Safari + Chrome iOS) — "Shetty." never painted. So each char carries its
+// own clipped gradient, sized to the whole word and shifted by the char's
+// offset so the result looks like one continuous gradient.
+interface WordGradient {
+  w: number
+  xs: number[]
+}
+const GRADIENT = "linear-gradient(to right, #9be9d8, #e9fffa, #8fd8c7)"
+
+function measureGradient(el: HTMLElement): WordGradient {
+  // Offsets relative to the first char: the word is transformed, so the
+  // offsetParent of the chars may be the word itself — never mix in el's own
+  // offsets.
+  const chars = Array.from(el.children) as HTMLElement[]
+  const first = chars[0].offsetLeft
+  const last = chars[chars.length - 1]
+  return {
+    w: last.offsetLeft + last.offsetWidth - first,
+    xs: chars.map((c) => c.offsetLeft - first),
+  }
+}
+
 function Word({
   text,
   offset,
@@ -51,6 +75,7 @@ function Word({
   pose,
   animating,
   started,
+  gradient,
 }: {
   text: string
   offset: number
@@ -62,6 +87,8 @@ function Word({
   // Chars only begin rising once the name is measured/visible, so the CSS
   // animation clock doesn't burn down while hidden before hydration.
   started?: boolean
+  // Per-char gradient fill (see WordGradient). Omit for a solid-color word.
+  gradient?: WordGradient | null
 }) {
   return (
     // Padding keeps ascenders/descenders and rotated chars from clipping
@@ -86,14 +113,31 @@ function Word({
         transition: animating ? "transform 0.8s cubic-bezier(0.76, 0, 0.24, 1)" : "none",
         willChange: "transform",
       }}
-      className={`inline-flex overflow-hidden pb-[0.32em] -mb-[0.2em] pt-[0.06em] px-[0.06em] ${className ?? ""}`}
+      className={`inline-flex shrink-0 overflow-hidden pb-[0.32em] -mb-[0.2em] pt-[0.06em] px-[0.06em] -mx-[0.06em] ${className ?? ""}`}
     >
       {text.split("").map((ch, i) => (
         <span
           key={i}
           // The trailing dot is rendered smaller — must match the hero h1.
           className={`preloader-char inline-block origin-bottom-left ${started ? "preloader-char-go" : ""} ${ch === "." ? "text-[0.6em]" : ""}`}
-          style={{ animationDelay: `${0.15 + (offset + i) * 0.04}s` }}
+          style={{
+            animationDelay: `${0.15 + (offset + i) * 0.04}s`,
+            ...(gradient
+              ? {
+                  backgroundImage: GRADIENT,
+                  backgroundSize: `${gradient.w}px 100%`,
+                  backgroundPosition: `${-(gradient.xs[i] ?? 0)}px 0`,
+                  backgroundRepeat: "no-repeat",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  WebkitTextFillColor: "transparent",
+                  // paint box must cover the "y" descender
+                  paddingBottom: "0.3em",
+                  marginBottom: "-0.3em",
+                }
+              : undefined),
+          }}
         >
           {ch}
         </span>
@@ -164,6 +208,7 @@ export default function Preloader() {
   const [reduced, setReduced] = useState(false)
   const [start, setStart] = useState<{ f: WordPose; l: WordPose } | null>(null)
   const [descended, setDescended] = useState(false)
+  const [lastGrad, setLastGrad] = useState<WordGradient | null>(null)
   const [sweep, setSweep] = useState<"below" | "cover" | "gone">("below")
   const firstRef = useRef<HTMLSpanElement>(null)
   const lastRef = useRef<HTMLSpanElement>(null)
@@ -174,6 +219,7 @@ export default function Preloader() {
     const l = lastRef.current
     if (!f || !l) return
     setStart(calcStartPoses(f, l))
+    setLastGrad(measureGradient(l))
     // The display fonts may load after mount and change the word widths —
     // re-measure while still in the small state (never once the descend has
     // begun; the pose is identity by then anyway).
@@ -181,6 +227,7 @@ export default function Preloader() {
     document.fonts.ready.then(() => {
       if (!cancelled && firstRef.current && lastRef.current) {
         setStart((prev) => (prev ? calcStartPoses(firstRef.current!, lastRef.current!) : prev))
+        setLastGrad(measureGradient(lastRef.current))
       }
     })
     return () => {
@@ -310,14 +357,9 @@ export default function Preloader() {
               pose={pose("l")}
               started={!!start}
               animating={descended && !reduced}
+              gradient={lastGrad}
               className="font-normal [font-family:Helvetica,Arial,sans-serif] text-[15.2vw]"
-              style={{
-                backgroundImage: "linear-gradient(to right, #9be9d8, #e9fffa, #8fd8c7)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                WebkitTextFillColor: "transparent",
-              }}
+              style={{ color: "transparent" }}
             />
           </div>
         </motion.div>
